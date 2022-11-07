@@ -15,8 +15,8 @@ A more formal reference specification is in the works.
 ### Development
 
 ```sh
-npm install
-npm run dev
+yarn
+yarn run dev
 ```
 
 ### Note

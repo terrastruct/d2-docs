@@ -11,7 +11,7 @@ fmt:
 	prefix "$@" ./ci/sub/fmt/make.sh
 .PHONY: build
 build:
-	prefix "$@" npm run prod
+	prefix "$@" yarn run prod
 .PHONY: assert-linear
 assert-linear:
 	prefix "$@" ./ci/sub/assert_linear.sh
