@@ -2,7 +2,6 @@
 sidebar_label: Text & Code
 pagination_next: tour/icons
 ---
-
 # Text
 
 ```d2
@@ -72,3 +71,4 @@ explanation: |go
 ```
 
 <img src={require('@site/static/img/screenshots/text-3.png').default} alt="code block example" width="600"/>
+

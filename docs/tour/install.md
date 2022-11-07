@@ -1,7 +1,6 @@
 ---
 pagination_next: tour/hello-world
 ---
-
 # Install
 
 ```sh
@@ -21,3 +20,4 @@ It should have spun up a local web browser that will automatically refresh when 
 You can also download precompiled binaries specific to your OS on the Github releases
 page:
 [https://github.com/terrastruct/d2/releases](https://github.com/terrastruct/d2/releases).
+

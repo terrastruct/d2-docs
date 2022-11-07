@@ -1,7 +1,6 @@
 ---
 pagination_next: tour/comments
 ---
-
 # Strings
 
 ## Unquoted strings
@@ -156,3 +155,4 @@ correct it for you.
 You can use tabs to indent block strings after indenting to the base block string indent
 with two spaces. Any tabs in the base block string indent will be automatically converted
 to two spaces.
+

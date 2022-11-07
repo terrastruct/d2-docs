@@ -2,7 +2,6 @@
 sidebar_label: What is D2
 pagination_next: tour/experience
 ---
-
 # D2 Tour
 
 **D2** is a domain-specific language (DSL) that stands for **Declarative Diagramming**.
@@ -27,3 +26,4 @@ Download the CLI here:
 
 We recommend following along and running the examples as you go.
 :::
+

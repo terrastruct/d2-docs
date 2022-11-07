@@ -46,12 +46,7 @@ const sidebars = {
       label: "In Depth",
       collapsed: false,
       link: { type: "doc", id: "tour/strings" },
-      items: [
-        "tour/strings",
-        "tour/comments",
-        "tour/overrides",
-        "tour/auto-formatter",
-      ],
+      items: ["tour/strings", "tour/comments", "tour/overrides", "tour/auto-formatter"],
     },
     {
       type: "category",

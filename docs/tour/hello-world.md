@@ -1,7 +1,6 @@
 ---
 pagination_next: tour/shapes
 ---
-
 # Hello World
 
 ```d2
@@ -16,3 +15,4 @@ This declares a connection between two shapes, `x` and `y`, with the label, `hel
 :::info
 The specific layout rendered may vary as our autolayout algorithm changes.
 :::
+

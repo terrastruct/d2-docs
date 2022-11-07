@@ -1,7 +1,6 @@
 ---
 sidebar_label: Icons & Images
 ---
-
 # Icons
 
 Icons and images are an essential part of production-ready diagrams.
@@ -41,3 +40,4 @@ You can specify `width`s and `height`s of image shapes.
 :::info
 These keywords are only applicable `shape: image` shapes.
 :::
+

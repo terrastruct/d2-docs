@@ -1,7 +1,6 @@
 ---
 pagination_next: tour/vim
 ---
-
 # VSCode extension
 
 D2 has an official, creator-maintained extension for VSCode. It's searchable and
@@ -15,3 +14,4 @@ highlights illegal syntax.
 
 **Github:**
 [https://github.com/terrastruct/d2-vscode](https://github.com/terrastruct/d2-vscode)
+

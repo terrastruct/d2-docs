@@ -1,7 +1,6 @@
 ---
 sidebar_label: Dev tool vs design tool
 ---
-
 # A diagramming dev tool
 
 D2 is designed towards a single goal: **turn diagramming into a pleasant experience for
@@ -16,3 +15,4 @@ and the lack of ability to spatially architect a system should not block the cre
 valuable documentation. Every drag and drop shouldn’t require planning, and updates
 shouldn’t be a frustrating exercise in moving things around and resizing to make room for
 the new piece. Declarative Diagramming removes that friction.
+
