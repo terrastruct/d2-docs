@@ -4,7 +4,7 @@ This is language documentation for D2, a modern, open-source text-to-diagram DSL
 source repository for that is here:
 [https://github.com/terrastruct/d2](https://github.com/terrastruct/d2).
 
-Deployed at [https://d2-lang.com](https://d2-lang.com).
+Deployed at [https://d2lang.com](https://d2lang.com).
 
 ## Reference
 
