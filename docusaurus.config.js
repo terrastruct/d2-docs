@@ -4,7 +4,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "D2 Documentation",
   tagline: "A modern DSL that turns text to diagrams.",
-  url: "https://d2-lang.com",
+  url: "https://d2lang.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -36,7 +36,7 @@ const config = {
         alt: "D2",
         src: "img/logo.png",
         srcDark: "img/logo_dark.png",
-        href: "https://d2-lang.com/",
+        href: "https://d2lang.com/",
       },
       items: [
         {
