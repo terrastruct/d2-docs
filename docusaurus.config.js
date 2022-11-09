@@ -3,14 +3,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 const config = {
   title: "D2 Documentation",
-  tagline: "A modern DSL that turns text to diagrams.",
+  tagline: "D2 is a modern DSL that turns text to diagrams.",
   url: "https://d2lang.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "terrastruct",
-  projectName: "d2-docs",
 
   presets: [
     [
@@ -30,6 +28,14 @@ const config = {
   ],
 
   themeConfig: {
+    image: "img/opengraph.png",
+    metadata: [
+      {
+        name: "keywords",
+        content:
+          "diagrams, software architecture, text to diagram, graphviz alternative, mermaidjs alternative, plantuml alternative",
+      },
+    ],
     themeConfig: { docs: { sidebar: { hideable: true } } },
     navbar: {
       logo: {
@@ -59,6 +65,9 @@ const config = {
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
+    },
+    footer: {
+      copyright: `Copyright © ${new Date().getFullYear()} Terrastruct, Inc.`,
     },
   },
 
