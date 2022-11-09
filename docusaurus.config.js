@@ -110,6 +110,10 @@ const config = {
       }),
     }),
   ],
+
+  scripts: [
+    { src: "https://d2lang.com/js/script.js", defer: true, "data-domain": "d2lang.com" },
+  ],
 };
 
 module.exports = config;
