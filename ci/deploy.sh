@@ -13,5 +13,5 @@ fi
 
 npm run prod
 aws sts get-caller-identity
-aws s3 sync ${D2_DOCS_S3_BUCKET} --delete --acl public-read
+aws s3 sync ./build ${D2_DOCS_S3_BUCKET} --delete --acl public-read
 aws cloudfront create-invalidation --distribution-id ${D2_DOCS_CLOUDFRONT_ID} --paths "/*"
