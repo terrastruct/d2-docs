@@ -23,8 +23,8 @@ In some instances, you need a diagram to match the exact image in your head. The
 workflows will always require a design tool, with a drag-and-drop GUI. In other cases, you
 don't care about exact match, or you can't even picture the end result. The requirements
 for these types of diagrams are more relaxed --  it only needs to satisfy a set of
-  constraints. These are the types of diagrams that an algorithm can get right --
-  "automatable". The vast majority of software engineering diagrams are automatable.
+constraints. These are the types of diagrams that an algorithm can get right --
+"automatable". The vast majority of software engineering diagrams are automatable.
 
 Currently, D2 can handle a subset of these well, and increasing coverage is a priority.
 The primary lever, of course, is layout engines. These are the algorithms that take
@@ -90,7 +90,7 @@ levels, but D2 must have good support for granular customization.
 One deciding factor is the time it takes to get to a presentable diagram. Presentable
 doesn't mean full of vibrant colors and shadows and design fluff. It does mean consistent
 colors that increase clarity, on-brand palette of company colors, distinct shapes and
-arrow -- properties that make a professional diagram you'd be proud of presenting.
+arrows -- properties that make a professional diagram you'd be proud of presenting.
 
 Another consideration is how customizable the aesthetics are, and how much effort that
 customization takes. I wish the bar here could be that customizing via text can get better
@@ -130,8 +130,9 @@ unforeseen ones for the infinite workflows out there.
 
 D2's plugin system further makes the language extensible. These allow you to add "hooks"
 to stages of D2 compilation. For example, while not core to D2, a hypothetical set of
-plugins can add a styled border, add your signature/credits, make everything look
-hand-drawn, then increase contrast for accessibility.
+plugins can add a styled border, add your signature/credits, make everything [look
+hand-drawn](https://github.com/terrastruct/d2/pull/91), then increase contrast for
+accessibility.
 
 ### How success is measured
 
@@ -150,14 +151,14 @@ unplanned usage.
 ### Plan
 
 1. D2's plugin system is still in its early stages, and should allow deeper hooks into
-parts of compilation.
+   parts of compilation.
 1. Complete editor integrations. Currently, syntax highlighting is supported. But a
-feature-complete integration for VSCode for example would allow rendering to its built-in
-browser, autoformat, call out to LSP functions to refactor, and more.
+   feature-complete integration for VSCode for example would allow rendering to its
+   built-in browser, autoformat, call out to LSP functions to refactor, and more.
 1. Build out imports/exports. Currently, D2 can take in D2 files and export to SVGs. It
-should have a transpiler to import other popular text-to-diagram languages, and output to
-other popular image types. It should take in CSVs of schemas to make ERDs. It should be
-able to render to ASCII art.
+   should have a transpiler to import other popular text-to-diagram languages, and output
+   to other popular image types. It should take in CSVs of schemas to make ERDs. It should
+   be able to render to ASCII art.
 1. Build a configurable linter.
 
 ## Your feedback
@@ -185,5 +186,3 @@ https://github.com/terrastruct/d2/pull/91
 
 [5] Actually, gopls single-handedly brings my machine back to 2005 speeds with how much
 CPU it consumes. Not the fault of vim-go though!
-
-
