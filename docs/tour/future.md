@@ -26,10 +26,30 @@ for these types of diagrams are more relaxed --  it only needs to satisfy a set 
 constraints. These are the types of diagrams that an algorithm can get right --
 "automatable". The vast majority of software engineering diagrams are automatable.
 
-Currently, D2 can handle a subset of these well, and increasing coverage is a priority.
-The primary lever, of course, is layout engines. These are the algorithms that take
-shapes, labels, icons, connections and hints as input, and lay it out in such a way that
-is "legible".
+<div style={{
+  display: "flex",
+  alignItems: "center",
+}}>
+  <img src={require('@site/static/img/screenshots/freeform.png').default} alt="freeform diagram example" width="50%"/>
+  <img src={require('@site/static/img/screenshots/automatable.png').default} alt="automatable diagram example" width="50%" />
+</div>
+
+<div style={{
+  color: "grey",
+  display: "flex",
+  alignItems: "center",
+  marginBottom: "3rem",
+}}>
+  <div style={{width: "50%", textAlign: "center"}}>Not automatable. Precise placements,
+  unique shapes.</div>
+  <div style={{width: "50%", textAlign: "center"}}>Automatable. You could show these
+  relationships in 100 different ways that look good.</div>
+</div>
+
+Currently, D2 can handle a subset of automatable diagrams well, and increasing coverage is
+a priority. The primary lever, of course, is layout engines. These are the algorithms that
+take shapes, labels, icons, connections and hints as input, and lay it out in such a way
+that is "legible".
 
 There are two components to diagram legibility.
 
