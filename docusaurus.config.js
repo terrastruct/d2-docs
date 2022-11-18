@@ -42,7 +42,13 @@ const config = {
           "diagrams, software architecture, text to diagram, graphviz alternative, mermaidjs alternative, plantuml alternative",
       },
     ],
-    themeConfig: { docs: { sidebar: { hideable: true } } },
+    themeConfig: {
+      docs: {
+        sidebar: {
+          hideable: true
+        }
+      }
+    },
     navbar: {
       logo: {
         alt: "D2",

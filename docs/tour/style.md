@@ -1,4 +1,4 @@
-# Styling objects
+# Styles
 
 If you'd like to overwrite the style of a theme for a particular object, you may add styles to objects like so:
 
