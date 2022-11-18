@@ -10,6 +10,7 @@ const sidebars = {
         "tour/design",
         "tour/community",
         "tour/faq",
+        "tour/future",
       ],
     },
     {
@@ -51,7 +52,6 @@ const sidebars = {
     },
     "tour/cheat-sheet",
     "tour/troubleshoot",
-    "tour/future",
   ],
 };
 
