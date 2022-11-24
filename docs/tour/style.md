@@ -20,6 +20,15 @@ y: {
     3d: true
   }
 }
+
+x -> y: {
+  style: {
+    stroke: green
+    opacity: 0.5
+    stroke-width: 2
+    stroke-dash: 5
+  }
+}
 ```
 
 <img src={require('@site/static/img/screenshots/style_1.png').default} alt="styling example" width="500"/>
