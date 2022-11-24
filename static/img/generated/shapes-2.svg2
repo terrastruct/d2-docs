@@ -5,14 +5,16 @@ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 width="1067" height="326" viewBox="-100 -100 1067 326"><style type="text/css">
 <![CDATA[
 .shape {
-	shape-rendering: geometricPrecision;
+  shape-rendering: geometricPrecision;
+  stroke-linejoin: round;
 }
 .connection {
-	stroke-linecap: round;
-	stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
+
 ]]>
-</style><rect class="shape" x="0" y="0" width="187" height="126" style="fill:#F7F8FE;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /><text class="text-bold" x="93.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:black">PostgreSQL</text><path class="shape" d="M 274.9302 44.0477 C 274.9302 45.3862 273.8043 46.7245 272.6787 46.7245 C 258.3253 48.3974 247.0675 65.4626 247.0675 86.2083 C 247.0675 108.2925 259.7324 126.0267 275.7746 126.0267 H 384.6925 C 401.8606 126.0267 415.9326 106.954 415.9326 83.8661 C 415.9326 61.7819 402.9861 43.3784 386.6628 42.0401 C 385.5369 42.0401 384.4113 41.0362 384.1298 39.3633 C 380.471 16.9447 363.5843 0.2142 343.8837 0.2142 C 330.9374 0.2142 319.3982 7.241 312.0809 18.283 C 311.2365 19.6215 309.8294 19.9562 308.985 19.6215 C 306.1706 18.283 303.0749 17.6139 299.6975 17.6139 C 286.7509 17.2791 276.056 28.9904 274.9302 44.0477 Z" style="fill:#FFFFFF;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /><text class="text-bold" x="331.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:black">my cloud</text><rect class="shape" x="476" y="0" width="152" height="126" style="fill:#F7F8FE;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /><text class="text-bold" x="552.000000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:black">SQLite</text><rect class="shape" x="688" y="0" width="179" height="126" style="fill:#F7F8FE;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /><text class="text-bold" x="777.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:black">Cassandra</text><style type="text/css"><![CDATA[
+</style><g class="shape" ><rect x="0" y="0" width="187" height="126" style="fill:#F7F8FE;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text-bold" x="93.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:black">PostgreSQL</text><g class="shape" ><path d="M 274.9302 44.0477 C 274.9302 45.3862 273.8043 46.7245 272.6787 46.7245 C 258.3253 48.3974 247.0675 65.4626 247.0675 86.2083 C 247.0675 108.2925 259.7324 126.0267 275.7746 126.0267 H 384.6925 C 401.8606 126.0267 415.9326 106.954 415.9326 83.8661 C 415.9326 61.7819 402.9861 43.3784 386.6628 42.0401 C 385.5369 42.0401 384.4113 41.0362 384.1298 39.3633 C 380.471 16.9447 363.5843 0.2142 343.8837 0.2142 C 330.9374 0.2142 319.3982 7.241 312.0809 18.283 C 311.2365 19.6215 309.8294 19.9562 308.985 19.6215 C 306.1706 18.283 303.0749 17.6139 299.6975 17.6139 C 286.7509 17.2791 276.056 28.9904 274.9302 44.0477 Z" style="fill:#FFFFFF;stroke:#0D32B2;opacity:1.000000;stroke-width:2;"/></g><text class="text-bold" x="331.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:black">my cloud</text><g class="shape" ><rect x="476" y="0" width="152" height="126" style="fill:#F7F8FE;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text-bold" x="552.000000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:black">SQLite</text><g class="shape" ><rect x="688" y="0" width="179" height="126" style="fill:#F7F8FE;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text-bold" x="777.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:black">Cassandra</text><style type="text/css"><![CDATA[
 .text-bold {
 	font-family: "font-bold";
 }

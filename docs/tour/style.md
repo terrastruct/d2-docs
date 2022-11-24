@@ -18,11 +18,21 @@ y: {
     opacity: 0.6
     fill: red
     3d: true
+    stroke: black
+  }
+}
+
+x -> y: {
+  style: {
+    stroke: green
+    opacity: 0.5
+    stroke-width: 2
+    stroke-dash: 5
   }
 }
 ```
 
-<img src={require('@site/static/img/screenshots/style_1.png').default} alt="styling example" width="500"/>
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-1.svg2')}}></div>
 
 Here is the full list of styles you can configure. More coming soon, as well as classes so you can aggregate styles.
 
