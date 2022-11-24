@@ -51,7 +51,7 @@ Keys are case-insensitive, so `postgresql` and `postgreSQL` will reference the s
 :::
 
 :::info
-The full catalog of shapes:
+The full catalog of shapes types:
 - `rectangle`
 - `square`
 - `page`
@@ -70,7 +70,7 @@ The full catalog of shapes:
 - `hexagon`
 - `cloud`
 
-Special shapes (more on all of these later):
+Special shape types (more on these next):
 - `text`
 - `code`
 - `class`
