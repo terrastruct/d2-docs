@@ -1,3 +1,7 @@
+---
+pagination_next: tour/themes
+---
+
 # Layouts
 
 D2 supports using a different layout engines. The choice of layout engines can
