@@ -49,3 +49,31 @@ SQLite; Cassandra
 :::info
 Keys are case-insensitive, so `postgresql` and `postgreSQL` will reference the same shape.
 :::
+
+:::info
+The full catalog of shapes types:
+- `rectangle`
+- `square`
+- `page`
+- `parallelogram`
+- `document`
+- `cylinder`
+- `queue`
+- `package`
+- `step`
+- `callout`
+- `stored_data`
+- `person`
+- `diamond`
+- `oval`
+- `circle`
+- `hexagon`
+- `cloud`
+
+Special shape types (more on these next):
+- `text`
+- `code`
+- `class`
+- `sql_table`
+- `image`
+:::
