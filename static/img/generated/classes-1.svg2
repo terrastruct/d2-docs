@@ -14,11 +14,11 @@ width="510" height="384" viewBox="-100 -100 510 384"><style type="text/css">
 }
 
 ]]>
-</style><g class="shape" ><rect class="shape" x="0" y="0" width="310" height="184" style="fill:#FFFFFF;stroke:#0A0F25;opacity:1.000000;stroke-width:2;"/><rect class="class_header" x="0.000000" y="0.000000" width="310.000000" height="92.000000" fill="black" /><text class="text" x="155.000000" y="55.000000" style="text-anchor:middle;font-size:24px;fill:white">MyClass</text><text class="text" x="10.000000" y="120.000000" style="text-anchor:start;font-size:20px;fill:rgb(13, 50, 178)">+</text>
+</style><g id="MyClass"><g class="shape" ><rect class="shape" x="0" y="0" width="310" height="184" style="fill:#FFFFFF;stroke:#0A0F25;opacity:1.000000;stroke-width:2;"/><rect class="class_header" x="0.000000" y="0.000000" width="310.000000" height="92.000000" fill="black" /><text class="text" x="155.000000" y="55.000000" style="text-anchor:middle;font-size:24px;fill:white">MyClass</text><text class="text" x="10.000000" y="120.000000" style="text-anchor:start;font-size:20px;fill:rgb(13, 50, 178)">+</text>
 <text class="text" x="30.000000" y="120.000000" style="text-anchor:start;font-size:20px;fill:black">field</text>
 <text class="text" x="290.000000" y="120.000000" style="text-anchor:end;font-size:20px;fill:rgb(13, 50, 178)">[]string</text><line x1="0.000000" y1="138.000000" x2="310.000000" y2="138.000000" style="stroke-width:1;stroke:#0A0F25" /><text class="text" x="10.000000" y="166.000000" style="text-anchor:start;font-size:20px;fill:rgb(13, 50, 178)">+</text>
 <text class="text" x="30.000000" y="166.000000" style="text-anchor:start;font-size:20px;fill:black">method(a uint64)</text>
-<text class="text" x="290.000000" y="166.000000" style="text-anchor:end;font-size:20px;fill:rgb(13, 50, 178)">(x, y int)</text></g><style type="text/css"><![CDATA[
+<text class="text" x="290.000000" y="166.000000" style="text-anchor:end;font-size:20px;fill:rgb(13, 50, 178)">(x, y int)</text></g></g><style type="text/css"><![CDATA[
 .text {
 	font-family: "font-regular";
 }
