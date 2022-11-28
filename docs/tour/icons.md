@@ -17,6 +17,10 @@ my network: {
 Icons on connections coming soon.
 :::
 
+:::info
+Using the D2 CLI locally? You can specify local images like `icon: ./my_cat.png`.
+:::
+
 # Add `shape: image` for standalone icon shapes
 
 ```d2
