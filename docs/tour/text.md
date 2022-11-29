@@ -20,6 +20,8 @@ explanation: |md
 
 ## Latex
 
+You can use `latex` or `tex` to specify a Latex language block.
+
 ```d2
 plankton -> formula: will steal
 formula: {
@@ -50,6 +52,62 @@ A few things to note about Latex blocks:
 Currently cannot be applied to labels, which is why the above example nests an object.
 This is coming soon.
 :::
+
+D2 includes the following Latex plugins:
+
+```d2
+amscd plugin: {
+  ex: |tex
+\\begin{CD} B @>{\\text{very long label}}>> C S^{{\\mathcal{W}}_\\Lambda}\\otimes T @>j>> T\\\\ @VVV V \\end{CD}
+|
+}
+
+braket plugin: {
+  ex: |tex
+\\bra{a}\\ket{b}
+|
+}
+
+cancel plugin: {
+  ex: |tex
+\\cancel{Culture + 5}
+|
+}
+
+color plugin: {
+  ex: |tex
+\\textcolor{red}{y} = \\textcolor{green}{\\sin} x
+|
+}
+
+gensymb plugin: {
+  ex: |tex
+\\lambda = 10.6\\,\\micro\\mathrm{m}
+|
+}
+
+mhchem plugin: {
+  ex: |tex
+\ce{SO4^2- + Ba^2+ -> BaSO4 v}
+|
+}
+
+physics plugin: {
+  ex: |tex
+\\var{F[g(x)]}
+\\dd(\\cos\\theta)
+|
+}
+
+multilines: {
+  ex: |tex
+\\displaylines{x = a + b \\\\ y = b + c}
+\\sum_{k=1}^{n} h_{k} \\int_{0}^{1} \\bigl(\\partial_{k} f(x_{k-1}+t h_{k} e_{k}) -\\partial_{k} f(a)\\bigr) \\,dt
+|
+}
+```
+
+<img src={require('@site/static/img/screenshots/latex-1.png').default} alt="latex example" />
 
 ## How do I position text?
 
