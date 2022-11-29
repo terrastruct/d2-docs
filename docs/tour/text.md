@@ -46,9 +46,17 @@ A few things to note about Latex blocks:
   - `\huge{ }`
 - Under the hood, this is using [MathJax](https://www.mathjax.org/). It is not full Latex,
   which includes a document layout engine. D2's Latex blocks are meant to display
-  mathematical notation, but not support the format of existing Latex documents.
+  mathematical notation, but not support the format of existing Latex documents. See
+  [here](https://docs.mathjax.org/en/latest/input/tex/macros/index.html) for a list of all
+  supported commands.
 
-:::info
+:::caution
+D2 runs on the latest version of MathJax, which has a lot of nice things but unfortunately
+does not have linebreaks. You can kind of get around this with the `displaylines` command.
+See below.
+:::
+
+:::note
 Currently cannot be applied to labels, which is why the above example nests an object.
 This is coming soon.
 :::
