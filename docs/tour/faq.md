@@ -23,7 +23,7 @@ No, D2 can run entirely server-side.
 ## Can D2 run on a browser?
 
 Yes, with WebAssembly. We are working on including the build with the releases, as well
-provide instructions and examples.
+as provide instructions and examples.
 
 ## Can I use D2 online?
 

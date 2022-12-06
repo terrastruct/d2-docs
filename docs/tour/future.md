@@ -1,7 +1,6 @@
 # Roadmap
 
-:::info
-tldr;
+:::info TLDR
 [https://github.com/terrastruct/d2/issues?q=is%3Aopen+is%3Aissue+label%3Afeature](https://github.com/terrastruct/d2/issues?q=is%3Aopen+is%3Aissue+label%3Afeature)
 :::
 

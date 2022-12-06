@@ -44,8 +44,8 @@ A few things to note about Latex blocks:
   - `\normal{ }`
   - `\large{ }`
   - `\huge{ }`
-- Under the hood, this is using [MathJax](https://www.mathjax.org/). It is not full Latex,
-  which includes a document layout engine. D2's Latex blocks are meant to display
+- Under the hood, this is using [MathJax](https://www.mathjax.org/). It is not full Latex
+  (full Latex includes a document layout engine). D2's Latex blocks are meant to display
   mathematical notation, but not support the format of existing Latex documents. See
   [here](https://docs.mathjax.org/en/latest/input/tex/macros/index.html) for a list of all
   supported commands.
@@ -120,7 +120,7 @@ multilines: {
 ## How do I position text?
 
 :::info
-This keyword is currently only on Terrastruct and has not been ported yet to local
+This keyword is currently only on Terrastruct web app and has not been ported yet to local
 renders. In progress.
 :::
 

@@ -4,10 +4,9 @@ pagination_next: tour/hello-world
 # Install
 
 :::tip
-We have detailed install instructions for Mac, Windows, and Linux, using a variety of
-methods. If you're looking for a specific installation method, see
-[here](https://github.com/terrastruct/d2/blob/master/docs/INSTALL.md). This page is an
-abridged version.
+There are more detailed install instructions for Mac, Windows, and Linux, using a variety of
+methods, [here](https://github.com/terrastruct/d2/blob/master/docs/INSTALL.md). This page
+is an abridged version.
 :::
 
 ## Install script
@@ -17,7 +16,7 @@ best way to install based on your machine. E.g. if D2 is available through a pac
 manager installed, it will use that package manager.
 
 ```shell
-# With --dryrun the install script will print the commands it will use
+# With --dry-run the install script will print the commands it will use
 # to install without actually installing so you know what it's going to do.
 curl -fsSL https://d2lang.com/install.sh | sh -s -- --dry-run
 # If things look good, install for real.
