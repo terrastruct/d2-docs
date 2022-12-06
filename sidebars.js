@@ -53,6 +53,18 @@ const sidebars = {
     "tour/cheat-sheet",
     "tour/troubleshoot",
   ],
+  releasesSidebar: [
+    {
+      type: "category",
+      label: "Releases",
+      link: { type: "doc", id: "releases/intro" },
+      items: [
+        "releases/intro",
+        "releases/0.1.0",
+        "releases/0.0.13",
+      ],
+    },
+  ]
 };
 
 module.exports = sidebars;

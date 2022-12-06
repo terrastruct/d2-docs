@@ -64,6 +64,12 @@ const config = {
           label: "Tour",
         },
         {
+          type: "doc",
+          docId: "releases/intro",
+          position: "left",
+          label: "Releases",
+        },
+        {
           href: "https://github.com/terrastruct/d2-docs",
           label: "GitHub",
           position: "right",
