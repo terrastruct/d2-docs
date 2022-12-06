@@ -2,9 +2,6 @@
 
 .PHONY: all
 all: fmt build
-ifdef CI
-all: assert-linear
-endif
 
 .PHONY: fmt
 fmt:
@@ -12,6 +9,3 @@ fmt:
 .PHONY: build
 build:
 	prefix "$@" yarn run prod
-.PHONY: assert-linear
-assert-linear:
-	prefix "$@" ./ci/sub/assert_linear.sh
