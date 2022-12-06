@@ -2,7 +2,7 @@
 <svg
 style="background: white;"
 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-width="563" height="886" viewBox="-100 -100 563 886"><style type="text/css">
+width="383" height="706" viewBox="-10 -10 383 706"><style type="text/css">
 <![CDATA[
 .shape {
   shape-rendering: geometricPrecision;
@@ -11,6 +11,10 @@ width="563" height="886" viewBox="-100 -100 563 886"><style type="text/css">
 .connection {
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+.blend {
+  mix-blend-mode: multiply;
+  opacity: 0.5;
 }
 
 ]]>
@@ -30,7 +34,7 @@ width="563" height="886" viewBox="-100 -100 563 886"><style type="text/css">
 <text class="text" x="37.000000" y="622.000000" style="text-anchor:start;font-size:20px;fill:black">commit()</text>
 <text class="text" x="337.000000" y="622.000000" style="text-anchor:end;font-size:20px;fill:rgb(13, 50, 178)">void</text><text class="text" x="17.000000" y="668.000000" style="text-anchor:start;font-size:20px;fill:rgb(13, 50, 178)">#</text>
 <text class="text" x="37.000000" y="668.000000" style="text-anchor:start;font-size:20px;fill:black">peekn(n int)</text>
-<text class="text" x="337.000000" y="668.000000" style="text-anchor:end;font-size:20px;fill:rgb(13, 50, 178)">(s string, eof bool)</text></g></g><g id="&#34;github.com/terrastruct/d2parser.git&#34;"><g class="shape" ><rect x="0" y="0" width="363" height="126" style="fill:#F7F8FE;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text-bold" x="181.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">github.com/terrastruct/d2parser.git</text></g><g id="(&#34;github.com/terrastruct/d2parser.git&#34; -&gt; D2 Parser)[0]"><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 181.500000 128.000000 C 181.500000 166.000000 181.500000 186.000000 181.500000 222.000000" class="connection" style="fill:none;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" marker-end="url(#mk-3990223579)" /></g><style type="text/css"><![CDATA[
+<text class="text" x="337.000000" y="668.000000" style="text-anchor:end;font-size:20px;fill:rgb(13, 50, 178)">(s string, eof bool)</text></g></g><g id="&#34;github.com/terrastruct/d2parser.git&#34;"><g class="shape" ><rect x="0" y="0" width="363" height="126" style="fill:#F7F8FE;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text-bold" x="181.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">github.com/terrastruct/d2parser.git</text></g><g id="(&#34;github.com/terrastruct/d2parser.git&#34; -&gt; D2 Parser)[0]"><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 181.500000 128.000000 C 181.500000 166.000000 181.500000 186.000000 181.500000 222.000000" class="connection" style="fill:none;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#1142408691)"/></g><style type="text/css"><![CDATA[
 .text {
 	font-family: "font-regular";
 }
