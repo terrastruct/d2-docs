@@ -145,7 +145,7 @@ alice.t2 <- bob.a
 Groups help you label a subset of the sequence diagram.
 
 :::info
-A group in D2 is also known elsewhere as a "fragment" and "edge group".
+A group in D2 is also known elsewhere as a "fragment", "edge group", and "frame".
 :::
 
 We saw an example of this in an earlier example when explaining scoping rules. More

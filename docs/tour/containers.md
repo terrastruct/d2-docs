@@ -77,3 +77,21 @@ ci.deploys -> clouds
 ```
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/containers-3.svg2')}}></div>
+
+## Reference parent
+
+Sometimes you want to reference something outside of the container from within. The
+underscore (`_`) refers to parent.
+
+```d2
+christmas: {
+  presents
+}
+birthdays: {
+  presents
+  _.christmas.presents -> presents: regift
+  _.christmas.style.fill: "#ACE1AF"
+}
+```
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/containers-underscore.svg2')}}></div>
