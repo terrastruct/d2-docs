@@ -48,7 +48,7 @@ const sidebars = {
       type: "category",
       label: "Extensions",
       link: { type: "doc", id: "tour/extensions" },
-      items: ["tour/vscode", "tour/vim"],
+      items: ["tour/vscode", "tour/vim", "tour/obsidian"],
     },
     "tour/cheat-sheet",
     "tour/troubleshoot",

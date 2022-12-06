@@ -5,3 +5,4 @@ in the language.
 
 - [VSCode extension](/tour/vscode)
 - [Vim plugin](/tour/vim)
+- [Obsidian plugin](/tour/obsidian)
