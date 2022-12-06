@@ -3,6 +3,13 @@ pagination_next: tour/hello-world
 ---
 # Install
 
+:::tip
+We have detailed install instructions for Mac, Windows, and Linux, using a variety of
+methods. If you're looking for a specific installation method, see
+[here](https://github.com/terrastruct/d2/blob/master/docs/INSTALL.md). This page is an
+abridged version.
+:::
+
 ## Install script
 
 The recommended way to install is to run our install script, which will figure out the
