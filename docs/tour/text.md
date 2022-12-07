@@ -120,8 +120,8 @@ multilines: {
 ## How do I position text?
 
 :::info
-This keyword is currently only on Terrastruct web app and has not been ported yet to local
-renders. In progress.
+This keyword currently only works on the TALA layout engine. We are working on shims to
+make this possible in other layout engines.
 :::
 
 Usually, longform text adds detail to a particular area of the diagram. You can specify

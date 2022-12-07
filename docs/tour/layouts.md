@@ -5,7 +5,10 @@ pagination_next: tour/themes
 # Layouts
 
 D2 supports using a different layout engines. The choice of layout engines can
-significantly influence your overall diagram.
+significantly influence your overall diagram. Each layout also has varying degrees of
+support for certain keywords. Though we try our best to keep things consistent, ultimately
+we have the most control over our custom-built layout engine and are limited by what the
+other layout engines support.
 
 ## Layout engines
 
@@ -31,3 +34,15 @@ To see available layouts on your machine, you can run `d2 layout`.
 
 To specify the layout used, you can either set the flag `--layout=dagre` or set it as an
 environment variable, `$D2_LAYOUT=dagre`.
+
+## Direction
+
+Set `direction` to one of the following to influence an explicit direction your diagram
+flows towards.
+
+:::info Options
+- `up`
+- `down`
+- `right`
+- `left`
+:::

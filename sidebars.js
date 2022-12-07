@@ -28,7 +28,7 @@ const sidebars = {
 
     {
       type: "category",
-      label: "More Objects",
+      label: "Special Objects",
       link: { type: "doc", id: "tour/text" },
       items: ["tour/text", "tour/icons", "tour/sql-tables", "tour/classes", "tour/sequence-diagrams"],
     },

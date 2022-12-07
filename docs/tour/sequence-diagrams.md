@@ -238,3 +238,8 @@ scorer.t -> itemOutcome.t3: setFeedback(missingConcepts)
 
 ```
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/sequence-diagrams-4.svg2')}}></div>
+
+## Glossary
+
+<img src={require('@site/static/img/screenshots/sequence_glossary.png').default}
+alt="sequence diagram glossary"/>
