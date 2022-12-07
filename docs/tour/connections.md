@@ -127,7 +127,7 @@ d -> a -> c
 
 Currently, arrowhead shape choices are `triangle`, `arrow` (like triangle but
 pointier), and `diamond`, where
-`diamond` can further be styled as `style.filled: true`. The default is
+`diamond` can further be styled as `style.filled: true`. The default
 arrowhead shape is `triangle`.
 
 :::info
