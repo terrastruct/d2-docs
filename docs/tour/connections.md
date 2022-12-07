@@ -67,8 +67,9 @@ super long shape id here --\
 Repeated connections do not override existing connections. They declare new ones.
 
 ```d2
-DB -> S3: backup
-DB -> S3: backup
+Database -> S3: backup
+Database -> S3
+Database -> S3: backup
 ```
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/connections-2.svg2')}}></div>

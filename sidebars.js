@@ -28,7 +28,7 @@ const sidebars = {
 
     {
       type: "category",
-      label: "More Objects",
+      label: "Special Objects",
       link: { type: "doc", id: "tour/text" },
       items: ["tour/text", "tour/icons", "tour/sql-tables", "tour/classes", "tour/sequence-diagrams"],
     },
@@ -48,11 +48,23 @@ const sidebars = {
       type: "category",
       label: "Extensions",
       link: { type: "doc", id: "tour/extensions" },
-      items: ["tour/vscode", "tour/vim"],
+      items: ["tour/vscode", "tour/vim", "tour/obsidian"],
     },
     "tour/cheat-sheet",
     "tour/troubleshoot",
   ],
+  releasesSidebar: [
+    {
+      type: "category",
+      label: "Releases",
+      link: { type: "doc", id: "releases/intro" },
+      items: [
+        "releases/intro",
+        "releases/0.1.0",
+        "releases/0.0.13",
+      ],
+    },
+  ]
 };
 
 module.exports = sidebars;
