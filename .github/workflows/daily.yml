@@ -1,0 +1,21 @@
+name: daily
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '42 0 * * *' # daily at 00:42
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/yarn/v6
+          key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - run: COLOR=1 CI_FORCE=1 ./make.sh
