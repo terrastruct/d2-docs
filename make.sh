@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
-if [ ! -e "$(dirname "$0")/../ci/sub/.git" -o \
-  ! -e "$(dirname "$0")/../frontend/src/d2-vscode/.git" ]; then
+if [ ! -e "$(dirname "$0")/ci/sub/.git" -o \
+  ! -e "$(dirname "$0")/src/d2-vscode/.git" ]; then
   set -x
   git submodule update --init
   set +x
