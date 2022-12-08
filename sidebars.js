@@ -30,7 +30,13 @@ const sidebars = {
       type: "category",
       label: "Special Objects",
       link: { type: "doc", id: "tour/text" },
-      items: ["tour/text", "tour/icons", "tour/sql-tables", "tour/classes", "tour/sequence-diagrams"],
+      items: [
+        "tour/text",
+        "tour/icons",
+        "tour/sql-tables",
+        "tour/classes",
+        "tour/sequence-diagrams",
+      ],
     },
     {
       type: "category",
@@ -58,13 +64,9 @@ const sidebars = {
       type: "category",
       label: "Releases",
       link: { type: "doc", id: "releases/intro" },
-      items: [
-        "releases/intro",
-        "releases/0.1.0",
-        "releases/0.0.13",
-      ],
+      items: ["releases/intro", "releases/0.1.0", "releases/0.0.13"],
     },
-  ]
+  ],
 };
 
 module.exports = sidebars;

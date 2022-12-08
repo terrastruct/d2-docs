@@ -29,9 +29,9 @@ const config = {
 
   themeConfig: {
     announcementBar: {
-      id: 'oss',
+      id: "oss",
       content:
-      'D2 is now open-source! <a target="_blank" rel="noopener noreferrer" href="https://github.com/terrastruct/d2">Github</a>',
+        'D2 is now open-source! <a target="_blank" rel="noopener noreferrer" href="https://github.com/terrastruct/d2">Github</a>',
       isCloseable: true,
     },
     image: "img/opengraph.png",
@@ -45,9 +45,9 @@ const config = {
     themeConfig: {
       docs: {
         sidebar: {
-          hideable: true
-        }
-      }
+          hideable: true,
+        },
+      },
     },
     navbar: {
       logo: {
