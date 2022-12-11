@@ -5,6 +5,15 @@ pagination_next: tour/experience
 
 # D2 Tour
 
+```d2
+x -> y
+x
+whal
+what: {
+  shape: person
+}
+```
+
 **D2** is a diagram scripting language that turns text to diagrams. It stands for
 **Declarative Diagramming**. Declarative, as in, you describe what you want diagrammed, it
 generates the image.

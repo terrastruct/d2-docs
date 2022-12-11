@@ -63,21 +63,22 @@ export default function D2CodeBlock(props) {
 
   let theme;
   let preStyle = {
-    position: "relative",
-    lineHeight: "25px",
+    lineHeight: "16px",
   };
   const { colorMode } = docusaurusThemeCommon.useColorMode();
   switch (colorMode) {
     case "light":
       theme = lightTheme;
-      preStyle.border = "solid #dee1eb 1px";
       break;
     case "dark":
       theme = darkTheme;
-      preStyle.border = "solid #606770 1px";
       break;
   }
-  preStyle.backgroundColor = theme.colors["editor.background"];
+  preStyle.backgroundColor = "#F8F8FB";
+  preStyle.whiteSpace = "pre-wrap";
+  preStyle.padding = "12px";
+  preStyle.fontSize = "12px";
+  preStyle.fontFamily = 'Source Code Pro';
 
   const children = [];
   if (tmGrammar) {
@@ -94,23 +95,6 @@ export default function D2CodeBlock(props) {
     if (i == lines.length - 1 && line === "") {
       continue;
     }
-
-    children.push(
-      <span
-        style={{
-          color: theme.colors["editorLineNumber.foreground"],
-          marginRight: "20px",
-          userSelect: "none",
-          textAlign: "right",
-          width: lines.length > 9 ? "20px" : undefined,
-          display: "inline-block",
-        }}
-        key={`ln-${i}`}
-      >
-        {i + 1}
-      </span>
-    );
-
     children.push(
       <span key={`line-${i}`}>{tmGrammar ? highlightLine(tmGrammar, line) : line}</span>
     );
@@ -239,7 +223,7 @@ function highlightLine(tmGrammar, line) {
       (tokenMeta & metadataConsts.BACKGROUND_MASK) >>> metadataConsts.BACKGROUND_OFFSET;
 
     style.color = colorMap[foregroundIndex];
-    style.backgroundColor = colorMap[backgroundIndex];
+    style.backgroundColor = "#F8F8FB";
 
     const fontStyle = fontStyles[fontStyleIndex];
     switch (fontStyle) {
