@@ -46,3 +46,19 @@ flows towards.
 - `right`
 - `left`
 :::
+
+```d2
+direction: right
+x -> y -> z: hello world
+```
+
+<div
+className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/direction-right.svg2')}}></div>
+
+```d2
+direction: up
+x -> y -> z: hello world
+```
+
+<div
+className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/direction-up.svg2')}}></div>
