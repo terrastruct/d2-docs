@@ -18,7 +18,7 @@ into blogs and wikis.
 
 # How to set theme?
 
-To specify the layout used, you can set the flag `-t, --theme`
+To specify the theme used, you can set the flag `-t, --theme`
 
 ```shell
 d2 -t 101 hello.d2 hello.svg
