@@ -49,7 +49,7 @@ flows towards.
 
 ```d2
 direction: right
-x -> y -> z: hello world
+x -> y -> z: hello
 ```
 
 <div
@@ -57,7 +57,7 @@ className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img
 
 ```d2
 direction: up
-x -> y -> z: hello world
+x -> y -> z: hello
 ```
 
 <div

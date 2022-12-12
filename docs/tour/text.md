@@ -179,3 +179,33 @@ explanation: |go
 
 <img src={require('@site/static/img/screenshots/text-3.png').default} alt="code block example" width="600"/>
 
+### Advanced: Block strings
+
+What if you're writing Typescript where the pipe symbol `|` is commonly used? Just add
+another pipe, `||`.
+
+```d2
+my_code: ||ts
+  declare function getSmallPet(): Fish | Bird;
+||
+```
+
+Actually, Typescript uses `||` too, so that won't work. Let's keep going.
+
+```d2
+my_code: |||ts
+  declare function getSmallPet(): Fish | Bird;
+  const works = (a > 1) || (b < 2)
+|||
+```
+
+There's probably some language or scenario where the triple pipe is used too. D2 actually
+allows you to use any special symbols (not alphanumeric, space, or `_`) after the first pipe:
+
+```d2
+# Much cleaner!
+my_code: |`ts
+  declare function getSmallPet(): Fish | Bird;
+  const works = (a > 1) || (b < 2)
+`|
+```
