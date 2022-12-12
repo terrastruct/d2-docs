@@ -16,27 +16,16 @@ into blogs and wikis.
 <img width={600} src={require('@site/static/img/screenshots/themes/theme_table_2.png').default} alt="table mixed berry blue theme"/>
 <img width={600} src={require('@site/static/img/screenshots/themes/theme_table_3.png').default} alt="table vanilla nitro cola theme"/>
 
-# How to set theme?
+# Setting theme on the CLI
 
-To specify the theme used, you can set the flag `-t, --theme`
+To specify the theme used, you can set the flag `-t, --theme`.
 
 ```shell
-d2 -t 101 hello.d2 hello.svg
+d2 -t 101 input.d2 out.svg
 ```
 
-The available options are:
+You can also use an environment variable.
 
-- Neutral default: 0
-- Neutral Grey: 1
-- Flagship Terrastruct: 3
-- Mixed berry blue: 5
-- Cool classics: 4
-- Grape soda: 6
-- Aubergine: 7
-- Colorblind clear: 8
-- Vanilla nitro cola: 100
-- Orange creamsicle: 101
-- Shirley temple: 102
-- Earth tones: 103
-- Everglade green: 104
-- Buttered toast: 105
+```shell
+D2_THEME=101 d2 input.d2 out.svg
+```

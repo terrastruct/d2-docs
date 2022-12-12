@@ -17,7 +17,6 @@ const config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/terrastruct/d2-docs",
           breadcrumbs: false,
         },
         theme: {
