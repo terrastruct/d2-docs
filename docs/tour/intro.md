@@ -6,12 +6,8 @@ pagination_next: tour/experience
 # D2 Tour
 
 ```d2
-x -> y
-x
-whal
-what: {
-  shape: person
-}
+direction: right
+x -> y -> z: onwards!
 ```
 
 **D2** is a diagram scripting language that turns text to diagrams. It stands for
