@@ -69,6 +69,11 @@ const config = {
           label: "Releases",
         },
         {
+          href: "https://play.d2lang.com",
+          position: "left",
+          label: "Playground",
+        },
+        {
           href: "https://github.com/terrastruct/d2-docs",
           label: "GitHub",
           position: "right",
