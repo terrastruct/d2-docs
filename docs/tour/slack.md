@@ -8,7 +8,8 @@ We've submitted our plugin to be reviewed by the Slack team. However, you can al
 ## Your documentation right where you need it.
 Keep your projects moving by connecting Terrastruct and Slack. You’ll be able to compile D2 codeblocks using a simple slash command `/d2`.
 
-You must have a Terrastruct account to be able to use and configure the Slack plugin. Terrastruct will not collect any data from Slack. 
+
+You must have a Terrastruct account to be able to use and configure the Slack plugin. Terrastruct will not collect any data from Slack.
 
 <a
   href="https://slack.com/oauth/v2/authorize?scope=channels%3Ajoin%2Cchat%3Awrite%2Cchat%3Awrite.public%2Ccommands%2Cteam%3Aread%2Cusers%3Aread&amp;user_scope=&amp;redirect_uri=https%3A%2F%2Fapp.terrastruct.com%2Fslack&amp;client_id=1871375120724.4482998001377"
