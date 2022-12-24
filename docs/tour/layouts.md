@@ -62,3 +62,28 @@ x -> y -> z: hello
 
 <div
 className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/direction-up.svg2')}}></div>
+
+### Directions per container (TALA only)
+
+:::info
+Directions can only be set at a global level for all the layout engines except TALA. This
+is a limitation of their algorithms, which are hierarchical and only work in one
+direction. We are investigating ways to hack it to work.
+:::
+
+```d2
+direction: down
+a -> b -> c
+
+b: {
+  direction: right
+  1 -> 2 -> 3
+}
+
+a: {
+  direction: left
+  foo -> bar
+}
+```
+
+<img src={require('@site/static/img/screenshots/tala-direction.png').default} alt="directions in TALA" />
