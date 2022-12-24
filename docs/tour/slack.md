@@ -1,15 +1,15 @@
-# Slack plugin
+# Slack app
 <img width={200} src={require('@site/static/img/d2_slack.png').default} alt="D2 + Slack"/>
 
-:::info
-We've submitted our plugin to be reviewed by the Slack team. However, you can already use it by clicking the "Add to Slack" button below.
-:::
+### The fastest way to explain what you mean mid-conversation
 
-## Your documentation right where you need it.
-Keep your projects moving by connecting Terrastruct and Slack. You’ll be able to compile D2 codeblocks using a simple slash command `/d2`.
+Ever have like 6 rounds of back-and-forth to explain what you mean when it's a pretty
+simple model you're explaining? The Slack app lets you beautiful diagrams on the fly with
+a `/d2` command.
 
-
-You must have a Terrastruct account to be able to use and configure the Slack plugin. Terrastruct will not collect any data from Slack.
+Slack requires configurations that can only be set on a third-party platform. So **you'll
+need to create a Terrastruct account to use the Slack app**. Terrastruct does not collect
+any data from Slack.
 
 <a
   href="https://slack.com/oauth/v2/authorize?scope=channels%3Ajoin%2Cchat%3Awrite%2Cchat%3Awrite.public%2Ccommands%2Cteam%3Aread%2Cusers%3Aread&amp;user_scope=&amp;redirect_uri=https%3A%2F%2Fapp.terrastruct.com%2Fslack&amp;client_id=1871375120724.4482998001377"
@@ -58,6 +58,15 @@ You must have a Terrastruct account to be able to use and configure the Slack pl
   </svg>
   Add to Slack
 </a>
+
+## Communicating ideas
+
+<video controls width="100%">
+  <source src={require('@site/static/img/screenshots/slack-test.mp4').default} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+## Put large diagrams in the conversation for discussion
 
 <video controls width="100%">
   <source src={require('@site/static/img/screenshots/slack.mp4').default} type="video/mp4" />
