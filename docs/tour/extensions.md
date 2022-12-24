@@ -1,8 +1,5 @@
 # Extensions
 
-Extensions are things that enhance or complement D2, are optional, and don't quite belong
-in the language.
-
 ## Official
 
 Officially developed and maintained by the creators of D2.
