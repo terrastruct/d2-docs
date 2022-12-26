@@ -2,9 +2,9 @@
 
 :::info Latest
 
-Version: [0.1.0](/releases/0.1.0)
+Version: [0.1.3](/releases/0.1.3)
 
-Downloads: [Assets](https://github.com/terrastruct/d2/releases/tag/v0.1.0)
+Downloads: [Assets](https://github.com/terrastruct/d2/releases/tag/v0.1.3)
 
 :::
 
