@@ -42,7 +42,7 @@ const sidebars = {
       type: "category",
       label: "Customization",
       link: { type: "doc", id: "tour/layouts" },
-      items: ["tour/layouts", "tour/themes", "tour/style"],
+      items: ["tour/layouts", "tour/themes", "tour/style", "tour/sketch"],
     },
     {
       type: "category",
@@ -64,7 +64,14 @@ const sidebars = {
       type: "category",
       label: "Releases",
       link: { type: "doc", id: "releases/intro" },
-      items: ["releases/intro", "releases/0.1.0", "releases/0.0.13"],
+      items: [
+        "releases/intro",
+        "releases/0.1.3",
+        "releases/0.1.2",
+        "releases/0.1.1",
+        "releases/0.1.0",
+        "releases/0.0.13",
+      ],
     },
   ],
 };

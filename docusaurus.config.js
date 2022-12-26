@@ -27,12 +27,6 @@ const config = {
   ],
 
   themeConfig: {
-    announcementBar: {
-      id: "oss",
-      content:
-        'D2 is now open-source! <a target="_blank" rel="noopener noreferrer" href="https://github.com/terrastruct/d2">Github</a>',
-      isCloseable: true,
-    },
     image: "img/opengraph.png",
     metadata: [
       {
@@ -74,7 +68,7 @@ const config = {
           label: "Playground",
         },
         {
-          href: "https://github.com/terrastruct/d2-docs",
+          href: "https://github.com/terrastruct/d2",
           label: "GitHub",
           position: "right",
         },
@@ -90,6 +84,11 @@ const config = {
     },
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} Terrastruct, Inc.`,
+    },
+    algolia: {
+      appId: "DWAXJIMTZU",
+      apiKey: "5c73ff6e63896f9a247aecc8dcecb0ef",
+      indexName: "d2lang",
     },
   },
 
