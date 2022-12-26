@@ -86,9 +86,9 @@ const config = {
       copyright: `Copyright © ${new Date().getFullYear()} Terrastruct, Inc.`,
     },
     algolia: {
-      appId: 'DWAXJIMTZU',
-      apiKey: '5c73ff6e63896f9a247aecc8dcecb0ef',
-      indexName: 'd2lang',
+      appId: "DWAXJIMTZU",
+      apiKey: "5c73ff6e63896f9a247aecc8dcecb0ef",
+      indexName: "d2lang",
     },
   },
 
