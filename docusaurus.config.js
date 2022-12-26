@@ -82,9 +82,6 @@ const config = {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
     },
-    footer: {
-      copyright: `Copyright © ${new Date().getFullYear()} Terrastruct, Inc.`,
-    },
   },
 
   plugins: [
