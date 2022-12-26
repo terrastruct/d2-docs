@@ -119,13 +119,21 @@ multilines: {
 
 ## How do I position text?
 
+Usually, longform text adds detail to a particular area of the diagram. You can specify
+what you want it to be near, with the `near` keyword.
+
+You can set `near` to either
+1. the ID of another shape
+2. a constant value
+
 :::info
-This keyword currently only works on the TALA layout engine. We are working on shims to
-make this possible in other layout engines.
+Setting to another shape currently only works on the TALA layout engine. We are working on
+shims to make this possible in other layout engines.
+
+Setting to a constant works on all layout engines.
 :::
 
-Usually, longform text adds detail to a particular area of the diagram. You can specify
-what you want it to be near, with the `near` keyword:
+### Near another shape
 
 ```d2
 aws: {
@@ -150,6 +158,28 @@ explanation: |md
 Notice how the text is positioned near the `aws` node and not the `gcloud` node.
 
 <img src={require('@site/static/img/screenshots/text-2.png').default} alt="text near example" width="400"/>
+
+### Near a constant
+
+:::info Possible constant values
+`top-left`, `top-center`, `top-right`,
+
+`center-left`, `center-right`,
+
+`bottom-left`, `bottom-center`, `bottom-right`
+:::
+
+```d2
+title: |md
+  # A winning strategy
+| { near: top-center }
+
+poll the people -> results
+results -> unfavorable -> poll the people
+results -> favorable -> will of the people
+```
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/near-constant.svg2')}}></div>
 
 ## Code
 
