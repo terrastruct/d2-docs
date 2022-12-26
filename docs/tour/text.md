@@ -4,7 +4,7 @@ pagination_next: tour/icons
 ---
 # Text
 
-## Standalone text is markdown
+## Standalone text is Markdown
 
 ```d2
 explanation: |md
@@ -60,62 +60,6 @@ See below.
 Currently cannot be applied to labels, which is why the above example nests an object.
 This is coming soon.
 :::
-
-D2 includes the following Latex plugins:
-
-```d2
-amscd plugin: {
-  ex: |tex
-\\begin{CD} B @>{\\text{very long label}}>> C S^{{\\mathcal{W}}_\\Lambda}\\otimes T @>j>> T\\\\ @VVV V \\end{CD}
-|
-}
-
-braket plugin: {
-  ex: |tex
-\\bra{a}\\ket{b}
-|
-}
-
-cancel plugin: {
-  ex: |tex
-\\cancel{Culture + 5}
-|
-}
-
-color plugin: {
-  ex: |tex
-\\textcolor{red}{y} = \\textcolor{green}{\\sin} x
-|
-}
-
-gensymb plugin: {
-  ex: |tex
-\\lambda = 10.6\\,\\micro\\mathrm{m}
-|
-}
-
-mhchem plugin: {
-  ex: |tex
-\ce{SO4^2- + Ba^2+ -> BaSO4 v}
-|
-}
-
-physics plugin: {
-  ex: |tex
-\\var{F[g(x)]}
-\\dd(\\cos\\theta)
-|
-}
-
-multilines: {
-  ex: |tex
-\\displaylines{x = a + b \\\\ y = b + c}
-\\sum_{k=1}^{n} h_{k} \\int_{0}^{1} \\bigl(\\partial_{k} f(x_{k-1}+t h_{k} e_{k}) -\\partial_{k} f(a)\\bigr) \\,dt
-|
-}
-```
-
-<img src={require('@site/static/img/screenshots/latex-1.png').default} alt="latex example" />
 
 ## How do I position text?
 
@@ -209,6 +153,29 @@ explanation: |go
 
 <img src={require('@site/static/img/screenshots/text-3.png').default} alt="code block example" width="600"/>
 
+### Advanced: Non-Markdown text
+
+In some cases, you may want non-Markdown text. Maybe you just don't like Markdown, or the
+Github-styling of Markdown that D2 uses, or you want to quickly change a shape to text.
+Just set `shape: text`.
+
+```d2
+title: A winning strategy {
+  shape: text
+  near: top-center
+  style: {
+    font-size: 55
+    italic: true
+  }
+}
+
+poll the people -> results
+results -> unfavorable -> poll the people
+results -> favorable -> will of the people
+```
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/non-markdown-text.svg2')}}></div>
+
 ### Advanced: Block strings
 
 What if you're writing Typescript where the pipe symbol `|` is commonly used? Just add
@@ -239,3 +206,61 @@ my_code: |`ts
   const works = (a > 1) || (b < 2)
 `|
 ```
+
+### Advanced: Latex plugins
+
+D2 includes the following Latex plugins:
+
+```d2
+amscd plugin: {
+  ex: |tex
+\\begin{CD} B @>{\\text{very long label}}>> C S^{{\\mathcal{W}}_\\Lambda}\\otimes T @>j>> T\\\\ @VVV V \\end{CD}
+|
+}
+
+braket plugin: {
+  ex: |tex
+\\bra{a}\\ket{b}
+|
+}
+
+cancel plugin: {
+  ex: |tex
+\\cancel{Culture + 5}
+|
+}
+
+color plugin: {
+  ex: |tex
+\\textcolor{red}{y} = \\textcolor{green}{\\sin} x
+|
+}
+
+gensymb plugin: {
+  ex: |tex
+\\lambda = 10.6\\,\\micro\\mathrm{m}
+|
+}
+
+mhchem plugin: {
+  ex: |tex
+\ce{SO4^2- + Ba^2+ -> BaSO4 v}
+|
+}
+
+physics plugin: {
+  ex: |tex
+\\var{F[g(x)]}
+\\dd(\\cos\\theta)
+|
+}
+
+multilines: {
+  ex: |tex
+\\displaylines{x = a + b \\\\ y = b + c}
+\\sum_{k=1}^{n} h_{k} \\int_{0}^{1} \\bigl(\\partial_{k} f(x_{k-1}+t h_{k} e_{k}) -\\partial_{k} f(a)\\bigr) \\,dt
+|
+}
+```
+
+<img src={require('@site/static/img/screenshots/latex-1.png').default} alt="latex example" />
