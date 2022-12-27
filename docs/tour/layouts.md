@@ -4,7 +4,7 @@ pagination_next: tour/themes
 
 # Layouts
 
-D2 supports using a different layout engines. The choice of layout engines can
+D2 supports using different layout engines. The choice of layout engines can
 significantly influence your overall diagram. Each layout also has varying degrees of
 support for certain keywords. Though we try our best to keep things consistent, ultimately
 we have the most control over our custom-built layout engine and are limited by what the
