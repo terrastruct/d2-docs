@@ -21,3 +21,4 @@ issue and we're happy to include your's!
 - Postgres importer: [https://github.com/zekenie/d2-erd-from-postgres](https://github.com/zekenie/d2-erd-from-postgres)
 - Structurizr to D2 exporter: [https://github.com/goto1134/structurizr-d2-exporter](https://github.com/goto1134/structurizr-d2-exporter)
 - MdBook preprocessor: [https://github.com/danieleades/mdbook-d2](https://github.com/danieleades/mdbook-d2)
+- Org-mode support: [https://github.com/xcapaldi/ob-d2](https://github.com/xcapaldi/ob-d2)
