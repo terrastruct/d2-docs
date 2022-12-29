@@ -83,7 +83,7 @@ const config = {
       darkTheme: darkCodeTheme,
     },
     footer: {
-      copyright: `Copyright © ${new Date().getFullYear()} Terrastruct, Inc.`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://terrastruct.com">Terrastruct, Inc.</a>`,
     },
     algolia: {
       appId: "DWAXJIMTZU",
