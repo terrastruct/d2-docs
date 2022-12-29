@@ -1,9 +1,9 @@
 # Discord plugin
 <img width={200} src={require('@site/static/img/d2_discord.png').default} alt="D2 + Discord"/>
 
-## Your documentation right where you need it.
-Keep your projects moving by connecting Terrastruct and Discord. Compile D2 codeblocks by opening the context menu on a D2 codeblock, going to `Apps` and clicking `Compile D2`.
+### The fastest way to explain what you mean mid-conversation
 
+Keep your projects moving by connecting Terrastruct and Discord. Compile D2 codeblocks by opening the context menu on a D2 codeblock, going to `Apps` and clicking `Compile D2`.
 
 Configure your exports by using `/d2` inside Discord.
 
