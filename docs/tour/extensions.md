@@ -8,6 +8,7 @@ Officially developed and maintained by the creators of D2.
 - [Vim plugin](/tour/vim)
 - [Obsidian plugin](/tour/obsidian)
 - [Slack app](/tour/slack)
+- [Discord plugin](/tour/discord)
 
 ## Community
 

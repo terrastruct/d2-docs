@@ -41,11 +41,7 @@ server -> github
 
 ## Image dimensions
 
-You can specify `width`s and `height`s of image shapes.
-
-:::info
-These keywords are only applicable to `shape: image` shapes.
-:::
+You can specify `width`s and `height`s.
 
 ```d2
 direction: right
