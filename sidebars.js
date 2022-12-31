@@ -42,7 +42,13 @@ const sidebars = {
       type: "category",
       label: "Customization",
       link: { type: "doc", id: "tour/layouts" },
-      items: ["tour/layouts", "tour/themes", "tour/style", "tour/sketch", "tour/interactive"],
+      items: [
+        "tour/layouts",
+        "tour/themes",
+        "tour/style",
+        "tour/sketch",
+        "tour/interactive",
+      ],
     },
     {
       type: "category",
