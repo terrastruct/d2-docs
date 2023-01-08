@@ -47,11 +47,7 @@ const sidebars = {
           type: "category",
           label: "Layouts",
           link: { type: "doc", id: "tour/layouts" },
-          items: [
-            "tour/dagre",
-            "tour/elk",
-            "tour/tala",
-          ],
+          items: ["tour/dagre", "tour/elk", "tour/tala"],
         },
         "tour/themes",
         "tour/style",
