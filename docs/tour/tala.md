@@ -10,7 +10,6 @@ open-source D2, and proprietary, closed-source TALA. You can download it here:
 To learn more about TALA, visit
 [https://terrastruct.com/tala/](https://terrastruct.com/tala/).
 
-
 ## Pros
 
 - As a general orthogonal layout engine, TALA is not constrained to one type like

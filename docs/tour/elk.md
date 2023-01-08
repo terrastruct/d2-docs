@@ -19,6 +19,10 @@ Kiel](https://www.rtsys.informatik.uni-kiel.de/en/team).
 - Some routes have unnecessary bends.
 - Minimal consideration for symmetry.
 
+## Reference
+
+[https://www.eclipse.org/elk/reference.html](https://www.eclipse.org/elk/reference.html)
+
 ## Gallery
 
 <div style={{display: "inline-flex", width: "100%"}}>
