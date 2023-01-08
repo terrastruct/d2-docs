@@ -2,8 +2,6 @@
 
 Dagre is D2's default layout engine.
 
-
-
 ## Pros
 
 - Very fast.
@@ -17,9 +15,13 @@ Dagre is D2's default layout engine.
 - Unmaintained. Development stopped in 2018.
 - Makes some inexplicable edge routing decisions occasionally
   ([https://github.com/dagrejs/dagre/issues/256](https://github.com/dagrejs/dagre/issues/256)).
-- Large hierarchies tend to produce messy squiggly-line edge routes.
 - Layout algorithm is strictly hierarchical, even if underlying diagram is not
   hierarchical.
+- Container child to another container (or another container child) is not natively
+  supported by dagre. D2 has added a shim to make it work, but there's some core algorithm
+  considerations that are missed due to the shim.
+- Multi-segment edge routes are curved, instead of orthogonal. Can result in unaesthetic
+  squiggly lines.
 
 ## Reference
 
