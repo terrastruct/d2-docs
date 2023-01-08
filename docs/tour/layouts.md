@@ -4,7 +4,7 @@ pagination_next: tour/themes
 
 # Layouts
 
-D2 supports using different layout engines. The choice of layout engines can
+D2 supports using a variety of different layout engines. The choice of layout engines can
 significantly influence your overall diagram. Each layout also has varying degrees of
 support for certain keywords. Though we try our best to keep things consistent, ultimately
 we have the most control over our custom-built layout engine and are limited by what the
@@ -12,25 +12,20 @@ other layout engines support.
 
 ## Layout engines
 
-- [dagre](https://github.com/dagrejs/dagre) (default): A fast, directed graph
+- [dagre](dagre) (default): A fast, directed graph
   layout engine that produces layered/hierarchical layouts. Based on Graphviz's DOT
   algorithm.
-- [ELK](https://github.com/kieler/elkjs): Also a directed graph layout engine. More mature
+- [ELK](elk): Also a directed graph layout engine. More mature
   than dagre, better maintained (part-time academic research team working on it), with
   recent releases.
-- [TALA](https://github.com/terrastruct/TALA): New layout engine designed
-  specifically for software architecture diagrams. Requires separate install, visit the
-  Github page for more, including samples.
+- [TALA](tala): New layout engine designed specifically for software architecture diagrams.
 
-D2 intends to integrate with a variety of layout engines, e.g. `dot`, as well as
-single-purpose layout types like sequence diagrams. You can choose whichever layout engine
-you like and works best for the diagram you're making.
+You can choose whichever layout engine you like and works best for the diagram you're
+making. Each one has its tradeoffs, visit the individual pages to learn more.
 
-To compare D2 renders with the various layout engines, visit
-[https://text-to-diagram.com](https://text-to-diagram.com) and toggle the layout engines
-in the comparison settings.
-
-To see available layouts on your machine, you can run `d2 layout`.
+To see available layouts on your machine, you can run `d2 layout`. Each layout engine can
+also have specific configurable flags, which you can find by running `d2 layout [engine]`,
+e.g. `d2 layout dagre`.
 
 To specify the layout used, you can either set the flag `--layout=dagre` or set it as an
 environment variable, `$D2_LAYOUT=dagre`.

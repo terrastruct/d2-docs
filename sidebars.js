@@ -43,7 +43,12 @@ const sidebars = {
       label: "Customization",
       link: { type: "doc", id: "tour/layouts" },
       items: [
-        "tour/layouts",
+        {
+          type: "category",
+          label: "Layouts",
+          link: { type: "doc", id: "tour/layouts" },
+          items: ["tour/dagre", "tour/elk", "tour/tala"],
+        },
         "tour/themes",
         "tour/style",
         "tour/sketch",
@@ -72,6 +77,7 @@ const sidebars = {
       link: { type: "doc", id: "releases/intro" },
       items: [
         "releases/intro",
+        "releases/0.1.5",
         "releases/0.1.4",
         "releases/0.1.3",
         "releases/0.1.2",
