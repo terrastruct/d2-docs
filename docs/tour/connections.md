@@ -125,10 +125,15 @@ d -> a -> c
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/connections-5.svg2')}}></div>
 
-Currently, arrowhead shape choices are `triangle`, `arrow` (like triangle but
-pointier), and `diamond`, where
-`diamond` can further be styled as `style.filled: true`. The default
-arrowhead shape is `triangle`.
+
+:::info Arrowhead options
+- `triangle` (default)
+- `arrow` (like triangle but pointier)
+- `diamond`
+  - Can be further styled as `style.filled: true`.
+- `cf-one`, `cf-one-required` (cf stands for crows foot)
+- `cf-many`, `cf-many-required`
+:::
 
 :::info
 It's recommended the arrowhead labels be kept short. They do not go through
