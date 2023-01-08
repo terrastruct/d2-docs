@@ -43,7 +43,16 @@ const sidebars = {
       label: "Customization",
       link: { type: "doc", id: "tour/layouts" },
       items: [
-        "tour/layouts",
+        {
+          type: "category",
+          label: "Layouts",
+          link: { type: "doc", id: "tour/layouts" },
+          items: [
+            "tour/dagre",
+            "tour/elk",
+            "tour/tala",
+          ],
+        },
         "tour/themes",
         "tour/style",
         "tour/sketch",
