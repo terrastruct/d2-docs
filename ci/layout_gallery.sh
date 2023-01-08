@@ -5,7 +5,9 @@ cd -- "$(dirname "$0")/.."
 
 _tala() {
   sh_c D2_LAYOUT=tala hide d2 --theme="$theme" ./static/layout_gallery/"$ex".d2 ./static/layout_gallery/"$ex"-tala.svg2
-  sh_c D2_LAYOUT=tala hide d2 --tala-seed=2 --theme="$theme" ./static/layout_gallery/"$ex".d2 ./static/layout_gallery/"$ex"-tala-2.svg2
+  if [ "$ex" = "sample5" ] || [ "$ex" = "sample6" ]; then
+    sh_c D2_LAYOUT=tala hide d2 --tala-seed=2 --theme="$theme" ./static/layout_gallery/"$ex".d2 ./static/layout_gallery/"$ex"-tala-2.svg2
+  fi
 }
 
 _elk() {
