@@ -35,21 +35,21 @@ To learn more about TALA, visit
 
 ## Gallery
 
-<div style={{display: "inline-flex", width: "100%"}}>
+<div style={{display: "inline-flex", alignItems: "center", width: "100%"}}>
   <div style={{width: "50%"}}
   className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample1-tala.svg2')}}></div>
   <div style={{width: "50%"}}
   className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample2-tala.svg2')}}></div>
 </div>
 
-<div style={{display: "inline-flex", width: "100%"}}>
+<div style={{display: "inline-flex", alignItems: "center", width: "100%"}}>
   <div style={{width: "50%"}}
   className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample3-tala.svg2')}}></div>
   <div style={{width: "50%"}}
   className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample4-tala.svg2')}}></div>
 </div>
 
-<div style={{display: "inline-flex", width: "100%"}}>
+<div style={{display: "inline-flex", alignItems: "center", width: "100%"}}>
   <div style={{width: "50%"}}
   className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample5-tala.svg2')}}></div>
   <div style={{width: "50%"}}
@@ -63,7 +63,7 @@ not satisfied with a layout, you can produce different ones by specifying the se
 `--tala-seed` flag. For example, these are the same diagrams as the above, with
 `--tala-seed=2`.
 
-<div style={{display: "inline-flex", width: "100%"}}>
+<div style={{display: "inline-flex", alignItems: "center", width: "100%"}}>
   <div style={{width: "50%"}}
   className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample5-tala-2.svg2')}}></div>
   <div style={{width: "50%"}}
