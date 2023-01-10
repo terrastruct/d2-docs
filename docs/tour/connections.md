@@ -131,6 +131,8 @@ d -> a -> c
 - `arrow` (like triangle but pointier)
 - `diamond`
   - Can be further styled as `style.filled: true`.
+- `circle`
+  - Can be further styled as `style.filled: true`.
 - `cf-one`, `cf-one-required` (cf stands for crows foot)
 - `cf-many`, `cf-many-required`
 :::
