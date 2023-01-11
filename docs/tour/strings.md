@@ -40,54 +40,6 @@ If you need to use such symbols, you can use single or double quoted strings:
 You would use double quotes if your text contains single quotes, and vice-versa. If it includes both, use double quotes and simply `\` escape as you would in other languages.
 :::
 
-## Block strings
-
-Double and single quoted strings work well when defining simple labels, but what if you
-want to write a more detailed explanation or include a list? That's where block strings
-come in.
-
-Block strings begin on | and end on | with an optional language tag after the |.
-The default langauge embedded without any explicit tag is Markdown.
-
-There is no special character in a block string and they can span multiple lines. Block
-strings can only be used as values. They are not valid in keys.
-
-Block strings are indented with two spaces. The leading indent is appropriately stripped.
-
-```d2
-ok: |
-  1. Apples
-    - Granny Smith
-    - Fuji
-  2. Trucks
-    - Ford F150
-    - RAM 1500
-    - Toyota Tacoma
-|
-```
-
-<img src={require('@site/static/img/screenshots/strings-3.png').default} alt="strings render" width="300"/>
-
-## Code blocks
-
-You can use block strings to define code snippets.
-
-```d2
-pkg_io: |go
-  package io
-
-  type Writer interface {
-    Write(p []byte) (n int, err error)
-  }
-
-  type Reader interface {
-    Read(p []byte) (n int, err error)
-  }
-|
-```
-
-<img src={require('@site/static/img/screenshots/strings-4.png').default} alt="strings render" width="600"/>
-
 ## Autoformat
 
 If your block string's indent is not sufficient, the autoformatter will correct it.

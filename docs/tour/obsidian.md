@@ -1,11 +1,5 @@
 # Obsidian plugin
 
-:::info
-The plugin is currently [in
-review](https://github.com/obsidianmd/obsidian-releases/pull/1389) to be included in
-Obsidian's community plugins. Installation is manual until then.
-:::
-
 D2 has an official plugin for Obsidian.
 
 Currently it only supports rendering of D2 diagrams.

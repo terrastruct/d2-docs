@@ -23,3 +23,6 @@ issue and we're happy to include your's!
 - Structurizr to D2 exporter: [https://github.com/goto1134/structurizr-d2-exporter](https://github.com/goto1134/structurizr-d2-exporter)
 - MdBook preprocessor: [https://github.com/danieleades/mdbook-d2](https://github.com/danieleades/mdbook-d2)
 - Org-mode support: [https://github.com/xcapaldi/ob-d2](https://github.com/xcapaldi/ob-d2)
+- ROS2 D2 Exporter: [https://github.com/Greenroom-Robotics/ros-d2](https://github.com/Greenroom-Robotics/ros-d2)
+- Python D2 diagram builder: [https://github.com/MrBlenny/py-d2](https://github.com/MrBlenny/py-d2)
+- Clojure D2 transpiler: [https://github.com/judepayne/dictim](https://github.com/judepayne/dictim)

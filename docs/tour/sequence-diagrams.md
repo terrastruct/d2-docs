@@ -1,11 +1,5 @@
 # Sequence Diagrams
 
-:::caution
-Sequence diagrams are a new addition to D2 as of v0.1.0, with all the implications of a
-new feature. If you run into anything unexpected or missing, we'd appreciate it if you
-could help us improve it by [filing an issue](https://github.com/terrastruct/d2).
-:::
-
 Sequence diagrams are created by setting `shape: sequence_diagram` on an object.
 
 ```d2
