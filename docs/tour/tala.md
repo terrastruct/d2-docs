@@ -7,8 +7,9 @@ TALA is a separate install from D2, to keep a clean cut between 100% free and
 open-source D2, and proprietary, closed-source TALA. You can download it here:
 [https://github.com/terrastruct/tala](https://github.com/terrastruct/tala#installation).
 
-To learn more about TALA, visit
-[https://terrastruct.com/tala/](https://terrastruct.com/tala/).
+## Reference
+
+[https://terrastruct.com/tala/](https://terrastruct.com/tala/)
 
 ## Pros
 

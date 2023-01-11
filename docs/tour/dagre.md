@@ -2,6 +2,10 @@
 
 Dagre is D2's default layout engine.
 
+## Reference
+
+[https://github.com/dagrejs/dagre](https://github.com/dagrejs/dagre)
+
 ## Pros
 
 - Very fast.
@@ -22,10 +26,6 @@ Dagre is D2's default layout engine.
   considerations that are missed due to the shim.
 - Multi-segment edge routes are curved, instead of orthogonal. Can result in unaesthetic
   squiggly lines.
-
-## Reference
-
-[https://github.com/dagrejs/dagre](https://github.com/dagrejs/dagre)
 
 ## Gallery
 
