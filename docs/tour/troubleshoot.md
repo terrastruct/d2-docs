@@ -24,4 +24,4 @@ D2 works with any language, but sometimes non-ASCII characters look like reserve
 hello世界：مرحبا بالعال
 ```
 
-The character `：` is not the same as the ASCII `:`, and so it won't register as a label. In the future we'll match non-ASCII equivalents, but for now, for foreign language diagrams, please take care to use the ASCII versions of special characters like `:`, `;`, `.`, among others.
+The character `：` is not the same as the ASCII `:`, and so it won't register as a label. For foreign language diagrams, please take care to use the ASCII versions of special characters like `:`, `;`, `.`, among others.

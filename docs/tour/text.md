@@ -156,7 +156,7 @@ explanation: |go
 ### Advanced: Non-Markdown text
 
 In some cases, you may want non-Markdown text. Maybe you just don't like Markdown, or the
-Github-styling of Markdown that D2 uses, or you want to quickly change a shape to text.
+GitHub-styling of Markdown that D2 uses, or you want to quickly change a shape to text.
 Just set `shape: text`.
 
 ```d2

@@ -4,6 +4,10 @@ ELK is a mature, hierarchical layout, actively maintained by an academic researc
 [Christian Albrechts University in
 Kiel](https://www.rtsys.informatik.uni-kiel.de/en/team).
 
+## Reference
+
+[https://www.eclipse.org/elk/reference.html](https://www.eclipse.org/elk/reference.html)
+
 ## Pros
 
 - Clean, orthogonal routes.
@@ -18,10 +22,6 @@ Kiel](https://www.rtsys.informatik.uni-kiel.de/en/team).
 - Strictly hierarchical, like dagre.
 - Some routes have unnecessary bends.
 - Minimal consideration for symmetry.
-
-## Reference
-
-[https://www.eclipse.org/elk/reference.html](https://www.eclipse.org/elk/reference.html)
 
 ## Gallery
 
