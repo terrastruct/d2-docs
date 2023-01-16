@@ -4,7 +4,7 @@
 ### The fastest way to explain what you mean mid-conversation
 
 Ever have like 6 rounds of back-and-forth to explain what you mean when it's a pretty
-simple model you're explaining? The Slack app lets you beautiful diagrams on the fly with
+simple model you're explaining? The Slack app lets you create beautiful diagrams on the fly with
 a `/d2` command.
 
 Slack requires configurations that can only be set on a third-party platform. So **you'll
