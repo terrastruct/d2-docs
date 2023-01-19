@@ -1,82 +1,197 @@
 # Styles
 
-If you'd like to overwrite the style of a theme for a particular object, you may add styles to objects like so:
+If you'd like to customize the style of a shape, the following reserved keywords can be
+set under the `style` field.
+
+Below is a catalog of all valid styles, applied individually to this baseline diagram.
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-base.svg2')}}></div>
+
+:::note
+The following SVGs are rendered with `direction: right`, but omitted from the shown scripts for
+brevity.
+:::
+
+
+## Style keywords
+- [opacity](#opacity)
+- [stroke](#stroke)
+- [fill](#fill) (shape only)
+- [stroke-width](#stroke-width)
+- [stroke-dash](#stroke-dash)
+- [border-radius](#border-radius) (shape only)
+- [shadow](#shadow) (shape only)
+- [3D](#3D) (rectangle/square only)
+- [multiple](#multiple) (shape only)
+- [font-size](#font-size)
+- [font-color](#font-color)
+- [animated](#animated) (connection only)
+- [bold, italic, underline](#bold-italic-underline)
+
+## Opacity
+
+Float between `0` and `1`.
 
 ```d2
-x: {
+x -> y: hi {
   style: {
-    opacity: 0.6
-    fill: orange
-    stroke: "#53C0D8"
-    stroke-width: 5
-    shadow: true
+    opacity: 0.4
   }
 }
+x.style.opacity: 0
+y.style.opacity: 0.7
+```
 
-y: {
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-opacity.svg2')}}></div>
+
+## Stroke
+
+CSS color name or hex code.
+
+```d2
+x -> y: hi {
   style: {
-    opacity: 0.6
-    fill: red
-    3d: true
-    stroke: black
+    stroke: deepskyblue
   }
 }
+# We need quotes for hex otherwise it gets interpreted as comment
+x.style.stroke: "#f4a261"
+```
 
-x -> y: {
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-stroke.svg2')}}></div>
+
+## Fill
+
+CSS color name or hex code.
+
+```d2
+x -> y: hi
+x.style.fill: "#f4a261"
+y.style.fill: honeydew
+```
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-fill.svg2')}}></div>
+
+## Stroke Width
+
+Integer between `1` and `15`.
+
+```d2
+x -> y: hi {
   style: {
-    stroke: green
-    opacity: 0.5
-    stroke-width: 2
-    stroke-dash: 5
+    stroke-width: 8
   }
+}
+x.style.stroke-width: 1
+```
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-stroke-width.svg2')}}></div>
+
+## Stroke Dash
+
+Integer between `0` and `10`.
+
+```d2
+x -> y: hi {
+  style: {
+    stroke-dash: 3
+  }
+}
+x.style.stroke-dash: 5
+```
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-stroke-dash.svg2')}}></div>
+
+## Border Radius
+
+Integer between `0` and `20`.
+
+```d2
+x -> y: hi
+x.style.border-radius: 3
+y.style.border-radius: 8
+```
+
+Coming soon
+
+## Shadow
+
+```d2
+x -> y: hi
+x.style.shadow: true
+```
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-shadow.svg2')}}></div>
+
+## 3D
+
+```d2
+x -> y: hi
+x.style.3d: true
+```
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-3d.svg2')}}></div>
+
+## Multiple
+
+```d2
+x -> y: hi
+x.style.multiple: true
+```
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-multiple.svg2')}}></div>
+
+## Font Size
+
+```d2
+x -> y: hi {
+  style: {
+    font-size: 28
+  }
+}
+# 8 is minimum, 100 is maximum
+x.style.font-size: 8
+y.style.font-size: 55
+```
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-font-size.svg2')}}></div>
+
+## Font Color
+
+```d2
+x -> y: hi {
+  style: {
+    font-color: red
+  }
+}
+x.style.font-color: "#f4a261"
+```
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-font-color.svg2')}}></div>
+
+## Animated
+
+```d2
+x -> y: hi {
+  style.animated: true
 }
 ```
 
-<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-1.svg2')}}></div>
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-animated.svg2')}}></div>
 
-Here is the full list of styles you can configure. More coming soon, as well as classes so you can aggregate styles.
+## Bold, italic, underline
 
 ```d2
-# Float between 0 and 1
-opacity: 0.6
-
-# CSS color or hex code
-fill: orange
-
-# CSS color or hex code
-stroke: "#53C0D8"
-
-# Integer betwen 1 and 15
-stroke-width: 5
-
-# Integer betwen 0 and 10
-stroke-dash: 5
-
-# Only applicable to shapes, except ovals
-# Integer betwen 0 and 20
-border-radius: 4
-
-# CSS color or hex code
-font-color: red
-
-# Only applicable to shapes
-# true or false
-shadow: true
-
-# Only applicable to shapes
-# true or false
-multiple: true
-
-# Only applicable to squares
-# true or false
-3d: true
-
-# Only applicable to edges
-animated: false
-
-# Only applicable to shapes
-# Can be an external URL
-link: https://google.com
-# Or an internal board
-link: Overview.Untitled Board 2
+x -> y: hi {
+  style: {
+    bold: true
+  }
+}
+x.style.underline: true
+y.style.italic: true
+# By default, shape labels are bold. Bold has precedence over italic, so unbold to see
+# italic style
+y.style.bold: false
 ```
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-text-decoration.svg2')}}></div>

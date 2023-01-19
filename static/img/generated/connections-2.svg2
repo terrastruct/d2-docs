@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg
+id="d2-svg"
 style="background: white;"
 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-width="174" height="356" viewBox="-2 -2 174 356"><style type="text/css">
+width="174" height="377" viewBox="2 -2 174 377"><style type="text/css">
 <![CDATA[
 .shape {
   shape-rendering: geometricPrecision;
@@ -18,10 +19,30 @@ width="174" height="356" viewBox="-2 -2 174 356"><style type="text/css">
 }
 
 ]]>
-</style><g id="Database"><g class="shape" ><rect x="0" y="0" width="170" height="126" style="fill:#F7F8FE;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text-bold" x="85.000000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">Database</text></g><g id="S3"><g class="shape" ><rect x="24" y="226" width="122" height="126" style="fill:#F7F8FE;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text-bold" x="85.000000" y="292.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">S3</text></g><g id="(Database -&gt; S3)[0]"><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 62.031730 127.885364 C 48.539823 166.000000 48.600000 186.000000 61.645122 222.236450" class="connection" style="fill:none;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#577804137)"/><text class="text-italic" x="48.500000" y="182.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">backup</text></g><g id="(Database -&gt; S3)[1]"><path d="M 85.000000 128.000000 C 85.000000 166.000000 85.000000 186.000000 85.000000 222.000000" class="connection" style="fill:none;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#577804137)"/></g><g id="(Database -&gt; S3)[2]"><path d="M 107.968270 127.885364 C 121.460177 166.000000 121.400000 186.000000 108.354878 222.236450" class="connection" style="fill:none;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#577804137)"/><text class="text-italic" x="121.500000" y="182.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">backup</text></g><mask id="577804137" maskUnits="userSpaceOnUse" x="0" y="0" width="174" height="356">
-<rect x="0" y="0" width="174" height="356" fill="white"></rect>
-<rect x="24.000000" y="166.000000" width="49" height="21" fill="black"></rect>
-<rect x="97.000000" y="166.000000" width="49" height="21" fill="black"></rect>
+</style><script type="application/javascript"><![CDATA[window.addEventListener("DOMContentLoaded", () => {
+  if (document.documentElement.getAttribute("id") !== "d2-svg") {
+    return;
+  }
+  const svgEl = document.documentElement;
+  let width = parseInt(svgEl.getAttribute("width"), 10);
+  let height = parseInt(svgEl.getAttribute("height"), 10);
+  let ratio;
+  if (width > height) {
+    if (width > window.innerWidth) {
+      ratio = window.innerWidth / width;
+    }
+  } else if (height > window.innerHeight) {
+    ratio = window.innerHeight / height;
+  }
+  if (ratio) {
+    svgEl.setAttribute("width", width * ratio - 16);
+    svgEl.setAttribute("height", height * ratio - 16);
+  }
+});
+]]></script><g id="Database"><g class="shape" ><rect x="4" y="0" width="170" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="89.000000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">Database</text></g><g id="S3"><g class="shape" ><rect x="28" y="247" width="122" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="89.000000" y="313.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">S3</text></g><g id="(Database -&gt; S3)[0]"><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 55.171298 127.772786 C 30.819433 174.400000 30.900000 198.700000 54.641803 243.957811" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#192415601)"/><text class="text-italic" x="30.500000" y="192.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">backup</text></g><g id="(Database -&gt; S3)[1]"><path d="M 89.000000 128.000000 C 89.000000 174.400000 89.000000 198.700000 89.000000 243.500000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#192415601)"/></g><g id="(Database -&gt; S3)[2]"><path d="M 122.828702 127.772786 C 147.180567 174.400000 147.100000 198.700000 123.358197 243.957811" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#192415601)"/><text class="text-italic" x="147.500000" y="192.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">backup</text></g><mask id="192415601" maskUnits="userSpaceOnUse" x="0" y="0" width="174" height="377">
+<rect x="0" y="0" width="174" height="377" fill="white"></rect>
+<rect x="6.000000" y="176.000000" width="49" height="21" fill="black"></rect>
+<rect x="123.000000" y="176.000000" width="49" height="21" fill="black"></rect>
 </mask><style type="text/css"><![CDATA[
 .text-bold {
 	font-family: "font-bold";
