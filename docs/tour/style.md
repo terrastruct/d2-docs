@@ -21,7 +21,7 @@ brevity.
 - [stroke-dash](#stroke-dash)
 - [border-radius](#border-radius) (shape only)
 - [shadow](#shadow) (shape only)
-- [3D](#3D) (rectangle/square only)
+- [3D](#3d) (rectangle/square only)
 - [multiple](#multiple) (shape only)
 - [font-size](#font-size)
 - [font-color](#font-color)
@@ -112,9 +112,11 @@ x.style.border-radius: 3
 y.style.border-radius: 8
 ```
 
-Coming soon
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-border-radius.svg2')}}></div>
 
 ## Shadow
+
+`true` or `false`.
 
 ```d2
 x -> y: hi
@@ -125,6 +127,8 @@ x.style.shadow: true
 
 ## 3D
 
+`true` or `false`.
+
 ```d2
 x -> y: hi
 x.style.3d: true
@@ -133,6 +137,8 @@ x.style.3d: true
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-3d.svg2')}}></div>
 
 ## Multiple
+
+`true` or `false`.
 
 ```d2
 x -> y: hi
@@ -143,13 +149,14 @@ x.style.multiple: true
 
 ## Font Size
 
+Integer between `8` and `100`.
+
 ```d2
 x -> y: hi {
   style: {
     font-size: 28
   }
 }
-# 8 is minimum, 100 is maximum
 x.style.font-size: 8
 y.style.font-size: 55
 ```
@@ -157,6 +164,8 @@ y.style.font-size: 55
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-font-size.svg2')}}></div>
 
 ## Font Color
+
+CSS color name or hex code.
 
 ```d2
 x -> y: hi {
@@ -171,6 +180,8 @@ x.style.font-color: "#f4a261"
 
 ## Animated
 
+`true` or `false`.
+
 ```d2
 x -> y: hi {
   style.animated: true
@@ -180,6 +191,8 @@ x -> y: hi {
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-animated.svg2')}}></div>
 
 ## Bold, italic, underline
+
+`true` or `false`.
 
 ```d2
 x -> y: hi {
