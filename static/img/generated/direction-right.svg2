@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg
+id="d2-svg"
 style="background: white;"
 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-width="543" height="130" viewBox="-2 -2 543 130"><style type="text/css">
+width="609" height="130" viewBox="-2 -2 609 130"><style type="text/css">
 <![CDATA[
 .shape {
   shape-rendering: geometricPrecision;
@@ -18,10 +19,30 @@ width="543" height="130" viewBox="-2 -2 543 130"><style type="text/css">
 }
 
 ]]>
-</style><g id="x"><g class="shape" ><rect x="0" y="0" width="113" height="126" style="fill:#F7F8FE;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text-bold" x="56.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">x</text></g><g id="y"><g class="shape" ><rect x="213" y="0" width="114" height="126" style="fill:#F7F8FE;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text-bold" x="270.000000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">y</text></g><g id="z"><g class="shape" ><rect x="427" y="0" width="112" height="126" style="fill:#F7F8FE;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text-bold" x="483.000000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">z</text></g><g id="(x -&gt; y)[0]"><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 115.000000 63.000000 C 153.000000 63.000000 173.000000 63.000000 209.000000 63.000000" class="connection" style="fill:none;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#3502610376)"/><text class="text-italic" x="163.500000" y="69.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">hello</text></g><g id="(y -&gt; z)[0]"><path d="M 329.000000 63.000000 C 367.000000 63.000000 387.000000 63.000000 423.000000 63.000000" class="connection" style="fill:none;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#3502610376)"/><text class="text-italic" x="377.500000" y="69.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">hello</text></g><mask id="3502610376" maskUnits="userSpaceOnUse" x="0" y="0" width="543" height="130">
-<rect x="0" y="0" width="543" height="130" fill="white"></rect>
-<rect x="147.000000" y="53.000000" width="33" height="21" fill="black"></rect>
-<rect x="361.000000" y="53.000000" width="33" height="21" fill="black"></rect>
+</style><script type="application/javascript"><![CDATA[window.addEventListener("DOMContentLoaded", () => {
+  if (document.documentElement.getAttribute("id") !== "d2-svg") {
+    return;
+  }
+  const svgEl = document.documentElement;
+  let width = parseInt(svgEl.getAttribute("width"), 10);
+  let height = parseInt(svgEl.getAttribute("height"), 10);
+  let ratio;
+  if (width > height) {
+    if (width > window.innerWidth) {
+      ratio = window.innerWidth / width;
+    }
+  } else if (height > window.innerHeight) {
+    ratio = window.innerHeight / height;
+  }
+  if (ratio) {
+    svgEl.setAttribute("width", width * ratio - 16);
+    svgEl.setAttribute("height", height * ratio - 16);
+  }
+});
+]]></script><g id="x"><g class="shape" ><rect x="0" y="0" width="113" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="56.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">x</text></g><g id="y"><g class="shape" ><rect x="246" y="0" width="114" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="303.000000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">y</text></g><g id="z"><g class="shape" ><rect x="493" y="0" width="112" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="549.000000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">z</text></g><g id="(x -&gt; y)[0]"><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 115.000000 63.000000 C 166.200000 63.000000 192.900000 63.000000 242.500000 63.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#384425956)"/><text class="text-italic" x="179.500000" y="69.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">hello</text></g><g id="(y -&gt; z)[0]"><path d="M 362.000000 63.000000 C 413.200000 63.000000 439.900000 63.000000 489.500000 63.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#384425956)"/><text class="text-italic" x="426.500000" y="69.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">hello</text></g><mask id="384425956" maskUnits="userSpaceOnUse" x="0" y="0" width="609" height="130">
+<rect x="0" y="0" width="609" height="130" fill="white"></rect>
+<rect x="163.000000" y="53.000000" width="33" height="21" fill="black"></rect>
+<rect x="410.000000" y="53.000000" width="33" height="21" fill="black"></rect>
 </mask><style type="text/css"><![CDATA[
 .text-bold {
 	font-family: "font-bold";

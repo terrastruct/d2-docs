@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg
+id="d2-svg"
 style="background: white;"
 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-width="270" height="556" viewBox="-2 -2 270 556"><style type="text/css">
+width="270" height="577" viewBox="-2 -2 270 577"><style type="text/css">
 <![CDATA[
 .shape {
   shape-rendering: geometricPrecision;
@@ -18,9 +19,29 @@ width="270" height="556" viewBox="-2 -2 270 556"><style type="text/css">
 }
 
 ]]>
-</style><g id="christmas"><g class="shape" ><rect x="0" y="0" width="266" height="226" style="fill:#ACE1AF;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text" x="133.000000" y="33.000000" style="text-anchor:middle;font-size:28px;fill:#0A0F25">christmas</text></g><g id="birthdays"><g class="shape" ><rect x="0" y="326" width="266" height="226" style="fill:#E3E9FD;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text" x="133.000000" y="359.000000" style="text-anchor:middle;font-size:28px;fill:#0A0F25">birthdays</text></g><g id="christmas.presents"><g class="shape" ><rect x="50" y="50" width="166" height="126" style="fill:#EDF0FD;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text-bold" x="133.000000" y="116.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">presents</text></g><g id="birthdays.presents"><g class="shape" ><rect x="50" y="376" width="166" height="126" style="fill:#EDF0FD;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text-bold" x="133.000000" y="442.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">presents</text></g><g id="(christmas.presents -&gt; birthdays.presents)[0]"><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 133.000000 178.000000 C 133.000000 216.000000 133.000000 236.000000 133.000000 251.000000 C 133.000000 266.000000 133.000000 336.000000 133.000000 372.000000" class="connection" style="fill:none;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#3875748460)"/><text class="text-italic" x="133.000000" y="282.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">regift</text></g><mask id="3875748460" maskUnits="userSpaceOnUse" x="0" y="0" width="270" height="556">
-<rect x="0" y="0" width="270" height="556" fill="white"></rect>
-<rect x="115.000000" y="266.000000" width="36" height="21" fill="black"></rect>
+</style><script type="application/javascript"><![CDATA[window.addEventListener("DOMContentLoaded", () => {
+  if (document.documentElement.getAttribute("id") !== "d2-svg") {
+    return;
+  }
+  const svgEl = document.documentElement;
+  let width = parseInt(svgEl.getAttribute("width"), 10);
+  let height = parseInt(svgEl.getAttribute("height"), 10);
+  let ratio;
+  if (width > height) {
+    if (width > window.innerWidth) {
+      ratio = window.innerWidth / width;
+    }
+  } else if (height > window.innerHeight) {
+    ratio = window.innerHeight / height;
+  }
+  if (ratio) {
+    svgEl.setAttribute("width", width * ratio - 16);
+    svgEl.setAttribute("height", height * ratio - 16);
+  }
+});
+]]></script><g id="christmas"><g class="shape" ><rect x="0" y="0" width="266" height="226" style="fill:#ACE1AF;stroke:#0D32B2;stroke-width:2;" /></g><text class="text" x="133.000000" y="33.000000" style="text-anchor:middle;font-size:28px;fill:#0A0F25">christmas</text></g><g id="birthdays"><g class="shape" ><rect x="0" y="347" width="266" height="226" style="fill:#E3E9FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text" x="133.000000" y="380.000000" style="text-anchor:middle;font-size:28px;fill:#0A0F25">birthdays</text></g><g id="christmas.presents"><g class="shape" ><rect x="50" y="50" width="166" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="133.000000" y="116.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">presents</text></g><g id="birthdays.presents"><g class="shape" ><rect x="50" y="397" width="166" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="133.000000" y="463.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">presents</text></g><g id="(christmas.presents -&gt; birthdays.presents)[0]"><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 133.000000 178.000000 C 133.000000 216.000000 133.000000 238.100000 133.000000 256.250000 C 133.000000 274.400000 133.000000 357.000000 133.000000 393.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#1449967888)"/><text class="text-italic" x="133.000000" y="292.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">regift</text></g><mask id="1449967888" maskUnits="userSpaceOnUse" x="0" y="0" width="270" height="577">
+<rect x="0" y="0" width="270" height="577" fill="white"></rect>
+<rect x="115.000000" y="276.000000" width="36" height="21" fill="black"></rect>
 </mask><style type="text/css"><![CDATA[
 .text {
 	font-family: "font-regular";

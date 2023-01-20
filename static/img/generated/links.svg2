@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg
+id="d2-svg"
 style="background: white;"
 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-width="214" height="372" viewBox="-2 -18 214 372"><style type="text/css">
+width="214" height="393" viewBox="-2 -18 214 393"><style type="text/css">
 <![CDATA[
 .shape {
   shape-rendering: geometricPrecision;
@@ -18,7 +19,27 @@ width="214" height="372" viewBox="-2 -18 214 372"><style type="text/css">
 }
 
 ]]>
-</style><a href="https://apple.com" xlink:href="https://apple.com"><g id="x"><g class="shape" ><rect x="12" y="0" width="171" height="126" style="fill:#F7F8FE;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text-bold" x="97.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">I&#39;m a Mac</text><g transform="translate(167 -16)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+</style><script type="application/javascript"><![CDATA[window.addEventListener("DOMContentLoaded", () => {
+  if (document.documentElement.getAttribute("id") !== "d2-svg") {
+    return;
+  }
+  const svgEl = document.documentElement;
+  let width = parseInt(svgEl.getAttribute("width"), 10);
+  let height = parseInt(svgEl.getAttribute("height"), 10);
+  let ratio;
+  if (width > height) {
+    if (width > window.innerWidth) {
+      ratio = window.innerWidth / width;
+    }
+  } else if (height > window.innerHeight) {
+    ratio = window.innerHeight / height;
+  }
+  if (ratio) {
+    svgEl.setAttribute("width", width * ratio - 16);
+    svgEl.setAttribute("height", height * ratio - 16);
+  }
+});
+]]></script><a href="https://apple.com" xlink:href="https://apple.com"><g id="x"><g class="shape" ><rect x="12" y="0" width="171" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="97.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">I&#39;m a Mac</text><g transform="translate(167 -16)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_3440_35088111)">
 <path d="M16 31.1109C24.3456 31.1109 31.1111 24.3454 31.1111 15.9998C31.1111 7.65415 24.3456 0.888672 16 0.888672C7.65436 0.888672 0.888885 7.65415 0.888885 15.9998C0.888885 24.3454 7.65436 31.1109 16 31.1109Z" fill="white" stroke="#DEE1EB"/>
 <path d="M14.3909 16.7965C14.7364 17.2584 15.1772 17.6406 15.6834 17.9171C16.1896 18.1938 16.7494 18.3582 17.3248 18.3993C17.9001 18.4405 18.4777 18.3575 19.0181 18.1559C19.5586 17.9543 20.0492 17.6389 20.4571 17.2309L22.8708 14.8173C23.6036 14.0586 24.0089 13.0425 23.9998 11.9877C23.9906 10.933 23.5676 9.92404 22.8217 9.17821C22.0759 8.43237 21.067 8.00931 20.0123 8.00015C18.9575 7.99098 17.9413 8.39644 17.1827 9.1292L15.7988 10.505" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -30,7 +51,7 @@ width="214" height="372" viewBox="-2 -18 214 372"><style type="text/css">
 </clipPath>
 </defs>
 </svg>
-</g></g></a><a href="https://microsoft.com" xlink:href="https://microsoft.com"><g id="y"><g class="shape" ><rect x="0" y="226" width="194" height="126" style="fill:#F7F8FE;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" /></g><text class="text-bold" x="97.000000" y="292.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">And I&#39;m a PC</text><g transform="translate(178 210)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+</g></g></a><a href="https://microsoft.com" xlink:href="https://microsoft.com"><g id="y"><g class="shape" ><rect x="0" y="247" width="194" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="97.000000" y="313.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">And I&#39;m a PC</text><g transform="translate(178 231)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_3440_35088111)">
 <path d="M16 31.1109C24.3456 31.1109 31.1111 24.3454 31.1111 15.9998C31.1111 7.65415 24.3456 0.888672 16 0.888672C7.65436 0.888672 0.888885 7.65415 0.888885 15.9998C0.888885 24.3454 7.65436 31.1109 16 31.1109Z" fill="white" stroke="#DEE1EB"/>
 <path d="M14.3909 16.7965C14.7364 17.2584 15.1772 17.6406 15.6834 17.9171C16.1896 18.1938 16.7494 18.3582 17.3248 18.3993C17.9001 18.4405 18.4777 18.3575 19.0181 18.1559C19.5586 17.9543 20.0492 17.6389 20.4571 17.2309L22.8708 14.8173C23.6036 14.0586 24.0089 13.0425 23.9998 11.9877C23.9906 10.933 23.5676 9.92404 22.8217 9.17821C22.0759 8.43237 21.067 8.00931 20.0123 8.00015C18.9575 7.99098 17.9413 8.39644 17.1827 9.1292L15.7988 10.505" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -42,9 +63,9 @@ width="214" height="372" viewBox="-2 -18 214 372"><style type="text/css">
 </clipPath>
 </defs>
 </svg>
-</g></g></a><g id="(x -&gt; y)[0]"><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 97.000000 128.000000 C 97.000000 166.000000 97.000000 186.000000 97.000000 222.000000" class="connection" style="fill:none;stroke:#0D32B2;opacity:1.000000;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#2741063976)"/><text class="text-italic" x="97.500000" y="182.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">gazoontite</text></g><mask id="2741063976" maskUnits="userSpaceOnUse" x="0" y="0" width="214" height="372">
-<rect x="0" y="0" width="214" height="372" fill="white"></rect>
-<rect x="62.000000" y="166.000000" width="71" height="21" fill="black"></rect>
+</g></g></a><g id="(x -&gt; y)[0]"><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 97.000000 128.000000 C 97.000000 174.400000 97.000000 198.700000 97.000000 243.500000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#4037743114)"/><text class="text-italic" x="97.500000" y="192.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">gazoontite</text></g><mask id="4037743114" maskUnits="userSpaceOnUse" x="0" y="0" width="214" height="393">
+<rect x="0" y="0" width="214" height="393" fill="white"></rect>
+<rect x="62.000000" y="176.000000" width="71" height="21" fill="black"></rect>
 </mask><style type="text/css"><![CDATA[
 .appendix-icon {
 	filter: drop-shadow(0px 0px 32px rgba(31, 36, 58, 0.1));
