@@ -3,7 +3,7 @@ objects: {
   id: int {constraint: primary_key}
   disk: int {constraint: foreign_key}
 
-  json: jsonb  {constraint: unique}
+  json: jsonb {constraint: unique}
   last_updated: timestamp with time zone
 }
 
