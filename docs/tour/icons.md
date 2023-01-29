@@ -1,9 +1,17 @@
 ---
 sidebar_label: Icons & Images
 ---
+
 # Icons
 
+:::tip
+We host a collection of icons commonly found in software architecture diagrams for free to
+help you get started: [https://icons.terrastruct.com](https://icons.terrastruct.com).
+:::
+
 Icons and images are an essential part of production-ready diagrams.
+
+You can use any URL as value.
 
 ```d2
 my network: {
