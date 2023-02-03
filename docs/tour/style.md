@@ -72,6 +72,18 @@ y.style.fill: honeydew
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-fill.svg2')}}></div>
 
+Want transparent?
+
+```d2
+x: {
+  y
+  y.style.fill: transparent
+}
+x.style.fill: PapayaWhip
+```
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-fill-transparent.svg2')}}></div>
+
 ## Stroke Width
 
 Integer between `1` and `15`.
