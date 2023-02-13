@@ -3,7 +3,7 @@
 id="d2-svg"
 style="background: white;"
 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-width="344" height="145" viewBox="-2 -17 344 145"><style type="text/css">
+width="224" height="85" viewBox="-2 -17 224 85"><style type="text/css">
 <![CDATA[
 .shape {
   shape-rendering: geometricPrecision;
@@ -39,11 +39,11 @@ width="344" height="145" viewBox="-2 -17 344 145"><style type="text/css">
     svgEl.setAttribute("height", height * ratio - 16);
   }
 });
-]]></script><g id="x"><g class="shape" ><defs><mask id="border-mask-x" maskUnits="userSpaceOnUse" x="0" y="-15" width="128" height="141">
-<rect x="0" y="-15" width="128" height="141" fill="white"></rect>
-<path d="M0,0L15,-15L128,-15L128,111L113,126L0,126L0,0L113,0L113,126M113,0L128,-15" style="fill:none;stroke:#0D32B2;stroke-width:2;;stroke:#000;fill:none;opacity:1;"/></mask></defs><rect x="0" y="0" width="113" height="126" style="fill:#F7F8FE;stroke:none;stroke-width:2;" mask="url(#border-mask-x)"/><polygon points="0,0 15,-15 128,-15 128,111 113,126 113,0" style="fill:#cad0f8;stroke:none;stroke-width:2;" mask="url(#border-mask-x)"/><path d="M0,0 L15,-15 L128,-15 L128,111 L113,126 L0,126 L0,0 L113,0 L113,126 M113,0 L128,-15" style="fill:none;stroke:#0D32B2;stroke-width:2;"/></g><text class="text-bold" x="56.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">x</text></g><g id="y"><g class="shape" ><rect x="226" y="0" width="114" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="283.000000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">y</text></g><g id="(x -&gt; y)[0]"><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 115.000000 63.000000 C 158.200000 63.000000 180.900000 63.000000 222.500000 63.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#3266836918)"/><text class="text-italic" x="169.500000" y="69.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">hi</text></g><mask id="3266836918" maskUnits="userSpaceOnUse" x="0" y="0" width="344" height="145">
-<rect x="0" y="0" width="344" height="145" fill="white"></rect>
-<rect x="163.000000" y="53.000000" width="13" height="21" fill="black"></rect>
+]]></script><g id="x"><g class="shape" ><defs><mask id="border-mask-x" maskUnits="userSpaceOnUse" x="0" y="-15" width="68" height="81">
+<rect x="0" y="-15" width="68" height="81" fill="white"></rect>
+<path d="M0,0L15,-15L68,-15L68,51L53,66L0,66L0,0L53,0L53,66M53,0L68,-15" style="fill:none;stroke:#0D32B2;stroke-width:2;;stroke:#000;fill:none;opacity:1;"/></mask></defs><rect x="0" y="0" width="53" height="66" style="fill:#F7F8FE;stroke:none;stroke-width:2;" mask="url(#border-mask-x)"/><polygon points="0,0 15,-15 68,-15 68,51 53,66 53,0" style="fill:#cad0f8;stroke:none;stroke-width:2;" mask="url(#border-mask-x)"/><path d="M0,0 L15,-15 L68,-15 L68,51 L53,66 L0,66 L0,0 L53,0 L53,66 M53,0 L68,-15" style="fill:none;stroke:#0D32B2;stroke-width:2;"/></g><text class="text-bold" x="26.500000" y="38.500000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">x</text></g><g id="y"><g class="shape" ><rect x="166" y="0" width="54" height="66" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="193.000000" y="38.500000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">y</text></g><g id="(x -&gt; y)[0]"><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 55.000000 33.000000 C 98.200000 33.000000 120.900000 33.000000 162.500000 33.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#340520680)"/><text class="text-italic" x="109.500000" y="39.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">hi</text></g><mask id="340520680" maskUnits="userSpaceOnUse" x="0" y="0" width="224" height="85">
+<rect x="0" y="0" width="224" height="85" fill="white"></rect>
+<rect x="103.000000" y="23.000000" width="13" height="21" fill="black"></rect>
 </mask><style type="text/css"><![CDATA[
 .text-bold {
 	font-family: "font-bold";

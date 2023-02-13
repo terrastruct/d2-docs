@@ -23,6 +23,7 @@ brevity.
 - [shadow](#shadow) (shape only)
 - [3D](#3d) (rectangle/square only)
 - [multiple](#multiple) (shape only)
+- [double-border](#double-border) (rectangles and ovals)
 - [font-size](#font-size)
 - [font-color](#font-color)
 - [animated](#animated) (connection only)
@@ -158,6 +159,19 @@ x.style.multiple: true
 ```
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-multiple.svg2')}}></div>
+
+## Double Border
+
+`true` or `false`.
+
+```d2
+x -> y: hi
+x.style.double-border: true
+y.shape: circle
+y.style.double-border: true
+```
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-double-border.svg2')}}></div>
 
 ## Font Size
 

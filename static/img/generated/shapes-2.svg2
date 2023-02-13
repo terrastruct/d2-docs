@@ -3,7 +3,7 @@
 id="d2-svg"
 style="background: white;"
 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-width="871" height="130" viewBox="-2 -2 871 130"><style type="text/css">
+width="656" height="88" viewBox="-2 -2 656 88"><style type="text/css">
 <![CDATA[
 .shape {
   shape-rendering: geometricPrecision;
@@ -39,8 +39,8 @@ width="871" height="130" viewBox="-2 -2 871 130"><style type="text/css">
     svgEl.setAttribute("height", height * ratio - 16);
   }
 });
-]]></script><g id="pg"><g class="shape" ><rect x="0" y="0" width="187" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="93.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">PostgreSQL</text></g><g id="Cloud"><g class="shape" ><path d="M 274.9302 44.0477 C 274.9302 45.3862 273.8043 46.7245 272.6787 46.7245 C 258.3253 48.3974 247.0675 65.4626 247.0675 86.2083 C 247.0675 108.2925 259.7324 126.0267 275.7746 126.0267 H 384.6925 C 401.8606 126.0267 415.9326 106.954 415.9326 83.8661 C 415.9326 61.7819 402.9861 43.3784 386.6628 42.0401 C 385.5369 42.0401 384.4113 41.0362 384.1298 39.3633 C 380.471 16.9447 363.5843 0.2142 343.8837 0.2142 C 330.9374 0.2142 319.3982 7.241 312.0809 18.283 C 311.2365 19.6215 309.8294 19.9562 308.985 19.6215 C 306.1706 18.283 303.0749 17.6139 299.6975 17.6139 C 286.7509 17.2791 276.056 28.9904 274.9302 44.0477 Z" style="fill:#FFFFFF;stroke:#0D32B2;stroke-width:2;"/></g><text class="text-bold" x="331.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">my cloud</text></g><g id="SQLite"><g class="shape" ><rect x="476" y="0" width="152" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="552.000000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">SQLite</text></g><g id="Cassandra"><g class="shape" ><rect x="688" y="0" width="179" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="777.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">Cassandra</text></g><mask id="823003019" maskUnits="userSpaceOnUse" x="0" y="0" width="871" height="130">
-<rect x="0" y="0" width="871" height="130" fill="white"></rect>
+]]></script><g id="pg"><g class="shape" ><rect x="0" y="9" width="127" height="66" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="63.500000" y="47.500000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">PostgreSQL</text></g><g id="Cloud"><g class="shape" ><path d="M 209 29 C 209 30 208 31 207 31 C 196 32 187 43 187 57 C 187 72 197 84 210 84 H 296 C 310 84 321 71 321 56 C 321 41 311 29 298 28 C 297 28 296 27 296 26 C 293 11 280 -0 264 -0 C 254 0 245 5 239 12 C 238 13 237 13 237 13 C 235 12 232 12 230 12 C 219 12 210 19 209 29 Z" style="fill:#FFFFFF;stroke:#0D32B2;stroke-width:2;"/></g><text class="text-bold" x="253.873000" y="63.516000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">my cloud</text></g><g id="SQLite"><g class="shape" ><rect x="381" y="9" width="92" height="66" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="427.000000" y="47.500000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">SQLite</text></g><g id="Cassandra"><g class="shape" ><rect x="533" y="9" width="119" height="66" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="592.500000" y="47.500000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">Cassandra</text></g><mask id="828430646" maskUnits="userSpaceOnUse" x="0" y="0" width="656" height="88">
+<rect x="0" y="0" width="656" height="88" fill="white"></rect>
 
 </mask><style type="text/css"><![CDATA[
 .text-bold {
