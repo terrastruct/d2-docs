@@ -3,7 +3,7 @@
 id="d2-svg"
 style="background: white;"
 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-width="324" height="130" viewBox="-2 -2 324 130"><style type="text/css">
+width="264" height="70" viewBox="-2 -2 264 70"><style type="text/css">
 <![CDATA[
 .shape {
   shape-rendering: geometricPrecision;
@@ -39,8 +39,8 @@ width="324" height="130" viewBox="-2 -2 324 130"><style type="text/css">
     svgEl.setAttribute("height", height * ratio - 16);
   }
 });
-]]></script><g id="visual studio code text editor"><g class="shape" ><rect x="0" y="0" width="320" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="160.000000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">Visual Studio Code Text Editor</text></g><mask id="1529394735" maskUnits="userSpaceOnUse" x="0" y="0" width="324" height="130">
-<rect x="0" y="0" width="324" height="130" fill="white"></rect>
+]]></script><g id="visual studio code text editor"><g class="shape" ><rect x="0" y="0" width="260" height="66" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="130.000000" y="38.500000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">Visual Studio Code Text Editor</text></g><mask id="2275629226" maskUnits="userSpaceOnUse" x="0" y="0" width="264" height="70">
+<rect x="0" y="0" width="264" height="70" fill="white"></rect>
 
 </mask><style type="text/css"><![CDATA[
 .text-bold {

@@ -3,7 +3,7 @@
 id="d2-svg"
 style="background: white;"
 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-width="218" height="230" viewBox="-2 -2 218 230"><style type="text/css">
+width="138" height="168" viewBox="-2 0 138 168"><style type="text/css">
 <![CDATA[
 .shape {
   shape-rendering: geometricPrecision;
@@ -39,8 +39,8 @@ width="218" height="230" viewBox="-2 -2 218 230"><style type="text/css">
     svgEl.setAttribute("height", height * ratio - 16);
   }
 });
-]]></script><g id="x"><g class="shape" ><rect x="0" y="0" width="214" height="226" style="fill:PapayaWhip;stroke:#0D32B2;stroke-width:2;" /></g><text class="text" x="107.000000" y="33.000000" style="text-anchor:middle;font-size:28px;fill:#0A0F25">x</text></g><g id="x.y"><g class="shape" ><rect x="50" y="50" width="114" height="126" style="fill:transparent;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="107.000000" y="116.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">y</text></g><mask id="2433989141" maskUnits="userSpaceOnUse" x="0" y="0" width="218" height="230">
-<rect x="0" y="0" width="218" height="230" fill="white"></rect>
+]]></script><g id="x"><g class="shape" ><rect x="0" y="41" width="134" height="125" style="fill:PapayaWhip;stroke:#0D32B2;stroke-width:2;" /></g><text class="text" x="67.000000" y="28.000000" style="text-anchor:middle;font-size:28px;fill:#0A0F25">x</text></g><g id="x.y"><g class="shape" ><rect x="40" y="70" width="54" height="66" style="fill:transparent;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="67.000000" y="108.500000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">y</text></g><mask id="1535440777" maskUnits="userSpaceOnUse" x="0" y="0" width="138" height="168">
+<rect x="0" y="0" width="138" height="168" fill="white"></rect>
 
 </mask><style type="text/css"><![CDATA[
 .text {

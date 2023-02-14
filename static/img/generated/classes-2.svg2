@@ -3,7 +3,7 @@
 id="d2-svg"
 style="background: white;"
 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-width="483" height="690" viewBox="-2 -2 483 690"><style type="text/css">
+width="483" height="630" viewBox="-2 -2 483 630"><style type="text/css">
 <![CDATA[
 .shape {
   shape-rendering: geometricPrecision;
@@ -39,24 +39,24 @@ width="483" height="690" viewBox="-2 -2 483 690"><style type="text/css">
     svgEl.setAttribute("height", height * ratio - 16);
   }
 });
-]]></script><g id="D2 Parser"><g class="shape" ><rect class="shape" x="0" y="226" width="479" height="460" style="fill:#FFFFFF;stroke:#0A0F25;stroke-width:2;"/><rect class="class_header" x="0.000000" y="226.000000" width="479.000000" height="92.000000" fill="#0A0F25" /><text class="text-mono" x="239.500000" y="281.000000" style="text-anchor:middle;font-size:24px;fill:#FFFFFF">D2 Parser</text><text class="text-mono" x="10.000000" y="346.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">+</text>
-<text class="text-mono" x="30.000000" y="346.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">reader</text>
-<text class="text-mono" x="459.000000" y="346.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">io.RuneReader</text><text class="text-mono" x="10.000000" y="392.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">+</text>
-<text class="text-mono" x="30.000000" y="392.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">readerPos</text>
-<text class="text-mono" x="459.000000" y="392.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">d2ast.Position</text><text class="text-mono" x="10.000000" y="438.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">-</text>
-<text class="text-mono" x="30.000000" y="438.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">lookahead</text>
-<text class="text-mono" x="459.000000" y="438.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">[]rune</text><text class="text-mono" x="10.000000" y="484.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">#</text>
-<text class="text-mono" x="30.000000" y="484.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">lookaheadPos</text>
-<text class="text-mono" x="459.000000" y="484.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">d2ast.Position</text><line x1="0.000000" y1="502.000000" x2="479.000000" y2="502.000000" style="stroke-width:1;stroke:#0A0F25" /><text class="text-mono" x="10.000000" y="530.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">+</text>
-<text class="text-mono" x="30.000000" y="530.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">peek()</text>
-<text class="text-mono" x="459.000000" y="530.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">(r rune, eof bool)</text><text class="text-mono" x="10.000000" y="576.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">+</text>
-<text class="text-mono" x="30.000000" y="576.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">rewind()</text>
-<text class="text-mono" x="459.000000" y="576.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">void</text><text class="text-mono" x="10.000000" y="622.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">+</text>
-<text class="text-mono" x="30.000000" y="622.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">commit()</text>
-<text class="text-mono" x="459.000000" y="622.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">void</text><text class="text-mono" x="10.000000" y="668.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">#</text>
-<text class="text-mono" x="30.000000" y="668.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">peekn(n int)</text>
-<text class="text-mono" x="459.000000" y="668.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">(s string, eof bool)</text></g></g><g id="&#34;github.com/terrastruct/d2parser.git&#34;"><g class="shape" ><rect x="58" y="0" width="363" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="239.500000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">github.com/terrastruct/d2parser.git</text></g><g id="(&#34;github.com/terrastruct/d2parser.git&#34; -&gt; D2 Parser)[0]"><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 239.500000 128.000000 C 239.500000 166.000000 239.500000 186.000000 239.500000 222.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#21149640)"/></g><mask id="21149640" maskUnits="userSpaceOnUse" x="0" y="0" width="483" height="690">
-<rect x="0" y="0" width="483" height="690" fill="white"></rect>
+]]></script><g id="D2 Parser"><g class="shape" ><rect class="shape" x="0" y="166" width="479" height="460" style="fill:#FFFFFF;stroke:#0A0F25;stroke-width:2;"/><rect class="class_header" x="0.000000" y="166.000000" width="479.000000" height="92.000000" fill="#0A0F25" /><text class="text-mono" x="239.500000" y="219.750000" style="text-anchor:middle;font-size:24px;fill:#FFFFFF">D2 Parser</text><text class="text-mono" x="10.000000" y="286.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">+</text>
+<text class="text-mono" x="30.000000" y="286.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">reader</text>
+<text class="text-mono" x="459.000000" y="286.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">io.RuneReader</text><text class="text-mono" x="10.000000" y="332.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">+</text>
+<text class="text-mono" x="30.000000" y="332.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">readerPos</text>
+<text class="text-mono" x="459.000000" y="332.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">d2ast.Position</text><text class="text-mono" x="10.000000" y="378.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">-</text>
+<text class="text-mono" x="30.000000" y="378.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">lookahead</text>
+<text class="text-mono" x="459.000000" y="378.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">[]rune</text><text class="text-mono" x="10.000000" y="424.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">#</text>
+<text class="text-mono" x="30.000000" y="424.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">lookaheadPos</text>
+<text class="text-mono" x="459.000000" y="424.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">d2ast.Position</text><line x1="0.000000" y1="442.000000" x2="479.000000" y2="442.000000" style="stroke-width:1;stroke:#0A0F25" /><text class="text-mono" x="10.000000" y="470.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">+</text>
+<text class="text-mono" x="30.000000" y="470.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">peek()</text>
+<text class="text-mono" x="459.000000" y="470.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">(r rune, eof bool)</text><text class="text-mono" x="10.000000" y="516.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">+</text>
+<text class="text-mono" x="30.000000" y="516.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">rewind()</text>
+<text class="text-mono" x="459.000000" y="516.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">void</text><text class="text-mono" x="10.000000" y="562.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">+</text>
+<text class="text-mono" x="30.000000" y="562.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">commit()</text>
+<text class="text-mono" x="459.000000" y="562.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">void</text><text class="text-mono" x="10.000000" y="608.000000" style="text-anchor:start;font-size:20px;fill:#0D32B2">#</text>
+<text class="text-mono" x="30.000000" y="608.000000" style="text-anchor:start;font-size:20px;fill:#0A0F25">peekn(n int)</text>
+<text class="text-mono" x="459.000000" y="608.000000" style="text-anchor:end;font-size:20px;fill:#4A6FF3">(s string, eof bool)</text></g></g><g id="&#34;github.com/terrastruct/d2parser.git&#34;"><g class="shape" ><rect x="88" y="0" width="303" height="66" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="239.500000" y="38.500000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">github.com/terrastruct/d2parser.git</text></g><g id="(&#34;github.com/terrastruct/d2parser.git&#34; -&gt; D2 Parser)[0]"><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 239.500000 68.000000 C 239.500000 106.000000 239.500000 126.000000 239.500000 162.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#1590631654)"/></g><mask id="1590631654" maskUnits="userSpaceOnUse" x="0" y="0" width="483" height="630">
+<rect x="0" y="0" width="483" height="630" fill="white"></rect>
 
 </mask><style type="text/css"><![CDATA[
 .text-bold {
