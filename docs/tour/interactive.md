@@ -46,3 +46,11 @@ Try clicking on each.
 
 <div
 className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/links.svg2')}}></div>
+
+:::info
+If you are using the Terrastruct app, you can link to other boards through their path.
+```d2
+x.link: Overview.My Service.Stuff
+```
+:::
+
