@@ -68,6 +68,12 @@ const sidebars = {
       link: { type: "doc", id: "tour/extensions" },
       items: ["tour/vscode", "tour/vim", "tour/obsidian", "tour/slack", "tour/discord"],
     },
+    {
+      type: "category",
+      label: "API",
+      link: { type: "doc", id: "tour/api" },
+      items: ["tour/api"],
+    },
     "tour/cheat-sheet",
     "tour/troubleshoot",
   ],
