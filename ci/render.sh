@@ -5,5 +5,5 @@ do
  echo "Processing $f"
  filename=$(basename -- "$f")
  filename="${filename%.*}"
- d2 -l dagre --pad 0 $f ./static/img/generated/${filename}.svg2
+ d2 --dark-theme=200 -l dagre --pad 0 $f ./static/img/generated/${filename}.svg2
 done
