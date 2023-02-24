@@ -6,7 +6,7 @@ pagination_next: tour/style
 D2 comes with many themes that make your diagram look professional and ready to insert
 into blogs and wikis.
 
-<img width={700} src={require('@site/static/img/screenshots/themes/theme_1.png').default} alt="neutral theme"/>
+<img width={700} src={require('@site/static/img/screenshots/themes/theme_overview.png').default} alt="D2 theme choices"/>
 <img width={400} src={require('@site/static/img/screenshots/themes/theme_2.png').default} alt="mixed berry blue theme"/>
 <img width={400} src={require('@site/static/img/screenshots/themes/theme_3.png').default} alt="vanilla nitro cola theme"/>
 
