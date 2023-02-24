@@ -18,6 +18,13 @@ explanation: |md
 
 <img src={require('@site/static/img/screenshots/text-1.png').default} alt="markdown example" width="200"/>
 
+## Most languages are supported
+
+D2 most likely supports any language you want to use, including non-Latin ones like
+Chinese, Japanese, Korean, even emojis!
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/unicode.svg2')}}></div>
+
 ## Latex
 
 You can use `latex` or `tex` to specify a Latex language block.
@@ -153,7 +160,7 @@ explanation: |go
 
 <img src={require('@site/static/img/screenshots/text-3.png').default} alt="code block example" width="600"/>
 
-### Advanced: Non-Markdown text
+## Advanced: Non-Markdown text
 
 In some cases, you may want non-Markdown text. Maybe you just don't like Markdown, or the
 GitHub-styling of Markdown that D2 uses, or you want to quickly change a shape to text.
@@ -176,7 +183,7 @@ results -> favorable -> will of the people
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/non-markdown-text.svg2')}}></div>
 
-### Advanced: Block strings
+## Advanced: Block strings
 
 What if you're writing Typescript where the pipe symbol `|` is commonly used? Just add
 another pipe, `||`.
@@ -207,7 +214,7 @@ my_code: |`ts
 `|
 ```
 
-### Advanced: Latex plugins
+## Advanced: Latex plugins
 
 D2 includes the following Latex plugins:
 
