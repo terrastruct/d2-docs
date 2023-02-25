@@ -41,6 +41,10 @@ d2 themes
 Dark themes are not set by default, so your diagram will look the same regardless of
 whether the user's system preferences are light or dark.
 
+:::caution
+Dark mode is in beta. There might be conflicts with styles set in .d2 itself. See #831.
+:::
+
 :::info
 All diagrams in these docs have a dark theme. Try toggling your system preference between
 light and dark and see how it changes.
