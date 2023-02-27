@@ -74,6 +74,7 @@ const sidebars = {
       link: { type: "doc", id: "tour/api" },
       items: ["tour/api"],
     },
+    "tour/exports",
     "tour/cheat-sheet",
     "tour/troubleshoot",
   ],
