@@ -43,6 +43,8 @@ Playwright dependencies outside of D2 on your machine. For example:
 npm install -g @playwright/test
 npx playwright install
 ```
+
+See [#744](https://github.com/terrastruct/d2/issues/744#issuecomment-1446641870) for more.
 :::
 
 ## PDF
