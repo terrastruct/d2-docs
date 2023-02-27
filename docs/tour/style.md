@@ -28,6 +28,7 @@ brevity.
 - [font-color](#font-color)
 - [animated](#animated) (connection only)
 - [bold, italic, underline](#bold-italic-underline)
+- [root](#root)
 
 ## Opacity
 
@@ -234,3 +235,32 @@ y.style.bold: false
 ```
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-text-decoration.svg2')}}></div>
+
+## Root
+
+Some styles are applicable at the root level. For example, to set a diagram background
+color, use `style.fill`.
+
+Currently the set of supported keywords are:
+- `fill`: diagram background color
+- `stroke`: frame around the diagram
+- `stroke-width`
+- `stroke-dash`
+- `double-border`: two frames, which is a popular framing method
+
+```d2
+x -> y: hi
+style: {
+  fill: LightBlue
+  stroke: FireBrick
+  stroke-width: 2
+}
+```
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-root.svg2')}}></div>
+
+:::info
+All diagrams in this documentation are rendered with `pad=0`. If you're using `stroke` to
+create a frame for your diagram, you'll likely want to add some padding.
+:::
+
