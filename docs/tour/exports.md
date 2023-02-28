@@ -35,6 +35,18 @@ PNG exports work by [Playwright](https://github.com/microsoft/playwright) spinni
 headless browser, putting the SVG onto it, and taking a screenshot. The first invocation
 of Playwright will download its dependencies, if they don't already exist on the machine.
 
+:::info
+If you get a message like `err: failed to launch Chromium`, you can try installing
+Playwright dependencies outside of D2 on your machine. For example:
+
+```
+npm install -g @playwright/test
+npx playwright install
+```
+
+See [#744](https://github.com/terrastruct/d2/issues/744#issuecomment-1446641870) for more.
+:::
+
 ## PDF
 
 ```shell
