@@ -40,8 +40,8 @@ If you get a message like `err: failed to launch Chromium`, you can try installi
 Playwright dependencies outside of D2 on your machine. For example:
 
 ```
-npm install -g @playwright/test
-npx playwright install
+npm install -g @playwright
+npx playwright install --with-deps chromium
 ```
 
 See [#744](https://github.com/terrastruct/d2/issues/744#issuecomment-1446641870) for more.
