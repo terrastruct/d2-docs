@@ -20,8 +20,12 @@ img {
   margin-bottom: 20px;
 }
 
+.embedSVG {
+  display: flex;
+  margin-bottom: 20px;
+}
+
 .embedSVG svg {
-  width: 100% !important;
-  height: auto !important;
   max-height: 500px;
+  margin: 0 auto;
 }
