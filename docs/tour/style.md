@@ -19,7 +19,7 @@ brevity.
 - [fill](#fill) (shape only)
 - [stroke-width](#stroke-width)
 - [stroke-dash](#stroke-dash)
-- [border-radius](#border-radius) (shape only)
+- [border-radius](#border-radius)
 - [shadow](#shadow) (shape only)
 - [3D](#3d) (rectangle/square only)
 - [multiple](#multiple) (shape only)
@@ -127,6 +127,12 @@ y.style.border-radius: 8
 ```
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-border-radius.svg2')}}></div>
+
+:::info
+`border-radius` works on connections too, which controls how rounded the corners are. This
+only applies to layout engines that use corners (e.g. ELK), and of course, only has effect
+on connections whose routes have corners.
+:::
 
 ## Shadow
 

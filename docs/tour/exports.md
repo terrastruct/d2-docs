@@ -56,3 +56,11 @@ d2 in.d2 out.pdf
 PDF exports are the result of taking PNG exports and placing them on PDF pages, along with
 headers and fonts. As such, dependencies needed for PNG exports are also needed for PDF
 exports.
+
+PDF is _more_ interactive than PNG, but _less_ interactive than SVG.
+
+For example, `animate` keyword won't show up in PDF exports like they would in SVG.
+
+But `link`s can still be clickable in PDFs.
+
+<img src={require('@site/static/img/screenshots/linked_pdf.png').default} alt="linked PDF example in D2" width="500"/>
