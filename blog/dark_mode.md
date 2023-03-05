@@ -3,7 +3,7 @@ title: Dark-mode responsive diagrams
 description: How diagrams in D2 are responsive to dark mode
 slug: dark-mode
 tags: [dark mode, show-and-tell]
-image: ../static/blog/dark_mode/permadark.png
+image: https://raw.githubusercontent.com/terrastruct/d2-docs/master/static/img/blog/dark_mode.png
 hide_table_of_contents: false
 ---
 
