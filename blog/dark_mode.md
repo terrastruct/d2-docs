@@ -1,11 +1,20 @@
 ---
-title: Dark mode diagrams
-description: Dark mode diagrams in D2
+title: Dark-mode responsive diagrams
+description: How diagrams in D2 are responsive to dark mode
 slug: dark-mode
 tags: [dark mode, show-and-tell]
 image: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: false
 ---
+
+I want to briefly highlight a cool new feature in D2, which is that you can set both a
+light theme *and* a dark theme for diagrams in D2.
+
+```
+d2 --theme=0 --dark-theme=200 input.d2
+```
+
+How does this work? How can a diagram have two themes?
 
 Try opening up your system preferences and toggling between light and dark mode.
 
@@ -21,5 +30,21 @@ want to follow along, here's two PNGs of what it would've transitioned between:
 <img src={require('@site/static/blog/dark_mode/permalight.png').default} alt="d2 cheat sheet" style={{width:'50%'}}/>
 <img src={require('@site/static/blog/dark_mode/permadark.png').default} alt="d2 cheat sheet" style={{width:'50%'}}/>
 
-Shoutout to [https://github.com/vfosnar](https://github.com/vfosnar), who juggled commits
-in between high school exams to implement this as a first-time contributor <3.
+This means that if your website already supports a responsive experience for visitors that
+prefer light mode and dark mode, it takes zero extra work to include a D2 diagram that'll
+adapt to light preferences. The alternative method used across the web currently is to
+include two diagrams -- and toggle which one gets shown with media queries.
+
+This is currently a new feature, and we are working on adding more themes and considering
+including it by default.
+
+How does this work? The diagram actually is a high level overview of it. All the shapes
+and connections are color coded, which takes into account their depth, shape type, and a
+few other factors. The themes then provide a color for that color code in CSS. Since
+classes are secondary to attributes and styles, any explicitly set styles are not
+overwritten. The dark mode theme simply applies a different set of colors to the color
+codes with a media query.
+
+Shoutout to first-time contributor
+[https://github.com/vfosnar](https://github.com/vfosnar), who came up with the idea and
+juggled commits in between high school exams to implement this <3.
