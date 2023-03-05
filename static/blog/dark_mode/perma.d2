@@ -11,7 +11,6 @@ objects: {
   custom styles
 }
 
-
 light theme -> exporter.CSS generator
 dark theme -> exporter.CSS generator
 
@@ -22,30 +21,29 @@ exporter: {
     shape: oval
   }
 
-
   CSS generator: {
     shape: oval
   }
 
   CSS generator -> css
   css: |css
-.fill-N1: {
-  fill: "#000"
-}
+    .fill-N1: {
+      fill: "#000"
+    }
 
-@media (prefers-color-scheme: dark) {
-  .fill-N1: {
-    fill: "#fff"
-  }
-}
+    @media (prefers-color-scheme: dark) {
+      .fill-N1: {
+        fill: "#fff"
+      }
+    }
   |
   renderer -> svg
   svg: |html
-<rect class="fill-N1" ... />
-<!-- If object has custom style, -->
-<!-- style would be appended -->
-<rect class="fill-N1"
-  style="fill: red" ... />
+    <rect class="fill-N1" ... />
+    <!-- If object has custom style, -->
+    <!-- style would be appended -->
+    <rect class="fill-N1"
+      style="fill: red" ... />
 
   | {
     height: 200
