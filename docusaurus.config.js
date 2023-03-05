@@ -57,6 +57,11 @@ const config = {
           label: "Tour",
         },
         {
+          to: "blog",
+          label: "Blog",
+          position: "left",
+        },
+        {
           type: "doc",
           docId: "releases/intro",
           position: "left",

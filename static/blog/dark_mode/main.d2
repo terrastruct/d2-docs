@@ -1,0 +1,66 @@
+style.fill: transparent
+direction: down
+
+input: |d2
+  # D2 script
+  hello -> world
+|
+
+input -> compile -> objects
+
+objects: {
+  custom styles
+}
+
+light theme -> exporter.CSS generator
+dark theme -> exporter.CSS generator
+
+exporter
+
+exporter: {
+  renderer: set each fill\naccording to color coding {
+    shape: oval
+  }
+
+  CSS generator: {
+    shape: oval
+  }
+
+  CSS generator -> css
+  css: |css
+    .fill-N1: {
+      fill: "#000"
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .fill-N1: {
+        fill: "#fff"
+      }
+    }
+  |
+  renderer -> svg
+  svg: |html
+    <rect class="fill-N1" ... />
+    <!-- If object has custom style, -->
+    <!-- style would be appended -->
+    <rect class="fill-N1"
+      style="fill: red" ... />
+
+  | {
+    height: 200
+  }
+}
+
+objects.custom styles -> exporter.svg
+
+SVG file: {
+  shape: page
+}
+
+exporter.svg -> SVG file
+exporter.css -> SVG file
+
+static: This object doesn't change color,\nbecause it has fill explicitly set {
+  style.fill: honeydew
+  style.font-color: black
+}
