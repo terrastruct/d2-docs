@@ -62,6 +62,13 @@ x.style.stroke: "#f4a261"
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-stroke.svg2')}}></div>
 
+<br/>
+
+For `sql_table`s and `class`es, `stroke` is applied as `fill` to the body (since `fill` is
+already used to control header's `fill`).
+
+<div style={{width: "600px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-table-stroke.svg2')}}></div>
+
 ## Fill
 
 CSS color name or hex code.
@@ -73,6 +80,12 @@ y.style.fill: honeydew
 ```
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-fill.svg2')}}></div>
+
+<br/>
+
+For `sql_table`s and `class`es, `fill` is applied to the header.
+
+<div style={{width: "600px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-table-fill.svg2')}}></div>
 
 Want transparent?
 
@@ -210,6 +223,13 @@ x.style.font-color: "#f4a261"
 ```
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-font-color.svg2')}}></div>
+
+<br/>
+
+For `sql_table`s and `class`es, `font-color` is applied to the header text only (theme
+controls other colors in the body).
+
+<div style={{width: "600px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-table-color.svg2')}}></div>
 
 ## Animated
 
