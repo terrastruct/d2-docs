@@ -1,0 +1,19 @@
+direction: right
+costumes: {
+  shape: sql_table
+  id: int {constraint: primary_key}
+  silliness: int
+  last_updated: timestamp
+  style.stroke: "#E5F7FD"
+}
+
+parser: {
+  shape: class
+  -lookahead: "[]rune"
+  +peek(): (r rune, eof bool)
+  rewind()
+  commit()
+  style.stroke: "#E5F7FD"
+}
+
+costumes -> parser
