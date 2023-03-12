@@ -1,0 +1,56 @@
+direction: right
+
+Processing Pipeline: {
+  shape: text
+  style.font-size: 55
+  near: top-center
+}
+
+Preprocessing: {
+  icon: https://icons.terrastruct.com/azure%2FDatabases%20Service%20Color%2FAzure%20SQL%20DataWarehouse.svg
+}
+
+gpu: Multi-GPU\nTraining {
+  icon: https://icons.terrastruct.com/aws%2FRobotics%2FRobotics.svg
+}
+
+Eval: {
+  icon: https://icons.terrastruct.com/essentials%2F110-zoom%20in.svg
+}
+
+Inference: {
+  icon: https://icons.terrastruct.com/essentials%2F005-programmer.svg
+}
+
+Orchestrator: {
+  pipeline: Full working\npipeline {
+    shape: queue
+  }
+}
+
+Preprocessing -> Orchestrator.pipeline
+gpu -> Orchestrator.pipeline
+Eval -> Orchestrator.pipeline
+Inference -> Orchestrator.pipeline
+
+Orchestrator -> Data Warehouse
+
+Data Warehouse: {
+  Primary: {
+    shape: cylinder
+  }
+  Secondary: {
+    shape: cylinder
+  }
+  style: {
+    fill: "#fdfbe3"
+  }
+}
+
+"Note: we can replace the orchestrator with Kubernetes when we run out of things to do": {
+  style.fill: "#056C4E"
+  style.font-color: white
+  style.stroke-width: 0
+  width: 800
+  near: bottom-center
+}
