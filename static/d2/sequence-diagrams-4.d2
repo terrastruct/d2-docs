@@ -2,19 +2,19 @@ shape: sequence_diagram
 scorer: {shape: person}
 scorer.t -> itemResponse.t: getItem()
 scorer.t <- itemResponse.t: item {
-  stroke-dash: 5
+  style.stroke-dash: 5
 }
 
 scorer.t -> item.t1: getRubric()
 scorer.t <- item.t1: rubric {
-  stroke-dash: 5
+  style.stroke-dash: 5
 }
 
 scorer.t -> essayRubric.t: applyTo(essayResp)
 itemResponse -> essayRubric.t.c
 essayRubric.t.c -> concept.t: match(essayResponse)
 scorer <- essayRubric.t: score {
-  stroke-dash: 5
+  style.stroke-dash: 5
 }
 
 scorer.t -> itemOutcome.t1: new
