@@ -24,7 +24,7 @@ d2 --sketch input.d2
 Most of the credit here goes to [RoughJS](https://roughjs.com/) for providing such an
 excellent library for converting normal SVG paths into imperfect ones, making the slight
 inaccuracies that our hand might when whiteboarding these types of diagrams in real life.
-In fact, [Preet](https://twitter.com/preetster) is an example of just a solo developer
+[Preet](https://twitter.com/preetster) is an example of just a solo developer
 responsible for maintaining a small project that's behind-the-scenes for what is now a
 good chunk of a lot of diagrams you see on the web today! Please consider sponsoring him
 if you like this aesthetic.
