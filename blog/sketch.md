@@ -3,7 +3,7 @@ title: Hand-drawn diagram aesthetic
 description: How you can make diagrams look hand-drawn in D2
 slug: hand-drawn-diagrams
 tags: [hand-drawn, show-and-tell]
-image: https://raw.githubusercontent.com/terrastruct/d2-docs/master/static/img/blog/dark_mode.png
+image: https://raw.githubusercontent.com/terrastruct/d2-docs/master/static/img/blog/sketch.png
 hide_table_of_contents: false
 ---
 
