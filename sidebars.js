@@ -85,6 +85,8 @@ const sidebars = {
       link: { type: "doc", id: "releases/intro" },
       items: [
         "releases/intro",
+        "releases/0.2.5",
+        "releases/0.2.4",
         "releases/0.2.3",
         "releases/0.2.2",
         "releases/0.2.1",
