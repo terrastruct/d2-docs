@@ -25,6 +25,7 @@ brevity.
 - [3D](#3d) (rectangle/square only)
 - [multiple](#multiple) (shape only)
 - [double-border](#double-border) (rectangles and ovals)
+- [font](#font)
 - [font-size](#font-size)
 - [font-color](#font-color)
 - [animated](#animated) (connection only)
@@ -209,6 +210,22 @@ y.style.double-border: true
 ```
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-double-border.svg2')}}></div>
+
+## Font
+
+Currently the only option is to specify `mono`. More coming soon.
+
+```d2
+x -> y: hi {
+  style: {
+    font: mono
+  }
+}
+x.style.font: mono
+y.style.font: mono
+```
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-font.svg2')}}></div>
 
 ## Font Size
 
