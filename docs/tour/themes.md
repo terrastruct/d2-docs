@@ -68,3 +68,68 @@ to give a surprise to dark mode users).
 An example of a dark theme (this one's an image not an SVG, so it won't change according
 to your system preference).
 <img width={600} src={require('@site/static/img/screenshots/themes/dark.png').default} alt="dark theme"/>
+
+## Special themes
+
+Certain, special themes do more than just color.
+
+For example, when you apply the `Terminal` theme, the following attributes are set as
+default:
+- Caps lock on all labels
+- No border radius
+- Monospaced font
+- `fill-pattern` set to `dots` for all containers
+- Most outer container has `double-border` set to `true`
+
+<div style={{width: "100%", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/terminal-theme.svg2')}}></div>
+
+Source code for the above diagram (rendered with ELK) is as follows. Notice that many of
+the properties apparent in the diagram do not appear in the source, such as the casing of
+the labels, because the special theme uses different defaults.
+
+```d2
+network: {
+  cell tower: {
+    satellites: {
+      shape: stored_data
+      style.multiple: true
+    }
+
+    transmitter
+
+    satellites -> transmitter: send
+    satellites -> transmitter: send
+    satellites -> transmitter: send
+  }
+
+  online portal: {
+    ui: {shape: hexagon}
+  }
+
+  data processor: {
+    storage: {
+      shape: cylinder
+      style.multiple: true
+    }
+  }
+
+  cell tower.transmitter -> data processor.storage: phone logs
+}
+
+user: {
+  shape: person
+  width: 130
+}
+
+user -> network.cell tower: make call
+user -> network.online portal.ui: access {
+  style.stroke-dash: 3
+}
+
+api server -> network.online portal.ui: display
+api server -> logs: persist
+logs: {shape: page; style.multiple: true}
+
+network.data processor -> api server
+
+```
