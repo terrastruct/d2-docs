@@ -17,6 +17,7 @@ brevity.
 - [opacity](#opacity)
 - [stroke](#stroke)
 - [fill](#fill) (shape only)
+- [fill-pattern](#fill-pattern) (shape only)
 - [stroke-width](#stroke-width)
 - [stroke-dash](#stroke-dash)
 - [border-radius](#border-radius)
@@ -98,6 +99,22 @@ x.style.fill: PapayaWhip
 ```
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-fill-transparent.svg2')}}></div>
+
+## Fill Pattern
+
+Available patterns:
+- `dots`
+- `lines`
+- `grain`
+
+```d2
+style.fill-pattern: dots
+x -> y: hi
+x.style.fill-pattern: lines
+y.style.fill-pattern: grain
+```
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-fill-pattern.svg2')}}></div>
 
 ## Stroke Width
 
