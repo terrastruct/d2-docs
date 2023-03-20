@@ -19,7 +19,7 @@ my network: {
 }
 ```
 
-<img src={require('@site/static/img/screenshots/icons-1.png').default} alt="icon example" width="200"/>
+<div style={{width: "200px", margin: "0 auto 20px auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/icons-1.svg2')}}></div>
 
 :::info
 Icons on connections coming soon.
@@ -82,4 +82,4 @@ github: {
 server -> github
 ```
 
-<img src={require('@site/static/img/screenshots/icons-3.png').default} alt="image shape example" width="400"/>
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/icons-image.svg2')}}></div>

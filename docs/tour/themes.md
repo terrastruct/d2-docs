@@ -131,5 +131,4 @@ api server -> logs: persist
 logs: {shape: page; style.multiple: true}
 
 network.data processor -> api server
-
 ```

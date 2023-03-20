@@ -8,11 +8,63 @@ pagination_next: tour/experience
 **Declarative Diagramming**. Declarative, as in, you describe what you want diagrammed, it
 generates the image.
 
-For example, you provide this input on the left, and you get back the output on the right.
-<img src={require('@site/static/img/screenshots/intro-example.png').default}
-alt="declarative diagramming example"/>
+For example, download the CLI, create a file named `input.d2`, copy paste the following,
+run this command, and you get the image below.
 
-CLI example
+```sh
+d2 --theme=300 --dark-theme=200 -l elk --pad 0 ./input.d2
+```
+
+<div style={{width: "100%", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/terminal-theme.svg2')}}></div>
+
+```d2
+network: {
+  cell tower: {
+    satellites: {
+      shape: stored_data
+      style.multiple: true
+    }
+
+    transmitter
+
+    satellites -> transmitter: send
+    satellites -> transmitter: send
+    satellites -> transmitter: send
+  }
+
+  online portal: {
+    ui: {shape: hexagon}
+  }
+
+  data processor: {
+    storage: {
+      shape: cylinder
+      style.multiple: true
+    }
+  }
+
+  cell tower.transmitter -> data processor.storage: phone logs
+}
+
+user: {
+  shape: person
+  width: 130
+}
+
+user -> network.cell tower: make call
+user -> network.online portal.ui: access {
+  style.stroke-dash: 3
+}
+
+api server -> network.online portal.ui: display
+api server -> logs: persist
+logs: {shape: page; style.multiple: true}
+
+network.data processor -> api server
+```
+
+## Using the CLI watch mode
+
 <img width="100%" src={require('@site/static/img/screenshots/cli.gif').default}
 alt="D2 CLI"/>
 
@@ -24,5 +76,7 @@ href="/tour/hello-world">Getting Started</a> takes
 :::info
 The source code for D2 is hosted here:
 [https://github.com/terrastruct/d2](https://github.com/terrastruct/d2).
-:::
 
+The source code for these docs are here:
+[https://github.com/terrastruct/d2-docs](https://github.com/terrastruct/d2-docs).
+:::
