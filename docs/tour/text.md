@@ -268,6 +268,12 @@ multilines: {
 \\sum_{k=1}^{n} h_{k} \\int_{0}^{1} \\bigl(\\partial_{k} f(x_{k-1}+t h_{k} e_{k}) -\\partial_{k} f(a)\\bigr) \\,dt
 |
 }
+
+# Just to separate into two rows
+amscd plugin -> braket plugin: { style.opacity: 0 }
+cancel plugin -> color plugin: { style.opacity: 0 }
+gensymb plugin -> mhchem plugin: { style.opacity: 0 }
+physics plugin -> multilines: { style.opacity: 0 }
 ```
 
-<img src={require('@site/static/img/screenshots/latex-1.png').default} alt="latex example" />
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/latex.svg2')}}></div>
