@@ -74,7 +74,8 @@ const sidebars = {
           link: { type: "doc", id: "tour/layers" },
           items: ["tour/layers", "tour/scenarios", "tour/steps"],
         },
-        "tour/linking", "tour/composition-formats"
+        "tour/linking",
+        "tour/composition-formats",
       ],
     },
     {
