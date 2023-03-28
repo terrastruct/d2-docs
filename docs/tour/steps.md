@@ -8,6 +8,8 @@ whether that's a Scenario or Layer.
 Notice how in Step 3 for example, the object "Approach road" exists even though it's not
 defined, because it was inherited from Step 2, which inherited it from Step 1.
 
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/chicken.svg2')}}></div>
+
 ```d2
 Chicken's plan: {
   style.font-size: 35
@@ -26,5 +28,3 @@ steps: {
   }
 }
 ```
-
-<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/chicken.svg2')}}></div>

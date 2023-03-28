@@ -8,6 +8,8 @@ the base Layer, and you can reference any objects from the base Layer to update 
 Notice that in the below Scenario, we simply turn some objects opacity lower, and define a
 new connection to show an alternate view of the deployment diagram.
 
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/animated.svg2')}}></div>
+
 ```d2
 direction: right
 
@@ -95,5 +97,3 @@ scenarios: {
   }
 }
 ```
-
-<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/animated.svg2')}}></div>

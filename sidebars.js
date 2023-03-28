@@ -66,7 +66,16 @@ const sidebars = {
       type: "category",
       label: "Composition",
       link: { type: "doc", id: "tour/composition" },
-      items: ["tour/composition", "tour/layers", "tour/scenarios", "tour/steps", "tour/composition-formats"],
+      items: [
+        "tour/composition",
+        {
+          type: "category",
+          label: "Board types",
+          link: { type: "doc", id: "tour/layers" },
+          items: ["tour/layers", "tour/scenarios", "tour/steps"],
+        },
+        "tour/linking", "tour/composition-formats"
+      ],
     },
     {
       type: "category",
