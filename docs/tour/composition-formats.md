@@ -7,6 +7,7 @@ Currently the options are:
 - PDF
   - PDF can be multiple pages, so this medium is suitable for multi-board diagrams.
     Each board is simply another page, and objects can be linked to those pages.
+  - This is the most suitable medium for layers currently.
 - Animated SVG
   - This is useful for small compositions. It's great for a small number of Steps or
     flipping between some Scenarios, but if the composition has too many boards, the
@@ -18,5 +19,6 @@ Currently the options are:
 
 - Interactive SVG
 - Animated GIF
+- Powerpoint
 - Maybe animated PNG (APNG)
 - Maybe HTML
