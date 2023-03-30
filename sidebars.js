@@ -54,6 +54,7 @@ const sidebars = {
         "tour/dimensions",
         "tour/sketch",
         "tour/interactive",
+        "tour/fonts",
       ],
     },
     {
