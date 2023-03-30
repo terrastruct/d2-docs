@@ -64,6 +64,22 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Composition",
+      link: { type: "doc", id: "tour/composition" },
+      items: [
+        "tour/composition",
+        {
+          type: "category",
+          label: "Board types",
+          link: { type: "doc", id: "tour/layers" },
+          items: ["tour/layers", "tour/scenarios", "tour/steps"],
+        },
+        "tour/linking",
+        "tour/composition-formats",
+      ],
+    },
+    {
+      type: "category",
       label: "Extensions",
       link: { type: "doc", id: "tour/extensions" },
       items: ["tour/vscode", "tour/vim", "tour/obsidian", "tour/slack", "tour/discord"],
