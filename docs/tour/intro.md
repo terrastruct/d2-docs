@@ -1,7 +1,9 @@
 ---
 sidebar_label: What is D2
+pagination_prev: tour/directory
 pagination_next: tour/experience
 ---
+
 # D2 Tour
 
 **D2** is a diagram scripting language that turns text to diagrams. It stands for

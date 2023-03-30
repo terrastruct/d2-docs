@@ -1,0 +1,124 @@
+@use "./variables.scss";
+
+:root:root {
+  --docsearch-searchbox-height: 2.25rem;
+  --docsearch-key-shadow: none;
+}
+
+html[data-theme="light"] {
+  --docsearch-searchbox-border: 1px solid var(--steel-200);
+  --search-keys-border-c: var(--steel-200);
+  --search-keys-color: var(--steel-700);
+  --docsearch-searchbox-background: white;
+
+  .DocSearch-Button {
+    &:hover {
+      background: var(--steel-100);
+    }
+  }
+
+  .DocSearch-Button-Placeholder {
+    color: var(--steel-900);
+    &:hover {
+      color: var(--steel-800);
+    }
+  }
+  .DocSearch-Search-Icon {
+    color: var(--steel-900);
+    &:hover {
+      color: var(--steel-800);
+    }
+  }
+}
+
+html[data-theme="dark"] {
+  --docsearch-searchbox-border: 1px solid var(--steel-500);
+  --search-keys-border-c: var(--steel-600);
+  --search-keys-color: var(--steel-100);
+
+  .DocSearch-Button {
+    &:hover {
+      background: var(--steel-800);
+    }
+  }
+
+  .DocSearch-Button-Placeholder {
+    color: var(--steel-100);
+    &:hover {
+      color: var(--steel-200);
+    }
+  }
+
+  .DocSearch-Search-Icon {
+    color: var(--steel-100);
+    &:hover {
+      color: var(--steel-200);
+    }
+  }
+}
+
+//overrides
+#__docusaurus {
+  [class^="searchBox_"] {
+    flex-grow: 1;
+    max-width: 11rem;
+  }
+
+  @media (max-width: 996px) {
+    [class^="searchBox_"] {
+      position: static;
+      right: initial;
+    }
+  }
+
+  .DocSearch-Button {
+    width: 10rem;
+    height: 32px;
+    border-radius: 4px;
+    border: var(--docsearch-searchbox-border);
+    box-shadow: none;
+
+    .DocSearch-Button-Keys {
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 6px;
+
+      .DocSearch-Button-Key {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        line-height: 13px;
+        border: 1px solid var(--search-keys-border-c);
+        border-bottom-width: 2px;
+        border-radius: 3px;
+        height: 20px;
+        width: 18px;
+        box-sizing: border-box;
+        padding: 0 2px 2px 2px;
+        margin-left: 2px;
+        font-size: 12px;
+        background-color: var(--steel-100);
+        color: var(--search-keys-color);
+        white-space: pre;
+        margin-right: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+    }
+
+    .DocSearch-Search-Icon {
+      max-width: 0.875rem;
+    }
+
+    .DocSearch-Button-Placeholder {
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 17px;
+      padding-top: 0.2rem;
+      margin-block-start: -0.125rem;
+    }
+  }
+}

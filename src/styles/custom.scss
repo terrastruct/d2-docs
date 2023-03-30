@@ -1,3 +1,7 @@
+@import "./navbar.scss";
+@import "./search.scss";
+@import "./sidebar.scss";
+
 :root {
   --ifm-color-primary: #4a6ff3;
 }
@@ -28,4 +32,8 @@ img {
 .embedSVG svg {
   max-height: 500px;
   margin: 0 auto;
+}
+
+main[class*="docMainContainer"] {
+  position: relative;
 }

@@ -1,0 +1,14 @@
+#__docusaurus {
+  .menu {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .menu__list-item-collapsible {
+    font-weight: 600;
+  }
+
+  .menu__caret:before {
+    background-size: 1.25rem;
+  }
+}

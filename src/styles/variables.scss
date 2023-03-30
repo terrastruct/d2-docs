@@ -1,0 +1,56 @@
+// Terrasystem Colors
+:root {
+  --blue-025: #f7f8fe;
+  --blue-050: #eef1fd;
+  --blue-100: #e0e7ff;
+  --blue-200: #bccaff;
+  --blue-300: #94abff;
+  --blue-400: #6b8afb;
+  --blue-500: #4a6ff3;
+  --blue-500-filter: brightness(0) saturate(100%) invert(36%) sepia(25%) saturate(3788%)
+    hue-rotate(210deg) brightness(103%) contrast(91%);
+  --blue-600: #234cda;
+  --blue-600-filter: brightness(0) saturate(100%) invert(21%) sepia(100%) saturate(3335%)
+    hue-rotate(227deg) brightness(88%) contrast(94%);
+  --blue-700: #0d32b2;
+  --blue-800: #042597;
+  --blue-900: #021a70;
+
+  --violet-200: #c0bcf9;
+  --violet-300: #a9a2f7;
+
+  // Steel is updated to 3.0
+  --steel-025: #fbfbfd;
+  --steel-050: #f6f6fa;
+  --steel-100: #eff1f7;
+  --steel-200: #dee1eb;
+  --steel-300: #cacedb;
+  --steel-400: #a7acbd;
+  --steel-400-filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(424%)
+    hue-rotate(189deg) brightness(87%) contrast(87%);
+  --steel-450: #9499ab;
+  --steel-500: #7d8295;
+  --steel-550: #6d7284;
+  --steel-600: #676c7e;
+  --steel-700: #4a4e5e;
+  --steel-800: #2e3346;
+  --steel-800-filter: brightness(0) saturate(100%) invert(18%) sepia(14%) saturate(1129%)
+    hue-rotate(190deg) brightness(95%) contrast(92%);
+  --steel-850: #1c2132;
+  --steel-900: #0a0f25;
+
+  --success-light: #e8faf3;
+  --success-mid: #7adebc;
+  --success-dark: #008053;
+  --success-dark-filter: brightness(0) saturate(100%) invert(35%) sepia(64%)
+    saturate(769%) hue-rotate(113deg) brightness(93%) contrast(101%);
+
+  --error-light: #ffe8ec;
+  --error-mid: #fd97a9;
+  --error-dark: #99001c;
+  --error-dark-filter: brightness(0) saturate(100%) invert(15%) sepia(66%) saturate(7196%)
+    hue-rotate(342deg) brightness(59%) contrast(110%);
+
+  --white-filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(110%)
+    hue-rotate(81deg) brightness(113%) contrast(100%);
+}

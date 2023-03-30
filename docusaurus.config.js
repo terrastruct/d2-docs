@@ -20,7 +20,7 @@ const config = {
           breadcrumbs: false,
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: [require.resolve("./src/styles/custom.scss")],
         },
       },
     ],
@@ -52,7 +52,7 @@ const config = {
       items: [
         {
           type: "doc",
-          docId: "tour/intro",
+          docId: "tour/directory",
           position: "left",
           label: "Tour",
         },
@@ -69,19 +69,34 @@ const config = {
         },
         {
           href: "https://play.d2lang.com",
-          position: "left",
+          position: "right",
           label: "Playground",
         },
         {
-          href: "https://github.com/terrastruct/d2",
-          label: "GitHub",
+          type: "custom-iconLink",
           position: "right",
+          icon: {
+            alt: "github logo",
+            src: `/logos/github.svg`,
+            href: "https://github.com/terrastruct/d2",
+            target: "_blank",
+          },
+        },
+        {
+          type: "custom-iconLink",
+          position: "right",
+          icon: {
+            alt: "discord logo",
+            src: `/logos/discord.svg`,
+            href: "https://discord.com/invite/pbUXgvmTpU",
+            target: "_blank",
+          },
         },
       ],
     },
     colorMode: {
       defaultMode: "light",
-      disableSwitch: true,
+      // disableSwitch: true,
       respectPrefersColorScheme: true,
     },
     prism: {
@@ -99,13 +114,14 @@ const config = {
   },
 
   plugins: [
+    "docusaurus-plugin-sass",
     [
       "@docusaurus/plugin-client-redirects",
       {
         fromExtensions: ["html", "htm"],
         redirects: [
           {
-            to: "/tour/intro",
+            to: "/tour/directory",
             from: ["/", "/tour"],
           },
         ],

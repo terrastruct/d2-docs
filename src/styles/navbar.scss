@@ -1,0 +1,136 @@
+html[data-theme="light"] {
+  --navbar-border: var(--steel-200);
+  --navbar-text-color: var(--steel-900);
+  --navbar-hover: var(--steel-100);
+  --icon-link-hover: var(--steel-100);
+  --icon-link-active: var(--blue-100);
+}
+
+html[data-theme="dark"] {
+  --navbar-border: var(--steel-500);
+  --navbar-text-color: var(--steel-100);
+  --navbar-hover: var(--steel-800);
+  --icon-link-hover: var(--steel-800);
+  --icon-link-active: var(--blue-700);
+
+  .navbar {
+    .dropdown {
+      .navbar__link {
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    .icon-link img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+
+//overrides
+#__docusaurus {
+  .navbar {
+    &__inner {
+      width: initial;
+      flex-grow: 1;
+      flex-wrap: nowrap;
+    }
+
+    &__items {
+      min-width: auto;
+      gap: 1rem;
+
+      &:not(.navbar__items--right) {
+        .navbar__link.navbar__item {
+          @media (max-width: 996px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__items--right {
+      display: flex;
+      flex-grow: 1;
+      gap: 1rem;
+      align-items: center;
+      height: 100%;
+
+      .navbar__link {
+        border: 1px solid var(--navbar-border);
+        border-radius: 4px;
+        margin-top: 0;
+        font-weight: 600;
+        color: var(--navbar-text-color);
+
+        &:hover {
+          background: var(--navbar-hover);
+        }
+      }
+
+      .icon-link,
+      [class*="toggle_"] {
+        padding: 0;
+        display: flex;
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 4px;
+        background: transparent;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        transition: opacity 0.2s ease-out;
+
+        img {
+          width: 70%;
+          height: 70%;
+          margin: 0;
+        }
+
+        &:hover {
+          background: var(--icon-link-hover);
+        }
+        &:active {
+          background: var(--icon-link-active);
+        }
+      }
+
+      .separator {
+        order: 5;
+      }
+
+      a {
+        //search icon
+        &:nth-of-type(1) {
+          order: 5;
+        }
+
+        //discord icon
+        &:nth-of-type(2) {
+          order: 6;
+        }
+
+        //github icon
+        &:nth-of-type(3) {
+          order: 7;
+        }
+      }
+    }
+
+    &__item:not(.dropdown) {
+      &.navbar__link {
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+    }
+
+    &__link {
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 17px;
+      height: 2rem;
+      color: var(--navbar-text-color);
+    }
+  }
+}
