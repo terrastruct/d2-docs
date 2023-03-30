@@ -55,6 +55,7 @@ const sidebars = {
         "tour/dimensions",
         "tour/sketch",
         "tour/interactive",
+        "tour/fonts",
       ],
     },
     {
@@ -62,6 +63,22 @@ const sidebars = {
       label: "In Depth",
       link: { type: "doc", id: "tour/strings" },
       items: ["tour/strings", "tour/comments", "tour/overrides", "tour/auto-formatter"],
+    },
+    {
+      type: "category",
+      label: "Composition",
+      link: { type: "doc", id: "tour/composition" },
+      items: [
+        "tour/composition",
+        {
+          type: "category",
+          label: "Board types",
+          link: { type: "doc", id: "tour/layers" },
+          items: ["tour/layers", "tour/scenarios", "tour/steps"],
+        },
+        "tour/linking",
+        "tour/composition-formats",
+      ],
     },
     {
       type: "category",
@@ -86,6 +103,7 @@ const sidebars = {
       link: { type: "doc", id: "releases/intro" },
       items: [
         "releases/intro",
+        "releases/0.3.0",
         "releases/0.2.6",
         "releases/0.2.5",
         "releases/0.2.4",
