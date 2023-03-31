@@ -34,6 +34,8 @@ img {
   margin: 0 auto;
 }
 
-main[class*="docMainContainer"] {
-  position: relative;
+.markdown {
+  h2 {
+    --ifm-h2-font-size: 1.5rem;
+  }
 }

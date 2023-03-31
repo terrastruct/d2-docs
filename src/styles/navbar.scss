@@ -130,7 +130,10 @@ html[data-theme="dark"] {
       font-size: 0.875rem;
       line-height: 17px;
       height: 2rem;
-      color: var(--navbar-text-color);
+
+      &:not(.navbar__link--active) {
+        color: var(--navbar-text-color);
+      }
     }
   }
 }

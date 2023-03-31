@@ -1,0 +1,24 @@
+html[data-theme="light"] {
+  --feature-border: var(--steel-200);
+}
+
+html[data-theme="dark"] {
+  --feature-border: var(--steel-200);
+}
+
+.Features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.Features__Item {
+  border: 1px solid var(--feature-border);
+  border-radius: 4px;
+
+  &--Bottom {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
