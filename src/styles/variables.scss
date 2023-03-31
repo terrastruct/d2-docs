@@ -53,4 +53,25 @@
 
   --white-filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(110%)
     hue-rotate(81deg) brightness(113%) contrast(100%);
+
+  --drop-shadow-medium: drop-shadow(1px 1px 8px rgba(31, 36, 58, 0.1));
+}
+
+// theme specific colors
+html[data-theme="light"] {
+  --directory-gradient: linear-gradient(
+    224.65deg,
+    #eee9ff 0%,
+    #e7ecff 45.31%,
+    #e3f2ff 100%
+  );
+}
+
+html[data-theme="dark"] {
+  --directory-gradient: linear-gradient(
+    224.65deg,
+    #8c65fc 0%,
+    #495bff 45.31%,
+    #1c6bfd 100%
+  );
 }

@@ -1,6 +1,6 @@
 .DirectoryBanner {
   height: 15rem;
-  background: var(--blue-100);
+  background: var(--directory-gradient);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -8,6 +8,7 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem;
+  position: relative;
 
   h1 {
     font-size: 2rem;
@@ -20,5 +21,10 @@
 
   img {
     margin: 0;
+  }
+
+  &__Circles {
+    position: absolute;
+    bottom: 0;
   }
 }

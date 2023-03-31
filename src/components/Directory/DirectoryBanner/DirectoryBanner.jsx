@@ -5,6 +5,7 @@ import "./DirectoryBanner.scss";
 export default function DirectoryBanner() {
   return (
     <div className="DirectoryBanner">
+      <img className="DirectoryBanner__Circles" src="/img/directory/circles.svg" />
       <img src="/img/d2_graphic.svg" />
       <h1>D2: Declarative Diagramming</h1>
       <p>

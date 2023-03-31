@@ -3,11 +3,11 @@
 @import "./sidebar.scss";
 
 :root {
-  --ifm-color-primary: #4a6ff3;
+  --ifm-color-primary: var(--blue-600);
 }
 
 [data-theme="dark"] {
-  --ifm-color-primary: #4a6ff3;
+  --ifm-color-primary: var(--blue-400);
 }
 html[data-theme="dark"] {
   background-color: #0a0f25;
