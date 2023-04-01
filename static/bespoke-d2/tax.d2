@@ -1,0 +1,40 @@
+title: Current state {
+  near: top-center
+  shape: text
+  style: {
+    font-size: 40
+  }
+}
+
+you -> accountant
+you -> turbotax
+turbotax -> government
+accountant -> turbotax
+government -> you: You owe\nus this much {
+  style.opacity: 0
+}
+
+scenarios: {
+  better: {
+    title.label: A better world
+    accountant.style.opacity: 0.2
+    turbotax.style.opacity: 0.2
+    you -> accountant: {
+      style.opacity: 0.2
+    }
+    you -> turbotax: {
+      style.opacity: 0.2
+    }
+    accountant -> turbotax: {
+      style.opacity: 0.2
+    }
+    turbotax -> government: {
+      style.opacity: 0.2
+    }
+
+    government -> you: {
+      style.opacity: 1
+      style.animated: true
+    }
+  }
+}

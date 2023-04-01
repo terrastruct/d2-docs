@@ -1,0 +1,30 @@
+shape: sequence_diagram
+
+john wick
+henchman 1
+henchman 2
+big boss
+
+steps: {
+  1: {
+    henchman 1 -> john wick: shoots, misses
+  }
+  2: {
+    john wick -> henchman 1: shoots, hits
+    henchman 1.style.fill: "#FFCCCB"
+  }
+  3: {
+    henchman 2 -> john wick: shoots, misses
+  }
+  4: {
+    john wick -> henchman 2: shoots, hits
+    henchman 2.style.fill: "#FFCCCB"
+  }
+  5: {
+    big boss -> john wick: injures
+  }
+  6: {
+    john wick -> big boss: shoots, hits
+    big boss.style.fill: "#FFCCCB"
+  }
+}

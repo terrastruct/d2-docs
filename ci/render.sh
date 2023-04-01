@@ -14,3 +14,7 @@ d2 --animate-interval=1400 --pad 0 ./static/bespoke-d2/chicken.d2 ./static/img/g
 d2 --pad 50 ./static/bespoke-d2/tiktok.d2 ./static/img/generated/tiktok.pdf
 d2 --pad 0 ./static/bespoke-d2/cat.d2 ./static/img/generated/cat.pdf
 d2 --pad 50 ./static/bespoke-d2/lotr.d2 ./static/img/generated/lotr.pdf
+
+d2 --animate-interval=1600 --pad 50 -l elk ./static/bespoke-d2/tax.d2 ./static/img/generated/tax.svg2
+d2 --animate-interval=1600 --pad 0 -l elk ./static/bespoke-d2/pizza.d2 ./static/img/generated/pizza.svg2
+d2 --animate-interval=1600 --pad 0 -l elk ./static/bespoke-d2/johnwick.d2 ./static/img/generated/johnwick.svg2

@@ -1,0 +1,123 @@
+pizza: "" {
+  icon: https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg
+  shape: image
+  near: top-center
+  width: 200
+  height: 200
+  style.opacity: 0
+}
+extras: "" {
+  style: {
+    stroke-width: 0
+    opacity: 0
+  }
+  Pepper flakes: {
+    width: 160
+    style.opacity: 0
+  }
+  Extra cheese: {
+    width: 160
+    style.opacity: 0
+  }
+  Random garnish: {
+    width: 160
+    style.opacity: 0
+  }
+}
+
+toppings: "" {
+  style: {
+    stroke-width: 0
+    opacity: 0
+  }
+  Pepperoni: {
+    width: 115
+    style.opacity: 0
+  }
+  Sausage: {
+    width: 115
+    style.opacity: 0
+  }
+  Mushrooms: {
+    width: 115
+    style.opacity: 0
+  }
+  Pineapple: {
+    width: 115
+    style.opacity: 0
+  }
+}
+
+base: "" {
+  style: {
+    stroke-width: 0
+    opacity: 0
+  }
+  Tomato sauce: {
+    width: 250
+    style.opacity: 0
+  }
+  Cheese base: {
+    width: 250
+    style.opacity: 0
+  }
+}
+
+dough: "" {
+  style: {
+    stroke-width: 0
+    opacity: 0
+  }
+  Dough: {
+    width: 500
+  }
+}
+
+extras -> toppings: {
+  style.opacity: 0
+}
+toppings -> base: {
+  style.opacity: 0
+}
+base -> dough: {
+  style.opacity: 0
+}
+
+steps: {
+  base: {
+    base.Tomato sauce: {
+      style.opacity: 1
+    }
+    base.Cheese base: {
+      style.opacity: 1
+    }
+  }
+  toppings: {
+    toppings.Pepperoni: {
+      style.opacity: 1
+    }
+    toppings.Sausage: {
+      style.opacity: 1
+    }
+    toppings.Mushrooms: {
+      style.opacity: 1
+    }
+    toppings.Pineapple: {
+      style.opacity: 1
+    }
+  }
+  extras: {
+    extras.Pepper flakes: {
+      style.opacity: 1
+    }
+    extras.Extra cheese: {
+      style.opacity: 1
+    }
+    extras.Random garnish: {
+      style.opacity: 1
+    }
+  }
+  pizza: {
+    pizza.style.opacity: 1
+  }
+}
