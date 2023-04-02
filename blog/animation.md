@@ -46,11 +46,11 @@ Or a journey to build up to something.
 
 D2 is not yet 1.0. Of the many things planned in the near term, better ergonomics for
 creating these are a priority. The source code for all of these diagrams can be found
-here:
-[https://github.com/terrastruct/d2-docs/tree/master/static/bespoke-d2](https://github.com/terrastruct/d2-docs/tree/master/static/bespoke-d2).
-Some of these are currently verbose and repetitive. We've released early to get feedback
-from the community, but in-progress things like globs (being able to target objects with
-`*`) and classes will make creating these animations much easier than they currently are.
+[here](https://github.com/terrastruct/d2-docs/tree/master/static/bespoke-d2). Some of
+these are currently verbose and repetitive. We've released early to get feedback from the
+community, but in-progress things like globs (being able to target objects with `*`) and
+classes will make creating these animations much easier than they currently are.
 
-`--animate-interval` is available to use in D2 0.3.0, hope you can check it out and let us
+`--animate-interval` is available to use in D2 0.3.0 ([install
+here](https://github.com/terrastruct/d2#install)), hope you can check it out and let us
 know what you think!
