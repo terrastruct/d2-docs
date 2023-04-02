@@ -10,7 +10,7 @@ This is a single SVG file created purely through D2 text:
 Brief factsheet:
 - Single file, weights 88kb, the vast majority is the embedded fonts so that it looks the
   same everywhere.
-- Concisely described. Well-formatted, readable D2 text (i.e. has newlines) is 85 lines.
+- Well-formatted, readable D2 text (i.e. has newlines) is 85 lines.
 - Configurable. This animation has 1400ms intervals, but if you want the animation to
   linger for longer and shorter, simply change the flags.
 - Easily split into 2 separate SVGs (the default behavior of CLI when a flag is not passed
@@ -48,6 +48,9 @@ D2 is not yet 1.0. Of the many things planned in the near term, better ergonomic
 creating these are a priority. The source code for all of these diagrams can be found
 here:
 [https://github.com/terrastruct/d2-docs/tree/master/static/bespoke-d2](https://github.com/terrastruct/d2-docs/tree/master/static/bespoke-d2).
-Some of these are currently verbose and repetitive. We're releasing early to get feedback
+Some of these are currently verbose and repetitive. We've released early to get feedback
 from the community, but in-progress things like globs (being able to target objects with
 `*`) and classes will make creating these animations much easier than they currently are.
+
+`--animate-interval` is available to use in D2 0.3.0, hope you can check it out and let us
+know what you think!
