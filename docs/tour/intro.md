@@ -17,7 +17,7 @@ run this command, and you get the image below.
 d2 --theme=300 --dark-theme=200 -l elk --pad 0 ./input.d2
 ```
 
-<div style={{width: "100%", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/terminal-theme.svg2')}}></div>
+<div style={{width: "100%"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/terminal-theme.svg2')}}></div>
 
 ```d2
 network: {
