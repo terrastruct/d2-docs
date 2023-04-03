@@ -5,14 +5,7 @@
 
 :root {
   --ifm-color-primary: var(--blue-600);
-}
-
-* {
-  font-family: SourceSansPro, sans-serif !important;
-}
-
-pre * {
-  font-family: SourceCodePro !important;
+  --ifm-font-family-base: SourceSansPro, sans-serif;
 }
 
 strong {
