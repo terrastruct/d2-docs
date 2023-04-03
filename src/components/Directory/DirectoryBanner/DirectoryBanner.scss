@@ -1,3 +1,11 @@
+html[data-theme="light"] {
+  --circles-opacity: 100%;
+}
+
+html[data-theme="dark"] {
+  --circles-opacity: 33%;
+}
+
 .DirectoryBanner {
   height: 15rem;
   background: var(--directory-gradient);
@@ -10,9 +18,17 @@
   padding: 1rem;
   position: relative;
 
+  @media (max-width: 996px) {
+    padding: 1rem 2rem;
+  }
+
   h1 {
     font-size: 2rem;
     margin: 0 !important;
+
+    @media (max-width: 996px) {
+      font-size: 1.25rem;
+    }
   }
 
   p {
@@ -23,8 +39,16 @@
     margin: 0;
   }
 
+  &__Icon {
+    @media (max-width: 996px) {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
   &__Circles {
     position: absolute;
     bottom: 0;
+    opacity: var(--circles-opacity);
   }
 }

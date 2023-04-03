@@ -16,6 +16,10 @@ html[data-theme="dark"] {
   display: grid;
   grid-template-columns: repeat(2, 1fr 8rem);
   gap: 1rem;
+
+  @media (max-width: 996px) {
+    grid-template-columns: 1fr 8rem;
+  }
 }
 
 .GetInvolved__Item {

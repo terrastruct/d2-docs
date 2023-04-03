@@ -3,6 +3,7 @@ html[data-theme="light"] {
   --feature-background: white;
   --image-background: white;
   --color-scheme: light;
+  --icon-filter: none;
 }
 
 html[data-theme="dark"] {
@@ -10,12 +11,17 @@ html[data-theme="dark"] {
   --feature-background: var(--steel-900);
   --image-background: #1e1e2e;
   --color-scheme: dark;
+  --icon-filter: var(--steel-200-filter);
 }
 
 .Features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+
+  @media (max-width: 996px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .Features__Item {
@@ -78,6 +84,7 @@ html[data-theme="dark"] {
     width: 1.75rem;
     height: 1.75rem;
     margin-bottom: 0.5rem;
+    filter: var(--icon-filter);
   }
 }
 

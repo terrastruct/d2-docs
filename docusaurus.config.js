@@ -75,6 +75,7 @@ const config = {
         {
           type: "custom-iconLink",
           position: "right",
+          className: "icon-link--github",
           icon: {
             alt: "github logo",
             src: `/logos/github.svg`,

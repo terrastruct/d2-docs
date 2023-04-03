@@ -68,6 +68,7 @@ html[data-theme="dark"] {
     [class^="searchBox_"] {
       position: static;
       right: initial;
+      max-width: 8rem;
     }
   }
 
@@ -77,6 +78,10 @@ html[data-theme="dark"] {
     border-radius: 4px;
     border: var(--docsearch-searchbox-border);
     box-shadow: none;
+
+    @media (max-width: 996px) {
+      width: 8rem;
+    }
 
     .DocSearch-Button-Keys {
       min-width: 0;
