@@ -23,8 +23,6 @@
   --steel-050: #f6f6fa;
   --steel-100: #eff1f7;
   --steel-200: #dee1eb;
-  --steel-200-filter: brightness(0) saturate(100%) invert(94%) sepia(11%) saturate(198%)
-    hue-rotate(193deg) brightness(93%) contrast(97%);
   --steel-300: #cacedb;
   --steel-400: #a7acbd;
   --steel-400-filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(424%)
@@ -52,8 +50,7 @@
   --error-dark-filter: brightness(0) saturate(100%) invert(15%) sepia(66%) saturate(7196%)
     hue-rotate(342deg) brightness(59%) contrast(110%);
 
-  --white-filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(110%)
-    hue-rotate(81deg) brightness(113%) contrast(100%);
+  --white-filter: brightness(0) saturate(100%) invert(100%);
 
   --drop-shadow-medium: drop-shadow(1px 1px 8px rgba(31, 36, 58, 0.1));
 }
