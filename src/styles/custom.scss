@@ -1,9 +1,22 @@
+@import "./fonts.scss";
 @import "./navbar.scss";
 @import "./search.scss";
 @import "./sidebar.scss";
 
 :root {
   --ifm-color-primary: var(--blue-600);
+}
+
+* {
+  font-family: SourceSansPro, sans-serif;
+}
+
+pre * {
+  font-family: SourceCodePro;
+}
+
+strong {
+  font-weight: 600;
 }
 
 [data-theme="dark"] {
@@ -38,4 +51,12 @@ img {
   h2 {
     --ifm-h2-font-size: 1.5rem;
   }
+}
+
+.pagination-nav__label {
+  font-weight: 600;
+}
+
+.DocSearch-Button-Placeholder {
+  display: flex !important;
 }

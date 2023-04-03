@@ -9,7 +9,7 @@ html[data-theme="light"] {
   --docsearch-searchbox-border: 1px solid var(--steel-200);
   --search-keys-border-c: var(--steel-200);
   --search-keys-color: var(--steel-700);
-  --docsearch-searchbox-background: white;
+  --docsearch-searchbox-background: transparent;
 
   .DocSearch-Button {
     &:hover {
