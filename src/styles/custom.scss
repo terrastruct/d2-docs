@@ -12,8 +12,12 @@ strong {
   font-weight: 600;
 }
 
+[data-theme="light"] {
+  --border: var(--steel-200);
+}
 [data-theme="dark"] {
   --ifm-color-primary: var(--blue-400);
+  --border: var(--steel-500);
 }
 html[data-theme="dark"] {
   background-color: #0a0f25;
@@ -52,4 +56,22 @@ img {
 
 .DocSearch-Button-Placeholder {
   display: flex !important;
+}
+
+.table-of-contents__left-border {
+  border: none;
+}
+
+.table-of-contents {
+  padding: 0;
+
+  li {
+    border-left: 1px solid var(--border);
+    padding-left: 0.5rem;
+    margin: 0.3rem;
+  }
+}
+
+.table-of-contents__link {
+  color: var(--ifm-font-color-base);
 }

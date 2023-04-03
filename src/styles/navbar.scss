@@ -1,5 +1,4 @@
 html[data-theme="light"] {
-  --navbar-border: var(--steel-200);
   --navbar-text-color: var(--steel-900);
   --navbar-hover: var(--steel-100);
   --icon-link-hover: var(--steel-100);
@@ -7,7 +6,6 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-  --navbar-border: var(--steel-500);
   --navbar-text-color: var(--steel-100);
   --navbar-hover: var(--steel-800);
   --icon-link-hover: var(--steel-800);
@@ -67,7 +65,7 @@ html[data-theme="dark"] {
       }
 
       .navbar__link {
-        border: 1px solid var(--navbar-border);
+        border: 1px solid var(--border);
         border-radius: 4px;
         margin-top: 0;
         font-weight: 600;
