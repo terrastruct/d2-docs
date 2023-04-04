@@ -67,7 +67,7 @@ network.data processor -> api server
 
 ## Using the CLI watch mode
 
-<img className="screenshot" width="100%" src={require('@site/static/img/screenshots/cli.gif').default}
+<img className="screenCap" width="100%" src={require('@site/static/img/screenshots/cli.gif').default}
 alt="D2 CLI"/>
 
 You can finish this tour in about 5-10 minutes, and at the end, there's a cheat sheet you
