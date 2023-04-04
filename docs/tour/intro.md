@@ -1,6 +1,5 @@
 ---
 sidebar_label: What is D2
-pagination_prev: tour/directory
 pagination_next: tour/experience
 ---
 

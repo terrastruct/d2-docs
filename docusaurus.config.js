@@ -52,7 +52,7 @@ const config = {
       items: [
         {
           type: "doc",
-          docId: "tour/directory",
+          docId: "tour/intro",
           position: "left",
           label: "Tour",
         },
@@ -122,8 +122,8 @@ const config = {
         fromExtensions: ["html", "htm"],
         redirects: [
           {
-            to: "/tour/directory",
-            from: ["/", "/tour"],
+            to: "/tour/intro",
+            from: ["/tour"],
           },
         ],
       },

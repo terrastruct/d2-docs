@@ -3,9 +3,8 @@ const sidebars = {
     {
       type: "category",
       label: "Introduction",
-      link: { type: "doc", id: "tour/directory" },
+      link: { type: "doc", id: "tour/intro" },
       items: [
-        "tour/directory",
         "tour/intro",
         "tour/experience",
         "tour/design",
