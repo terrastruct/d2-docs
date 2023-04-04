@@ -28,8 +28,6 @@ const config = {
 
   themeConfig: {
     image: "img/opengraph.png",
-    ogImage: "img/opengraph.png",
-    twitterImage: "img/opengraph.png",
     metadata: [
       {
         name: "keywords",
