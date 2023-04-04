@@ -50,6 +50,10 @@
   --error-dark-filter: brightness(0) saturate(100%) invert(15%) sepia(66%) saturate(7196%)
     hue-rotate(342deg) brightness(59%) contrast(110%);
 
+  --warning-dark: #a56300;
+  --warning-mid: #ffdb7e;
+  --warning-light: #fff8e5;
+
   --white-filter: brightness(0) saturate(100%) invert(100%);
 
   --drop-shadow-medium: drop-shadow(1px 1px 8px rgba(31, 36, 58, 0.1));

@@ -48,14 +48,15 @@ Add to Slack
 
 ## Communicating ideas
 
-<video controls width="100%">
+<video className="screenshot" controls width="100%">
   <source src={require('@site/static/img/screenshots/slack-test.mp4').default} type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 
 ## Put large diagrams in the conversation for discussion
 
-<video controls width="100%">
+<video className="screenshot" controls width="100%">
+  <source src={require('@site/static/img/screenshots/slack-test.mp4').default} type="video/mp4" />
   <source src={require('@site/static/img/screenshots/slack.mp4').default} type="video/mp4" />
   Your browser does not support the video tag.
 </video>
