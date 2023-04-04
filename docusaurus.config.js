@@ -47,7 +47,7 @@ const config = {
         alt: "D2",
         src: "img/logo.png",
         srcDark: "img/logo_dark.png",
-        href: "https://d2lang.com/",
+        href: "/",
       },
       items: [
         {
