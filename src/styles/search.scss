@@ -7,7 +7,6 @@
 
 html[data-theme="light"] {
   --docsearch-searchbox-border: 1px solid var(--steel-200);
-  --search-keys-border-c: var(--steel-200);
   --search-keys-color: var(--steel-700);
   --docsearch-searchbox-background: transparent;
 
@@ -33,7 +32,6 @@ html[data-theme="light"] {
 
 html[data-theme="dark"] {
   --docsearch-searchbox-border: 1px solid var(--steel-500);
-  --search-keys-border-c: var(--steel-600);
   --search-keys-color: var(--steel-100);
 
   .DocSearch-Button {
@@ -96,7 +94,7 @@ html[data-theme="dark"] {
         align-items: flex-end;
         justify-content: center;
         line-height: 13px;
-        border: 1px solid var(--search-keys-border-c);
+        border: 1px solid var(--border);
         border-bottom-width: 2px;
         border-radius: 3px;
         height: 20px;
@@ -109,8 +107,7 @@ html[data-theme="dark"] {
         color: var(--search-keys-color);
         white-space: pre;
         margin-right: 0;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-family: system-ui, -apple-system, SourceSansPro, sans-serif;
       }
     }
 
