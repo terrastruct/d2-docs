@@ -12,12 +12,6 @@ html[data-theme="dark"] {
   --icon-link-active: var(--blue-700);
 
   .navbar {
-    .dropdown {
-      .navbar__link {
-        filter: brightness(0) invert(1);
-      }
-    }
-
     .icon-link img {
       filter: brightness(0) invert(1);
     }
@@ -86,8 +80,7 @@ html[data-theme="dark"] {
         }
       }
 
-      .icon-link,
-      [class*="toggle_"] {
+      .icon-link {
         padding: 0;
         display: flex;
         width: 1.75rem;
