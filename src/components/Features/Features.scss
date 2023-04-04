@@ -4,6 +4,7 @@ html[data-theme="light"] {
   --image-background: white;
   --color-scheme: light;
   --icon-filter: none;
+  --feature-hover: var(--drop-shadow-medium);
 }
 
 html[data-theme="dark"] {
@@ -12,11 +13,12 @@ html[data-theme="dark"] {
   --image-background: #1e1e2e;
   --color-scheme: dark;
   --icon-filter: var(--white-filter);
+  --feature-hover: drop-shadow(1px 1px 8px rgba(255, 255, 255, 0.5));
 }
 
 .Features {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 
   @media (max-width: 996px) {
@@ -33,7 +35,7 @@ html[data-theme="dark"] {
   background: var(--feature-background);
 
   &:hover {
-    filter: var(--drop-shadow-medium);
+    filter: var(--feature-hover);
   }
 
   &--Top {

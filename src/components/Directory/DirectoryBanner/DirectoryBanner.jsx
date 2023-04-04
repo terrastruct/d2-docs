@@ -11,6 +11,14 @@ export default function DirectoryBanner() {
       <p>
         A free open-source language created by <strong>Terrastruct</strong>
       </p>
+      <button
+        className="DirectoryBanner__Button"
+        onClick={() => {
+          window.location.href = "/tour/intro";
+        }}
+      >
+        Start exploring
+      </button>
     </div>
   );
 }
