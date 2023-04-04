@@ -1,5 +1,6 @@
 import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 import Layout from "@theme/Layout";
 
@@ -18,6 +19,7 @@ export default function Home() {
       title="Directory"
       description={siteConfig.tagline}
       keywords={siteConfig.customFields.keywords}
+      metaImage={useBaseUrl("img/opengraph.png")}
     >
       <div className="Directory">
         <DirectoryBanner />
