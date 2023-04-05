@@ -19,15 +19,15 @@ export const GetInvolved = () => {
   return (
     <div className="GetInvolved">
       <InvolvedItem
-        title="Join D2's community"
-        description="Discord is our preferred way of communication. Our team is online and available weekdays from 9am - 6pm PST. Get help, share ideas, and show your work!"
-        cta="Join our community"
+        title="Chat on Discord"
+        description="Hangout, talk about diagrams, get help, give feedback and see early previews of what's coming next."
+        cta="Go to Discord"
         img="/features/discord.svg"
       />
       <InvolvedItem
-        title="Continue learning"
-        description="Learn about lalalala from the authors of D2. If you’ve contributed to our repo and would like to publish an article, email us at info@d2lang.com"
-        cta="Read our blog posts"
+        title="Check out our blog"
+        description="Technical blog posts from the authors of D2 on a variety of topics from feature deep dives to how things were built."
+        cta="Go to blog"
         img="/features/blog.svg"
       />
     </div>
