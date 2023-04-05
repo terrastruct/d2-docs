@@ -2,52 +2,60 @@ import React from "react";
 
 import Features from "@site/src/components/Features/Features";
 
+import Sketch from "@site/static/features/sketch.svg2";
+import Animations from "@site/static/features/animations.svg2";
+import Latex from "@site/static/features/latex.svg2";
+
+console.log(Sketch);
 const featureHighlights = [
   {
     title: "Adaptive dark mode",
-    description: "Diagrams adjust color schemes to fit user preferences automatically, anywhere on the web.",
-    img: "/features/sketch.svg",
+    description:
+      "Diagrams adjust color schemes to fit user preferences automatically, anywhere on the web.",
+    img: Sketch,
   },
   {
     title: "Sketch mode",
     description: "Our take on a beautiful, hand-drawn aesthetic",
-    img: "/features/sketch.svg",
+    img: Sketch,
     href: "/tour/sketch",
   },
   {
     title: "Animations",
     description: "D2 is the only language that can produce animated diagrams from text",
-    img: "/features/animation.svg",
+    img: Animations,
     href: "/tour/composition/",
   },
   {
     title: "LaTeX",
     description: "Perfect for academic use and research papers",
-    img: "/features/latex.svg",
+    img: Latex,
     href: "/tour/text/#latex",
   },
   {
     title: "Any language",
-    description: "Make diagrams in English, Chinese, French, or even emojis, D2 supports almost all languages.",
-    img: "/features/latex.svg",
+    description:
+      "Make diagrams in English, Chinese, French, or even emojis, D2 supports almost all languages.",
+    img: Sketch,
     href: "/tour/text/#latex",
   },
   {
     title: "Code snippets",
-    description: "Made for software diagrams. Syntax highlighted code right in the diagram.",
-    img: "/features/latex.svg",
+    description:
+      "Made for software diagrams. Syntax highlighted code right in the diagram.",
+    img: Sketch,
     href: "/tour/text/#latex",
   },
   {
     title: "Markdown",
     description: "Include longform explanations with Markdown.",
-    img: "/features/latex.svg",
+    img: Sketch,
     href: "/tour/text/#latex",
   },
   {
     title: "Tables",
     description: "Show structured data like SQL tables.",
-    img: "/features/latex.svg",
+    img: Sketch,
     href: "/tour/text/#latex",
   },
 ];

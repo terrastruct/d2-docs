@@ -3,6 +3,22 @@ import React from "react";
 import "./Features.scss";
 
 export const Features = (props) => {
+  const renderFeatureImage = (feature) => {
+    if (!feature.img) {
+      return null;
+    }
+    return (
+      <div className="Features__Item--Top">
+        <div className="Features__Item--ImageContainer">
+          <div
+            className="Features__Item--Image"
+            dangerouslySetInnerHTML={{ __html: feature.img }}
+          ></div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="Features">
       {props.features.map((feature) => {
@@ -17,16 +33,13 @@ export const Features = (props) => {
               window.location.href = feature.href;
             }}
           >
-            {feature.img && (
-              <div className="Features__Item--Top">
-                <div className="Features__Item--ImageContainer">
-                  <img className="Features__Item--Image" src={feature.img} />
-                </div>
-              </div>
-            )}
+            {renderFeatureImage(feature)}
             <div key={feature.title} className="Features__Item--Bottom">
               {feature.icon && (
-                <img className="Features__Item--Icon" src={feature.icon} />
+                <img
+                  className="Features__Item--Icon"
+                  src={require("@site/static/features/icons/" + feature.icon).default}
+                />
               )}
               <span className="Features__Item--Title">{feature.title}</span>
               <span className="Features__Item--Description">{feature.description}</span>
