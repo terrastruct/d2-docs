@@ -3,26 +3,50 @@ import React from "react";
 import Features from "@site/src/components/Features/Features";
 
 const featureHighlights = [
-  // {
-  //   title: "Responsive dark mode",
-  //   description: "Adjusting diagram theme colors from light to dark mode",
-  //   img: "",
-  // },
+  {
+    title: "Adaptive dark mode",
+    description: "Diagrams adjust color schemes to fit user preferences automatically, anywhere on the web.",
+    img: "/features/sketch.svg",
+  },
   {
     title: "Sketch mode",
-    description: "One of our most popular features - make your diagrams look hand drawn!",
+    description: "Our take on a beautiful, hand-drawn aesthetic",
     img: "/features/sketch.svg",
     href: "/tour/sketch",
   },
   {
     title: "Animations",
-    description: "Bring your diagram presentation to life with animations",
+    description: "D2 is the only language that can produce animated diagrams from text",
     img: "/features/animation.svg",
     href: "/tour/composition/",
   },
   {
-    title: "Latex",
-    description: "D2 now supports Latex, which runs on the latest version of MathJax",
+    title: "LaTeX",
+    description: "Perfect for academic use and research papers",
+    img: "/features/latex.svg",
+    href: "/tour/text/#latex",
+  },
+  {
+    title: "Any language",
+    description: "Make diagrams in English, Chinese, French, or even emojis, D2 supports almost all languages.",
+    img: "/features/latex.svg",
+    href: "/tour/text/#latex",
+  },
+  {
+    title: "Code snippets",
+    description: "Made for software diagrams. Syntax highlighted code right in the diagram.",
+    img: "/features/latex.svg",
+    href: "/tour/text/#latex",
+  },
+  {
+    title: "Markdown",
+    description: "Include longform explanations with Markdown.",
+    img: "/features/latex.svg",
+    href: "/tour/text/#latex",
+  },
+  {
+    title: "Tables",
+    description: "Show structured data like SQL tables.",
     img: "/features/latex.svg",
     href: "/tour/text/#latex",
   },

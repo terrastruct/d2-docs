@@ -4,22 +4,34 @@ import Features from "@site/src/components/Features/Features";
 
 const moreFeatures = [
   {
-    title: "Containers",
-    description: "Declaring a shape inside another shape",
+    title: "Local CLI",
+    description: "Robust CLI with watch mode. Completely offline workflow.",
     icon: "/features/containers.svg",
     href: "/tour/containers",
   },
   {
-    title: "Languages",
-    description: "Most languages are supported, including non-Latin and even emojis",
-    icon: "/features/languages.svg",
-    href: "/tour/text/#most-languages-are-supported",
+    title: "Most major OS's",
+    description: "MacOS, Linux, and Windows. D2 is included in many popular package managers like Homebrew and Winget.",
+    icon: "/features/containers.svg",
+    href: "/tour/containers",
   },
   {
-    title: "Markdown",
-    description: "Customize your text using Markdown",
-    icon: "/features/markdown.svg",
-    href: "/tour/text/#standalone-text-is-markdown",
+    title: "VSCode and Vim",
+    description: "Official editor support for VSCode and Vim, with more coming soon.",
+    icon: "/features/containers.svg",
+    href: "/tour/containers",
+  },
+  {
+    title: "Online playground",
+    description: "Create and share diagrams quickly by going to our hosted Playground.",
+    icon: "/features/containers.svg",
+    href: "/tour/containers",
+  },
+  {
+    title: "Containers",
+    description: "First-class support for containers (grouping shapes in other shapes).",
+    icon: "/features/containers.svg",
+    href: "/tour/containers",
   },
   {
     title: "Images and Icons",
@@ -28,14 +40,37 @@ const moreFeatures = [
     href: "/tour/icons",
   },
   {
-    title: "SQL Tables",
-    description:
-      "Diagram entity-relationship diagrams (ERDs) by using the sql_table shape",
-    icon: "/features/tables.svg",
-    href: "/tour/sql-tables/",
+    title: "Multiple layout engines",
+    description: "Choose from 3 layout engines that uniquely handle different types of diagrams.",
+    icon: "/features/images.svg",
+    href: "/tour/icons",
   },
   {
-    title: "Classes",
+    title: "Use any font",
+    description: "To customize the font, simply pass in your own .ttf files.",
+    icon: "/features/images.svg",
+    href: "/tour/icons",
+  },
+  {
+    title: "Autoformat",
+    description: "Don't sweat style decisions like indentations and spacing, D2 has a built-in autoformatter.",
+    icon: "/features/images.svg",
+    href: "/tour/icons",
+  },
+  {
+    title: "Language API",
+    description: "Programmatically create diagrams by calling D2's language API.",
+    icon: "/features/images.svg",
+    href: "/tour/icons",
+  },
+  {
+    title: "Interactive tooltips and links",
+    description: "Hover over shapes to learn more, or click through to another page.",
+    icon: "/features/images.svg",
+    href: "/tour/icons",
+  },
+  {
+    title: "Class shape",
     description: "UML Class diagrams are fully supported",
     icon: "/features/classes.svg",
     href: "/tour/classes",

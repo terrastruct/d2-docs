@@ -9,7 +9,7 @@ export default function DirectoryBanner() {
       <img className="DirectoryBanner__Icon" src="/img/d2_graphic.svg" />
       <h1>D2: Declarative Diagramming</h1>
       <p>
-        A free open-source language created by <strong>Terrastruct</strong>
+        A modern language that turns text to diagrams
       </p>
       <button
         className="DirectoryBanner__Button"
@@ -17,7 +17,7 @@ export default function DirectoryBanner() {
           window.location.href = "/tour/intro";
         }}
       >
-        Start exploring
+        Explore docs
       </button>
     </div>
   );
