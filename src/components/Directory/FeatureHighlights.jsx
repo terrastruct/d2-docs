@@ -6,7 +6,6 @@ import Sketch from "@site/static/features/sketch.svg2";
 import Animations from "@site/static/features/animations.svg2";
 import Latex from "@site/static/features/latex.svg2";
 
-console.log(Sketch);
 const featureHighlights = [
   {
     title: "Adaptive dark mode",
