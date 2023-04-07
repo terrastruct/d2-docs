@@ -39,8 +39,10 @@ html[data-theme="dark"] {
     max-height: 41rem;
 
     @media (max-width: 996px) {
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
       align-items: center;
+      max-height: unset;
     }
 
     &--Left {
@@ -60,11 +62,21 @@ html[data-theme="dark"] {
     }
 
     &--Right {
-      display: flex;
       max-height: 41rem;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      object-fit: contain;
+      position: relative;
 
       @media (max-width: 996px) {
-        align-items: center;
+        max-height: none;
+      }
+
+      > svg {
+        height: 100%;
       }
     }
 
