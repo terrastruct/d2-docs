@@ -12,8 +12,7 @@ import MoreFeatures from "@site/src/components/Directory/MoreFeatures";
 import D2CodeBlock from "@theme/CodeBlock";
 import Example from "@site/static/img/generated/terminal-theme.svg2";
 
-const exampleD2 = `
-logs: {
+const exampleD2 = `logs: {
   shape: page
   style.multiple: true
 }

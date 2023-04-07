@@ -2,15 +2,16 @@ import React from "react";
 
 import Features from "@site/src/components/Features/Features";
 
-import Sketch from "@site/static/features/sketch.svg2";
-import Animations from "@site/static/features/animations.svg2";
-import Latex from "@site/static/features/latex.svg2";
+import Sketch from "@site/static/blog/sketch/main.svg2";
+import Animations from "@site/static/img/generated/animated.svg2";
+import Latex from "@site/static/img/generated/text-2.svg2";
+import Language from "@site/static/img/generated/unicode.svg2";
 
 const featureHighlights = [
   {
-    title: "Adaptive dark mode",
+    title: "Feature packed",
     description:
-      "Diagrams adjust color schemes to fit user preferences automatically, anywhere on the web.",
+      `D2 is simple, but has the features you expect from a professional, industry language.`,
     img: Sketch,
   },
   {
@@ -35,7 +36,7 @@ const featureHighlights = [
     title: "Any language",
     description:
       "Make diagrams in English, Chinese, French, or even emojis, D2 supports almost all languages.",
-    img: Sketch,
+    img: Language,
     href: "/tour/text/#latex",
   },
   {

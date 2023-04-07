@@ -85,6 +85,12 @@ const moreFeatures = [
     href: "/tour/sequence-diagrams",
   },
   {
+    title: "Adaptive dark mode",
+    description: "Diagrams adjust color schemes to fit user preferences automatically, anywhere on the web.",
+    icon: "theme.svg",
+    href: "/tour/themes#dark-theme",
+  },
+  {
     title: "Themes",
     description: "D2 comes with many themes that make your diagram look professional",
     icon: "theme.svg",
