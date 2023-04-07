@@ -5,15 +5,15 @@ set under the `style` field.
 
 Below is a catalog of all valid styles, applied individually to this baseline diagram.
 
-<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-base.svg2')}}></div>
+<div style={{width: "400px", margin: "20px auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-base.svg2')}}></div>
 
 :::note
 The following SVGs are rendered with `direction: right`, but omitted from the shown scripts for
 brevity.
 :::
 
-
 ## Style keywords
+
 - [opacity](#opacity)
 - [stroke](#stroke)
 - [fill](#fill) (shape only)
@@ -104,6 +104,7 @@ x.style.fill: PapayaWhip
 ## Fill Pattern
 
 Available patterns:
+
 - `dots`
 - `lines`
 - `grain`
@@ -302,6 +303,7 @@ Some styles are applicable at the root level. For example, to set a diagram back
 color, use `style.fill`.
 
 Currently the set of supported keywords are:
+
 - `fill`: diagram background color
 - `stroke`: frame around the diagram
 - `stroke-width`
@@ -317,10 +319,9 @@ style: {
 }
 ```
 
-<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-root.svg2')}}></div>
+<div style={{width: "400px", margin: "20px auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-root.svg2')}}></div>
 
 :::info
 All diagrams in this documentation are rendered with `pad=0`. If you're using `stroke` to
 create a frame for your diagram, you'll likely want to add some padding.
 :::
-

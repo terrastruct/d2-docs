@@ -29,7 +29,7 @@ Configure your exports by using `/d2` inside Discord.
   Add to Discord
 </a>
 
-<video controls width="100%">
+<video className="screenCap" controls width="100%">
   <source src={require('@site/static/img/screenshots/discord.mp4').default} type="video/mp4" />
   Your browser does not support the video tag.
 </video>

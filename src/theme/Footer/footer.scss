@@ -1,0 +1,145 @@
+html[data-theme="light"] {
+  --footer-bg: var(--steel-900);
+}
+
+html[data-theme="dark"] {
+  --footer-bg: var(--steel-850);
+}
+
+.Footer {
+  height: 12rem;
+  background: var(--footer-bg);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  color: white;
+  font-weight: 500;
+
+  img {
+    margin: 0;
+  }
+
+  &__Logo {
+    width: 6rem;
+  }
+
+  &__Right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.125rem;
+
+    img {
+      margin: 0 0.3rem;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      margin-left: 0.2rem;
+    }
+  }
+
+  &__Mobile {
+    display: none;
+    width: 100%;
+    font-size: 0.875rem;
+
+    .navbar__item {
+      display: flex !important;
+      color: white !important;
+      padding: 0;
+    }
+
+    &--Top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--steel-700);
+      margin-top: 1rem;
+      padding-top: 0.5rem;
+    }
+
+    &--Bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 1rem;
+      margin: 1rem 0;
+
+      [class^="searchBox_"] {
+        width: 100% !important;
+        max-width: none !important;
+      }
+
+      .DocSearch-Button {
+        width: 100% !important;
+        border: 1px solid var(--steel-700) !important;
+        background: var(--footer-bg);
+      }
+
+      .DocSearch-Search-Icon {
+        color: var(--steel-400) !important;
+      }
+
+      .DocSearch-Button-Placeholder {
+        display: flex !important;
+        color: var(--steel-400) !important;
+      }
+    }
+
+    &--Links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    &--Icons {
+      display: flex;
+      gap: 1rem;
+
+      .navbar__item {
+        height: 1.125rem;
+        width: 1.125rem;
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    &--Playground {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border: 1px solid var(--steel-700);
+      border-radius: 4px;
+      margin-top: 0;
+      font-weight: 600;
+    }
+  }
+
+  @media (max-width: 996px) {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+
+    &__Logo {
+      width: 4rem;
+    }
+
+    &__Right {
+      font-size: 0.875rem;
+      gap: 0.5rem;
+
+      img {
+        width: 6rem;
+        margin: 0 0.2rem;
+      }
+    }
+
+    &__Mobile {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+@import "./fonts.scss";
+@import "./navbar.scss";
+@import "./search.scss";
+@import "./sidebar.scss";
+
+:root {
+  --ifm-color-primary: var(--blue-600);
+  --ifm-font-family-base: SourceSansPro, sans-serif;
+}
+
+strong {
+  font-weight: 600;
+}
+
+[data-theme="light"] {
+  --border: var(--steel-200);
+  --success-label: var(--success-dark);
+  --info-label: var(--blue-800);
+  --warning-label: var(--warning-dark);
+  --note-label: var(--steel-900);
+}
+[data-theme="dark"] {
+  --ifm-color-primary: var(--blue-400);
+  --border: var(--steel-500);
+  --success-label: var(--success-mid);
+  --info-label: var(--blue-300);
+  --warning-label: var(--warning-mid);
+  --note-label: white;
+
+  .theme-admonition {
+    background: var(--steel-800);
+  }
+}
+html[data-theme="dark"] {
+  background-color: #0a0f25;
+}
+/* Not sure why but data-theme has to be first here. */
+[data-theme="dark"] .navbar {
+  background-color: #0a0f25;
+  border-bottom: solid #606770 1px;
+}
+
+img {
+  /* Not sure why this isn't default...
+   * Matches the margin-bottom on paragraphs. */
+  margin-bottom: 20px;
+}
+
+.embedSVG {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.embedSVG svg {
+  max-height: 500px;
+  margin: 0 auto;
+  height: -webkit-fill-available;
+}
+
+.markdown {
+  h2 {
+    --ifm-h2-font-size: 1.5rem;
+  }
+}
+
+.pagination-nav__label {
+  font-weight: 600;
+}
+
+// Search
+.DocSearch-Button-Placeholder {
+  display: flex !important;
+}
+
+// TOC
+.table-of-contents__left-border {
+  border: none;
+}
+
+.table-of-contents {
+  padding: 0;
+
+  li {
+    border-left: 1px solid var(--border);
+    padding-left: 0.5rem;
+    margin: 0.3rem;
+  }
+}
+
+.table-of-contents__link {
+  color: var(--ifm-font-color-base);
+}
+
+// Docs
+.screenCap {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+// Alerts
+:root {
+  .alert--success {
+    --ifm-alert-border-color: var(--success-mid);
+    --alert-label-color: var(--success-label);
+    --ifm-color-success-contrast-background: var(--success-light);
+  }
+  .alert--info {
+    --ifm-alert-border-color: var(--blue-300);
+    --alert-label-color: var(--info-label);
+    --ifm-color-info-contrast-background: var(--blue-050);
+  }
+  .alert--warning {
+    --ifm-alert-border-color: var(--warning-mid);
+    --alert-label-color: var(--warning-label);
+    --ifm-color-warning-contrast-background: var(--warning-light);
+  }
+  .alert--secondary {
+    --ifm-alert-border-color: var(--steel-200);
+    --alert-label-color: var(--note-label);
+    --ifm-color-warning-contrast-background: var(--steel-050);
+  }
+
+  .alert {
+    [class^="admonitionHeading"] {
+      color: var(--alert-label-color);
+    }
+    [class^="admonitionIcon"] svg {
+      fill: var(--alert-label-color) !important;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+[data-theme="light"] {
+  --copy-bg: white;
+  --copy-border: var(--blue-300);
+  --copy-hover-bg: var(--steel-100);
+  --copy-filter: none;
+  --copy-shadow: 1px 1px 8px rgba(31, 36, 58, 0.1);
+}
+[data-theme="dark"] {
+  --copy-bg: var(--steel-900);
+  --copy-border: var(--steel-700);
+  --copy-hover-bg: var(--steel-800);
+  --copy-filter: var(--white-filter);
+  --copy-shadow: 1px 1px 8px rgba(255, 255, 255, 0.1);
+
+  .theme-admonition {
+    background: var(--steel-800);
+  }
+}
+
+.CodeBlock {
+  position: relative;
+
+  &:hover {
+    .Copy {
+      visibility: visible;
+    }
+  }
+}
+
+.Copy {
+  z-index: 1;
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  background: var(--copy-bg);
+  border: 1px solid var(--copy-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  margin-left: auto;
+  box-shadow: var(--copy-shadow);
+  overflow: visible;
+  visibility: hidden;
+
+  svg {
+    width: 1rem;
+    height: 1rem;
+    filter: var(--copy-filter);
+  }
+
+  &:hover {
+    background: var(--copy-hover-bg);
+
+    .Copy--Tooltip {
+      visibility: visible;
+    }
+
+    .Copy--Arrow {
+      visibility: visible;
+    }
+  }
+
+  .Copy--Tooltip {
+    position: absolute;
+    top: -41px;
+    white-space: nowrap;
+    background: var(--steel-900);
+    border-radius: 2px;
+    padding: 6px 8px 6px 8px;
+    visibility: hidden;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-family: var(--ifm-font-family-base) !important;
+  }
+
+  .Copy--Arrow {
+    visibility: hidden;
+    position: absolute;
+    margin: -45px 0 0 0px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid var(--steel-900);
+  }
+}

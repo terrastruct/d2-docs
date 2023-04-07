@@ -1,4 +1,5 @@
 import * as React from "react";
+import clsx from "clsx";
 
 import * as docusaurusThemeCommon from "@docusaurus/theme-common";
 import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
@@ -11,6 +12,8 @@ import d2Grammar from "@site/src/d2-vscode/syntaxes/d2.tmLanguage.json";
 import markdownGrammar from "@site/src/d2-vscode/syntaxes/markdown.tmLanguage.json";
 import lightTheme from "@site/src/d2-vscode/themes/light-color-theme.json";
 import darkTheme from "@site/src/d2-vscode/themes/dark-color-theme.json";
+import Clipboard from "@site/static/icons/clipboard.svg";
+import CheckCircle from "@site/static/icons/checkcircle.svg";
 
 import metadataConsts from "./metadata-consts";
 
@@ -18,12 +21,13 @@ import goGrammar from "shiki/languages/go.tmLanguage.json";
 import jsGrammar from "shiki/languages/javascript.tmLanguage.json";
 import shGrammar from "shiki/languages/shellscript.tmLanguage.json";
 
+import "./CodeBlock.scss";
+
 if (!ExecutionEnvironment.canUseDOM) {
   // TODO: real static rendering
   global.window = {};
 }
 
-// TODO: clipboard copy button
 export default function D2CodeBlock(props) {
   if (!ExecutionEnvironment.canUseDOM) {
     // React requires this to rerender correctly on hydration.
@@ -40,6 +44,7 @@ export default function D2CodeBlock(props) {
   }
 
   let [tmGrammar, setTMGrammar] = React.useState(getTextMateGrammar(scope));
+  const [tooltipText, setTooltipText] = React.useState("Copy to clipboard");
 
   React.useEffect(() => {
     if (tmGrammar) {
@@ -58,6 +63,7 @@ export default function D2CodeBlock(props) {
 
   let theme;
   let preStyle = {
+    position: "relative",
     lineHeight: "25px",
   };
   const { colorMode } = docusaurusThemeCommon.useColorMode();
@@ -81,6 +87,7 @@ export default function D2CodeBlock(props) {
     window.tmRegistry.ruleStack = vscTextMate.INITIAL;
   }
 
+  const code = props.children;
   const lines = props.children.split("\n");
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
@@ -113,7 +120,23 @@ export default function D2CodeBlock(props) {
     }
   }
 
-  return <pre style={preStyle}>{children}</pre>;
+  return (
+    <div className={clsx("CodeBlock", props.containerClassName)}>
+      <div
+        className="Copy"
+        onMouseLeave={() => setTooltipText("Copy to clipboard")}
+        onClick={() => {
+          navigator.clipboard.writeText(code);
+          setTooltipText("Copied");
+        }}
+      >
+        <div className="Copy--Tooltip">{tooltipText}</div>
+        <div className="Copy--Arrow"></div>
+        {tooltipText === "Copied" ? <CheckCircle /> : <Clipboard />}
+      </div>
+      <pre style={preStyle}>{children}</pre>
+    </div>
+  );
 }
 
 window.tmGrammars = new Map();

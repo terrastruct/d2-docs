@@ -2,6 +2,7 @@
 sidebar_label: What is D2
 pagination_next: tour/experience
 ---
+
 # D2 Tour
 
 **D2** is a diagram scripting language that turns text to diagrams. It stands for
@@ -15,7 +16,7 @@ run this command, and you get the image below.
 d2 --theme=300 --dark-theme=200 -l elk --pad 0 ./input.d2
 ```
 
-<div style={{width: "100%", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/terminal-theme.svg2')}}></div>
+<div style={{width: "100%"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/terminal-theme.svg2')}}></div>
 
 ```d2
 network: {
@@ -65,7 +66,7 @@ network.data processor -> api server
 
 ## Using the CLI watch mode
 
-<img width="100%" src={require('@site/static/img/screenshots/cli.gif').default}
+<img className="screenCap" width="100%" src={require('@site/static/img/screenshots/cli.gif').default}
 alt="D2 CLI"/>
 
 You can finish this tour in about 5-10 minutes, and at the end, there's a cheat sheet you
