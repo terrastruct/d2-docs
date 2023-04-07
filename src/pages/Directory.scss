@@ -71,7 +71,12 @@ html[data-theme="dark"] {
       flex: 1;
       display: flex;
       flex-direction: column;
-      overflow: hidden;
+      overflow: visible;
+      height: 30rem;
+
+      @media (max-width: 996px) {
+        height: 25rem;
+      }
 
       pre {
         flex: 1;
