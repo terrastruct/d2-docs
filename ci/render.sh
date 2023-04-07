@@ -18,5 +18,3 @@ d2 --pad 50 ./static/bespoke-d2/lotr.d2 ./static/img/generated/lotr.pdf
 d2 --animate-interval=1600 --pad 50 -l elk ./static/bespoke-d2/tax.d2 ./static/img/generated/tax.svg2
 d2 --animate-interval=1600 --pad 0 -l elk ./static/bespoke-d2/pizza.d2 ./static/img/generated/pizza.svg2
 d2 --animate-interval=1600 --pad 0 -l elk ./static/bespoke-d2/johnwick.d2 ./static/img/generated/johnwick.svg2
-
-d2 --theme=4 --pad 50 -l elk ./static/bespoke-d2/origami.d2 ./static/img/generated/origami.svg2

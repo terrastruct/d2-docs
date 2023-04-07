@@ -10,7 +10,7 @@ import Code from "@site/static/img/generated/code.svg2";
 import Markdown from "@site/static/img/screenshots/markdown-2.png";
 import Tables from "@site/static/img/generated/tables-3.svg2";
 
-import Origami from "@site/static/img/screenshots/themes/theme_overview.png";
+import Themes from "@site/static/img/screenshots/themes/theme_overview.png";
 
 
 const featureHighlights = [
@@ -18,7 +18,7 @@ const featureHighlights = [
     title: "Production-ready themes",
     description:
       "Themes by professional designers, each unique. Effortlessly ready for blogs, wikis, and presentations.",
-    img: Origami,
+    img: Themes,
   },
   {
     title: "Sketch mode",
