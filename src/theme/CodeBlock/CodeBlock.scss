@@ -19,6 +19,12 @@
 
 .CodeBlock {
   position: relative;
+
+  &:hover {
+    .Copy {
+      visibility: visible;
+    }
+  }
 }
 
 .Copy {
@@ -38,6 +44,7 @@
   margin-left: auto;
   box-shadow: var(--copy-shadow);
   overflow: visible;
+  visibility: hidden;
 
   svg {
     width: 1rem;
