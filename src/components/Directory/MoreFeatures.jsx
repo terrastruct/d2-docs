@@ -91,12 +91,6 @@ const moreFeatures = [
     href: "/tour/themes#dark-theme",
   },
   {
-    title: "Themes",
-    description: "D2 comes with many themes that make your diagram look professional",
-    icon: "theme.svg",
-    href: "/tour/themes",
-  },
-  {
     title: "Extensions",
     description: "Explore official and community developed plugins and extensions",
     icon: "extension.svg",

@@ -10,10 +10,18 @@ export const Features = (props) => {
     return (
       <div className="Features__Item--Top">
         <div className="Features__Item--ImageContainer">
+          {!feature.img.endsWith("png") && (
           <div
             className="Features__Item--Image"
             dangerouslySetInnerHTML={{ __html: feature.img }}
           ></div>
+          )}
+          {feature.img.endsWith("png") && (
+          <img
+            className="Features__Item--Image"
+            src={feature.img}
+          />
+          )}
         </div>
       </div>
     );
