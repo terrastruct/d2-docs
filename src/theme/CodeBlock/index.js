@@ -11,12 +11,16 @@ import d2Grammar from "@site/src/d2-vscode/syntaxes/d2.tmLanguage.json";
 import markdownGrammar from "@site/src/d2-vscode/syntaxes/markdown.tmLanguage.json";
 import lightTheme from "@site/src/d2-vscode/themes/light-color-theme.json";
 import darkTheme from "@site/src/d2-vscode/themes/dark-color-theme.json";
+import Clipboard from "@site/static/icons/clipboard.svg";
+import CheckCircle from "@site/static/icons/CheckCircle.svg";
 
 import metadataConsts from "./metadata-consts";
 
 import goGrammar from "shiki/languages/go.tmLanguage.json";
 import jsGrammar from "shiki/languages/javascript.tmLanguage.json";
 import shGrammar from "shiki/languages/shellscript.tmLanguage.json";
+
+import "./CodeBlock.scss";
 
 if (!ExecutionEnvironment.canUseDOM) {
   // TODO: real static rendering
@@ -40,6 +44,7 @@ export default function D2CodeBlock(props) {
   }
 
   let [tmGrammar, setTMGrammar] = React.useState(getTextMateGrammar(scope));
+  const [tooltipText, setTooltipText] = React.useState("Copy to clipboard");
 
   React.useEffect(() => {
     if (tmGrammar) {
@@ -58,7 +63,9 @@ export default function D2CodeBlock(props) {
 
   let theme;
   let preStyle = {
+    position: "relative",
     lineHeight: "25px",
+    paddingTop: "2rem",
   };
   const { colorMode } = docusaurusThemeCommon.useColorMode();
   switch (colorMode) {
@@ -81,6 +88,7 @@ export default function D2CodeBlock(props) {
     window.tmRegistry.ruleStack = vscTextMate.INITIAL;
   }
 
+  const code = props.children;
   const lines = props.children.split("\n");
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
@@ -113,7 +121,23 @@ export default function D2CodeBlock(props) {
     }
   }
 
-  return <pre style={preStyle}>{children}</pre>;
+  return (
+    <div className="CodeBlock">
+      <div
+        className="Copy"
+        onMouseLeave={() => setTooltipText("Copy to clipboard")}
+        onClick={() => {
+          navigator.clipboard.writeText(code);
+          setTooltipText("Copied");
+        }}
+      >
+        <div class="Copy--Tooltip">{tooltipText}</div>
+        <div class="Copy--Arrow"></div>
+        {tooltipText === "Copied" ? <CheckCircle /> : <Clipboard />}
+      </div>
+      <pre style={preStyle}>{children}</pre>
+    </div>
+  );
 }
 
 window.tmGrammars = new Map();
