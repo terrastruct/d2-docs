@@ -12,7 +12,6 @@ import Tables from "@site/static/img/generated/tables-3.svg2";
 
 import Themes from "@site/static/img/screenshots/themes/theme_overview.png";
 
-
 const featureHighlights = [
   {
     title: "Production-ready themes",

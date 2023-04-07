@@ -86,7 +86,8 @@ const moreFeatures = [
   },
   {
     title: "Adaptive dark mode",
-    description: "Diagrams adjust color schemes to fit user preferences automatically, anywhere on the web.",
+    description:
+      "Diagrams adjust color schemes to fit user preferences automatically, anywhere on the web.",
     icon: "theme.svg",
     href: "/tour/themes#dark-theme",
   },
