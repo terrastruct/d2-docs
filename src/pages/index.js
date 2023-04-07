@@ -87,10 +87,10 @@ export default function Home() {
       <div className="Directory__Example">
         <div className="Directory__Example--Left">
           <div>
-            Create beautiful diagrams in minutes. Simple syntax. Endlessly customizable. D2 is the fastest and easiest way to get a mental model from your head onto the screen.
+            Create beautiful diagrams in minutes. Simple syntax. Endlessly customizable. D2 is the fastest and easiest way to get a mental model from your head onto the screen, then make edits with your team.
             <br/>
             <br/>
-            It takes the text below, and turns it into the image on the right.
+            For example, it takes the text below, and turns it into the image on the right.
           </div>
           <D2CodeBlock
             className="language-d2"
