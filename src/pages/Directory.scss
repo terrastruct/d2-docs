@@ -81,6 +81,7 @@ html[data-theme="dark"] {
       pre {
         flex: 1;
         margin-bottom: 0;
+        max-width: calc(100vw - 2rem);
       }
     }
   }
