@@ -2,32 +2,38 @@ import React from "react";
 
 import Features from "@site/src/components/Features/Features";
 
-import Sketch from "@site/static/features/sketch.svg2";
-import Animations from "@site/static/features/animations.svg2";
-import Latex from "@site/static/features/latex.svg2";
+import Sketch from "@site/static/blog/sketch/main.svg2";
+import Animations from "@site/static/img/generated/johnwick.svg2";
+import Latex from "@site/static/img/generated/text-2.svg2";
+import Language from "@site/static/img/generated/language.svg2";
+import Code from "@site/static/img/generated/code.svg2";
+import Markdown from "@site/static/img/screenshots/markdown-2.png";
+import Tables from "@site/static/img/generated/tables-3.svg2";
+
+import Themes from "@site/static/img/screenshots/themes/theme_overview.png";
 
 const featureHighlights = [
   {
-    title: "Adaptive dark mode",
+    title: "Production-ready themes",
     description:
-      "Diagrams adjust color schemes to fit user preferences automatically, anywhere on the web.",
-    img: Sketch,
+      "Themes by professional designers, each unique. Effortlessly ready for blogs, wikis, and presentations.",
+    img: Themes,
   },
   {
     title: "Sketch mode",
-    description: "Our take on a beautiful, hand-drawn aesthetic",
+    description: "Our take on a beautiful, hand-drawn aesthetic.",
     img: Sketch,
     href: "/tour/sketch",
   },
   {
     title: "Animations",
-    description: "D2 is the only language that can produce animated diagrams from text",
+    description: "D2 is the only language that can produce animated diagrams from text.",
     img: Animations,
     href: "/tour/composition/",
   },
   {
     title: "LaTeX",
-    description: "Perfect for academic use and research papers",
+    description: "Perfect for academic use and research papers.",
     img: Latex,
     href: "/tour/text/#latex",
   },
@@ -35,26 +41,26 @@ const featureHighlights = [
     title: "Any language",
     description:
       "Make diagrams in English, Chinese, French, or even emojis, D2 supports almost all languages.",
-    img: Sketch,
+    img: Language,
     href: "/tour/text/#latex",
   },
   {
     title: "Code snippets",
     description:
       "Made for software diagrams. Syntax highlighted code right in the diagram.",
-    img: Sketch,
+    img: Code,
     href: "/tour/text/#latex",
   },
   {
     title: "Markdown",
     description: "Include longform explanations with Markdown.",
-    img: Sketch,
+    img: Markdown,
     href: "/tour/text/#latex",
   },
   {
     title: "Tables",
     description: "Show structured data like SQL tables.",
-    img: Sketch,
+    img: Tables,
     href: "/tour/text/#latex",
   },
 ];

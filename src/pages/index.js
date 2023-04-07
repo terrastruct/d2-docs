@@ -12,8 +12,7 @@ import MoreFeatures from "@site/src/components/Directory/MoreFeatures";
 import D2CodeBlock from "@theme/CodeBlock";
 import Example from "@site/static/img/generated/terminal-theme.svg2";
 
-const exampleD2 = `
-logs: {
+const exampleD2 = `logs: {
   shape: page
   style.multiple: true
 }
@@ -87,10 +86,13 @@ export default function Home() {
       <div className="Directory__Example">
         <div className="Directory__Example--Left">
           <div>
-            Create beautiful diagrams in minutes. Simple syntax. Endlessly customizable. D2 is the fastest and easiest way to get a mental model from your head onto the screen, then make edits with your team.
-            <br/>
-            <br/>
-            For example, it takes the text below, and turns it into the image on the right.
+            Create beautiful diagrams in minutes. Simple syntax. Endlessly customizable.
+            D2 is the fastest and easiest way to get a mental model from your head onto
+            the screen, then make edits with your team.
+            <br />
+            <br />
+            For example, it takes the text below, and turns it into the image on the
+            right.
           </div>
           <D2CodeBlock
             className="language-d2"
