@@ -54,6 +54,7 @@ img {
 .embedSVG svg {
   max-height: 500px;
   margin: 0 auto;
+  height: -webkit-fill-available;
 }
 
 .markdown {
