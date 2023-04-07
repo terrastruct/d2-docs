@@ -65,7 +65,6 @@ export default function D2CodeBlock(props) {
   let preStyle = {
     position: "relative",
     lineHeight: "25px",
-    paddingTop: "2rem",
   };
   const { colorMode } = docusaurusThemeCommon.useColorMode();
   switch (colorMode) {
