@@ -13,7 +13,7 @@ import markdownGrammar from "@site/src/d2-vscode/syntaxes/markdown.tmLanguage.js
 import lightTheme from "@site/src/d2-vscode/themes/light-color-theme.json";
 import darkTheme from "@site/src/d2-vscode/themes/dark-color-theme.json";
 import Clipboard from "@site/static/icons/clipboard.svg";
-import CheckCircle from "@site/static/icons/CheckCircle.svg";
+import CheckCircle from "@site/static/icons/checkcircle.svg";
 
 import metadataConsts from "./metadata-consts";
 
