@@ -18,15 +18,14 @@
 }
 
 .CodeBlock {
-  overflow: visible;
   position: relative;
 }
 
 .Copy {
   z-index: 1;
   position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
+  top: 1.2rem;
+  right: 1.2rem;
   background: var(--copy-bg);
   border: 1px solid var(--copy-border);
   display: flex;

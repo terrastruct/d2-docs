@@ -9,7 +9,10 @@ const InvolvedItem = (props) => {
       <span className="GetInvolved__Item--Description">{props.description}</span>
       <span className="GetInvolved__Item--CTA">{props.cta}</span>
       <div className="GetInvolved__Item--Right">
-        <img className="GetInvolved__Item--Image" src={props.img} />
+        <img
+          className="GetInvolved__Item--Image"
+          src={require("@site/static/features/icons/" + props.img).default}
+        />
       </div>
     </div>
   );
@@ -22,13 +25,13 @@ export const GetInvolved = () => {
         title="Chat on Discord"
         description="Hangout, talk about diagrams, get help, give feedback and see early previews of what's coming next."
         cta="Go to Discord"
-        img="/features/discord.svg"
+        img="discord.svg"
       />
       <InvolvedItem
         title="Check out our blog"
         description="Technical blog posts from the authors of D2 on a variety of topics from feature deep dives to how things were built."
         cta="Go to blog"
-        img="/features/blog.svg"
+        img="blog.svg"
       />
     </div>
   );

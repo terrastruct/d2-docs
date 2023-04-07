@@ -1,4 +1,5 @@
 import * as React from "react";
+import clsx from "clsx";
 
 import * as docusaurusThemeCommon from "@docusaurus/theme-common";
 import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
@@ -27,7 +28,6 @@ if (!ExecutionEnvironment.canUseDOM) {
   global.window = {};
 }
 
-// TODO: clipboard copy button
 export default function D2CodeBlock(props) {
   if (!ExecutionEnvironment.canUseDOM) {
     // React requires this to rerender correctly on hydration.
@@ -122,7 +122,7 @@ export default function D2CodeBlock(props) {
   }
 
   return (
-    <div className="CodeBlock">
+    <div className={clsx("CodeBlock", props.containerClassName)}>
       <div
         className="Copy"
         onMouseLeave={() => setTooltipText("Copy to clipboard")}
@@ -131,8 +131,8 @@ export default function D2CodeBlock(props) {
           setTooltipText("Copied");
         }}
       >
-        <div class="Copy--Tooltip">{tooltipText}</div>
-        <div class="Copy--Arrow"></div>
+        <div className="Copy--Tooltip">{tooltipText}</div>
+        <div className="Copy--Arrow"></div>
         {tooltipText === "Copied" ? <CheckCircle /> : <Clipboard />}
       </div>
       <pre style={preStyle}>{children}</pre>
