@@ -10,7 +10,7 @@ import GetInvolved from "@site/src/components/Directory/GetInvolved/GetInvolved"
 import FeatureHighlights from "@site/src/components/Directory/FeatureHighlights";
 import MoreFeatures from "@site/src/components/Directory/MoreFeatures";
 import D2CodeBlock from "@theme/CodeBlock";
-import Example from "@site/static/features/example.svg2";
+import Example from "@site/static/img/generated/terminal-theme.svg2";
 
 const exampleD2 = `
 logs: {
@@ -86,13 +86,11 @@ export default function Home() {
     return (
       <div className="Directory__Example">
         <div className="Directory__Example--Left">
-          <strong>D2 Tour</strong>
           <div>
-            D2 is a diagram scripting language that turns text to diagrams. It stands for
-            Declarative Diagramming. Declarative, as in, you describe what you want
-            diagrammed, it generates the image. For example, download the CLI, create a
-            file named input.d2, copy paste the following, run this command, and you get
-            the image to the right.
+            Create beautiful diagrams in minutes. Simple syntax. Endlessly customizable. D2 is the fastest and easiest way to get a mental model from your head onto the screen.
+            <br/>
+            <br/>
+            It takes the text below, and turns it into the image on the right.
           </div>
           <D2CodeBlock
             className="language-d2"

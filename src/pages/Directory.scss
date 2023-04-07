@@ -32,10 +32,11 @@ html[data-theme="dark"] {
   &__Example {
     position: relative;
     display: grid;
-    align-items: flex-end;
+    align-items: flex-start;
     grid-template-columns: 1fr 1fr;
     margin-top: 1rem;
     gap: 1rem;
+    max-height: 41rem;
 
     @media (max-width: 996px) {
       grid-template-columns: 1fr;
@@ -60,7 +61,7 @@ html[data-theme="dark"] {
 
     &--Right {
       display: flex;
-      align-items: flex-end;
+      max-height: 41rem;
 
       @media (max-width: 996px) {
         align-items: center;
