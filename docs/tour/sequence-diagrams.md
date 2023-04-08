@@ -233,6 +233,22 @@ scorer.t -> itemOutcome.t3: setFeedback(missingConcepts)
 ```
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/sequence-diagrams-4.svg2')}}></div>
 
+Lifeline edges (those lines going from top-down) inherit the actor's `stroke` and
+`stroke-dash` styles.
+
+```d2
+shape: sequence_diagram
+alice -> bob: What does it mean\nto be well-adjusted?
+bob -> alice: The ability to play bridge or\ngolf as if they were games.
+
+alice.style: {
+  stroke: red
+  stroke-dash: 0
+}
+```
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/sequence-diagrams-lifeline.svg2')}}></div>
+
 ## Glossary
 
 <img src={require('@site/static/img/screenshots/sequence_glossary.png').default}
