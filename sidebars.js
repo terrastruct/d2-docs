@@ -36,6 +36,7 @@ const sidebars = {
         "tour/sql-tables",
         "tour/classes",
         "tour/sequence-diagrams",
+        "tour/grid-diagrams",
       ],
     },
     {
