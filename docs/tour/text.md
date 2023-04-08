@@ -16,7 +16,7 @@ explanation: |md
 |
 ```
 
-<img src={require('@site/static/img/screenshots/text-1.png').default} alt="markdown example" width="200"/>
+<div style={{width: 300, margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/markdown.svg2')}}></div>
 
 ## Most languages are supported
 
@@ -137,28 +137,16 @@ results -> favorable -> will of the people
 Change `md` to a programming language for code blocks
 
 ```d2
-aws: {
-  load_balancer -> api
-  api -> db
-}
-gcloud: {
-  auth -> db
-}
-
-gcloud -> aws
-
 explanation: |go
   awsSession := From(c.Request.Context())
   client := s3.New(awsSession)
 
   ctx, cancelFn := context.WithTimeout(c.Request.Context(), AWS_TIMEOUT)
   defer cancelFn()
-| {
-  near: aws
-}
+|
 ```
 
-<img src={require('@site/static/img/screenshots/text-3.png').default} alt="code block example" width="600"/>
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/code-2.svg2')}}></div>
 
 ## Advanced: Non-Markdown text
 
