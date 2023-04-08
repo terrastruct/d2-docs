@@ -110,28 +110,6 @@ Notice how the text is positioned near the `aws` node and not the `gcloud` node.
 
 <img src={require('@site/static/img/screenshots/text-2.png').default} alt="text near example" width="400"/>
 
-### Near a constant
-
-:::info Possible constant values
-`top-left`, `top-center`, `top-right`,
-
-`center-left`, `center-right`,
-
-`bottom-left`, `bottom-center`, `bottom-right`
-:::
-
-```d2
-title: |md
-  # A winning strategy
-| { near: top-center }
-
-poll the people -> results
-results -> unfavorable -> poll the people
-results -> favorable -> will of the people
-```
-
-<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/near-constant.svg2')}}></div>
-
 ## Code
 
 Change `md` to a programming language for code blocks

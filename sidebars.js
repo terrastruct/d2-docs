@@ -42,22 +42,23 @@ const sidebars = {
     {
       type: "category",
       label: "Customization",
-      link: { type: "doc", id: "tour/layouts" },
+      link: { type: "doc", id: "tour/themes" },
       items: [
-        {
-          type: "category",
-          label: "Layouts",
-          link: { type: "doc", id: "tour/layouts" },
-          items: ["tour/dagre", "tour/elk", "tour/tala"],
-        },
         "tour/themes",
         "tour/style",
         "tour/style-classes",
         "tour/dimensions",
+        "tour/positions",
         "tour/sketch",
         "tour/interactive",
         "tour/fonts",
       ],
+    },
+    {
+      type: "category",
+      label: "Layouts",
+      link: { type: "doc", id: "tour/layouts" },
+      items: ["tour/dagre", "tour/elk", "tour/tala"],
     },
     {
       type: "category",

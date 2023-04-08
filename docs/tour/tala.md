@@ -16,6 +16,7 @@ open-source D2, and proprietary, closed-source TALA. You can download it here:
 - As a general orthogonal layout engine, TALA is not constrained to one type like
   hierarchies or trees or radial. For fundamentally non-hierarchical layouts, TALA can
   produce diagrams like a human would on a whiteboard.
+- `top` and `left` can be used to lock positions.
 - Considers and prefers symmetry.
 - First-class consideration for containers.
 - `direction` can be set per-container.
