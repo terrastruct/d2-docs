@@ -18,6 +18,7 @@ const featureHighlights = [
     description:
       "Themes by professional designers, each unique. Effortlessly ready for blogs, wikis, and presentations.",
     img: Themes,
+    href: "/tour/themes",
   },
   {
     title: "Sketch mode",
@@ -42,26 +43,26 @@ const featureHighlights = [
     description:
       "Make diagrams in English, Chinese, French, or even emojis, D2 supports almost all languages.",
     img: Language,
-    href: "/tour/text/#latex",
+    href: "/tour/text/#most-languages-are-supported",
   },
   {
     title: "Code snippets",
     description:
       "Made for software diagrams. Syntax highlighted code right in the diagram.",
     img: Code,
-    href: "/tour/text/#latex",
+    href: "/tour/text/#code",
   },
   {
     title: "Markdown",
     description: "Include longform explanations with Markdown.",
     img: Markdown,
-    href: "/tour/text/#latex",
+    href: "/tour/text/#standalone-text-is-markdown",
   },
   {
     title: "Tables",
     description: "Show structured data like SQL tables.",
     img: Tables,
-    href: "/tour/text/#latex",
+    href: "/tour/sql-tables",
   },
 ];
 

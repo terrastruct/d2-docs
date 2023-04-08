@@ -7,26 +7,26 @@ const moreFeatures = [
     title: "Local CLI",
     description: "Robust CLI with watch mode. Completely offline workflow.",
     icon: "cli.svg",
-    href: "/tour/containers",
+    href: "/tour/install",
   },
   {
     title: "Most major OS's",
     description:
       "MacOS, Linux, and Windows. D2 is included in many popular package managers like Homebrew and Winget.",
     icon: "os.svg",
-    href: "/tour/containers",
+    href: "https://github.com/terrastruct/d2/releases",
   },
   {
     title: "VSCode and Vim",
     description: "Official editor support for VSCode and Vim, with more coming soon.",
     icon: "vscode.svg",
-    href: "/tour/containers",
+    href: "/tour/extensions#official",
   },
   {
     title: "Online playground",
     description: "Create and share diagrams quickly by going to our hosted Playground.",
     icon: "playground.svg",
-    href: "/tour/containers",
+    href: "https://play.d2lang.com",
   },
   {
     title: "Containers",
@@ -45,32 +45,32 @@ const moreFeatures = [
     description:
       "Choose from 3 layout engines that uniquely handle different types of diagrams.",
     icon: "engines.svg",
-    href: "/tour/icons",
+    href: "/tour/layouts",
   },
   {
     title: "Use any font",
     description: "To customize the font, simply pass in your own .ttf files.",
     icon: "fonts.svg",
-    href: "/tour/icons",
+    href: "/tour/fonts",
   },
   {
     title: "Autoformat",
     description:
       "Don't sweat style decisions like indentations and spacing, D2 has a built-in autoformatter.",
     icon: "autoformat.svg",
-    href: "/tour/icons",
+    href: "/tour/auto-formatter",
   },
   {
     title: "Language API",
     description: "Programmatically create diagrams by calling D2's language API.",
     icon: "api.svg",
-    href: "/tour/icons",
+    href: "/tour/api",
   },
   {
     title: "Interactive tooltips and links",
     description: "Hover over shapes to learn more, or click through to another page.",
     icon: "tooltip.svg",
-    href: "/tour/icons",
+    href: "/tour/interactive",
   },
   {
     title: "Class shape",
