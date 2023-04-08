@@ -51,6 +51,7 @@ const sidebars = {
         },
         "tour/themes",
         "tour/style",
+        "tour/style-classes",
         "tour/dimensions",
         "tour/sketch",
         "tour/interactive",
