@@ -111,7 +111,7 @@ export default function Home() {
 
   return (
     <Layout
-      title="Directory"
+      title="Home"
       description={siteConfig.tagline}
       keywords={siteConfig.customFields.keywords}
       metaImage={useBaseUrl("img/opengraph.png")}
