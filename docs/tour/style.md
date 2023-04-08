@@ -30,6 +30,7 @@ brevity.
 - [font-color](#font-color)
 - [animated](#animated) (connection only)
 - [bold, italic, underline](#bold-italic-underline)
+- [text-transform](#text-transform)
 - [root](#root)
 
 ## Opacity
@@ -296,6 +297,27 @@ y.style.bold: false
 ```
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-text-decoration.svg2')}}></div>
+
+## Text transform
+
+`text-transform` changes the casing of labels.
+
+- `uppercase`
+- `lowercase`
+- `title`
+- `none` (used for negating caps lock that special themes may apply)
+
+```d2
+x -> y: hi {
+  style: {
+    text-transform: capitalize
+  }
+}
+x.style.text-transform: lowercase
+y.style.text-transform: uppercase
+```
+
+<div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-text-transform.svg2')}}></div>
 
 ## Root
 
