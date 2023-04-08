@@ -68,48 +68,6 @@ Currently cannot be applied to labels, which is why the above example nests an o
 This is coming soon.
 :::
 
-## How do I position text?
-
-Usually, longform text adds detail to a particular area of the diagram. You can specify
-what you want it to be near, with the `near` keyword.
-
-You can set `near` to either
-1. the ID of another shape
-2. a constant value
-
-:::info
-Setting to another shape currently only works on the TALA layout engine. We are working on
-shims to make this possible in other layout engines.
-
-Setting to a constant works on all layout engines.
-:::
-
-### Near another shape
-
-```d2
-aws: {
-  load_balancer -> api
-  api -> db
-}
-gcloud: {
-  auth -> db
-}
-
-gcloud -> aws
-
-explanation: |md
-  # Why do we use AWS?
-  - It has more uptime than GCloud
-  - We have free credits
-| {
-  near: aws
-}
-```
-
-Notice how the text is positioned near the `aws` node and not the `gcloud` node.
-
-<img src={require('@site/static/img/screenshots/text-2.png').default} alt="text near example" width="400"/>
-
 ## Code
 
 Change `md` to a programming language for code blocks

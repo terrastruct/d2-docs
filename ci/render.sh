@@ -29,7 +29,6 @@ main() {
   for ex in ./static/d2/*.d2; do
     ex=${ex#./static/d2/}
     ex=${ex%.d2}
-    echo $ex
     export JOBNAME=$ex
     if ! _runjob_filter; then
       continue
