@@ -110,9 +110,15 @@ It would do the opposite.
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-column-dominant.svg2')}}></div>
 
-## Complex example source code
+:::info
+These animations are also pure D2, so you can animate grid diagrams being built-up. Use
+the `animate-interval` flag with this
+[code](https://github.com/terrastruct/d2-docs/blob/f5c762223ce192338d9d7865df3ca8533d683cdc/static/bespoke-d2/grid-row-dominant.d2#L1).
+:::
 
-This is the text for the image at the top.
+## Source code
+
+This is the text for the image at the top of this page.
 
 ```d2
 grid-rows: 5
