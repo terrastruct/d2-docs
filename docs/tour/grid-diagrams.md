@@ -128,9 +128,16 @@ classes: {
       stroke-width: 10
     }
   }
+  block: {
+    style: {
+      text-transform: uppercase
+      font-color: white
+      fill: darkcyan
+      stroke: black
+    }
+  }
 }
 
-# Classes are introduced later
 flow1.class: white square
 flow2.class: white square
 flow3.class: white square
@@ -141,8 +148,9 @@ flow7.class: white square
 flow8.class: white square
 flow9.class: white square
 
-DAGGER ENGINE: {
+dagger engine: {
   width: 800
+  class: block
   style: {
     fill: beige
     stroke: darkcyan
@@ -151,8 +159,9 @@ DAGGER ENGINE: {
   }
 }
 
-ANY DOCKER COMPATIBLE RUNTIME: {
+any docker compatible runtime: {
   width: 800
+  class: block
   style: {
     fill: lightcyan
     stroke: darkcyan
@@ -162,7 +171,8 @@ ANY DOCKER COMPATIBLE RUNTIME: {
   icon: https://icons.terrastruct.com/dev%2Fdocker.svg
 }
 
-ANY CI: {
+any ci: {
+  class: block
   style: {
     fill: gold
     stroke: maroon
@@ -170,25 +180,8 @@ ANY CI: {
     stroke-width: 8
   }
 }
-
-WINDOWS.style: {
-  font-color: white
-  fill: darkcyan
-  stroke: black
-}
-LINUX.style: {
-  font-color: white
-  fill: darkcyan
-  stroke: black
-}
-MACOS.style: {
-  font-color: white
-  fill: darkcyan
-  stroke: black
-}
-KUBERNETES.style: {
-  font-color: white
-  fill: darkcyan
-  stroke: black
-}
+windows.class: block
+linux.class: block
+macos.class: block
+kubernetes.class: block
 ```
