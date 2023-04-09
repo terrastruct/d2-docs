@@ -34,7 +34,7 @@ const sidebars = {
         "tour/text",
         "tour/icons",
         "tour/sql-tables",
-        "tour/classes",
+        "tour/uml-classes",
         "tour/sequence-diagrams",
         "tour/grid-diagrams",
       ],
@@ -46,7 +46,7 @@ const sidebars = {
       items: [
         "tour/themes",
         "tour/style",
-        "tour/style-classes",
+        "tour/classes",
         "tour/dimensions",
         "tour/positions",
         "tour/sketch",
