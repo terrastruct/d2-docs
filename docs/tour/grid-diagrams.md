@@ -117,6 +117,15 @@ the `animate-interval` flag with this
 More on this later, in the [composition](/tour/composition) section.
 :::
 
+## Connections
+
+Connections for objects within grids are coming soon, but you can connect the grids
+themselves like regular objects in D2.
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-connected.svg2')}}></div>
+
+<!-- > Source code [here](). -->
+
 ## Source code
 
 This is the text for the image at the top of this page.
