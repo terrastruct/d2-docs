@@ -124,7 +124,7 @@ themselves like regular objects in D2.
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-connected.svg2')}}></div>
 
-<!-- > Source code [here](). -->
+> Source code [here](https://github.com/terrastruct/d2-docs/blob/eda2d8739ce21c656e7608be48cb9067df36eb53/static/d2/grid-connected.d2).
 
 ## Source code
 
