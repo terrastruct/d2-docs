@@ -87,12 +87,6 @@ html[data-theme="dark"] {
         }
       }
 
-      .icon-link--github {
-        @media (max-width: 996px) {
-          display: none !important;
-        }
-      }
-
       .icon-link {
         padding: 0;
         display: flex;
@@ -109,6 +103,10 @@ html[data-theme="dark"] {
         }
         &:active {
           background: var(--icon-link-active);
+        }
+
+        @media (max-width: 996px) {
+          display: none !important;
         }
       }
 
