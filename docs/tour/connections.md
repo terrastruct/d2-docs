@@ -142,6 +142,18 @@ autolayout for optimal positioning like regular labels do, so long arrowhead lab
 more likely to collide with surrounding objects.
 :::
 
+:::caution
+If the connection does not have an endpoint, arrowheads won't do anything.
+
+For example, the following will do nothing, because there is no source arrowhead.
+
+```d2
+x -> y: {
+  source-arrowhead.shape: diamond
+}
+```
+:::
+
 ## Referencing connections
 
 You can reference a connection by specifying the original ID followed by its index.
