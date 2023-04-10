@@ -21,6 +21,7 @@ html[data-theme="dark"] {
 
 .Directory {
   max-width: 78rem;
+  width: 100%;
   margin: 1rem auto;
   padding: 1rem;
 
@@ -77,6 +78,8 @@ html[data-theme="dark"] {
 
       > svg {
         height: 100%;
+        width: 100%;
+        box-sizing: border-box;
       }
     }
 

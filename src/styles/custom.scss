@@ -53,8 +53,8 @@ img {
 
 .embedSVG svg {
   max-height: 500px;
-  margin: 0 auto;
-  height: -webkit-fill-available;
+  height: 100%;
+  width: 100%;
 }
 
 .markdown {
@@ -127,5 +127,12 @@ img {
     [class^="admonitionIcon"] svg {
       fill: var(--alert-label-color) !important;
     }
+  }
+}
+
+// Menu
+.menu__list {
+  .icon-link {
+    margin-left: 1rem !important;
   }
 }

@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "docusaurus start --port 8888",
-    "serve": "docusaurus serve",
+    "serve": "docusaurus serve --port 8899",
     "prod": "docusaurus build",
     "clear": "docusaurus clear",
     "swizzle": "docusaurus swizzle",
