@@ -1,0 +1,21 @@
+.sidebarRSS {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  border: 1px solid var(--border);
+  background: transparent;
+  border-radius: 4px;
+  height: 1.5rem;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: var(--ifm-menu-link-padding-horizontal);
+  margin-top: var(--ifm-menu-link-padding-vertical);
+}
+
+.sidebarRSS:hover {
+  background: var(--button-hover);
+}
+
+.sidebarRSS svg {
+  filter: var(--icon-filter);
+}

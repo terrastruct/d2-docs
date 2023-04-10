@@ -3,7 +3,6 @@ html[data-theme="light"] {
   --feature-background: white;
   --image-background: white;
   --color-scheme: light;
-  --icon-filter: none;
   --feature-hover: var(--drop-shadow-medium);
 }
 
@@ -12,7 +11,7 @@ html[data-theme="dark"] {
   --feature-background: var(--steel-900);
   --image-background: #1e1e2e;
   --color-scheme: dark;
-  --icon-filter: var(--white-filter);
+
   --feature-hover: drop-shadow(1px 1px 8px rgba(255, 255, 255, 0.5));
 }
 
