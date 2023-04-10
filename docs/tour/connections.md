@@ -125,7 +125,6 @@ d -> a -> c
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/connections-5.svg2')}}></div>
 
-
 :::info Arrowhead options
 - `triangle` (default)
 - `arrow` (like triangle but pointier)
@@ -142,3 +141,17 @@ It's recommended the arrowhead labels be kept short. They do not go through
 autolayout for optimal positioning like regular labels do, so long arrowhead labels are
 more likely to collide with surrounding objects.
 :::
+
+## Referencing connections
+
+You can reference a connection by specifying the original ID followed by its index.
+
+```d2
+x -> y: hi
+x -> y: hello
+
+(x -> y)[0].style.stroke: red
+(x -> y)[1].style.stroke: blue
+```
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/connections-reference.svg2')}}></div>
