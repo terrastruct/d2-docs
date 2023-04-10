@@ -2,7 +2,6 @@ import React from "react";
 import { useThemeConfig } from "@docusaurus/theme-common";
 import { splitNavbarItems } from "@docusaurus/theme-common/internal";
 
-import NavbarSearch from "@theme/Navbar/Search";
 import SearchBar from "@theme/SearchBar";
 import NavbarItem from "@theme/NavbarItem";
 
@@ -40,9 +39,6 @@ function Footer() {
             </div>
           </div>
           <div className="Footer__Mobile--Bottom">
-            <NavbarSearch>
-              <SearchBar />
-            </NavbarSearch>
             <NavbarItem {...playground} className="Footer__Mobile--Playground" />
           </div>
         </div>
