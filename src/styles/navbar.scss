@@ -47,6 +47,19 @@ html[data-theme="dark"] {
       }
     }
 
+    .icon-link {
+      width: 1.75rem;
+      height: 1.75rem;
+      padding: 0;
+      margin: 0.5rem 0;
+
+      img {
+        width: 70%;
+        height: 70%;
+        margin: 0;
+      }
+    }
+
     &__items--right {
       display: flex;
       flex-grow: 1;
@@ -83,8 +96,6 @@ html[data-theme="dark"] {
       .icon-link {
         padding: 0;
         display: flex;
-        width: 1.75rem;
-        height: 1.75rem;
         border-radius: 4px;
         background: transparent;
         position: relative;
@@ -92,12 +103,6 @@ html[data-theme="dark"] {
         align-items: center;
 
         transition: opacity 0.2s ease-out;
-
-        img {
-          width: 70%;
-          height: 70%;
-          margin: 0;
-        }
 
         &:hover {
           background: var(--icon-link-hover);
