@@ -51,6 +51,17 @@ html[data-theme="dark"] {
     }
   }
 
+  &--Top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 996px) {
+      width: 100%;
+    }
+  }
+
   &__Mobile {
     display: none;
     width: 100%;
@@ -62,21 +73,13 @@ html[data-theme="dark"] {
       padding: 0;
     }
 
-    &--Top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-top: 1px solid var(--steel-700);
-      margin-top: 1rem;
-      padding-top: 0.5rem;
-    }
-
     &--Bottom {
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
       gap: 1rem;
-      margin: 1rem 0;
+      border-top: 1px solid var(--steel-700);
+      padding-top: 1rem;
 
       [class^="searchBox_"] {
         width: 100% !important;
@@ -106,6 +109,8 @@ html[data-theme="dark"] {
 
     &--Icons {
       display: flex;
+      align-items: center;
+      justify-content: flex-end;
       gap: 1rem;
 
       .navbar__item {
