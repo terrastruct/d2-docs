@@ -18,6 +18,8 @@ strong {
   --info-label: var(--blue-800);
   --warning-label: var(--warning-dark);
   --note-label: var(--steel-900);
+  --button-hover: var(--steel-100);
+  --icon-filter: none;
 }
 [data-theme="dark"] {
   --ifm-color-primary: var(--blue-400);
@@ -26,6 +28,8 @@ strong {
   --info-label: var(--blue-300);
   --warning-label: var(--warning-mid);
   --note-label: white;
+  --button-hover: var(--steel-800);
+  --icon-filter: var(--white-filter);
 
   .theme-admonition {
     background: var(--steel-800);
