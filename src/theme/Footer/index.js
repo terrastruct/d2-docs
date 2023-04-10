@@ -19,9 +19,9 @@ function Footer() {
       <img className="Footer__Logo" src="/img/d2_logo.png" />
       <div className="Footer__Right">
         <a className="Footer__Link" href="https://terrastruct.com">
-        <span>
-          Created by <img src="/img/terrastruct_logo.svg" />
-        </span>
+          <span>
+            Created by <img src="/img/terrastruct_logo.svg" />
+          </span>
         </a>
         |<span>© 2023 Terrastruct, Inc.</span>
       </div>
