@@ -21,7 +21,14 @@
   position: relative;
   max-width: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
+
+  @media (max-width: 996px) {
+    overflow: hidden;
+
+    .Copy {
+      visibility: visible;
+    }
+  }
 
   &:hover {
     .Copy {
@@ -69,7 +76,7 @@
 
   .Copy--Tooltip {
     position: absolute;
-    top: -41px;
+    top: -39px;
     white-space: nowrap;
     background: var(--steel-900);
     border-radius: 2px;
@@ -84,7 +91,7 @@
   .Copy--Arrow {
     visibility: hidden;
     position: absolute;
-    margin: -45px 0 0 0px;
+    margin: -47px 0 0 0px;
     width: 0;
     height: 0;
     border-left: 6px solid transparent;

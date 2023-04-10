@@ -121,8 +121,8 @@ export default function D2CodeBlock(props) {
   }
 
   return (
-    <div className={clsx("CodeBlock", props.containerClassName)}>
-      <div
+    <section className={clsx("CodeBlock", props.containerClassName)}>
+      <button
         className="Copy"
         onMouseLeave={() => setTooltipText("Copy to clipboard")}
         onClick={() => {
@@ -133,9 +133,9 @@ export default function D2CodeBlock(props) {
         <div className="Copy--Tooltip">{tooltipText}</div>
         <div className="Copy--Arrow"></div>
         {tooltipText === "Copied" ? <CheckCircle /> : <Clipboard />}
-      </div>
+      </button>
       <pre style={preStyle}>{children}</pre>
-    </div>
+    </section>
   );
 }
 
