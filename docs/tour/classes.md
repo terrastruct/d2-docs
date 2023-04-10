@@ -62,3 +62,10 @@ x.style.fill: orange
 Accepting an array of multiple `class` values is coming soon:
 [https://github.com/terrastruct/d2/issues/1135](https://github.com/terrastruct/d2/issues/1135)
 :::
+
+## Advanced: Using classes as tags
+
+If you want to post-process D2 diagrams, you can also use classes to arbitrarily tag
+objects. Any `class` you apply is written into the SVG element as a `class` attribute. So
+for example, you can then apply custom CSS like `.stuff { ... }` (or use Javascript for
+  onclick handlers and such) on a web page that D2 SVG is embedded in.
