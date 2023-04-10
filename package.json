@@ -2,8 +2,9 @@
   "private": true,
   "scripts": {
     "dev": "docusaurus start --port 8888",
+    "prod": "yarn run build && yarn run serve",
     "serve": "docusaurus serve --port 8899",
-    "prod": "docusaurus build",
+    "build": "docusaurus build",
     "clear": "docusaurus clear",
     "swizzle": "docusaurus swizzle",
     "write-translations": "docusaurus write-translations"
