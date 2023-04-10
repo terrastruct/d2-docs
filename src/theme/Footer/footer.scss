@@ -7,7 +7,7 @@ html[data-theme="dark"] {
 }
 
 .Footer {
-  height: 12rem;
+  height: 6rem;
   background: var(--footer-bg);
 
   display: flex;
@@ -21,8 +21,17 @@ html[data-theme="dark"] {
     margin: 0;
   }
 
+  &__Link {
+    color: white;
+  }
+
+  &__Link:hover {
+    color: white;
+    text-decoration: none;
+  }
+
   &__Logo {
-    width: 6rem;
+    width: 5rem;
   }
 
   &__Right {
