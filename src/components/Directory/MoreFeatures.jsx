@@ -115,7 +115,7 @@ const MoreFeatures = () => {
   return (
     <>
       <Features features={moreFeatures} />
-      <div className="Seperator" />
+      <div className="Separator" />
     </>
   );
 };
