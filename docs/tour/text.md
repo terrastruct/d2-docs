@@ -25,9 +25,9 @@ Chinese, Japanese, Korean, even emojis!
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/unicode.svg2')}}></div>
 
-## Latex
+## LaTeX
 
-You can use `latex` or `tex` to specify a Latex language block.
+You can use `latex` or `tex` to specify a LaTeX language block.
 
 ```d2
 plankton -> formula: will steal
@@ -40,20 +40,20 @@ formula: {
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/text-2.svg2')}}></div>
 
-A few things to note about Latex blocks:
+A few things to note about LaTeX blocks:
 
 - You must escape `\`, as these are escape characters. Note the usage of `\\` in the above
   example.
-- Latex blocks do not respect `font-size` styling. Instead, you must style these inside
+- LaTeX blocks do not respect `font-size` styling. Instead, you must style these inside
   the Latex script itself with commands:
   - `\tiny{ }`
   - `\small{ }`
   - `\normal{ }`
   - `\large{ }`
   - `\huge{ }`
-- Under the hood, this is using [MathJax](https://www.mathjax.org/). It is not full Latex
-  (full Latex includes a document layout engine). D2's Latex blocks are meant to display
-  mathematical notation, but not support the format of existing Latex documents. See
+- Under the hood, this is using [MathJax](https://www.mathjax.org/). It is not full LaTeX
+  (full LaTeX includes a document layout engine). D2's LaTeX blocks are meant to display
+  mathematical notation, but not support the format of existing LaTeX documents. See
   [here](https://docs.mathjax.org/en/latest/input/tex/macros/index.html) for a list of all
   supported commands.
 
@@ -138,9 +138,9 @@ my_code: |`ts
 `|
 ```
 
-## Advanced: Latex plugins
+## Advanced: LaTeX plugins
 
-D2 includes the following Latex plugins:
+D2 includes the following LaTeX plugins:
 
 ```d2
 amscd plugin: {
@@ -175,7 +175,7 @@ gensymb plugin: {
 
 mhchem plugin: {
   ex: |tex
-    \ce{SO4^2- + Ba^2+ -> BaSO4 v}
+    \\ce{SO4^2- + Ba^2+ -> BaSO4 v}
   |
 }
 

@@ -13,7 +13,7 @@ bob -> alice: The ability to play bridge or\ngolf as if they were games.
 ## Rules
 
 Unlike other tools, there is no special syntax to learn for sequence diagrams. The rules
-are also almost exactly the same as everywhere else in D2, with two noteable differences.
+are also almost exactly the same as everywhere else in D2, with two notable differences.
 
 ### Scoping
 

@@ -15,9 +15,9 @@ For example, this is a composition of 2 boards, exported as an animated SVG:
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/animated.svg2')}}></div>
 
 The way to define another board in a D2 diagram is to use 1 of 3 keywords. Each of these
-declare boards with different inheritence rules.
+declare boards with different inheritance rules.
 
-| Keyword   | Inheritence                                       |
+| Keyword   | Inheritance                                       |
 |-----------|---------------------------------------------------|
 | `layers`    | Boards which do not inherit. They are a new base. |
 | `scenarios` | Boards which inherit from the base layer.         |
