@@ -33,3 +33,4 @@ issue and we're happy to include your's!
 - D2 Snippets (for text editors): [https://github.com/Paracelsus-Rose/D2-Language-Code-Snippets](https://github.com/Paracelsus-Rose/D2-Language-Code-Snippets)
 - MongoDB to D2: [https://github.com/novuhq/mongo-to-D2](https://github.com/novuhq/mongo-to-D2)
 - Pandoc filter: [https://github.com/ram02z/d2-filter](https://github.com/ram02z/d2-filter)
+- MySQL to D2: [https://github.com/JDOsborne1/db_to_d2](https://github.com/JDOsborne1/db_to_d2)
