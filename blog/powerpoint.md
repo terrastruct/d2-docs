@@ -3,7 +3,7 @@ title: Text to PowerPoint
 description: Creating PowerPoint presentations from text with diagrams
 slug: powerpoint
 tags: [powerpoint, show-and-tell]
-image: https://raw.githubusercontent.com/terrastruct/d2-docs/master/static/img/blog/sketch.png
+image: https://raw.githubusercontent.com/terrastruct/d2-docs/master/static/img/screenshots/wcc_pptx.png
 hide_table_of_contents: false
 ---
 
