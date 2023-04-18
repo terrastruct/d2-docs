@@ -21,6 +21,9 @@ _bespoke() {
 
   sh_c d2 --animate-interval=400 -c --pad 0 ./static/bespoke-d2/grid-row-dominant.d2 ./static/img/generated/grid-row-dominant.svg2
   sh_c d2 --animate-interval=400 -c --pad 0 ./static/bespoke-d2/grid-column-dominant.d2 ./static/img/generated/grid-column-dominant.svg2
+
+  sh_c d2 ./static/bespoke-d2/cult.d2 ./static/img/generated/cult.pptx
+  sh_c d2 ./static/bespoke-d2/wcc.d2 ./static/img/generated/wcc.pptx
 }
 
 main() {
