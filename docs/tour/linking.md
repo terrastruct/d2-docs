@@ -34,7 +34,7 @@ journey: {
 
 layers: {
   rivendell: {
-    elvs: {
+    elves: {
       elrond -> frodo: gives advice
     }
 
@@ -55,3 +55,8 @@ layers: {
 
 <embed src={require('@site/static/img/generated/lotr.pdf').default} width="100%" height="800"
  type="application/pdf" />
+
+## Backlinks
+
+Notice how the navigation bar at the top is clickable. You can easiliy return to the root
+or any ancestor page by clicking on the text.

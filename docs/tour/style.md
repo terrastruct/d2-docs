@@ -327,6 +327,7 @@ color, use `style.fill`.
 Currently the set of supported keywords are:
 
 - `fill`: diagram background color
+- `fill-pattern`: background fill pattern
 - `stroke`: frame around the diagram
 - `stroke-width`
 - `stroke-dash`
