@@ -117,6 +117,61 @@ the `animate-interval` flag with this
 More on this later, in the [composition](/tour/composition) section.
 :::
 
+## Gap size
+
+You can control the gap size of the grid with 3 keywords:
+- `vertical-gap`
+- `horizontal-gap`
+- `grid-gap`
+
+Setting `grid-gap` is equivalent to setting both `vertical-gap` and `horizontal-gap`.
+
+`vertical-gap` and `horizontal-gap` can override `grid-gap`.
+
+`grid-gap: 0` in particular can create some interesting constructions:
+
+### Like this map of Japan
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/japan.svg2')}}></div>
+
+> [D2 source](https://github.com/terrastruct/d2/blob/master/docs/examples/japan-grid/japan.d2)
+
+### Or a table of data
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/table.svg2')}}></div>
+
+```d2
+grid-rows: 2
+grid-columns: 4
+grid-gap: 0
+
+classes: {
+  header: {
+    style.underline: true
+  }
+}
+
+Element.class: header
+Atomic Number.class: header
+Atomic Mass.class: header
+Melting Point.class: header
+
+Hydrogen
+1
+"1.008"
+"-259.16"
+
+Carbon
+6
+"12.011"
+3500
+
+Oxygen
+8
+"15.999"
+"-218.79"
+```
+
 ## Connections
 
 Connections for objects within grids are coming soon, but you can connect the grids
