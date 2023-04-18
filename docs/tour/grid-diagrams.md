@@ -141,6 +141,7 @@ Setting `grid-gap` is equivalent to setting both `vertical-gap` and `horizontal-
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/table.svg2')}}></div>
 
 ```d2
+# Specified so that objects are written in row-dominant order
 grid-rows: 2
 grid-columns: 4
 grid-gap: 0
