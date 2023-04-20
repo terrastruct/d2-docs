@@ -67,28 +67,31 @@ legend: {
 ### Longform description or explanation
 
 ```d2
-direction: right
-
-x -> y: {
-  style.stroke: green
+explanation: |md
+  # LLMs
+  The Large Language Model (LLM) is a powerful AI\
+    system that learns from vast amounts of text data.\
+  By analyzing patterns and structures in language,\
+  it gains an understanding of grammar, facts,\
+  and even some reasoning abilities. As users input text,\
+  the LLM predicts the most likely next words or phrases\
+  to create coherent responses. The model\
+  continuously fine-tunes its output, considering both the\
+  user's input and its own vast knowledge base.\
+  This cutting-edge technology enables LLM to generate human-like text,\
+  making it a valuable tool for various applications.
+| {
+  near: center-left
 }
 
-y -> z: {
-  style.stroke: red
-}
+ML Platform -> Pre-trained models
+ML Platform -> Model registry
+ML Platform -> Compiler
+ML Platform -> Validation
+ML Platform -> Auditing
 
-legend: {
-  near: bottom-center
-  color1: foo {
-    shape: text
-    style.font-color: green
-  }
-
-  color2: bar {
-    shape: text
-    style.font-color: red
-  }
-}
+Model registry -> Server.Batch Predictor
+Server.Online Model Server
 ```
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/near-explanation.svg2')}}></div>
