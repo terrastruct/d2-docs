@@ -89,10 +89,6 @@ export default function Home() {
             Create beautiful diagrams in minutes. Simple syntax. Endlessly customizable.
             D2 is the fastest and easiest way to get a mental model from your head onto
             the screen, then make edits with your team.
-            <br />
-            <br />
-            For example, it takes the text below, and turns it into the image on the
-            right.
           </div>
           <D2CodeBlock
             className="language-d2"
