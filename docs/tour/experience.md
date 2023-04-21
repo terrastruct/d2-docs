@@ -16,3 +16,8 @@ valuable documentation. Every drag and drop shouldn’t require planning, and up
 shouldn’t be a frustrating exercise in moving things around and resizing to make room for
 the new piece. Declarative Diagramming removes that friction.
 
+Before Hashicorp introduced Terraform to let engineers write infrastructure as text, they
+were clicking around AWS and Google Cloud consoles to configure their infrastructure.
+Nowadays, that's just unprofessional. Where's the review process, the rollback steps, the
+history and version control? It's hard to believe that the future of visual documentation
+in companies around the world will predominantly be made with drag-and-drop design tools.
