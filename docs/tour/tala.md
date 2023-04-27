@@ -27,10 +27,7 @@ open-source D2, and proprietary, closed-source TALA. You can download it here:
 ## Cons
 
 - Not free.
-- Much slower than the other layout engines, due to fundamental algorithm differences
-  (many heuristic-searching iterations converging on final layout) and lack of constraint
-  like hierarchy.
-- Relatively new. ~1 year in production compared to the 10+ years that alternative layout
+- Relatively new. ~2 years in production compared to the 10+ years that alternative layout
   engines have.
 - More random than other layout engines. A small change to a label can cascade into an
   entirely different layout.
