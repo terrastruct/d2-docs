@@ -29,6 +29,23 @@ e.g. `d2 layout dagre`.
 To specify the layout used, you can either set the flag `--layout=dagre` or set it as an
 environment variable, `$D2_LAYOUT=dagre`.
 
+### Layout-specific functionality
+
+Some keywords and functionality are only available for certain layout engines. We authored
+and maintain TALA, so it is the only one we have full control over. We write shims for
+Dagre and ELK, but some things are fundamental to the layout engines, and the only way to
+support everything we want to do on those is to fork (which we may eventually do).
+
+These are mentioned in other parts of the doc and aggregated here:
+
+- `near` set to another object. `near` can be set to constants for all layout engines, but
+  only TALA can use it to set to objects.
+- `width` and `height` on containers. TALA will add this soon, but currently it is only in
+  ELK. Note that these keywords work on non-containers in all layout engines.
+- `top` and `left` to lock positions only work in TALA.
+- Connections from ancestors to descendants (e.g. a container to its child) do not work in
+  Dagre.
+
 ## Direction
 
 Set `direction` to one of the following to influence an explicit direction your diagram
