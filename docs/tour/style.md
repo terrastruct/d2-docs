@@ -167,6 +167,14 @@ only applies to layout engines that use corners (e.g. ELK), and of course, only 
 on connections whose routes have corners.
 :::
 
+Specifying a very high value creates a "pill" effect.
+
+```d2
+tylenol.style.border-radius: 999
+```
+
+<div style={{width: "200px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/pill.svg2')}}></div>
+
 ## Shadow
 
 `true` or `false`.
