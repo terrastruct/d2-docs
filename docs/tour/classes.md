@@ -58,10 +58,46 @@ x.style.fill: orange
 
 <div style={{width: 100, margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/style-classes-2.svg2')}}></div>
 
-:::info
-Accepting an array of multiple `class` values is coming soon:
-[https://github.com/terrastruct/d2/issues/1135](https://github.com/terrastruct/d2/issues/1135)
-:::
+## Multiple classes
+
+You may use arrays for the value as well to apply multiple classes.
+
+```d2
+classes: {
+  d2: {
+    label: ""
+    icon: https://play.d2lang.com/assets/icons/d2-logo.svg
+  }
+  sphere: {
+    shape: circle
+    style.stroke-width: 0
+  }
+}
+
+logo.class: [d2; sphere]
+```
+
+<div style={{width: 200, margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/multiple-classes.svg2')}}></div>
+
+### Order matters
+
+When multiple classes are given, they are applied left-to-right.
+
+```d2
+classes: {
+  uno: {
+    label: 1
+  }
+  dos: {
+    label: 2
+  }
+}
+
+x.class: [uno; dos]
+y.class: [dos; uno]
+```
+
+<div style={{width: 200, margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/ordered-classes.svg2')}}></div>
 
 ## Advanced: Using classes as tags
 
