@@ -13,7 +13,7 @@ need to create a Terrastruct account (paid) to use the D2 app for Slack**. Terra
 collect any data from Slack.
 
 <a
-href="https://slack.com/oauth/v2/authorize?scope=channels%3Ajoin%2Cchat%3Awrite%2Cchat%3Awrite.public%2Ccommands%2Cteam%3Aread%2Cusers%3Aread&amp;user_scope=&amp;redirect_uri=https%3A%2F%2Fapp.terrastruct.com%2Fslack&amp;client_id=1871375120724.4482998001377"
+href="https://slack.com/oauth/v2/authorize?scope=commands%2Cteam%3Aread%2Cusers%3Aread&amp;user_scope=&amp;redirect_uri=https%3A%2F%2Fapp.terrastruct.com%2Fslack&amp;client_id=1871375120724.4482998001377"
 style={{
     alignItems: "center",
     color: "#fff",
