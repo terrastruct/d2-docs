@@ -71,7 +71,6 @@ const sidebars = {
       label: "Composition",
       link: { type: "doc", id: "tour/composition" },
       items: [
-        "tour/composition",
         {
           type: "category",
           label: "Board types",
@@ -80,6 +79,19 @@ const sidebars = {
         },
         "tour/linking",
         "tour/composition-formats",
+      ],
+    },
+    {
+      type: "category",
+      label: "Imports",
+      link: { type: "doc", id: "tour/imports" },
+      items: [
+        {
+          type: "category",
+          label: "Use cases",
+          link: { type: "doc", id: "tour/imports-use-cases" },
+          items: ["tour/model-view"],
+        },
       ],
     },
     {
