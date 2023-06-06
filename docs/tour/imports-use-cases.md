@@ -26,3 +26,5 @@ files can also fulfill useful principles for organizations:
   changes.
 - **Reusability**. Your organization can define one `color-classes.d2`, and that can be
   imported and used across all diagrams for a consistent diagram style.
+- **Don't repeat yourself**. When multiple files import an object, you only have to make
+  changes to that one object to update it everywhere else.
