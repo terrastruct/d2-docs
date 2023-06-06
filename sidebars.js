@@ -90,7 +90,11 @@ const sidebars = {
           type: "category",
           label: "Use cases",
           link: { type: "doc", id: "tour/imports-use-cases" },
-          items: ["tour/model-view"],
+          items: [
+            "tour/model-view",
+            "tour/modular-classes",
+            "tour/nested-composition",
+          ],
         },
       ],
     },
