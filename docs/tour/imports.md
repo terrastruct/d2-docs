@@ -108,3 +108,28 @@ employees: {
 ### Render of donut-flowchart.d2
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/imports-targeted.svg2')}}></div>
+
+## Imports are relative to that file
+
+Not to the executing path.
+
+Consider that your working directory is `/Users/You/dev`. Your D2 files:
+
+- `/Users/you/dev/d2-stuff/x.d2`
+```d2
+y: @../y.d2
+```
+
+The above import will search directory `/Users/you/dev/` for `y.d2`, not `/Users/You`.
+
+:::info
+Unnecessary relative imports are removed by autoformat.
+
+`@./x` will be autoformatted to `@x`.
+:::
+
+:::caution
+Absolute imports are not currently available. We are considering designs to set a root, so
+that you can import like `@~/my/d2/x.d2`. If you have a use case for absolute imports,
+please file an issue (or upvote an existing one) on GitHub.
+:::
