@@ -41,10 +41,12 @@ classes: {
 ```d2
 ...@classes.d2
 user.class: person
-error.class: [base, error]
-modal.class: [base, large]
+error.class: [base; error]
+modal.class: [base; large]
 
 user -> app.signup: click
 app.signup -> error: invalid fields
 app.signup -> modal: continue registration
 ```
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/imports-classes-main.svg2')}}></div>

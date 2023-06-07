@@ -49,3 +49,6 @@ users: {
 #   ...
 # }
 ```
+
+<embed src={require('@site/static/img/generated/imports-nested.pdf').default} width="100%" height="800"
+ type="application/pdf" />

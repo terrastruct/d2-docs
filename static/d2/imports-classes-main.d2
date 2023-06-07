@@ -1,0 +1,8 @@
+...@imports-classes.d2
+user.class: person
+error.class: [base; error]
+modal.class: [base; large]
+
+user -> app.signup: click
+app.signup -> error: invalid fields
+app.signup -> modal: continue registration

@@ -4,9 +4,11 @@ pagination_next: tour/imports-use-cases
 
 # Imports
 
-There are two ways to import. These two examples both have the same result.
+There are two ways to import. These two examples both have the same result:
 
-<!-- <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/imports-normal.svg2')}}></div> -->
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/imports-normal.svg2')}}></div>
+
+> Result of running both types of imports below
 
 In the next section, we'll see examples of common import use cases.
 
@@ -22,9 +24,12 @@ x: {
 ```
 - `y.d2`
 ```
-x: @x.d2
-x -> y
+a: @x.d2
+a -> b
 ```
+
+This is the equivalent of giving the entire file of `x` as a map that `a` sets as its
+value.
 
 ### 2. Spread import
 
@@ -36,11 +41,17 @@ x: {
 ```
 - `y.d2`
 ```
-x: {
+a: {
   ...@x.d2
 }
-x -> y
+a -> b
 ```
+
+This tells D2 to take the contents of the file `x` and insert it into the map.
+
+:::info
+Spread imports only work within maps. Something like `a: ...@x.d2` is an invalid usage.
+:::
 
 ## Omit the extension
 
@@ -93,3 +104,7 @@ employees: {
   }
 }
 ```
+
+### Render of donut-flowchart.d2
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/imports-targeted.svg2')}}></div>
