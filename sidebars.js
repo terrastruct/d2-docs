@@ -58,7 +58,8 @@ const sidebars = {
       type: "category",
       label: "Layouts",
       link: { type: "doc", id: "tour/layouts" },
-      items: ["tour/layouts",
+      items: [
+        "tour/layouts",
         {
           type: "category",
           label: "Layout engines",
@@ -105,7 +106,11 @@ const sidebars = {
               type: "category",
               label: "Patterns",
               link: { type: "doc", id: "tour/model-view" },
-              items: ["tour/model-view", "tour/modular-classes", "tour/nested-composition"],
+              items: [
+                "tour/model-view",
+                "tour/modular-classes",
+                "tour/nested-composition",
+              ],
             },
             {
               type: "category",
@@ -121,14 +126,21 @@ const sidebars = {
       type: "category",
       label: "Extensions",
       link: { type: "doc", id: "tour/extensions" },
-      items: ["tour/extensions",
+      items: [
+        "tour/extensions",
         {
           type: "category",
           label: "Official",
           link: { type: "doc", id: "tour/vscode" },
-          items: ["tour/vscode", "tour/vim", "tour/obsidian", "tour/slack", "tour/discord"],
+          items: [
+            "tour/vscode",
+            "tour/vim",
+            "tour/obsidian",
+            "tour/slack",
+            "tour/discord",
+          ],
         },
-        ],
+      ],
     },
     {
       type: "category",
