@@ -42,7 +42,7 @@ classes: {
 ...@classes.d2
 user.class: person
 error.class: [base; error]
-modal.class: [base; large]
+modal.class: [base; med]
 
 user -> app.signup: click
 app.signup -> error: invalid fields

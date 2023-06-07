@@ -1,4 +1,8 @@
-# Use cases
+---
+pagination_next: tour/model-view
+---
+
+# Overview
 
 The following are examples of some popular use cases for imports. Fundamentally, D2
 imports behave just like dependencies in other programming languages, so it is flexible
@@ -28,3 +32,11 @@ files can also fulfill useful principles for organizations:
   imported and used across all diagrams for a consistent diagram style.
 - **Don't repeat yourself**. When multiple files import an object, you only have to make
   changes to that one object to update it everywhere else.
+
+## More Examples
+
+Some more creative, practical examples of using imports.
+
+- [Version control](./version-control)
+<!-- - [Template](./template) -->
+<!-- - [Data analysis](./template) -->

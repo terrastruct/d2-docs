@@ -2,7 +2,7 @@
 pagination_next: tour/imports-use-cases
 ---
 
-# Imports
+# Syntax
 
 There are two ways to import. These two examples both have the same result:
 

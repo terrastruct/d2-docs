@@ -1,4 +1,8 @@
-# Extensions
+---
+pagination_next: tour/vscode
+---
+
+# Overview
 
 ## Official
 

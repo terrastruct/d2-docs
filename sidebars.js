@@ -58,7 +58,14 @@ const sidebars = {
       type: "category",
       label: "Layouts",
       link: { type: "doc", id: "tour/layouts" },
-      items: ["tour/dagre", "tour/elk", "tour/tala"],
+      items: ["tour/layouts",
+        {
+          type: "category",
+          label: "Layout engines",
+          link: { type: "doc", id: "tour/dagre" },
+          items: ["tour/dagre", "tour/elk", "tour/tala"],
+        },
+      ],
     },
     {
       type: "category",
@@ -71,6 +78,7 @@ const sidebars = {
       label: "Composition",
       link: { type: "doc", id: "tour/composition" },
       items: [
+        "tour/composition",
         {
           type: "category",
           label: "Board types",
@@ -86,11 +94,26 @@ const sidebars = {
       label: "Imports",
       link: { type: "doc", id: "tour/imports" },
       items: [
+        "tour/imports",
         {
           type: "category",
           label: "Use cases",
           link: { type: "doc", id: "tour/imports-use-cases" },
-          items: ["tour/model-view", "tour/modular-classes", "tour/nested-composition"],
+          items: [
+            "tour/imports-use-cases",
+            {
+              type: "category",
+              label: "Patterns",
+              link: { type: "doc", id: "tour/model-view" },
+              items: ["tour/model-view", "tour/modular-classes", "tour/nested-composition"],
+            },
+            {
+              type: "category",
+              label: "More examples",
+              link: { type: "doc", id: "tour/version-control" },
+              items: ["tour/version-control"],
+            },
+          ],
         },
       ],
     },
@@ -98,7 +121,14 @@ const sidebars = {
       type: "category",
       label: "Extensions",
       link: { type: "doc", id: "tour/extensions" },
-      items: ["tour/vscode", "tour/vim", "tour/obsidian", "tour/slack", "tour/discord"],
+      items: ["tour/extensions",
+        {
+          type: "category",
+          label: "Official",
+          link: { type: "doc", id: "tour/vscode" },
+          items: ["tour/vscode", "tour/vim", "tour/obsidian", "tour/slack", "tour/discord"],
+        },
+        ],
     },
     {
       type: "category",

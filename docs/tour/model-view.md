@@ -1,3 +1,7 @@
+---
+pagination_next: tour/modular-classes
+---
+
 # Model-view
 
 A popular pattern defines your models once, and then reuses it across a number of

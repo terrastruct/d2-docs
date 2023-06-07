@@ -2,7 +2,7 @@
 pagination_next: tour/themes
 ---
 
-# Layouts
+# Overview
 
 D2 supports using a variety of different layout engines. The choice of layout engines can
 significantly influence your overall diagram. Each layout also has varying degrees of

@@ -1,4 +1,4 @@
-# API
+# D2 Oracle
 
 D2 has an API built on top of its AST for **programmatically creating diagrams in Go**.
 This package is `d2/d2oracle`.
