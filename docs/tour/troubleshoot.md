@@ -55,6 +55,16 @@ have HTML rendering capabilities. The vast majority of SVG viewing is, but if yo
 to use a pure SVG editor on D2 diagrams that don't have such capabilities (e.g. Adobe
 Illustrator), it won't render correctly there.
 
+## My SVG isn't interactive when I embed into HTML
+
+There's a few different ways to embed SVG into HTML, each with tradeoffs. If you use plain
+`<img>` tags, interactivity is blocked. Here are two good resources to learn more:
+
+1. tldr:
+   [https://docs.asciidoctor.org/asciidoc/latest/macros/image-svg/#options-for-svg-images](https://docs.asciidoctor.org/asciidoc/latest/macros/image-svg/#options-for-svg-images)
+2. The official W3 spec:
+   [https://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html#SVG_in_HTML](https://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html#SVG_in_HTML)
+
 ## Non-ASCII text breaks stuff
 
 D2 works with any language, but sometimes non-ASCII characters look like reserved characters when they're not.
