@@ -115,8 +115,8 @@ const sidebars = {
             {
               type: "category",
               label: "More examples",
-              link: { type: "doc", id: "tour/version-control" },
-              items: ["tour/version-control"],
+              link: { type: "doc", id: "tour/version-visualization" },
+              items: ["tour/version-visualization"],
             },
           ],
         },

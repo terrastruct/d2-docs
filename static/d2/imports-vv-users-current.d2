@@ -1,0 +1,18 @@
+users: {
+  shape: sql_table
+  id: int {constraint: primary_key}
+  email: int {constraint: foreign_key}
+  name: string
+  password: text
+  created_at: timestamp
+  last_updated: timestamp
+}
+
+emails: {
+  shape: sql_table
+  id: int {constraint: [primary_key; unique]}
+  local: string
+  domain: string
+  verified: boolean
+}
+users.email -> emails.id

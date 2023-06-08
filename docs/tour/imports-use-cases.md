@@ -37,6 +37,6 @@ files can also fulfill useful principles for organizations:
 
 Some more creative, practical examples of using imports.
 
-- [Version control](./version-control)
+- [Version visualization](./version-visualization)
 <!-- - [Template](./template) -->
 <!-- - [Data analysis](./template) -->

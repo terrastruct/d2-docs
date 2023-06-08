@@ -96,6 +96,7 @@ management: {
     label: Jan Donutbaker
   }
 }
+
 # Notice how these do not appear in the rendered diagram
 employees: {
   toby: {
@@ -104,6 +105,13 @@ employees: {
   }
 }
 ```
+
+:::info
+Since `.` is used for targeting, if you want to import from a file with `.` in its name,
+use string quotes.
+
+`@"schema-v0.1.2"`
+:::
 
 ### Render of donut-flowchart.d2
 
