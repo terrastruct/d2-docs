@@ -35,8 +35,8 @@ files can also fulfill useful principles for organizations:
 
 ## More Examples
 
-Some more creative, practical examples of using imports.
+Some more creative, practical examples of using imports that mix and match the above
+patterns and principles.
 
 - [Version visualization](./version-visualization)
 - [Template](./imported-template)
-<!-- - [Data analysis](./template) -->
