@@ -31,6 +31,14 @@ shorten:
 
 But you can set any constraint you'd like. It just won't be shortened if unrecognized.
 
+:::info
+You can also specify multiple constraints with an array.
+
+```d2
+x: int { constraint: [primary_key; unique] }
+```
+:::
+
 ## Foreign Keys
 
 Here's an example of how you'd define a foreign key connection between two tables:
@@ -57,6 +65,11 @@ objects.disk -> disks.id
 
 If you hover over the primary key or foreign key with your cursor, you'll notice that the
 corresponding key is highlighted.
+
+:::info
+When rendered with the [TALA layout engine](/tour/tala), connections point to the exact
+row.
+:::
 
 ## Example
 
