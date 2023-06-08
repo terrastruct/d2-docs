@@ -6,6 +6,7 @@
 * [I can't use reserved keywords](#i-cant-use-reserved-keywords)
 * [My diagram is breaking with HTML in Markdown](#my-diagram-is-breaking-with-html-in-markdown)
 * [Markdown SVGs won't render in certain SVG viewers](#markdown-svgs-wont-render-in-certain-svg-viewers)
+* [My SVG isn't interactive when I embed into HTML](#my-svg-isnt-interactive-when-i-embed-into-html)
 * [Non-ASCII text breaks stuff](#non-ascii-text-breaks-stuff)
 
 ## It won't compile a specific label or value
