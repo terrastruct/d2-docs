@@ -2,8 +2,8 @@
 
 ## History
 
-Consider that you want to understand how the schema of a system has evolved over time. As
-long as the diagram is modularized with imports, such a visualization is easy to whip up.
+You want to understand how the schema of a system has evolved over time. As long as the
+diagram is modularized with imports, such a visualization is easy to whip up.
 
 - `history.d2`
 ```d2
@@ -51,9 +51,9 @@ mv users.d2 users-v0.1.d2
 
 ## Compare
 
-Consider you're a manager at Apple who has two teams secretly working on the same product
-for multiple years. After years of iterating in their silos, you form a committee to
-compare the two results. The evaluation starts by comparing their design decisions in an
+You're a manager at Apple who has two teams secretly working on the same product for
+multiple years. After years of iterating in their silos, you form a committee to compare
+the two results. The evaluation starts by comparing their design decisions in an
 overarching diagram projected in a dark room behind a closed door.
 
 - `compare.d2`
