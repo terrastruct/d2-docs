@@ -53,3 +53,14 @@ Default, zero-customization D2 should produce good diagrams. That requires being
 opinionated on what a good default should be. For example, D2 ships with a default theme.
 Instead of keeping things open-ended with monochrome shapes, pleasant colors are the
 default.
+
+## Optimized for desktops and servers
+
+D2 has a robust CLI with a built-in watch mode, maintained `man` page, and allows reading
+from stdin and writing to stdout. Images and fonts are by default embedded into the
+diagram so that exported diagrams are standalone -- they'll look the same everywhere. D2
+supports a wide variety of formats like PPT and GIF. It allows imports, such that you can
+modularize your diagram into multiple files. There's a language API to programmatically
+edit and write D2. All of these are antithetical to a web library for browser rendering.
+D2 intends to ship and maintain a web library for that purpose, but it'll be trimmed down
+from the full feature set and secondary in priority.
