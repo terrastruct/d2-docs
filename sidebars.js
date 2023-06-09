@@ -58,7 +58,15 @@ const sidebars = {
       type: "category",
       label: "Layouts",
       link: { type: "doc", id: "tour/layouts" },
-      items: ["tour/dagre", "tour/elk", "tour/tala"],
+      items: [
+        "tour/layouts",
+        {
+          type: "category",
+          label: "Layout engines",
+          link: { type: "doc", id: "tour/dagre" },
+          items: ["tour/dagre", "tour/elk", "tour/tala"],
+        },
+      ],
     },
     {
       type: "category",
@@ -84,9 +92,55 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Imports",
+      link: { type: "doc", id: "tour/imports" },
+      items: [
+        "tour/imports",
+        {
+          type: "category",
+          label: "Use cases",
+          link: { type: "doc", id: "tour/imports-use-cases" },
+          items: [
+            "tour/imports-use-cases",
+            {
+              type: "category",
+              label: "Patterns",
+              link: { type: "doc", id: "tour/model-view" },
+              items: [
+                "tour/model-view",
+                "tour/modular-classes",
+                "tour/nested-composition",
+              ],
+            },
+            {
+              type: "category",
+              label: "More examples",
+              link: { type: "doc", id: "tour/version-visualization" },
+              items: ["tour/version-visualization", "tour/imported-template"],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Extensions",
       link: { type: "doc", id: "tour/extensions" },
-      items: ["tour/vscode", "tour/vim", "tour/obsidian", "tour/slack", "tour/discord"],
+      items: [
+        "tour/extensions",
+        {
+          type: "category",
+          label: "Official",
+          link: { type: "doc", id: "tour/vscode" },
+          items: [
+            "tour/vscode",
+            "tour/vim",
+            "tour/obsidian",
+            "tour/slack",
+            "tour/discord",
+          ],
+        },
+      ],
     },
     {
       type: "category",
@@ -106,6 +160,7 @@ const sidebars = {
       link: { type: "doc", id: "releases/intro" },
       items: [
         "releases/intro",
+        "releases/0.5.0",
         "releases/0.4.2",
         "releases/0.4.1",
         "releases/0.4.0",

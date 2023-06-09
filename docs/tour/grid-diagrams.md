@@ -182,6 +182,26 @@ themselves like regular objects in D2.
 
 > Source code [here](https://github.com/terrastruct/d2-docs/blob/eda2d8739ce21c656e7608be48cb9067df36eb53/static/d2/grid-connected.d2).
 
+## Nesting
+
+Currently you can nest grid diagrams within grid diagrams. Nesting other types is coming
+soon.
+
+```d2
+grid-gap: 0
+grid-columns: 1
+header
+body: "" {
+  grid-gap: 0
+  grid-columns: 2
+  content
+  sidebar
+}
+footer
+```
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-nested-grid.svg2')}}></div>
+
 ## Source code
 
 This is the text for the image at the top of this page.

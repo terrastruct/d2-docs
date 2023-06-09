@@ -28,6 +28,13 @@ When you export to a static format like PNG, D2 will
 
 <img align="center" width="500" src={require('@site/static/img/screenshots/tooltip.png').default} alt="d2 tooltip" />
 
+:::caution
+Tooltips are implemented with HTML
+[title](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title) tags,
+which have basic support for text formatting. Markdown won't be rendered as expected in
+tooltips.
+:::
+
 ## Links
 
 Links are like tooltips, except you click to go to an external link.

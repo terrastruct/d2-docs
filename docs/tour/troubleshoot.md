@@ -6,6 +6,7 @@
 * [I can't use reserved keywords](#i-cant-use-reserved-keywords)
 * [My diagram is breaking with HTML in Markdown](#my-diagram-is-breaking-with-html-in-markdown)
 * [Markdown SVGs won't render in certain SVG viewers](#markdown-svgs-wont-render-in-certain-svg-viewers)
+* [My SVG isn't interactive when I embed into HTML](#my-svg-isnt-interactive-when-i-embed-into-html)
 * [Non-ASCII text breaks stuff](#non-ascii-text-breaks-stuff)
 
 ## It won't compile a specific label or value
@@ -54,6 +55,16 @@ D2's Markdown support is added via xhtml foreign objects, which means the SVG vi
 have HTML rendering capabilities. The vast majority of SVG viewing is, but if you intend
 to use a pure SVG editor on D2 diagrams that don't have such capabilities (e.g. Adobe
 Illustrator), it won't render correctly there.
+
+## My SVG isn't interactive when I embed into HTML
+
+There's a few different ways to embed SVG into HTML, each with tradeoffs. If you use plain
+`<img>` tags, interactivity is blocked. Here are two good resources to learn more:
+
+1. tldr:
+   [https://docs.asciidoctor.org/asciidoc/latest/macros/image-svg/#options-for-svg-images](https://docs.asciidoctor.org/asciidoc/latest/macros/image-svg/#options-for-svg-images)
+2. The official W3 spec:
+   [https://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html#SVG_in_HTML](https://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html#SVG_in_HTML)
 
 ## Non-ASCII text breaks stuff
 
