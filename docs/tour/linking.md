@@ -58,5 +58,5 @@ layers: {
 
 ## Backlinks
 
-Notice how the navigation bar at the top is clickable. You can easiliy return to the root
+Notice how the navigation bar at the top is clickable. You can easily return to the root
 or any ancestor page by clicking on the text.

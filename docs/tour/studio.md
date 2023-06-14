@@ -14,7 +14,7 @@ importing existing D2 code and offboard the same way. No lock-in.
 
 - **Team assets**: Upload, name, and reuse your company's images and icons across
   diagrams.
-- **Brand**: Company color pallette, watermarks, team logos on presentations.
+- **Brand**: Company color palette, watermarks, team logos on presentations.
 - **Bidirectional edits**: Use the GUI where it makes sense, like picking colors or sliding opacity values. Changes are synced to D2 automatically.
 - **TALA in the cloud**: TALA runs on our powerful machines, racing multiple iterations to quickly get the best automatic layout on each compile.
 - **Diagram management**: Bookmark, set permissions/passwords, and manage all your diagrams, individually and with your team.
