@@ -27,12 +27,12 @@ A method key without a value has a return type of void.
 
 You can also use UML-style prefixes to indicate field/method visibility.
 
-| visiblity prefix | meaning   |
-| ---------------- | --------- |
-| none             | public    |
-| +                | public    |
-| -                | private   |
-| #                | protected |
+| visibility prefix | meaning   |
+| ----------------- | --------- |
+| none              | public    |
+| +                 | public    |
+| -                 | private   |
+| #                 | protected |
 
 See https://www.uml-diagrams.org/visibility.html
 
