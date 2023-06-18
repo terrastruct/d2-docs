@@ -9,7 +9,6 @@ const sidebars = {
         "tour/experience",
         "tour/design",
         "tour/community",
-        "tour/faq",
         "tour/future",
       ],
     },
@@ -151,6 +150,7 @@ const sidebars = {
     "tour/studio",
     "tour/exports",
     "tour/cheat-sheet",
+        "tour/faq",
     "tour/troubleshoot",
   ],
   releasesSidebar: [
