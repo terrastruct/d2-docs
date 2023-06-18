@@ -1,5 +1,16 @@
 # Frequently asked questions (FAQ)
 
+* [General](#general)
+  + [How does this compare to Mermaid, Graphviz, PlantUML?](#how-does-this-compare-to-mermaid-graphviz-plantuml)
+  + [Is this designed for small diagrams or complex ones?](#is-this-designed-for-small-diagrams-or-complex-ones)
+  + [Does the D2 CLI collect telemetry?](#does-the-d2-cli-collect-telemetry)
+  + [Does D2 need a browser to run?](#does-d2-need-a-browser-to-run)
+  + [Can D2 run on a browser?](#can-d2-run-on-a-browser)
+  + [Can I use D2 online?](#can-i-use-d2-online)
+* [Layouts](#layouts)
+  + [Can an object be part of more than 1 container?](#can-an-object-be-part-of-more-than-1-container)
+  + [Can I specify ports?](#can-i-specify-ports)
+
 ## General
 
 ### How does this compare to Mermaid, Graphviz, PlantUML?
