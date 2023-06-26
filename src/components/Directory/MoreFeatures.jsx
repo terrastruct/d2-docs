@@ -54,6 +54,13 @@ const moreFeatures = [
     href: "/tour/fonts",
   },
   {
+    title: "Imports",
+    description:
+      "Modularize your diagrams like your code. Split models from views or dice it any way you want.",
+    icon: "import.svg",
+    href: "/tour/imports",
+  },
+  {
     title: "Autoformat",
     description:
       "Don't sweat style decisions like indentations and spacing, D2 has a built-in autoformatter.",
