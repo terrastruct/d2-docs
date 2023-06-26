@@ -51,29 +51,15 @@ Keys are case-insensitive, so `postgresql` and `postgreSQL` will reference the s
 :::
 
 :::info Shape catalog
-- `rectangle`
-- `square`
-- `page`
-- `parallelogram`
-- `document`
-- `cylinder`
-- `queue`
-- `package`
-- `step`
-- `callout`
-- `stored_data`
-- `person`
-- `diamond`
-- `oval`
-- `circle`
-- `hexagon`
-- `cloud`
 
-Special shape types (more on these next):
-- `text`
-- `code`
-- `class`
-- `sql_table`
-- `image`
-- `sequence_diagram`
+Standard shape types:
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/shapes-3.svg2')}}></div>
+
+Special shape types warrant their own pages:
+- [Text and code](./text.md)
+- [UML classes](./uml-classes.md)
+- [SQL tables](./sql-tables.md)
+- [Icons with images](./icons.md)
+- [Sequence diagrams](./sequence-diagrams.md)
 :::
