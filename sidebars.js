@@ -150,7 +150,7 @@ const sidebars = {
     "tour/studio",
     "tour/exports",
     "tour/cheat-sheet",
-        "tour/faq",
+    "tour/faq",
     "tour/troubleshoot",
   ],
   releasesSidebar: [
