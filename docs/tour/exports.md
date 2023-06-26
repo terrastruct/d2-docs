@@ -5,6 +5,7 @@ On the CLI, you may export `.d2` into
 * [PNG](#png)
 * [PDF](#pdf)
 * [PPTX](#pptx)
+* [GIF](#gif)
 * [Stdout](#stdout)
 
 ## SVG
@@ -74,7 +75,18 @@ d2 in.d2 out.pptx
 ```
 
 Similar to PDF exports. This export format is useful for giving presentations when used
-with composition (e.g. diagram with multiple Steps).
+with composition (e.g. diagram with multiple Layers, Scenarios, Steps).
+
+## GIF
+
+```shell
+d2 in.d2 out.gif
+```
+
+This export format is useful for giving presentations when used with short compositions.
+For example, show two Scenarios, show a couple of steps. Something that the audience can
+digest in a loop that lasts a couple of seconds without needing to flip through it
+manually.
 
 ## Stdout
 
