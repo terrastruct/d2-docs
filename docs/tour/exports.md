@@ -1,13 +1,11 @@
 # Exports
 
 On the CLI, you may export `.d2` into
-- SVG
-- PNG
-- PDF
-
-:::info
-Powerpoint exports coming soon!
-:::
+* [SVG](#svg)
+* [PNG](#png)
+* [PDF](#pdf)
+* [PPTX](#pptx)
+* [Stdout](#stdout)
 
 ## SVG
 
@@ -68,3 +66,23 @@ For example, `animate` keyword won't show up in PDF exports like they would in S
 But `link`s can still be clickable in PDFs.
 
 <img src={require('@site/static/img/screenshots/linked_pdf.png').default} alt="linked PDF example in D2" width="500"/>
+
+## PPTX
+
+```shell
+d2 in.d2 out.pptx
+```
+
+Similar to PDF exports. This export format is useful for giving presentations when used
+with composition (e.g. diagram with multiple Steps).
+
+## Stdout
+
+D2 accepts `-` in place of the input and/or output arguments. SVG is used as the format
+for Stdout output.
+
+For example, this writes a D2 script of `x -> y` and outputs it to a file `example.svg`.
+
+```shell
+echo "x -> y" | d2 - - > example.svg
+```
