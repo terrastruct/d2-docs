@@ -20,6 +20,21 @@ layers: {
 <embed src={require('@site/static/img/generated/cat.pdf').default} width="100%" height="800"
  type="application/pdf" />
 
+:::info
+If your board name has a `.`, use quotes to target that board.
+For example:
+
+```d2
+a.link: layers."2012.06"
+
+layers: {
+  "2012.06": {
+    hello
+  }
+}
+```
+:::
+
 ## Parent reference
 
 The underscore `_` is used to refer to the parent scope, but when used in `link` values,
