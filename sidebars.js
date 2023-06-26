@@ -152,6 +152,7 @@ const sidebars = {
     "tour/cheat-sheet",
     "tour/faq",
     "tour/troubleshoot",
+    "tour/help",
   ],
   releasesSidebar: [
     {
