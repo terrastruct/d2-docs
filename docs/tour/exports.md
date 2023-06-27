@@ -96,5 +96,5 @@ for Stdout output.
 For example, this writes a D2 script of `x -> y` and outputs it to a file `example.svg`.
 
 ```shell
-echo "x -> y" | d2 - - > example.svg
+echo "x -> y" | d2 - example.svg
 ```
