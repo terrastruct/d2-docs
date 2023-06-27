@@ -61,6 +61,10 @@ img {
   width: 100%;
 }
 
+.overflow svg {
+  max-height: unset !important;
+}
+
 .markdown {
   h2 {
     --ifm-h2-font-size: 1.5rem;

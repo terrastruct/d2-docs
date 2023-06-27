@@ -52,14 +52,8 @@ Keys are case-insensitive, so `postgresql` and `postgreSQL` will reference the s
 
 :::info Shape catalog
 
-Standard shape types:
+<div className="embedSVG overflow" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/shapes-3.svg2')}}></div>
 
-<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/shapes-3.svg2')}}></div>
-
-Special shape types warrant their own pages:
-- [Text and code](./text.md)
-- [UML classes](./uml-classes.md)
-- [SQL tables](./sql-tables.md)
-- [Icons with images](./icons.md)
-- [Sequence diagrams](./sequence-diagrams.md)
+There are other values that `shape` can take, but they're special types that are covered
+in the next section.
 :::
