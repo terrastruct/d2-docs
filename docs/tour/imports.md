@@ -68,9 +68,12 @@ into
 x: @x
 ```
 
-The reason for that is to allow the following feature.
+:::info
+D2 will not open files that don't have `.d2` extension, which means an import like
+`@x.txt` won't work.
+:::
 
-## Targeted imports
+## Partial imports
 
 You don't have to import the full file.
 
