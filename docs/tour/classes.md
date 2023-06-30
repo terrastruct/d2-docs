@@ -41,6 +41,25 @@ cache lb.class: load balancer
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/style-classes-1.svg2')}}></div>
 
+## Connection classes
+
+As a reminder of D2 syntax, you can apply classes to connections both at the initial
+declaration as well as afterwards.
+
+On initial declaration:
+
+```d2
+a -> b: {class: something}
+```
+
+Targeting:
+
+```d2
+a -> b
+# ...
+(a -> b)[0].class: something
+```
+
 ## Overriding classes
 
 If your object defines an attribute that the class also has defined, the object's
