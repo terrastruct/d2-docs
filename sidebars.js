@@ -70,7 +70,13 @@ const sidebars = {
       type: "category",
       label: "In Depth",
       link: { type: "doc", id: "tour/strings" },
-      items: ["tour/strings", "tour/vars", "tour/comments", "tour/overrides", "tour/auto-formatter"],
+      items: [
+        "tour/strings",
+        "tour/vars",
+        "tour/comments",
+        "tour/overrides",
+        "tour/auto-formatter",
+      ],
     },
     {
       type: "category",
