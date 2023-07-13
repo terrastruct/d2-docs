@@ -201,7 +201,7 @@ widely released and their live editor still won't allow it.
 visit [https://terrastruct.com/tala](https://terrastruct.com/tala).
 
 [4] If you still miss the hand-drawn aesthetic, D2 has just the thing:
-https://github.com/terrastruct/d2/pull/91
+https://github.com/terrastruct/d2/pull/492
 
 [5] Actually, gopls single-handedly brings my machine back to 2005 speeds with how much
 CPU it consumes. Not the fault of vim-go though!
