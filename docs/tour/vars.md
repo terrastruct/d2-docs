@@ -41,12 +41,6 @@ button: {
 }
 ```
 
-:::info
-You cannot substitute to a map. E.g., above, you would not be able to set anything to
-`${primaryColors.button}`. If you find yourself reaching for this functionality, you
-likely want to use [classes](/tour/classes) instead.
-:::
-
 <div style={{width: 200}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/vars-nested.svg2')}}></div>
 
 ## Variables are scoped
@@ -85,3 +79,29 @@ a -> b: 'Send field ${names}'
 ```
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/vars-escaped.svg2')}}></div>
+
+## Spread substitutions
+
+If `x` is a map or an array, `...${x}` will spread the contents of `x` into either a map
+or an array.
+
+```d2
+vars: {
+  base-constraints: [NOT NULL; UNQ]
+  disclaimer: DISCLAIMER {
+    I am not a lawyer
+    near: top-center
+  }
+}
+
+data: {
+  shape: sql_table
+  a: int {constraint: [PK; ...${base-constraints}]}
+}
+
+custom-disclaimer: DRAFT DISCLAIMER {
+  ...${disclaimer}
+}
+```
+
+<div style={{width: 400}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/vars-spread.svg2')}}></div>
