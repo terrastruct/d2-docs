@@ -138,6 +138,6 @@ d2 --layout=elk --theme=4 --dark-theme=200 --pad=0 --sketch --center input.d2
 Flags and environment variables take precedence.
 
 In other words, if you call `D2_PAD=2 d2 --theme=1 input.d2`, it doesn't matter what
-`theme-id` and `pad` are set to in `d2-config` -- it will use the options from the
-command.
+`theme-id` and `pad` are set to in `input.d2`'s `d2-config`; it will use the options from
+the command.
 :::
