@@ -105,3 +105,39 @@ custom-disclaimer: DRAFT DISCLAIMER {
 ```
 
 <div style={{width: 400}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/vars-spread.svg2')}}></div>
+
+## Configuration variables
+
+Some configurations can be made directly in `vars` instead of using flags or environment
+variables.
+
+```d2
+vars: {
+  d2-config: {
+    theme-id: 4
+    dark-theme-id: 200
+    pad: 0
+    center: true
+    sketch: true
+    layout-engine: elk
+  }
+}
+
+direction: right
+x -> y
+```
+
+This is equivalent to calling the following with no `vars`:
+```shell
+d2 --layout=elk --theme=4 --dark-theme=200 --pad=0 --sketch --center input.d2
+```
+
+<div style={{width: 400}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/vars-config.svg2')}}></div>
+
+:::info Precedence
+Flags and environment variables take precedence.
+
+In other words, if you call `D2_PAD=2 d2 --theme=1 input.d2`, it doesn't matter what
+`theme-id` and `pad` are set to in `d2-config` -- it will use the options from the
+command.
+:::
