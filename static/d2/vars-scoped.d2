@@ -1,0 +1,12 @@
+vars: {
+  region: Global
+}
+
+lb: ${region} load balancer
+
+zone1: {
+  vars: {
+    region: us-east-1
+  }
+  server: ${region} API
+}
