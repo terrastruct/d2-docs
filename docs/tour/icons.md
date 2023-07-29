@@ -66,6 +66,10 @@ vpc: VPC 1 10.1.0.0./16 {
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/icon-placement.svg2')}}></div>
 
+:::info
+Icons can be positioned with the `near` keyword [introduced later](/tour/positions#label-and-icon-positioning).
+:::
+
 ## Add `shape: image` for standalone icon shapes
 
 ```d2
@@ -83,3 +87,4 @@ server -> github
 ```
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/icons-image.svg2')}}></div>
+

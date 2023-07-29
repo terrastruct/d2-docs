@@ -96,6 +96,46 @@ Server.Online Model Server
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/near-explanation.svg2')}}></div>
 
+## Label and icon positioning
+
+The `near` can be nested to `label` and `icon` to specify their positions.
+
+```d2
+direction: right
+x -> y
+
+x: worker {
+  label.near: top-center
+  icon: https://icons.terrastruct.com/essentials%2F005-programmer.svg
+  icon.near: outside-top-right
+}
+
+y: profits {
+  label.near: bottom-right
+  icon: https://icons.terrastruct.com/essentials%2Fprofits.svg
+  icon.near: outside-top-left
+}
+```
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/near-label-icon.svg2')}}></div>
+
+:::info Extra values
+
+When positioning labels and icons, in addition to the values that `near` can take
+elsewhere, an `outside-` prefix can be added to specify positioning outside the bounding
+box of the shape.
+
+`outside-top-left`, `outside-top-center`, `outside-top-right`,
+
+`outside-left-center`, `outside-right-center`,
+
+`outside-bottom-left`, `outside-bottom-center`, `outside-bottom-right`
+
+
+Note that `outside-left-center` is a different order than `center-left`.
+:::
+
+
 ## Near objects
 
 :::info
