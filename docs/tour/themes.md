@@ -12,9 +12,13 @@ into blogs and wikis.
 
 ### They apply to special shapes like tables too
 
-<!-- <img width={600} src={require('@site/static/img/screenshots/themes/theme_table_1.png').default} alt="table neutral theme"/> -->
-<!-- <img width={600} src={require('@site/static/img/screenshots/themes/theme_table_2.png').default} alt="table mixed berry blue theme"/> -->
-<!-- <img width={600} src={require('@site/static/img/screenshots/themes/theme_table_3.png').default} alt="table vanilla nitro cola theme"/> -->
+# Rendered with theme "Grape soda"
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/theme-table.svg2')}}></div>
+
+# Rendered with theme "Vanilla nitro cola"
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/theme-table-2.svg2')}}></div>
 
 ## Setting theme on the CLI
 

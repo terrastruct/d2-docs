@@ -1,0 +1,25 @@
+vars: {
+  d2-config: {
+    theme-id: 100
+  }
+}
+
+direction: right
+
+costumes: {
+  shape: sql_table
+  id: int {constraint: primary_key}
+  silliness: int
+  monster: int
+  last_updated: timestamp
+}
+
+monsters: {
+  shape: sql_table
+  id: int {constraint: primary_key}
+  movie: string
+  weight: int
+  last_updated: timestamp
+}
+
+costumes.monster -> monsters.id
