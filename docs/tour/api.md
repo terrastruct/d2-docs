@@ -16,11 +16,13 @@ All functions in `d2oracle` are pure: they do not mutate the original graph, the
 Create a shape or connection.
 
 ```go
-func Create(g *d2graph.Graph, key string) (newG *d2graph.Graph, newKey string, _ error)
+func Create(g *d2graph.Graph, boardPath []string, key string) (newG *d2graph.Graph, newKey string, _ error)
 ```
 
 **Parameters**:
 - `g`: D2 graph
+- `boardPath`: Path of the board to modify. Only applicable to multi-board diagrams;
+  otherwise, pass in `nil`.
 - `key`: The ID of the shape or connection being created
 
 **Return**:
@@ -34,7 +36,7 @@ for example, if you create a connection between 2 shapes that don't exist, they 
 
 ```go
 // This call creates 6 shapes and 1 connection
-d2oracle.Create(g, "a.b.c -> x.y.z")
+d2oracle.Create(g, nil, "a.b.c -> x.y.z")
 ```
 
 If you call `Create` twice with the same shape ID, you will get an
@@ -45,18 +47,35 @@ error. If you call it twice with the same edge ID, you will create another edge.
 For shapes, there may be an ID collision. `Create` appends a counter in this case.
 ```go
 // newKey = "a"
-g, newKey, _ = d2oracle.Create(g, "a")
+g, newKey, _ = d2oracle.Create(g, nil, "a")
 // newKey = "a 2"
-_, newKey, _ = d2oracle.Create(g, "a")
+_, newKey, _ = d2oracle.Create(g, nil, "a")
 ```
 
 
 Connection IDs include the index.
 ```go
 // newKey = "(a -> b[0])"
-g, newKey, _ = d2oracle.Create(g, "a -> b")
+g, newKey, _ = d2oracle.Create(g, nil, "a -> b")
 // newKey = "(a -> b[1])"
-_, newKey, _ = d2oracle.Create(g, "a -> b")
+_, newKey, _ = d2oracle.Create(g, nil, "a -> b")
+```
+
+If you have a multi-board diagram like so:
+
+```d2
+x
+
+layers: {
+  y: {}
+}
+```
+
+```go
+// This creates a shape "a" at the root
+g, _ = d2oracle.Create(g, nil, "a")
+// This creates a shape "a" at layer "y"
+g, _ = d2oracle.Create(g, []string{"y"}, "a")
 ```
 
 ## Set
@@ -64,11 +83,13 @@ _, newKey, _ = d2oracle.Create(g, "a -> b")
 Set an attribute on a shape or connection.
 
 ```go
-func Set(g *d2graph.Graph, key string, tag, value *string) (newG *d2graph.Graph, _ error)
+func Set(g *d2graph.Graph, boardPath []string, key string, tag, value *string) (newG *d2graph.Graph, _ error)
 ```
 
 **Parameters**:
 - `g`: D2 graph
+- `boardPath`: Path of the board to modify. Only applicable to multi-board diagrams;
+  otherwise, pass in `nil`.
 - `key`: The identifier for the attribute
 - `tag`: The language tag. This is only non-nil when text values are set that can be
   different languages, e.g. a code snippet value.
@@ -117,16 +138,20 @@ that object's primary value (usually label).
 g, _ = d2oracle.Set(g, "a", "md", "# I am A")
 ```
 
+
+
 ## Delete
 
 Delete a shape or connection.
 
 ```go
-func Delete(g *d2graph.Graph, key string) (newG *d2graph.Graph, _ error)
+func Delete(g *d2graph.Graph, boardPath []string, key string) (newG *d2graph.Graph, _ error)
 ```
 
 **Parameters**:
 - `g`: D2 graph
+- `boardPath`: Path of the board to modify. Only applicable to multi-board diagrams;
+  otherwise, pass in `nil`.
 - `key`: The identifier for the shape or connection
 
 **Return**:
@@ -149,11 +174,13 @@ Note that the ID != label. If you want to change the label, use `Set`.
 :::
 
 ```go
-func Rename(g *d2graph.Graph, key, newName string) (newG *d2graph.Graph, err error)
+func Rename(g *d2graph.Graph, boardPath []string, key, newName string) (newG *d2graph.Graph, err error)
 ```
 
 **Parameters**:
 - `g`: D2 graph
+- `boardPath`: Path of the board to modify. Only applicable to multi-board diagrams;
+  otherwise, pass in `nil`.
 - `key`: The current identifier for the shape or connection
 - `newName`: The new identifier for the shape or connection
 
@@ -173,7 +200,7 @@ g, _ = d2oracle.Rename(g, "a", "z)
 Move a given shape or connection to a different container.
 
 ```go
-func Move(g *d2graph.Graph, key, newKey string) (newG *d2graph.Graph, err error)
+func Move(g *d2graph.Graph, boardPath []string, key, newKey string) (newG *d2graph.Graph, err error)
 ```
 
 :::info
@@ -182,6 +209,8 @@ If you give two keys of the same scope (e.g. "a" to "b"), it's the same as `Rena
 
 **Parameters**:
 - `g`: D2 graph
+- `boardPath`: Path of the board to modify. Only applicable to multi-board diagrams;
+  otherwise, pass in `nil`.
 - `key`: The current identifier for the shape or connection
 - `newKey`: The new identifier for the shape or connection
 
@@ -226,7 +255,7 @@ y
 x -> z
 ```
 
-`deltas, err := MoveIDDeltas(g, "x", "y.x")`
+`deltas, err := MoveIDDeltas(g, nil, "x", "y.x")`
 
 `deltas`:
 ```json
