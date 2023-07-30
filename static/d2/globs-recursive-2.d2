@@ -1,0 +1,9 @@
+zone-A: {
+  machine A
+  machine B: {
+    submachine A
+    submachine B
+  }
+}
+
+zone-A.** -> load balancer
