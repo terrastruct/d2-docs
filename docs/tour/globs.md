@@ -48,6 +48,19 @@ Donkey Kong
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-casing.svg2')}}></div>
 
+## Globs can appear multiple times
+
+```d2
+teacher
+thriller
+thrifter
+
+
+t*h*r.shape: person
+```
+
+<div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-multiple.svg2')}}></div>
+
 ## Glob connections
 
 You can use globs to create connections.
@@ -67,6 +80,11 @@ Spiderman 3
 ```
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-connections.svg2')}}></div>
+
+:::info
+Notice how self-connections were omitted. While not entirely consistent with what you may
+expect from globs, we feel it is more pragmatic for this to be the behavior.
+:::
 
 You can also use globs to target modifying existing connections.
 
@@ -132,15 +150,38 @@ zone-A: {
   }
 }
 
-# Connect everything in zone-A to the load balancer
 zone-A.** -> load balancer
 ```
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-recursive-2.svg2')}}></div>
 
+
+:::info
+Notice how `machine B` was not captured. Similar to the exception with `* -> *` omitting
+self-connections, recursive globs in connections also make an exception for practical
+diagramming: it only applies to non-container (AKA leaf) shapes.
+:::
+
 ## Filters
 
 Use `&` to filter what globs target.
+
+```d2
+bravo team.shape: person
+charlie team.shape: person
+command center.shape: cloud
+hq.shape: rectangle
+
+*: {
+  &shape: person
+  style.multiple: true
+}
+```
+
+<div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter.svg2')}}></div>
+
+If the filtered attribute has an array value, the filter will match if it matches any
+element of the array.
 
 ```d2
 the-little-cannon: {
@@ -159,4 +200,33 @@ catapult: {
 }
 ```
 
-<div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter.svg2')}}></div>
+<div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter-2.svg2')}}></div>
+
+## Nested globs
+
+You can nest globs, combining the features above.
+
+```d2
+conversation 1: {
+  shape: sequence_diagram
+  alice -> bob: hi
+  bob -> alice: hi
+}
+
+conversation 2: {
+  shape: sequence_diagram
+  alice -> bob: hello again
+  alice -> bob: hello?
+  bob -> alice: hello
+}
+
+# Recursively target all shapes...
+**: {
+  # ... that are sequence diagrams
+  &shape: sequence_diagram
+  # Then recursively set all shapes in them to person
+  **: { shape: person }
+}
+```
+
+<div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-nested.svg2')}}></div>
