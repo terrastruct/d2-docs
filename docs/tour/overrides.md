@@ -51,7 +51,7 @@ When is this useful?
 - [Import](/tour/imports) a diagram from a colleague and remove the things you don't want.
 - [Multi-board compositions](/tour/composition) where you inherit all the objects from a
   board with some exceptions.
-- (Coming soon) Use globs to define connections between a batch of objects except one in
+- Use [globs](/tour/globs) to define connections between a batch of objects except one in
   particular you want to leave out.
 
 ### Nulling a connection
