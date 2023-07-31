@@ -115,9 +115,9 @@ foods: {
     *.shape: circle
   }
   humans: {
-   john
-   james
-   *.shape: person
+    john
+    james
+    *.shape: person
   }
   humans.* -> pizzas.pineapple: eats
 }
@@ -229,7 +229,7 @@ conversation 2: {
   # ... that are sequence diagrams
   &shape: sequence_diagram
   # Then recursively set all shapes in them to person
-  **: { shape: person }
+  **: {shape: person}
 }
 ```
 
