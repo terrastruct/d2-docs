@@ -1,5 +1,12 @@
 # Globs
 
+:::caution Alpha
+Globs are an alpha feature in 0.6.0. It is likely to change in behavior in followup minor
+releases. In particular, the current plan is for globs to be lazy evaluated, so that it
+can be used to set defaults, as opposed to the current implementation where it is
+evaluated as it appears.
+:::
+
 :::note Etymology
 > The glob command, short for global, originates in the earliest versions of Bell Labs' Unix... to expand wildcard characters in unquoted arguments ...
 
@@ -22,21 +29,6 @@ iphone 12 mini
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-intro.svg2')}}></div>
 
-:::info Order
-Order matters in D2. When you add a glob statement, it will only match with what's already
-been declared.
-
-```d2
-# These will be red
-a
-b
-*.style.fill: red
-# These will not be red
-c
-d
-```
-:::
-
 ## Globs are case insensitive
 
 ```d2
@@ -55,11 +47,19 @@ teacher
 thriller
 thrifter
 
-
 t*h*r.shape: person
 ```
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-multiple.svg2')}}></div>
+
+```d2
+a: {
+  b
+  c
+}
+
+a.*.c -> c
+```
 
 ## Glob connections
 
@@ -201,6 +201,10 @@ catapult: {
 ```
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter-2.svg2')}}></div>
+
+:::info
+We are working on adding more filters.
+:::
 
 ## Nested globs
 
