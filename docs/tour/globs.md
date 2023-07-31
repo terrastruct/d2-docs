@@ -52,15 +52,6 @@ t*h*r.shape: person
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-multiple.svg2')}}></div>
 
-```d2
-a: {
-  b
-  c
-}
-
-a.*.c -> c
-```
-
 ## Glob connections
 
 You can use globs to create connections.
