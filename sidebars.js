@@ -73,6 +73,7 @@ const sidebars = {
       items: [
         "tour/strings",
         "tour/vars",
+        "tour/globs",
         "tour/comments",
         "tour/overrides",
         "tour/auto-formatter",

@@ -1,0 +1,17 @@
+conversation 1: {
+  shape: sequence_diagram
+  alice -> bob: hi
+  bob -> alice: hi
+}
+
+conversation 2: {
+  shape: sequence_diagram
+  alice -> bob: hello again
+  alice -> bob: hello?
+  bob -> alice: hello
+}
+
+**: {
+  &shape: sequence_diagram
+  **: {shape: person}
+}

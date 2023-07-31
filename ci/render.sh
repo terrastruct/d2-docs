@@ -4,7 +4,7 @@ set -eu
 cd -- "$(dirname "$0")/.."
 
 _normal() {
-  sh_c d2 --dark-theme=200 -l dagre -c --pad 0 ./static/d2/${ex}.d2 ./static/img/generated/${ex}.svg2
+  sh_c d2 --dark-theme=200 -c --pad 0 ./static/d2/${ex}.d2 ./static/img/generated/${ex}.svg2
 }
 
 _bespoke() {

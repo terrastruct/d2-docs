@@ -1,0 +1,14 @@
+foods: {
+  pizzas: {
+    cheese
+    sausage
+    pineapple
+    *.shape: circle
+  }
+  humans: {
+    john
+    james
+    *.shape: person
+  }
+  humans.* -> pizzas.pineapple: eats
+}
