@@ -61,6 +61,19 @@ const moreFeatures = [
     href: "/tour/imports",
   },
   {
+    title: "Variables",
+    description:
+      "Reuse values like colors, labels, and anything else for clean diagram code.",
+    icon: "variables.svg",
+    href: "/tour/variables",
+  },
+  {
+    title: "Globs",
+    description: "All the power of wildcard globs you're already familiar with.",
+    icon: "globs.svg",
+    href: "/tour/globs",
+  },
+  {
     title: "Autoformat",
     description:
       "Don't sweat style decisions like indentations and spacing, D2 has a built-in autoformatter.",
