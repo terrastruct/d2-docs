@@ -10,6 +10,19 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "ko"],
+    localeConfigs: {
+      en: {
+        label: "English",
+      },
+      ko: {
+        label: "Korean (한국인)",
+      },
+    },
+  },
+
   presets: [
     [
       "classic",
@@ -72,6 +85,11 @@ const config = {
           position: "right",
           label: "Playground",
         },
+        // TODO enable when a language has been translated
+        // {
+        //   type: "localeDropdown",
+        //   position: "right",
+        // },
         {
           type: "custom-iconLink",
           position: "right",
