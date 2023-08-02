@@ -72,8 +72,8 @@ html[data-theme="dark"] {
       }
 
       .navbar__link {
-        border: 1px solid var(--border);
-        border-radius: 4px;
+        display: flex;
+        align-items: center;
         margin-top: 0;
         font-weight: 600;
         color: var(--navbar-text-color);
