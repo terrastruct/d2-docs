@@ -18,7 +18,7 @@ const config = {
         label: "English",
       },
       ko: {
-        label: "Korean (한국인)",
+        label: "Korean (한국어)",
       },
     },
   },
@@ -173,7 +173,11 @@ const config = {
   ],
 
   scripts: [
-    { src: "https://d2lang.com/js/script.js", defer: true, "data-domain": "d2lang.com" },
+    {
+      src: "https://d2lang.com/js/script.js",
+      defer: true,
+      "data-domain": "d2lang.com",
+    },
   ],
 };
 
