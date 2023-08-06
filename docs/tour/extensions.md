@@ -38,3 +38,4 @@ issue and we're happy to include your's!
 - MongoDB to D2: [https://github.com/novuhq/mongo-to-D2](https://github.com/novuhq/mongo-to-D2)
 - Pandoc filter: [https://github.com/ram02z/d2-filter](https://github.com/ram02z/d2-filter)
 - MySQL to D2: [https://github.com/JDOsborne1/db_to_d2](https://github.com/JDOsborne1/db_to_d2)
+- Remark D2 code blocks into images: [https://github.com/mech-a/remark-d2](https://github.com/mech-a/remark-d2)
