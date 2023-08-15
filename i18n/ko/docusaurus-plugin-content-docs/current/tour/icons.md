@@ -31,7 +31,7 @@ D2 CLI를 로컬에서 사용하시나요? `icon: ./my_cat.png`와 같이 로컬
 
 아이콘은 자동으로 배치됩니다.
 Considerations vary depending on layout engine, but things like coexistence with a label and whether it's a container generally affect where the icon is placed to not obstruct.
-레이아웃 엔진에 따라 고려 사항이 다르지만 일반적으로 레이블과의 공존, 컨테이너인지 여부 등이 아이콘의 배치를 방해하지 않도록 합니다.
+레이아웃 엔진에 따라 고려 사항이 다르지만 일반적으로 라벨과의 공존, 컨테이너인지 여부 등이 아이콘의 배치를 방해하지 않도록 합니다.
 Notice how the following diagram has container icons in the top-left and non-container icons in the center.
 다음 다이어그램에서 왼쪽 상단의 컨테이너 아이콘과 중앙에 컨테이너가 아닌 아이콘이 어떻게 배치되는지 확인해보세요.
 
