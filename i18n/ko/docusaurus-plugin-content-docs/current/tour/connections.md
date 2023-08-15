@@ -27,13 +27,13 @@ Read Replica 1 -- Read Replica 2
 
 :::
 
-### 연결 레이블(Connections labels)
+### 연결 라벨(Connections labels)
 
 ```d2
 Read Replica 1 -- Read Replica 2: Kept in sync
 ```
 
-### 연결 시 레이블이 아닌 도형의 키를 참조해야 합니다.
+### 연결 시 라벨이 아닌 도형의 키를 참조해야 합니다.
 
 ```d2
 be: Backend
@@ -42,7 +42,7 @@ fe: Frontend
 # 새로운 도형이 생성됩니다
 Backend -> Frontend
 
-# 기본 레이블(키)에 대한 연결을 정의합니다.
+# 기본 라벨(키)에 대한 연결을 정의합니다.
 be -> fe
 ```
 
@@ -79,7 +79,7 @@ Database -> S3: backup
 가독성을 위해, 한 줄에 여러 연결을 정의하는 것이 더 자연스럽게 보일 수 있습니다.
 
 ```d2
-# 레이블은 연결 체인의 각 연결에 적용됩니다.
+# 라벨은 연결 체인의 각 연결에 적용됩니다.
 High Mem Instance -> EC2 <- High CPU Instance: Hosted By
 ```
 
@@ -96,7 +96,7 @@ Stage Four -> Stage One: repeat
 
 ## 화살표 머리(Arrowheads)
 
-기본 화살표 머리의 모양을 재정의하거나 화살표 머리 옆에 레이블을 지정하려면 `source-arrowhead` 또는 `target-arrowhead`라는 속성을 사용해 정의합니다.
+기본 화살표 머리의 모양을 재정의하거나 화살표 머리 옆에 라벨을 지정하려면 `source-arrowhead` 또는 `target-arrowhead`라는 속성을 사용해 정의합니다.
 
 ```d2
 a: The best way to avoid responsibility is to say, "I've got responsibilities"
@@ -139,8 +139,8 @@ d -> a -> c
 :::
 
 :::info
-화살표 머리의 레이블은 짧게 하는 것이 좋습니다.
-일반 레이블처럼 최적의 위치 지정을 위해 자동 레이아웃이 이뤄지지 않으므로 레이블이 길 경우 주변 개체와 충돌할 가능성이 큽니다.
+화살표 머리의 라벨은 짧게 하는 것이 좋습니다.
+일반 라벨처럼 최적의 위치 지정을 위해 자동 레이아웃이 이뤄지지 않으므로 라벨이 길 경우 주변 개체와 충돌할 가능성이 큽니다.
 :::
 
 :::caution
