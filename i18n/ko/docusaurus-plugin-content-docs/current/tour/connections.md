@@ -1,10 +1,10 @@
 # 연결(Connections)
 
-연결은 도형 간의 관계를 정의합니다.
+연결은 형태 간의 관계를 정의합니다.
 
 ## 기본
 
-도형 사이의 하이픈 또는 화살표는 연결을 정의합니다.
+형태 사이의 하이픈 또는 화살표는 연결을 정의합니다.
 
 ```d2
 Write Replica Canada <-> Write Replica Australia
@@ -15,7 +15,7 @@ Write Replica -> Master
 Read Replica 1 -- Read Replica 2
 ```
 
-연결에서 선언되지 않은 도형을 참조하는 경우 해당 도형이 새로 생성됩니다([hello world](hello-world.md)에서 확인 가능).
+연결에서 선언되지 않은 형태를 참조하는 경우 해당 형태가 새로 생성됩니다([hello world](hello-world.md)에서 확인 가능).
 
 :::info
 4가지 방법으로 연결을 정의할 수 있습니다.
@@ -33,13 +33,13 @@ Read Replica 1 -- Read Replica 2
 Read Replica 1 -- Read Replica 2: Kept in sync
 ```
 
-### 연결 시 라벨이 아닌 도형의 키를 참조해야 합니다.
+### 연결 시 라벨이 아닌 형태의 키를 참조해야 합니다.
 
 ```d2
 be: Backend
 fe: Frontend
 
-# 새로운 도형이 생성됩니다
+# 새로운 형태가 생성됩니다
 Backend -> Frontend
 
 # 기본 라벨(키)에 대한 연결을 정의합니다.
