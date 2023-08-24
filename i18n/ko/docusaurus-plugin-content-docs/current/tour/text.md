@@ -90,7 +90,7 @@ explanation: |go
 ## 고급 기능: Markdown이 아닌 텍스트
 
 경우에 따라 Markdown이 아닌 텍스트가 필요할 수 있습니다.
-Markdown 또는 D2가 사용하는 GitHub 스타일의 Markdown이 마음에 들지 않거나, 형태를 텍스트로 빠르게 변경하고 싶을 수 있습니다.
+Markdown 또는 D2가 사용하는 GitHub 스타일의 Markdown이 마음에 들지 않거나, 셰이프를 텍스트로 빠르게 변경하고 싶을 수 있습니다.
 그럴 경우 `shape: text`를 설정하기만 하면 됩니다.
 
 ```d2

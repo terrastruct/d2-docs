@@ -21,7 +21,7 @@ my network: {
 <div style={{width: "200px", margin: "0 auto 20px auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/icons-1.svg2')}}></div>
 
 :::info
-연결에 적용 가능한 아이콘이 곧 개발 될 예정입니다.
+커넥션에 적용 가능한 아이콘이 곧 개발 될 예정입니다.
 :::
 
 :::info
