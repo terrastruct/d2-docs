@@ -1,4 +1,4 @@
-# UML Classes
+# UML 클래스
 
 ## 기본
 
