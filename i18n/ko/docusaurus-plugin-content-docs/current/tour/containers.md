@@ -24,6 +24,7 @@ clouds: {
     load_balancer -> api
     api -> db
   }
+
   gcloud: {
     auth -> db
   }
@@ -63,6 +64,7 @@ clouds: {
     load_balancer -> api
     api -> db
   }
+
   gcloud: Google Cloud {
     auth -> db
   }

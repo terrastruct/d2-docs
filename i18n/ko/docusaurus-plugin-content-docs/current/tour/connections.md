@@ -105,6 +105,7 @@ c: I still maintain the point that designing a monolithic kernel in 1991 is a
 
 a -> b: To err is human, to moo bovine {
   source-arrowhead: 1
+
   target-arrowhead: * {
     shape: diamond
   }
@@ -112,6 +113,7 @@ a -> b: To err is human, to moo bovine {
 
 b <-> c: "Reality is just a crutch for people who can't handle science fiction" {
   source-arrowhead.label: 1
+
   target-arrowhead: * {
     shape: diamond
     style.filled: true

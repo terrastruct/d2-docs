@@ -35,11 +35,13 @@ D2 CLI를 로컬에서 사용하시나요? `icon: ./my_cat.png`와 같이 로컬
 ```d2
 vpc: VPC 1 10.1.0.0./16 {
   icon: https://icons.terrastruct.com/aws%2F_Group%20Icons%2FVirtual-private-cloud-VPC_light-bg.svg
+
   style: {
     stroke: green
     font-color: green
     fill: white
   }
+
   az: Availability Zone A {
     style: {
       stroke: blue
@@ -47,13 +49,16 @@ vpc: VPC 1 10.1.0.0./16 {
       stroke-dash: 3
       fill: white
     }
+
     firewall: Firewall Subnet A {
       icon: https://icons.terrastruct.com/aws%2FNetworking%20&%20Content%20Delivery%2FAmazon-Route-53_Hosted-Zone_light-bg.svg
+
       style: {
         stroke: purple
         font-color: purple
         fill: "#e1d5e7"
       }
+
       ec2: EC2 Instance {
         icon: https://icons.terrastruct.com/aws%2FCompute%2F_Instance%2FAmazon-EC2_C4-Instance_light-bg.svg
       }
