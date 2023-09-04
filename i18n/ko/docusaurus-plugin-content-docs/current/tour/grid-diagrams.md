@@ -49,7 +49,7 @@ Judicial
 
 ## 너비와 높이
 
-독특한 구성을 원한다면 `width` 또는 `height`를 사용하세요.
+독특한 구성을 원한다면 `width` 또는 `height`를 사용해 보세요.
 
 ```d2
 grid-rows: 2
@@ -61,7 +61,7 @@ The American Government.width: 400
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-dimensions.svg2')}}></div>
 
-각 행 내에서 객체가 어떤 식으로 균등하게 분포되는지 확인해보세요.
+각 행 내에서 객체가 어떤 식으로 균등하게 분포되는지 확인해 보세요.
 
 ## 셀 확장
 
@@ -111,23 +111,23 @@ grid-rows: 4
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-column-dominant.svg2')}}></div>
 
 :::info
-이러한 애니메이션은 D2만으로 구현했습니다.
+위의 애니메이션은 D2만으로 구현되었습니다.
 즉, 그리드 다이어그램의 구성 과정을 애니메이션화 할 수 있습니다.
 이 [코드](https://github.com/terrastruct/d2-docs/blob/f5c762223ce192338d9d7865df3ca8533d683cdc/static/bespoke-d2/grid-row-dominant.d2)와 함께 `animate-interval` 플래그를 사용하세요.
-이에 대한 자세한 내용은 나중에 [composition](/tour/composition) 섹션에서 확인하세요.
+이에 대한 자세한 내용은 뒤에 나오는 [composition](/tour/composition) 섹션에서 확인하세요.
 :::
 
 ## 그리드 간격 크기 조절
 
-3가지 키워드를 사용하여 그리드의 간격 크기를 제어할 수 있습니다.
+다음 3가지 키워드를 사용하여 그리드의 간격 크기를 제어할 수 있습니다.
 
 - `vertical-gap`
 - `horizontal-gap`
 - `grid-gap`
 
-`grid-gap`을 설정하는 것은 `vertical-gap`과 ​​`horizontal-gap`을 모두 설정하는 것과 동일합니다.
+`grid-gap`을 설정하는 것은 `vertical-gap`과 ​​`horizontal-gap`을 동시에 설정하는 것과 같습니다.
 
-`vertical-gap` 및 `horizontal-gap`은 `grid-gap`을 재정의할 수 있습니다.
+`vertical-gap` 또는 `horizontal-gap`으로 `grid-gap`을 재정의할 수 있습니다.
 
 특히 `grid-gap: 0`은 몇 가지 흥미로운 구성을 만들 수 있습니다.
 
@@ -135,7 +135,7 @@ grid-rows: 4
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/japan.svg2')}}></div>
 
-> [D2 source](https://github.com/terrastruct/d2/blob/master/docs/examples/japan-grid/japan.d2)
+> [D2 소스 코드](https://github.com/terrastruct/d2/blob/master/docs/examples/japan-grid/japan.d2)
 
 ### 또는 테이블형 데이터에도 저장 가능합니다.
 
@@ -176,11 +176,12 @@ Oxygen
 
 ## 연결
 
-그리드 내의 객체에 대한 연결은 곧 제공될 예정이지만 D2의 일반 객체처럼 그리드 자체를 연결할 수 있습니다.
+D2의 일반 객체처럼 그리드와 다른 객체를 연결할 수 있습니다.
+그리드 내의 객체에 대한 연결은 곧 제공될 예정입니다.
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-connected.svg2')}}></div>
 
-> Source code [here](https://github.com/terrastruct/d2-docs/blob/eda2d8739ce21c656e7608be48cb9067df36eb53/static/d2/grid-connected.d2).
+> [소스 코드](https://github.com/terrastruct/d2-docs/blob/eda2d8739ce21c656e7608be48cb9067df36eb53/static/d2/grid-connected.d2)
 
 ## 중첩
 
