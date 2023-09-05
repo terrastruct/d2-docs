@@ -26,6 +26,8 @@ _bespoke() {
   sh_c d2 ./static/bespoke-d2/wcc.d2 ./static/img/generated/wcc.pptx
 
   sh_c d2 ./static/bespoke-d2/imports-nested.d2 ./static/img/generated/imports-nested.pdf
+
+  sh_c d2 ./static/bespoke-d2/triple-glob.d2 ./static/img/generated/triple-glob.pdf
 }
 
 main() {

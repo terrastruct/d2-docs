@@ -1,12 +1,5 @@
 # Globs
 
-:::caution Alpha
-Globs are an alpha feature in 0.6.0. It is likely to change in behavior in followup minor
-releases. In particular, the current plan is for globs to be lazy evaluated, so that it
-can be used to set defaults, as opposed to the current implementation where it is
-evaluated as it appears.
-:::
-
 :::note Etymology
 > The glob command, short for global, originates in the earliest versions of Bell Labs' Unix... to expand wildcard characters in unquoted arguments ...
 
@@ -28,6 +21,26 @@ iphone 12 mini
 ```
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-intro.svg2')}}></div>
+
+## Globs apply backwards and forwards
+
+In the following example, the instructions are as follows:
+1. Create a shape `a`.
+2. Apply a glob rule. This immediately applies to existing shapes, i.e., `a`.
+3. Create a shape `b`. Existing glob rules are re-evaluated, and applied if they meet the
+   criteria. This does, so it applies to `b`.
+4. Same with `c`.
+
+```d2
+a
+
+* -> y
+
+b
+c
+```
+
+<div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-lazy.svg2')}}></div>
 
 ## Globs are case insensitive
 
@@ -194,7 +207,7 @@ catapult: {
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter-2.svg2')}}></div>
 
 :::info
-We are working on adding more filters.
+We are working on adding more filters, as well as the "not-filter", `!&`.
 :::
 
 ## Nested globs
@@ -225,3 +238,34 @@ conversation 2: {
 ```
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-nested.svg2')}}></div>
+
+## Global globs
+
+Triple globs apply globally to the whole diagram. The difference between a double glob and
+a triple glob is that a triple glob will apply to nested `layers` (see the section on
+[composition](/tour/composition) for more on `layers`), as well as persist across imports.
+
+```d2
+***.style.fill: yellow
+**.shape: circle
+*.style.multiple: true
+
+x: {
+  y
+}
+
+layers: {
+  next: {
+    a
+  }
+}
+```
+
+<embed src={require('@site/static/img/generated/triple-glob.pdf').default} width="100%" height="800"
+ type="application/pdf" />
+
+:::info Imports
+If you import a file, the globs declared inside it are usually not carried over. Triple
+globs are the exception -- since they are global, importing a file with triple glob will
+carry that glob as well.
+:::
