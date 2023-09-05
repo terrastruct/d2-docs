@@ -63,9 +63,6 @@ objects.disk -> disks.id
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/tables-2.svg2')}}></div>
 
-If you hover over the primary key or foreign key with your cursor, you'll notice that the
-corresponding key is highlighted.
-
 :::info
 When rendered with the [TALA layout engine](/tour/tala), connections point to the exact
 row.
