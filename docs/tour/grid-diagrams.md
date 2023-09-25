@@ -202,6 +202,20 @@ footer
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-nested-grid.svg2')}}></div>
 
+## Connections between grid cells
+
+Connections between top-level grid cells are supported. Their routes are simple
+center-center straight segments, i.e., no path-finding routes.
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-connections.svg2')}}></div>
+
+> Source code [here](https://github.com/terrastruct/d2/blob/master/e2etests/testdata/files/simple_grid_edges.d2).
+
+:::info
+Connections between more inner elements of a grid to another grid cell's inner element is
+a work in progress.
+:::
+
 ## Source code
 
 This is the text for the image at the top of this page.
