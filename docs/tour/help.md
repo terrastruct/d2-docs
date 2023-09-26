@@ -17,5 +17,6 @@ Discord, or email us (alex at terrastruct).
 - [Chocolatey package](https://github.com/terrastruct/d2/issues/154)
 - [Docusaurus plugin](https://github.com/terrastruct/d2/issues/1448)
 - [Visual Studio Extension](https://github.com/terrastruct/d2/discussions/237)
+- [PrismJS highlighter](https://github.com/terrastruct/d2-docs/issues/185)
 
 Want to add something to this wishlist? Just make an Issue on D2's GitHub!

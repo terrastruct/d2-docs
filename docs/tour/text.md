@@ -143,6 +143,12 @@ my_code: |`ts
 D2 includes the following LaTeX plugins:
 
 ```d2
+grid-columns: 3
+grid-gap: 100
+
+*.style.fill: transparent
+*.style.stroke: black
+
 amscd plugin: {
   ex: |tex
     \\begin{CD} B @>{\\text{very long label}}>> C S^{{\\mathcal{W}}_\\Lambda}\\otimes T @>j>> T\\\\ @VVV V \\end{CD}
@@ -175,7 +181,7 @@ gensymb plugin: {
 
 mhchem plugin: {
   ex: |tex
-    \\ce{SO4^2- + Ba^2+ -> BaSO4 v}
+    \ce{SO4^2- + Ba^2+ -> BaSO4 v}
   |
 }
 
@@ -193,11 +199,11 @@ multilines: {
   |
 }
 
-# Just to separate into two rows
-amscd plugin -> braket plugin: {style.opacity: 0}
-cancel plugin -> color plugin: {style.opacity: 0}
-gensymb plugin -> mhchem plugin: {style.opacity: 0}
-physics plugin -> multilines: {style.opacity: 0}
+asm: {
+  ex: |latex
+    \\min_{ \\mathclap{\\substack{ x \\in \\mathbb{R}^n \\ x \\geq 0 \\ Ax \\leq b }}} c^T x
+  |
+}
 ```
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/latex.svg2')}}></div>
