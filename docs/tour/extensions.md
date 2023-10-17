@@ -13,13 +13,15 @@ Officially developed and maintained by the creators of D2.
 - [Obsidian plugin](/tour/obsidian)
 - [D2 app for Slack](/tour/slack)
 - [Discord plugin](/tour/discord)
+- [Confluence app](/tour/confluence)
 
 ## Community
 
 Community developed plugins and extensions. Have one you'd like to share? Please open an
 issue and we're happy to include your's!
 
-- Tree-sitter grammar: [https://github.com/pleshevskiy/tree-sitter-d2](https://github.com/pleshevskiy/tree-sitter-d2)
+- Tree-sitter grammar: [https://git.pleshevski.ru/pleshevskiy/tree-sitter-d2](https://git.pleshevski.ru/pleshevskiy/tree-sitter-d2)
+- Tree-sitter grammar 2: [https://github.com/ravsii/tree-sitter-d2](https://github.com/ravsii/tree-sitter-d2)
 - Emacs major mode: [https://github.com/andorsk/d2-mode](https://github.com/andorsk/d2-mode)
 - Goldmark extension: [https://github.com/FurqanSoftware/goldmark-d2](https://github.com/FurqanSoftware/goldmark-d2)
 - Telegram bot: [https://github.com/meinside/telegram-d2-bot](https://github.com/meinside/telegram-d2-bot)
@@ -31,11 +33,11 @@ issue and we're happy to include your's!
 - Python D2 diagram builder: [https://github.com/MrBlenny/py-d2](https://github.com/MrBlenny/py-d2)
 - Clojure D2 transpiler: [https://github.com/judepayne/dictim](https://github.com/judepayne/dictim)
 - JavaScript D2 diagram builder: [https://github.com/Kreshnik/d2lang-js](https://github.com/Kreshnik/d2lang-js)
-- Maven plugin: [https://github.com/andrinmeier/unofficial-d2lang-maven-plugin](https://github.com/andrinmeier/unofficial-d2lang-maven-plugin)
-- Confluence plugin: [https://github.com/andrinmeier/unofficial-d2lang-confluence-plugin](https://github.com/andrinmeier/unofficial-d2lang-confluence-plugin)
 - CIL (C#, Visual Basic, F#, C++ CLR) to D2: [https://github.com/HugoVG/AppDiagram](https://github.com/HugoVG/AppDiagram)
 - D2 Snippets (for text editors): [https://github.com/Paracelsus-Rose/D2-Language-Code-Snippets](https://github.com/Paracelsus-Rose/D2-Language-Code-Snippets)
 - MongoDB to D2: [https://github.com/novuhq/mongo-to-D2](https://github.com/novuhq/mongo-to-D2)
 - Pandoc filter: [https://github.com/ram02z/d2-filter](https://github.com/ram02z/d2-filter)
 - MySQL to D2: [https://github.com/JDOsborne1/db_to_d2](https://github.com/JDOsborne1/db_to_d2)
 - Remark D2 code blocks into images: [https://github.com/mech-a/remark-d2](https://github.com/mech-a/remark-d2)
+- D2 image service: [https://github.com/Watt3r/d2-live](https://github.com/Watt3r/d2-live)
+- MkDocs plugin: [https://github.com/landmaj/mkdocs-d2-plugin](https://github.com/landmaj/mkdocs-d2-plugin)
