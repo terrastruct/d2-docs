@@ -143,6 +143,7 @@ const sidebars = {
             "tour/obsidian",
             "tour/slack",
             "tour/discord",
+            "tour/confluence",
           ],
         },
       ],
