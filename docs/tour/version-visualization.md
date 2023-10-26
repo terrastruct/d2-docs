@@ -1,3 +1,7 @@
+---
+pagination_next: tour/imported-template
+---
+
 # Version visualization
 
 ## History
