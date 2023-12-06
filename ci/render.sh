@@ -28,6 +28,8 @@ _bespoke() {
   sh_c d2 ./static/bespoke-d2/imports-nested.d2 ./static/img/generated/imports-nested.pdf
 
   sh_c d2 ./static/bespoke-d2/triple-glob.d2 ./static/img/generated/triple-glob.pdf
+
+  sh_c d2 --sketch ./static/bespoke-d2/grid-nested-connections.d2 ./static/img/generated/grid-nested-connections.svg2
 }
 
 main() {

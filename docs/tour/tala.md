@@ -23,6 +23,7 @@ open-source D2, and proprietary, closed-source TALA. You can download it here:
 - `near` can be specified to be to another shape.
 - `sql_table` connections point to exact row.
 - Dynamic label positioning to avoid obstructions.
+- Connections for grid cells use TALA's routing engine instead of always straight lines.
 
 ## Cons
 
