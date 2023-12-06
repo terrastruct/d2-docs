@@ -41,3 +41,4 @@ issue and we're happy to include your's!
 - Remark D2 code blocks into images: [https://github.com/mech-a/remark-d2](https://github.com/mech-a/remark-d2)
 - D2 image service: [https://github.com/Watt3r/d2-live](https://github.com/Watt3r/d2-live)
 - MkDocs plugin: [https://github.com/landmaj/mkdocs-d2-plugin](https://github.com/landmaj/mkdocs-d2-plugin)
+- C# & dotnet SDK: [https://github.com/Stephanvs/d2lang-cs](https://github.com/Stephanvs/d2lang-cs)

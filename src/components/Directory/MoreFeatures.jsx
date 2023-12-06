@@ -65,7 +65,7 @@ const moreFeatures = [
     description:
       "Reuse values like colors, labels, and anything else for clean diagram code.",
     icon: "variables.svg",
-    href: "/tour/variables",
+    href: "/tour/vars",
   },
   {
     title: "Globs",
