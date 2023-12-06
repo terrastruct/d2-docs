@@ -127,6 +127,7 @@ d -> a -> c
 
 :::info Arrowhead options
 - `triangle` (default)
+  - Can be further styled as `style.filled: false`.
 - `arrow` (like triangle but pointier)
 - `diamond`
   - Can be further styled as `style.filled: true`.
