@@ -136,3 +136,49 @@ logs: {shape: page; style.multiple: true}
 
 network.data processor -> api server
 ```
+
+## Customizing themes
+
+You can override theme values to customize existing themes or replace them entirely with
+your own theme.
+
+This is controlled by two [configuration variables](/tour/vars#configuration-variables):
+
+- `theme-overrides`: replaces color codes for theme
+- `dark-theme-overrides`: replaces color codes for dark theme
+
+Adding this snippet to the above code results in the following diagram.
+
+```d2
+vars: {
+  d2-config: {
+    theme-overrides: {
+      B1: "#2E7D32"
+      B2: "#66BB6A"
+      B3: "#A5D6A7"
+      B4: "#C5E1A5"
+      B5: "#E6EE9C"
+      B6: "#FFF59D"
+
+      AA2: "#0D47A1"
+      AA4: "#42A5F5"
+      AA5: "#90CAF9"
+
+      AB4: "#F44336"
+      AB5: "#FFCDD2"
+    }
+  }
+}
+```
+
+<div style={{width: "100%", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/theme-override.svg2')}}></div>
+
+### Color codes
+
+<img width={700} src={require('@site/static/img/color-code.png').default} alt="D2 color
+codes"/>
+
+:::info
+Not all color codes are currently used right now, but that may change in the future for
+new things that come to D2.
+:::

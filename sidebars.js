@@ -168,6 +168,7 @@ const sidebars = {
       link: { type: "doc", id: "releases/intro" },
       items: [
         "releases/intro",
+        "releases/0.6.3",
         "releases/0.6.2",
         "releases/0.6.1",
         "releases/0.6.0",
