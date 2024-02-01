@@ -175,12 +175,26 @@ Oxygen
 
 ## Connections
 
-Connections for objects within grids are coming soon, but you can connect the grids
-themselves like regular objects in D2.
+Connections for grids themselves work normally as you'd expect.
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-connected.svg2')}}></div>
 
 > Source code [here](https://github.com/terrastruct/d2-docs/blob/eda2d8739ce21c656e7608be48cb9067df36eb53/static/d2/grid-connected.d2).
+
+### Connections between grid cells
+
+Connections between shapes inside a grid work a bit differently. Because a grid structure
+imposes positioning outside what the layout engine controls, the layout engine is also
+unable to make routes. Therefore, these connections are center-center straight segments,
+i.e., no path-finding.
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-connections.svg2')}}></div>
+
+> Source code [here](https://github.com/terrastruct/d2/blob/master/e2etests/testdata/files/simple_grid_edges.d2).
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-nested-connections.svg2')}}></div>
+
+> Source code [here](https://github.com/terrastruct/d2/blob/master/docs/examples/vector-grid/vector-grid.d2).
 
 ## Nesting
 
@@ -201,6 +215,8 @@ footer
 ```
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-nested-grid.svg2')}}></div>
+
+
 
 ## Source code
 

@@ -143,6 +143,7 @@ const sidebars = {
             "tour/obsidian",
             "tour/slack",
             "tour/discord",
+            "tour/confluence",
           ],
         },
       ],
@@ -167,6 +168,9 @@ const sidebars = {
       link: { type: "doc", id: "releases/intro" },
       items: [
         "releases/intro",
+        "releases/0.6.3",
+        "releases/0.6.2",
+        "releases/0.6.1",
         "releases/0.6.0",
         "releases/0.5.1",
         "releases/0.5.0",

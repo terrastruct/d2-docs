@@ -16,6 +16,7 @@ Kiel](https://www.rtsys.informatik.uni-kiel.de/en/team).
 - Good at minimizing crossings.
 - Natively supports container to container routing, handling these better than dagre.
 - Undergoing active improvements with regular releases.
+- Routes SQL tables with exact columns.
 
 ## Cons
 

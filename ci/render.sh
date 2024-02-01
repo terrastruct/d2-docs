@@ -9,6 +9,7 @@ _normal() {
 
 _bespoke() {
   sh_c d2 --theme=300 --dark-theme=200 -l elk -c --pad 0 ./static/bespoke-d2/terminal-theme.d2 ./static/img/generated/terminal-theme.svg2
+  sh_c d2 --theme=300 --dark-theme=200 -l elk -c --pad 0 ./static/bespoke-d2/theme-override.d2 ./static/img/generated/theme-override.svg2
   sh_c d2 --animate-interval=1400 -l elk -c --pad 0 ./static/bespoke-d2/animated.d2 ./static/img/generated/animated.svg2
   sh_c d2 --animate-interval=1400 -c --pad 0 ./static/bespoke-d2/chicken.d2 ./static/img/generated/chicken.svg2
   sh_c d2 --pad 50 ./static/bespoke-d2/tiktok.d2 ./static/img/generated/tiktok.pdf
@@ -28,6 +29,8 @@ _bespoke() {
   sh_c d2 ./static/bespoke-d2/imports-nested.d2 ./static/img/generated/imports-nested.pdf
 
   sh_c d2 ./static/bespoke-d2/triple-glob.d2 ./static/img/generated/triple-glob.pdf
+
+  sh_c d2 --sketch ./static/bespoke-d2/grid-nested-connections.d2 ./static/img/generated/grid-nested-connections.svg2
 }
 
 main() {

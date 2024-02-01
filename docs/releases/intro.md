@@ -2,9 +2,9 @@
 
 :::info Latest
 
-Version: [0.6.0](/releases/0.6.0) (released July 30, 2023)
+Version: [0.6.3](/releases/0.6.3) (released December 16, 2023)
 
-Downloads: [Assets](https://github.com/terrastruct/d2/releases/tag/v0.6.0)
+Downloads: [Assets](https://github.com/terrastruct/d2/releases/tag/v0.6.3)
 
 :::
 
