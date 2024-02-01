@@ -2,19 +2,20 @@
 sidebar_label: Text & Code
 pagination_next: tour/icons
 ---
+import CodeBlock from '@theme/CodeBlock';
+import Markdown from '@site/static/d2/markdown.d2';
+import Text2 from '@site/static/d2/text-2.d2';
+import Code2 from '@site/static/d2/code-2.d2';
+import NonMarkdownText from '@site/static/d2/non-markdown-text.d2';
+import Latex from '@site/static/d2/latex.d2';
+
 # Text
 
 ## Standalone text is Markdown
 
-```d2
-explanation: |md
-  # I can do headers
-  - lists
-  - lists
-
-  And other normal markdown stuff
-|
-```
+<CodeBlock className="language-d2">
+    {Markdown}
+</CodeBlock>
 
 <div style={{width: 300, margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/markdown.svg2')}}></div>
 
@@ -29,14 +30,9 @@ Chinese, Japanese, Korean, even emojis!
 
 You can use `latex` or `tex` to specify a LaTeX language block.
 
-```d2
-plankton -> formula: will steal
-formula: {
-  equation: |latex
-    \\lim_{h \\rightarrow 0 } \\frac{f(x+h)-f(x)}{h}
-  |
-}
-```
+<CodeBlock className="language-d2">
+    {Text2}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/text-2.svg2')}}></div>
 
@@ -72,15 +68,9 @@ This is coming soon.
 
 Change `md` to a programming language for code blocks
 
-```d2
-explanation: |go
-  awsSession := From(c.Request.Context())
-  client := s3.New(awsSession)
-
-  ctx, cancelFn := context.WithTimeout(c.Request.Context(), AWS_TIMEOUT)
-  defer cancelFn()
-|
-```
+<CodeBlock className="language-d2">
+    {Code2}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/code-2.svg2')}}></div>
 
@@ -90,20 +80,9 @@ In some cases, you may want non-Markdown text. Maybe you just don't like Markdow
 GitHub-styling of Markdown that D2 uses, or you want to quickly change a shape to text.
 Just set `shape: text`.
 
-```d2
-title: A winning strategy {
-  shape: text
-  near: top-center
-  style: {
-    font-size: 55
-    italic: true
-  }
-}
-
-poll the people -> results
-results -> unfavorable -> poll the people
-results -> favorable -> will of the people
-```
+<CodeBlock className="language-d2">
+    {NonMarkdownText}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/non-markdown-text.svg2')}}></div>
 
@@ -142,68 +121,8 @@ my_code: |`ts
 
 D2 includes the following LaTeX plugins:
 
-```d2
-grid-columns: 3
-grid-gap: 100
-
-*.style.fill: transparent
-*.style.stroke: black
-
-amscd plugin: {
-  ex: |tex
-    \\begin{CD} B @>{\\text{very long label}}>> C S^{{\\mathcal{W}}_\\Lambda}\\otimes T @>j>> T\\\\ @VVV V \\end{CD}
-  |
-}
-
-braket plugin: {
-  ex: |tex
-    \\bra{a}\\ket{b}
-  |
-}
-
-cancel plugin: {
-  ex: |tex
-    \\cancel{Culture + 5}
-  |
-}
-
-color plugin: {
-  ex: |tex
-    \\textcolor{red}{y} = \\textcolor{green}{\\sin} x
-  |
-}
-
-gensymb plugin: {
-  ex: |tex
-    \\lambda = 10.6\\,\\micro\\mathrm{m}
-  |
-}
-
-mhchem plugin: {
-  ex: |tex
-    \ce{SO4^2- + Ba^2+ -> BaSO4 v}
-  |
-}
-
-physics plugin: {
-  ex: |tex
-    \\var{F[g(x)]}
-    \\dd(\\cos\\theta)
-  |
-}
-
-multilines: {
-  ex: |tex
-    \\displaylines{x = a + b \\\\ y = b + c}
-    \\sum_{k=1}^{n} h_{k} \\int_{0}^{1} \\bigl(\\partial_{k} f(x_{k-1}+t h_{k} e_{k}) -\\partial_{k} f(a)\\bigr) \\,dt
-  |
-}
-
-asm: {
-  ex: |latex
-    \\min_{ \\mathclap{\\substack{ x \\in \\mathbb{R}^n \\ x \\geq 0 \\ Ax \\leq b }}} c^T x
-  |
-}
-```
+<CodeBlock className="language-d2">
+    {Latex}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/latex.svg2')}}></div>

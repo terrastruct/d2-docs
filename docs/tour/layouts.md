@@ -1,6 +1,9 @@
 ---
 pagination_next: tour/dagre
 ---
+import CodeBlock from '@theme/CodeBlock';
+import DirectionRight from '@site/static/d2/direction-right.d2';
+import DirectionUp from '@site/static/d2/direction-up.d2';
 
 # Overview
 
@@ -58,18 +61,16 @@ flows towards.
 - `left`
 :::
 
-```d2
-direction: right
-x -> y -> z: hello
-```
+<CodeBlock className="language-d2">
+    {DirectionRight}
+</CodeBlock>
 
 <div
 className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/direction-right.svg2')}}></div>
 
-```d2
-direction: up
-x -> y -> z: hello
-```
+<CodeBlock className="language-d2">
+    {DirectionUp}
+</CodeBlock>
 
 <div
 className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/direction-up.svg2')}}></div>
@@ -83,6 +84,11 @@ direction. We are investigating ways to hack it to work.
 :::
 
 ```d2
+vars: {
+  d2-config: {
+    layout-engine: tala
+  }
+}
 direction: down
 a -> b -> c
 

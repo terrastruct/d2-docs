@@ -1,3 +1,11 @@
+import CodeBlock from '@theme/CodeBlock';
+import Connections1 from '@site/static/d2/connections-1.d2';
+import Connections2 from '@site/static/d2/connections-2.d2';
+import Connections3 from '@site/static/d2/connections-3.d2';
+import Connections4 from '@site/static/d2/connections-4.d2';
+import Connections5 from '@site/static/d2/connections-5.d2';
+import ConnectionsReference from '@site/static/d2/connections-reference.d2';
+
 # Connections
 
 Connections define relationships between shapes.
@@ -49,16 +57,9 @@ be -> fe
 
 ## Example
 
-```d2
-Write Replica Canada <-> Write Replica Australia
-
-Read Replica <- Master
-
-x -- y
-
-super long shape id here --\
-  -> super long shape id even longer here
-```
+<CodeBlock className="language-d2">
+    {Connections1}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/connections-1.svg2')}}></div>
 
@@ -66,11 +67,9 @@ super long shape id here --\
 
 Repeated connections do not override existing connections. They declare new ones.
 
-```d2
-Database -> S3: backup
-Database -> S3
-Database -> S3: backup
-```
+<CodeBlock className="language-d2">
+    {Connections2}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/connections-2.svg2')}}></div>
 
@@ -78,19 +77,17 @@ Database -> S3: backup
 
 For readability, it may look more natural to define multiple connection in a single line.
 
-```d2
-# The label applies to each connection in the chain.
-High Mem Instance -> EC2 <- High CPU Instance: Hosted By
-```
+<CodeBlock className="language-d2">
+    {Connections3}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/connections-3.svg2')}}></div>
 
 ## Cycles are okay
 
-```d2
-Stage One -> Stage Two -> Stage Three -> Stage Four
-Stage Four -> Stage One: repeat
-```
+<CodeBlock className="language-d2">
+    {Connections4}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/connections-4.svg2')}}></div>
 
@@ -98,30 +95,9 @@ Stage Four -> Stage One: repeat
 
 To override the default arrowhead shape or give a label next to arrowheads, define a special shape on connections named `source-arrowhead` and/or `target-arrowhead`.
 
-```d2
-a: The best way to avoid responsibility is to say, "I've got responsibilities"
-b: Whether weary or unweary, O man, do not rest
-c: I still maintain the point that designing a monolithic kernel in 1991 is a
-
-a -> b: To err is human, to moo bovine {
-  source-arrowhead: 1
-  target-arrowhead: * {
-    shape: diamond
-  }
-}
-
-b <-> c: "Reality is just a crutch for people who can't handle science fiction" {
-  source-arrowhead.label: 1
-  target-arrowhead: * {
-    shape: diamond
-    style.filled: true
-  }
-}
-
-d: A black cat crossing your path signifies that the animal is going somewhere
-
-d -> a -> c
-```
+<CodeBlock className="language-d2">
+    {Connections5}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/connections-5.svg2')}}></div>
 
@@ -159,12 +135,8 @@ x -> y: {
 
 You can reference a connection by specifying the original ID followed by its index.
 
-```d2
-x -> y: hi
-x -> y: hello
-
-(x -> y)[0].style.stroke: red
-(x -> y)[1].style.stroke: blue
-```
+<CodeBlock className="language-d2">
+    {ConnectionsReference}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/connections-reference.svg2')}}></div>

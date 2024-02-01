@@ -6,6 +6,8 @@ tags: [hand-drawn, show-and-tell]
 image: https://raw.githubusercontent.com/terrastruct/d2-docs/master/static/img/blog/sketch.png
 hide_table_of_contents: false
 ---
+import CodeBlock from '@theme/CodeBlock';
+import Animated from '@site/static/blog/sketch/animated.d2';
 
 Sketch mode started out as a "wouldn't it be cool" weekend feature, and has since turned
 into one of the things people love most about D2.
@@ -58,8 +60,8 @@ brightness of fills.
 
 It even works with animated connections!
 
-```d2
-winter.snow -> summer.sun -> trees -> winter.snow: { style.animated: true }
-```
+<CodeBlock className="language-d2">
+    {Animated}
+</CodeBlock>
 
 <div style={{width:'30%'}} dangerouslySetInnerHTML={{__html: require('@site/static/blog/sketch/animated.svg2')}}></div>

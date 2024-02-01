@@ -1,15 +1,19 @@
+import CodeBlock from '@theme/CodeBlock';
+import Overrides1 from '@site/static/d2/overrides-1.d2';
+import Overrides2 from '@site/static/d2/overrides-2.d2';
+import NullBasic from '@site/static/d2/null-basic.d2';
+import NullConnection from '@site/static/d2/null-connection.d2';
+import NullAttribute from '@site/static/d2/null-attribute.d2';
+import NullImplicitConnection from '@site/static/d2/null-implicit-connection.d2';
+import NullImplicitDescendant from '@site/static/d2/null-implicit-descendant.d2';
+
 # Overrides
 
 If you redeclare a shape, the new declaration is merged with the previous declaration.
 
-```d2
-visual studio code text editor
-visual studio code text editor: visual_studio_code_text_editor
-# Remember that shape keys are case insensitive
-visual studio CODE text editor: VisualStudioCodeTextEditor
-visual studio code TEXT editor: Visual Studio Code Text Editor
-visual STUDIO code text editor
-```
+<CodeBlock className="language-d2">
+    {Overrides1}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/overrides-1.svg2')}}></div>
 
@@ -17,20 +21,9 @@ The latest explicit setting of the label takes priority.
 
 Here's a more complex example of overrides involving containers:
 
-```d2
-aws_s3: AWS S3 California {
-  Monitoring -> California
-}
-aws_s3: "AWS S3 San Francisco, California" {
-  California.San Francisco
-}
-
-# Equal to:
-# aws_s3: "AWS S3 San Francisco, California" {
-#   Monitoring -> California
-#   California.San Francisco
-# }
-```
+<CodeBlock className="language-d2">
+    {Overrides2}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/overrides-2.svg2')}}></div>
 
@@ -38,12 +31,9 @@ aws_s3: "AWS S3 San Francisco, California" {
 
 You may override with the value `null` to delete the shape/connection/attribute.
 
-```d2
-one
-two
-
-one: null
-```
+<CodeBlock className="language-d2">
+    {NullBasic}
+</CodeBlock>
 
 <div style={{width: 200}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/null-basic.svg2')}}></div>
 
@@ -56,26 +46,17 @@ When is this useful?
 
 ### Nulling a connection
 
-```d2
-one -> two
-
-(one -> two)[0]: null
-```
+<CodeBlock className="language-d2">
+    {NullConnection}
+</CodeBlock>
 
 <div style={{width: 200}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/null-connection.svg2')}}></div>
 
 ### Nulling an attribute
 
-```d2
-one: {
-  style: {
-    fill: pink
-    stroke: green
-  }
-}
-
-one.style.stroke: null
-```
+<CodeBlock className="language-d2">
+    {NullAttribute}
+</CodeBlock>
 
 <div style={{width: 200}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/null-attribute.svg2')}}></div>
 
@@ -85,24 +66,16 @@ one.style.stroke: null
 If you null a shape with connections, its connections are also nulled (since every
 connection in D2 needs an endpoint).
 
-```d2
-one -> two
-
-two: null
-```
+<CodeBlock className="language-d2">
+    {NullImplicitConnection}
+</CodeBlock>
 
 <div style={{width: 200}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/null-implicit-connection.svg2')}}></div>
 
 If you null a shape with descendents, those descendants are also nulled.
 
-```d2
-one: {
-  two: {
-    three
-  }
-}
-
-one.two: null
-```
+<CodeBlock className="language-d2">
+    {NullImplicitDescendant}
+</CodeBlock>
 
 <div style={{width: 200}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/null-implicit-descendant.svg2')}}></div>

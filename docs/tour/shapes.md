@@ -1,18 +1,16 @@
+import CodeBlock from '@theme/CodeBlock';
+import Shapes1 from '@site/static/d2/shapes-1.d2';
+import Shapes2 from '@site/static/d2/shapes-2.d2';
+
 # Shapes
 
 ## Basics
 
 You can declare shapes like so:
 
-```d2
-imAShape
-im_a_shape
-im a shape
-i'm a shape
-# notice that one-hyphen is not a connection
-# whereas, `a--shape` would be a connection
-a-shape
-```
+<CodeBlock className="language-d2">
+    {Shapes1}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/shapes-1.svg2')}}></div>
 
@@ -37,12 +35,9 @@ Cloud.shape: cloud
 
 ## Example
 
-```d2
-pg: PostgreSQL
-Cloud: my cloud
-Cloud.shape: cloud
-SQLite; Cassandra
-```
+<CodeBlock className="language-d2">
+    {Shapes2}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/shapes-2.svg2')}}></div>
 

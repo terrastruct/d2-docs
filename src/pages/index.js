@@ -11,52 +11,7 @@ import FeatureHighlights from "@site/src/components/Directory/FeatureHighlights"
 import MoreFeatures from "@site/src/components/Directory/MoreFeatures";
 import D2CodeBlock from "@theme/CodeBlock";
 import Example from "@site/static/img/generated/terminal-theme.svg2";
-
-const exampleD2 = `logs: {
-  shape: page
-  style.multiple: true
-}
-user: User {shape: person}
-network: Network {
-  tower: Cell Tower {
-    satellites: {
-      shape: stored_data
-      style.multiple: true
-    }
-
-    satellites -> transmitter
-    satellites -> transmitter
-    satellites -> transmitter
-    transmitter
-  }
-  processor: Data Processor {
-    storage: Storage {
-      shape: cylinder
-      style.multiple: true
-    }
-  }
-  portal: Online Portal {
-    UI
-  }
-
-  tower.transmitter -> processor: phone logs
-}
-server: API Server
-
-user -> network.tower: Make call
-network.processor -> server
-network.processor -> server
-network.processor -> server
-
-server -> logs
-server -> logs
-server -> logs: persist
-
-server -> network.portal.UI: display
-user -> network.portal.UI: access {
-  style.stroke-dash: 3
-}
-`;
+import ExampleCode from "@site/static/bespoke-d2/terminal-theme.d2";
 
 export default function Home() {
   const context = useDocusaurusContext();
@@ -94,7 +49,7 @@ export default function Home() {
             className="language-d2"
             containerClassName="Directory__Example--Code"
           >
-            {exampleD2}
+            {ExampleCode}
           </D2CodeBlock>
         </div>
         <div

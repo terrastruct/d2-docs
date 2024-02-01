@@ -1,12 +1,21 @@
+import CodeBlock from '@theme/CodeBlock';
+import SequenceDiagrams1 from '@site/static/d2/sequence-diagrams-1.d2';
+import SequenceDiagrams2 from '@site/static/d2/sequence-diagrams-2.d2';
+import SequenceDiagrams3 from '@site/static/d2/sequence-diagrams-3.d2';
+import SequenceDiagrams4 from '@site/static/d2/sequence-diagrams-4.d2';
+import SequenceDiagramsScope from '@site/static/d2/sequence-diagrams-scope.d2';
+import SequenceDiagramsGroup from '@site/static/d2/sequence-diagrams-group.d2';
+import SequenceDiagramsNote from '@site/static/d2/sequence-diagrams-note.d2';
+import SequenceDiagramsSelf from '@site/static/d2/sequence-diagrams-self.d2';
+import SequenceDiagramsLifeline from '@site/static/d2/sequence-diagrams-lifeline.d2';
+
 # Sequence Diagrams
 
 Sequence diagrams are created by setting `shape: sequence_diagram` on an object.
 
-```d2
-shape: sequence_diagram
-alice -> bob: What does it mean\nto be well-adjusted?
-bob -> alice: The ability to play bridge or\ngolf as if they were games.
-```
+<CodeBlock className="language-d2">
+    {SequenceDiagrams1}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/sequence-diagrams-1.svg2')}}></div>
 
@@ -21,23 +30,9 @@ Children of sequence diagrams share the same scope throughout the sequence diagr
 
 For example:
 
-```d2
-Office chatter: {
-  shape: sequence_diagram
-  alice: Alice
-  bob: Bobby
-  awkward small talk: {
-    alice -> bob: uhm, hi
-    bob -> alice: oh, hello
-    icebreaker attempt: {
-      alice -> bob: what did you have for lunch?
-    }
-    unfortunate outcome: {
-      bob -> alice: that's personal
-    }
-  }
-}
-```
+<CodeBlock className="language-d2">
+    {SequenceDiagramsScope}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/sequence-diagrams-scope.svg2')}}></div>
 
@@ -76,40 +71,9 @@ An actor in D2 is also known elsewhere as "participant".
 Like every other object in D2, they can be contained, connected, relabeled, re-styled, and
 treated like any other object.
 
-```d2
-direction: right
-Before and after becoming friends: {
-  2007: Office chatter in 2007 {
-    shape: sequence_diagram
-    alice: Alice
-    bob: Bobby
-    awkward small talk: {
-      alice -> bob: uhm, hi
-      bob -> alice: oh, hello
-      icebreaker attempt: {
-        alice -> bob: what did you have for lunch?
-      }
-      unfortunate outcome: {
-        bob -> alice: that's personal
-      }
-    }
-  }
-
-  2012: Office chatter in 2012 {
-    shape: sequence_diagram
-    alice: Alice
-    bob: Bobby
-    alice -> bob: Want to play with ChatGPT?
-    bob -> alice: Yes!
-    bob -> alice.play: Write a play...
-    alice.play -> bob.play: about 2 friends...
-    bob.play -> alice.play: who find love...
-    alice.play -> bob.play: in a sequence diagram
-  }
-
-  2007 -> 2012: Five\nyears\nlater
-}
-```
+<CodeBlock className="language-d2">
+    {SequenceDiagrams2}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/sequence-diagrams-2.svg2')}}></div>
 
@@ -123,14 +87,9 @@ A span in D2 is also known elsewhere as a "lifespan", "activation box", and "act
 
 You can specify a span by connecting a nested object on an actor.
 
-```d2
-shape: sequence_diagram
-alice.t1 -> bob
-alice.t2 -> bob.a
-alice.t2.a -> bob.a
-alice.t2.a <- bob.a
-alice.t2 <- bob.a
-```
+<CodeBlock className="language-d2">
+    {SequenceDiagrams3}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/sequence-diagrams-3.svg2')}}></div>
 
@@ -146,18 +105,9 @@ We saw an example of this in an earlier example when explaining scoping rules. M
 formally, a group is a container within a `sequence_diagram` shape which is not connected
 to anything but has connections or objects inside.
 
-```d2
-shape: sequence_diagram
-# Predefine actors
-alice; bob
-shower thoughts: {
-  alice -> bob: A physicist is an atom's way of knowing about atoms.
-  alice -> bob: Today is the first day of the rest of your life.
-}
-life advice: {
-  bob -> alice: If all else fails, lower your standards.
-}
-```
+<CodeBlock className="language-d2">
+    {SequenceDiagramsGroup}
+</CodeBlock>
 
 :::caution
 Due to the unique scoping rules in sequence diagrams, when you are within a group, the
@@ -172,16 +122,9 @@ example that `alice` and `bob` are explicitly declared before group declarations
 Notes are declared by defining a nested object on an actor with no connections going to
 it.
 
-```d2
-shape: sequence_diagram
-alice -> bob
-bob."In the eyes of my dog, I'm a man."
-# Notes can go into groups, too
-important insight: {
-  bob."Cold hands, no gloves."
-}
-bob -> alice: Chocolate chip.
-```
+<CodeBlock className="language-d2">
+    {SequenceDiagramsNote}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/sequence-diagrams-note.svg2')}}></div>
 
@@ -189,12 +132,9 @@ bob -> alice: Chocolate chip.
 
 Self-referential messages can be declared from an actor to the themselves.
 
-```d2
-shape: sequence_diagram
-son -> father: Can I borrow your car?
-friend -> father: Never lend your car to anyone to whom you have given birth.
-father -> father: internal debate ensues
-```
+<CodeBlock className="language-d2">
+    {SequenceDiagramsSelf}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/sequence-diagrams-self.svg2')}}></div>
 
@@ -203,49 +143,18 @@ father -> father: internal debate ensues
 You can style shapes and connections like any other. Here we make some messages dashed and
 set the shape on an actor.
 
-```d2
-shape: sequence_diagram
-scorer: { shape: person }
-scorer.t -> itemResponse.t: getItem()
-scorer.t <- itemResponse.t: item {
-    style.stroke-dash: 5
-}
+<CodeBlock className="language-d2">
+    {SequenceDiagrams4}
+</CodeBlock>
 
-scorer.t -> item.t1: getRubric()
-scorer.t <- item.t1: rubric {
-    style.stroke-dash: 5
-}
-
-scorer.t -> essayRubric.t: applyTo(essayResp)
-itemResponse -> essayRubric.t.c
-essayRubric.t.c -> concept.t: match(essayResponse)
-scorer <- essayRubric.t: score {
-    style.stroke-dash: 5
-}
-
-scorer.t -> itemOutcome.t1: new
-scorer.t -> item.t2: getNormalMinimum()
-scorer.t -> item.t3: getNormalMaximum()
-
-scorer.t -> itemOutcome.t2: setScore(score)
-scorer.t -> itemOutcome.t3: setFeedback(missingConcepts)
-
-```
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/sequence-diagrams-4.svg2')}}></div>
 
 Lifeline edges (those lines going from top-down) inherit the actor's `stroke` and
 `stroke-dash` styles.
 
-```d2
-shape: sequence_diagram
-alice -> bob: What does it mean\nto be well-adjusted?
-bob -> alice: The ability to play bridge or\ngolf as if they were games.
-
-alice.style: {
-  stroke: red
-  stroke-dash: 0
-}
-```
+<CodeBlock className="language-d2">
+    {SequenceDiagramsLifeline}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/sequence-diagrams-lifeline.svg2')}}></div>
 

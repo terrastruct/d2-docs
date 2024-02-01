@@ -1,17 +1,16 @@
+import CodeBlock from '@theme/CodeBlock';
+import Classes1 from '@site/static/d2/classes-1.d2';
+import Classes2 from '@site/static/d2/classes-2.d2';
+
 # UML Classes
 
 ## Basics
 
 D2 fully supports UML Class diagrams. Here's a minimal example:
 
-```d2
-MyClass: {
-  shape: class
-
-  field: "[]string"
-  method(a uint64): (x, y int)
-}
-```
+<CodeBlock className="language-d2">
+    {Classes1}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/classes-1.svg2')}}></div>
 
@@ -38,29 +37,8 @@ See https://www.uml-diagrams.org/visibility.html
 
 Here's an example with differing visibilities and more complex types:
 
-```d2
-D2 Parser: {
-  shape: class
-
-  # Default visibility is + so no need to specify.
-  +reader: io.RuneReader
-  readerPos: d2ast.Position
-
-  # Private field.
-  -lookahead: "[]rune"
-
-  # Protected field.
-  # We have to escape the # to prevent the line from being parsed as a comment.
-  \#lookaheadPos: d2ast.Position
-
-  +peek(): (r rune, eof bool)
-  rewind()
-  commit()
-
-  \#peekn(n int): (s string, eof bool)
-}
-
-"github.com/terrastruct/d2parser.git" -> D2 Parser
-```
+<CodeBlock className="language-d2">
+    {Classes2}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/classes-2.svg2')}}></div>

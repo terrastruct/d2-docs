@@ -1,6 +1,9 @@
 ---
 pagination_next: tour/comments
 ---
+import CodeBlock from '@theme/CodeBlock';
+import Strings2 from '@site/static/d2/strings-2.d2';
+
 # Strings
 
 ## Unquoted strings
@@ -30,9 +33,9 @@ language. The syntax highlighting will make it clear if you're using a forbidden
 
 If you need to use such symbols, you can use single or double quoted strings:
 
-```d2
-'$$$' -> "###"
-```
+<CodeBlock className="language-d2">
+    {Strings2}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/strings-2.svg2')}}></div>
 
