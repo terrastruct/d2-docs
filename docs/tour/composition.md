@@ -28,14 +28,14 @@ Each one serves different use cases. The example above is achieved by defining a
 
 Thus far, all D2 diagrams we've encountered are single-board diagrams, the root board.
 
-```d2
+```d2-incomplete
 # Root board
 x -> y
 ```
 
 Composition in D2 is when you use one of those keywords to declare another board.
 
-```d2
+```d2-incomplete
 # Root board
 x -> y
 layers: {

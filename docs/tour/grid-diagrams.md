@@ -1,3 +1,13 @@
+import CodeBlock from '@theme/CodeBlock';
+import Grid from '@site/static/d2/grid.d2';
+import Grid2 from '@site/static/d2/grid-2.d2';
+import Grid3 from '@site/static/d2/grid-3.d2';
+import Grid4 from '@site/static/d2/grid-4.d2';
+import GridDimensions from '@site/static/d2/grid-dimensions.d2';
+import GridFill from '@site/static/d2/grid-fill.d2';
+import GridNestedGrid from '@site/static/d2/grid-nested-grid.d2';
+import Table from '@site/static/d2/table.d2';
+
 # Grid Diagrams
 
 Grid diagrams let you display objects in a structured grid.
@@ -15,35 +25,25 @@ Two keywords do all the magic:
 
 Setting just `grid-rows`:
 
-```d2
-grid-rows: 3
-Executive
-Legislative
-Judicial
-```
+<CodeBlock className="language-d2">
+    {Grid2}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-2.svg2')}}></div>
 
 Setting just `grid-columns`:
 
-```d2
-grid-columns: 3
-Executive
-Legislative
-Judicial
-```
+<CodeBlock className="language-d2">
+    {Grid3}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-3.svg2')}}></div>
 
 Setting both `grid-rows` and `grid-columns`:
 
-```d2
-grid-rows: 2
-grid-columns: 2
-Executive
-Legislative
-Judicial
-```
+<CodeBlock className="language-d2">
+    {Grid4}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-4.svg2')}}></div>
 
@@ -51,13 +51,9 @@ Judicial
 
 To create specific constructions, use `width` and/or `height`.
 
-```d2
-grid-rows: 2
-Executive
-Legislative
-Judicial
-The American Government.width: 400
-```
+<CodeBlock className="language-d2">
+    {GridDimensions}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-dimensions.svg2')}}></div>
 
@@ -67,15 +63,9 @@ Notice how objects are evenly distributed within each row.
 
 When you define only one of row or column, objects will expand.
 
-```d2
-grid-rows: 3
-Executive
-Legislative
-Judicial
-The American Government.width: 400
-Voters
-Non-voters
-```
+<CodeBlock className="language-d2">
+    {GridFill}
+</CodeBlock>
 
 Notice how `Voters` and `Non-voters` fill the space.
 
@@ -88,7 +78,7 @@ dominant direction is the order in which cells are filled.
 
 For example:
 
-```d2
+```d2-incomplete
 grid-rows: 4
 grid-columns: 2
 # bunch of shapes
@@ -100,7 +90,7 @@ Since `grid-rows` is defined first, objects will fill rows before moving onto co
 
 But if it were reversed:
 
-```d2
+```d2-incomplete
 grid-columns: 2
 grid-rows: 4
 # bunch of shapes
@@ -140,38 +130,9 @@ Setting `grid-gap` is equivalent to setting both `vertical-gap` and `horizontal-
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/table.svg2')}}></div>
 
-```d2
-# Specified so that objects are written in row-dominant order
-grid-rows: 2
-grid-columns: 4
-grid-gap: 0
-
-classes: {
-  header: {
-    style.underline: true
-  }
-}
-
-Element.class: header
-Atomic Number.class: header
-Atomic Mass.class: header
-Melting Point.class: header
-
-Hydrogen
-1
-"1.008"
-"-259.16"
-
-Carbon
-6
-"12.011"
-3500
-
-Oxygen
-8
-"15.999"
-"-218.79"
-```
+<CodeBlock className="language-d2">
+    {Table}
+</CodeBlock>
 
 ## Connections
 
@@ -201,95 +162,16 @@ i.e., no path-finding.
 Currently you can nest grid diagrams within grid diagrams. Nesting other types is coming
 soon.
 
-```d2
-grid-gap: 0
-grid-columns: 1
-header
-body: "" {
-  grid-gap: 0
-  grid-columns: 2
-  content
-  sidebar
-}
-footer
-```
+<CodeBlock className="language-d2">
+    {GridNestedGrid}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-nested-grid.svg2')}}></div>
 
-
-
 ## Source code
 
-This is the text for the image at the top of this page.
+This is the script for the image at the top of this page.
 
-```d2
-grid-rows: 5
-style.fill: black
-
-classes: {
-  white square: {
-    label: ""
-    width: 120
-    style: {
-      fill: white
-      stroke: cornflowerblue
-      stroke-width: 10
-    }
-  }
-  block: {
-    style: {
-      text-transform: uppercase
-      font-color: white
-      fill: darkcyan
-      stroke: black
-    }
-  }
-}
-
-flow1.class: white square
-flow2.class: white square
-flow3.class: white square
-flow4.class: white square
-flow5.class: white square
-flow6.class: white square
-flow7.class: white square
-flow8.class: white square
-flow9.class: white square
-
-dagger engine: {
-  width: 800
-  class: block
-  style: {
-    fill: beige
-    stroke: darkcyan
-    font-color: blue
-    stroke-width: 8
-  }
-}
-
-any docker compatible runtime: {
-  width: 800
-  class: block
-  style: {
-    fill: lightcyan
-    stroke: darkcyan
-    font-color: black
-    stroke-width: 8
-  }
-  icon: https://icons.terrastruct.com/dev%2Fdocker.svg
-}
-
-any ci: {
-  class: block
-  style: {
-    fill: gold
-    stroke: maroon
-    font-color: maroon
-    stroke-width: 8
-  }
-}
-windows.class: block
-linux.class: block
-macos.class: block
-kubernetes.class: block
-```
+<CodeBlock className="language-d2">
+    {Grid}
+</CodeBlock>

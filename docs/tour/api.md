@@ -1,3 +1,7 @@
+---
+pagination_next: tour/studio
+---
+
 # D2 Oracle
 
 D2 has an API built on top of its AST for **programmatically creating diagrams in Go**.
@@ -63,7 +67,7 @@ _, newKey, _ = d2oracle.Create(g, nil, "a -> b")
 
 If you have a multi-board diagram like so:
 
-```d2
+```d2-incomplete
 x
 
 layers: {

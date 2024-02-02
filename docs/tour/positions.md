@@ -1,3 +1,9 @@
+import CodeBlock from '@theme/CodeBlock';
+import NearConstant from '@site/static/d2/near-constant.d2';
+import NearContainer from '@site/static/d2/near-container.d2';
+import NearExplanation from '@site/static/d2/near-explanation.d2';
+import NearLabelIcon from '@site/static/d2/near-label-icon.d2';
+
 # Positions
 
 In general, positioning is controlled entirely by the layout engine. It's one of the
@@ -23,76 +29,25 @@ Let's explore some use cases:
 
 ### Giving your diagram a title
 
-```d2
-title: |md
-  # A winning strategy
-| { near: top-center }
-
-poll the people -> results
-results -> unfavorable -> poll the people
-results -> favorable -> will of the people
-```
+<CodeBlock className="language-d2">
+    {NearConstant}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/near-constant.svg2')}}></div>
 
 ### Creating a legend
 
-```d2
-direction: right
-
-x -> y: {
-  style.stroke: green
-}
-
-y -> z: {
-  style.stroke: red
-}
-
-legend: {
-  near: bottom-center
-  color1: foo {
-    shape: text
-    style.font-color: green
-  }
-
-  color2: bar {
-    shape: text
-    style.font-color: red
-  }
-}
-```
+<CodeBlock className="language-d2">
+    {NearContainer}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/near-container.svg2')}}></div>
 
 ### Longform description or explanation
 
-```d2
-explanation: |md
-  # LLMs
-  The Large Language Model (LLM) is a powerful AI\
-    system that learns from vast amounts of text data.\
-  By analyzing patterns and structures in language,\
-  it gains an understanding of grammar, facts,\
-  and even some reasoning abilities. As users input text,\
-  the LLM predicts the most likely next words or phrases\
-  to create coherent responses. The model\
-  continuously fine-tunes its output, considering both the\
-  user's input and its own vast knowledge base.\
-  This cutting-edge technology enables LLM to generate human-like text,\
-  making it a valuable tool for various applications.
-| {
-  near: center-left
-}
-
-ML Platform -> Pre-trained models
-ML Platform -> Model registry
-ML Platform -> Compiler
-ML Platform -> Validation
-ML Platform -> Auditing
-
-Model registry -> Server.Batch Predictor
-Server.Online Model Server
-```
+<CodeBlock className="language-d2">
+    {NearExplanation}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/near-explanation.svg2')}}></div>
 
@@ -100,22 +55,9 @@ Server.Online Model Server
 
 The `near` can be nested to `label` and `icon` to specify their positions.
 
-```d2
-direction: right
-x -> y
-
-x: worker {
-  label.near: top-center
-  icon: https://icons.terrastruct.com/essentials%2F005-programmer.svg
-  icon.near: outside-top-right
-}
-
-y: profits {
-  label.near: bottom-right
-  icon: https://icons.terrastruct.com/essentials%2Fprofits.svg
-  icon.near: outside-top-left
-}
-```
+<CodeBlock className="language-d2">
+    {NearLabelIcon}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/near-label-icon.svg2')}}></div>
 
@@ -146,6 +88,11 @@ You can also set `near` to the absolute ID of another shape to hint to the layou
 that they should be in the vicinity of one another.
 
 ```d2
+vars: {
+  d2-config: {
+    layout-engine: tala
+  }
+}
 aws: {
   load_balancer -> api
   api -> db
@@ -167,7 +114,7 @@ explanation: |md
 
 Notice how the text is positioned near the `aws` node and not the `gcloud` node.
 
-<img src={require('@site/static/img/screenshots/text-2.png').default} alt="text near example" width="400"/>
+<img src={require('@site/static/img/screenshots/text-2.png').default} alt="text near example" width="800"/>
 
 ## Top and left
 

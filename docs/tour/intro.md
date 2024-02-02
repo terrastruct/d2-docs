@@ -2,6 +2,8 @@
 sidebar_label: What is D2
 pagination_next: tour/experience
 ---
+import CodeBlock from '@theme/CodeBlock';
+import Example from '@site/static/bespoke-d2/terminal-theme.d2';
 
 # D2 Tour
 
@@ -18,51 +20,9 @@ d2 --theme=300 --dark-theme=200 -l elk --pad 0 ./input.d2
 
 <div style={{width: "100%"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/terminal-theme.svg2')}}></div>
 
-```d2
-network: {
-  cell tower: {
-    satellites: {
-      shape: stored_data
-      style.multiple: true
-    }
-
-    transmitter
-
-    satellites -> transmitter: send
-    satellites -> transmitter: send
-    satellites -> transmitter: send
-  }
-
-  online portal: {
-    ui: {shape: hexagon}
-  }
-
-  data processor: {
-    storage: {
-      shape: cylinder
-      style.multiple: true
-    }
-  }
-
-  cell tower.transmitter -> data processor.storage: phone logs
-}
-
-user: {
-  shape: person
-  width: 130
-}
-
-user -> network.cell tower: make call
-user -> network.online portal.ui: access {
-  style.stroke-dash: 3
-}
-
-api server -> network.online portal.ui: display
-api server -> logs: persist
-logs: {shape: page; style.multiple: true}
-
-network.data processor -> api server
-```
+<CodeBlock className="language-d2">
+    {Example}
+</CodeBlock>
 
 ## Using the CLI watch mode
 
@@ -80,4 +40,10 @@ The source code for D2 is hosted here:
 
 The source code for these docs are here:
 [https://github.com/terrastruct/d2-docs](https://github.com/terrastruct/d2-docs).
+:::
+
+:::info
+For each D2 snippet, you can hover over it to open directly in the Playground and tinker.
+
+There's some exceptions like snippets that use imports.
 :::

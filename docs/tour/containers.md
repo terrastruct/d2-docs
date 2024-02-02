@@ -1,16 +1,14 @@
+import CodeBlock from '@theme/CodeBlock';
+import Containers1 from '@site/static/d2/containers-1.d2';
+import Containers2 from '@site/static/d2/containers-2.d2';
+import Containers3 from '@site/static/d2/containers-3.d2';
+import ContainersUnderscore from '@site/static/d2/containers-underscore.d2';
+
 # Containers
 
-```d2
-server
-# Declares a shape inside of another shape
-server.process
-
-# Can declare the container and child in same line
-im a parent.im a child
-
-# Since connections can also declare keys, this works too
-apartment.Bedroom.Bathroom -> office.Spare Room.Bathroom: Portal
-```
+<CodeBlock className="language-d2">
+    {Containers1}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/containers-1.svg2')}}></div>
 
@@ -18,19 +16,9 @@ apartment.Bedroom.Bathroom -> office.Spare Room.Bathroom: Portal
 
 You can avoid repeating containers by creating nested maps.
 
-```d2
-clouds: {
-  aws: {
-    load_balancer -> api
-    api -> db
-  }
-  gcloud: {
-    auth -> db
-  }
-
-  gcloud -> aws
-}
-```
+<CodeBlock className="language-d2">
+    {Containers2}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/containers-2.svg2')}}></div>
 
@@ -40,7 +28,7 @@ There are two ways define container labels.
 
 ### 1. Shorthand container labels
 
-```d2
+```d2-incomplete
 gcloud: Google Cloud {
   ...
 }
@@ -48,7 +36,7 @@ gcloud: Google Cloud {
 
 ### 2. Reserved keyword `label`
 
-```d2
+```d2-incomplete
 gcloud: {
   label: Google Cloud
   ...
@@ -57,24 +45,9 @@ gcloud: {
 
 ## Example
 
-```d2
-clouds: {
-  aws: AWS {
-    load_balancer -> api
-    api -> db
-  }
-  gcloud: Google Cloud {
-    auth -> db
-  }
-
-  gcloud -> aws
-}
-
-users -> clouds.aws.load_balancer
-users -> clouds.gcloud.auth
-
-ci.deploys -> clouds
-```
+<CodeBlock className="language-d2">
+    {Containers3}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/containers-3.svg2')}}></div>
 
@@ -83,15 +56,8 @@ ci.deploys -> clouds
 Sometimes you want to reference something outside of the container from within. The
 underscore (`_`) refers to parent.
 
-```d2
-christmas: {
-  presents
-}
-birthdays: {
-  presents
-  _.christmas.presents -> presents: regift
-  _.christmas.style.fill: "#ACE1AF"
-}
-```
+<CodeBlock className="language-d2">
+    {ContainersUnderscore}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/containers-underscore.svg2')}}></div>

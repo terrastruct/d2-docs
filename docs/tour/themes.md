@@ -1,6 +1,9 @@
 ---
 pagination_next: tour/style
 ---
+import CodeBlock from '@theme/CodeBlock';
+import TerminalTheme from '@site/static/bespoke-d2/terminal-theme.d2';
+
 # Themes
 
 D2 comes with many themes that make your diagram look professional and ready to insert
@@ -91,51 +94,9 @@ Source code for the above diagram (rendered with ELK) is as follows. Notice that
 the properties apparent in the diagram do not appear in the source, such as the casing of
 the labels, because the special theme uses different defaults.
 
-```d2
-network: {
-  cell tower: {
-    satellites: {
-      shape: stored_data
-      style.multiple: true
-    }
-
-    transmitter
-
-    satellites -> transmitter: send
-    satellites -> transmitter: send
-    satellites -> transmitter: send
-  }
-
-  online portal: {
-    ui: {shape: hexagon}
-  }
-
-  data processor: {
-    storage: {
-      shape: cylinder
-      style.multiple: true
-    }
-  }
-
-  cell tower.transmitter -> data processor.storage: phone logs
-}
-
-user: {
-  shape: person
-  width: 130
-}
-
-user -> network.cell tower: make call
-user -> network.online portal.ui: access {
-  style.stroke-dash: 3
-}
-
-api server -> network.online portal.ui: display
-api server -> logs: persist
-logs: {shape: page; style.multiple: true}
-
-network.data processor -> api server
-```
+<CodeBlock className="language-d2">
+    {TerminalTheme}
+</CodeBlock>
 
 ## Customizing themes
 
@@ -149,7 +110,7 @@ This is controlled by two [configuration variables](/tour/vars#configuration-var
 
 Adding this snippet to the above code results in the following diagram.
 
-```d2
+```d2-incomplete
 vars: {
   d2-config: {
     theme-overrides: {

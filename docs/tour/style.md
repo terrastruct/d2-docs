@@ -1,3 +1,26 @@
+import CodeBlock from '@theme/CodeBlock';
+import StylesOpacity from '@site/static/d2/styles-opacity.d2';
+import StylesStroke from '@site/static/d2/styles-stroke.d2';
+import StylesFill from '@site/static/d2/styles-fill.d2';
+import StylesFillTransparent from '@site/static/d2/styles-fill-transparent.d2';
+import StylesFillPattern from '@site/static/d2/styles-fill-pattern.d2';
+import StylesStrokeWidth from '@site/static/d2/styles-stroke-width.d2';
+import StylesStrokeDash from '@site/static/d2/styles-stroke-dash.d2';
+import StylesBorderRadius from '@site/static/d2/styles-border-radius.d2';
+import Pill from '@site/static/d2/pill.d2';
+import StylesShadow from '@site/static/d2/styles-shadow.d2';
+import Styles3d from '@site/static/d2/styles-3d.d2';
+import StylesMultiple from '@site/static/d2/styles-multiple.d2';
+import StylesDoubleBorder from '@site/static/d2/styles-double-border.d2';
+import StylesFont from '@site/static/d2/styles-font.d2';
+import StylesFontSize from '@site/static/d2/styles-font-size.d2';
+import StylesFontColor from '@site/static/d2/styles-font-color.d2';
+import StylesTableColor from '@site/static/d2/styles-table-color.d2';
+import StylesAnimated from '@site/static/d2/styles-animated.d2';
+import StylesTextDecoration from '@site/static/d2/styles-text-decoration.d2';
+import StylesTextTransform from '@site/static/d2/styles-text-transform.d2';
+import StylesRoot from '@site/static/d2/styles-root.d2';
+
 # Styles
 
 If you'd like to customize the style of a shape, the following reserved keywords can be
@@ -37,15 +60,9 @@ brevity.
 
 Float between `0` and `1`.
 
-```d2
-x -> y: hi {
-  style: {
-    opacity: 0.4
-  }
-}
-x.style.opacity: 0
-y.style.opacity: 0.7
-```
+<CodeBlock className="language-d2">
+    {StylesOpacity}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-opacity.svg2')}}></div>
 
@@ -53,15 +70,9 @@ y.style.opacity: 0.7
 
 CSS color name or hex code.
 
-```d2
-x -> y: hi {
-  style: {
-    stroke: deepskyblue
-  }
-}
-# We need quotes for hex otherwise it gets interpreted as comment
-x.style.stroke: "#f4a261"
-```
+<CodeBlock className="language-d2">
+    {StylesStroke}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-stroke.svg2')}}></div>
 
@@ -76,11 +87,9 @@ already used to control header's `fill`).
 
 CSS color name or hex code.
 
-```d2
-x -> y: hi
-x.style.fill: "#f4a261"
-y.style.fill: honeydew
-```
+<CodeBlock className="language-d2">
+    {StylesFill}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-fill.svg2')}}></div>
 
@@ -92,13 +101,9 @@ For `sql_table`s and `class`es, `fill` is applied to the header.
 
 Want transparent?
 
-```d2
-x: {
-  y
-  y.style.fill: transparent
-}
-x.style.fill: PapayaWhip
-```
+<CodeBlock className="language-d2">
+    {StylesFillTransparent}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-fill-transparent.svg2')}}></div>
 
@@ -110,12 +115,9 @@ Available patterns:
 - `lines`
 - `grain`
 
-```d2
-style.fill-pattern: dots
-x -> y: hi
-x.style.fill-pattern: lines
-y.style.fill-pattern: grain
-```
+<CodeBlock className="language-d2">
+    {StylesFillPattern}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-fill-pattern.svg2')}}></div>
 
@@ -123,14 +125,9 @@ y.style.fill-pattern: grain
 
 Integer between `1` and `15`.
 
-```d2
-x -> y: hi {
-  style: {
-    stroke-width: 8
-  }
-}
-x.style.stroke-width: 1
-```
+<CodeBlock className="language-d2">
+    {StylesStrokeWidth}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-stroke-width.svg2')}}></div>
 
@@ -138,14 +135,9 @@ x.style.stroke-width: 1
 
 Integer between `0` and `10`.
 
-```d2
-x -> y: hi {
-  style: {
-    stroke-dash: 3
-  }
-}
-x.style.stroke-dash: 5
-```
+<CodeBlock className="language-d2">
+    {StylesStrokeDash}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-stroke-dash.svg2')}}></div>
 
@@ -153,11 +145,9 @@ x.style.stroke-dash: 5
 
 Integer between `0` and `20`.
 
-```d2
-x -> y: hi
-x.style.border-radius: 3
-y.style.border-radius: 8
-```
+<CodeBlock className="language-d2">
+    {StylesBorderRadius}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-border-radius.svg2')}}></div>
 
@@ -169,9 +159,9 @@ on connections whose routes have corners.
 
 Specifying a very high value creates a "pill" effect.
 
-```d2
-tylenol.style.border-radius: 999
-```
+<CodeBlock className="language-d2">
+    {Pill}
+</CodeBlock>
 
 <div style={{width: "200px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/pill.svg2')}}></div>
 
@@ -179,10 +169,9 @@ tylenol.style.border-radius: 999
 
 `true` or `false`.
 
-```d2
-x -> y: hi
-x.style.shadow: true
-```
+<CodeBlock className="language-d2">
+    {StylesShadow}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-shadow.svg2')}}></div>
 
@@ -190,10 +179,9 @@ x.style.shadow: true
 
 `true` or `false`.
 
-```d2
-x -> y: hi
-x.style.3d: true
-```
+<CodeBlock className="language-d2">
+    {Styles3d}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-3d.svg2')}}></div>
 
@@ -201,10 +189,9 @@ x.style.3d: true
 
 `true` or `false`.
 
-```d2
-x -> y: hi
-x.style.multiple: true
-```
+<CodeBlock className="language-d2">
+    {StylesMultiple}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-multiple.svg2')}}></div>
 
@@ -212,12 +199,9 @@ x.style.multiple: true
 
 `true` or `false`.
 
-```d2
-x -> y: hi
-x.style.double-border: true
-y.shape: circle
-y.style.double-border: true
-```
+<CodeBlock className="language-d2">
+    {StylesDoubleBorder}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-double-border.svg2')}}></div>
 
@@ -225,15 +209,9 @@ y.style.double-border: true
 
 Currently the only option is to specify `mono`. More coming soon.
 
-```d2
-x -> y: hi {
-  style: {
-    font: mono
-  }
-}
-x.style.font: mono
-y.style.font: mono
-```
+<CodeBlock className="language-d2">
+    {StylesFont}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-font.svg2')}}></div>
 
@@ -241,15 +219,9 @@ y.style.font: mono
 
 Integer between `8` and `100`.
 
-```d2
-x -> y: hi {
-  style: {
-    font-size: 28
-  }
-}
-x.style.font-size: 8
-y.style.font-size: 55
-```
+<CodeBlock className="language-d2">
+    {StylesFontSize}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-font-size.svg2')}}></div>
 
@@ -257,14 +229,9 @@ y.style.font-size: 55
 
 CSS color name or hex code.
 
-```d2
-x -> y: hi {
-  style: {
-    font-color: red
-  }
-}
-x.style.font-color: "#f4a261"
-```
+<CodeBlock className="language-d2">
+    {StylesFontColor}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-font-color.svg2')}}></div>
 
@@ -279,11 +246,9 @@ controls other colors in the body).
 
 `true` or `false`.
 
-```d2
-x -> y: hi {
-  style.animated: true
-}
-```
+<CodeBlock className="language-d2">
+    {StylesAnimated}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-animated.svg2')}}></div>
 
@@ -291,18 +256,9 @@ x -> y: hi {
 
 `true` or `false`.
 
-```d2
-x -> y: hi {
-  style: {
-    bold: true
-  }
-}
-x.style.underline: true
-y.style.italic: true
-# By default, shape labels are bold. Bold has precedence over italic, so unbold to see
-# italic style
-y.style.bold: false
-```
+<CodeBlock className="language-d2">
+    {StylesTextDecoration}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-text-decoration.svg2')}}></div>
 
@@ -315,15 +271,9 @@ y.style.bold: false
 - `title`
 - `none` (used for negating caps lock that special themes may apply)
 
-```d2
-x -> y: hi {
-  style: {
-    text-transform: capitalize
-  }
-}
-x.style.text-transform: lowercase
-y.style.text-transform: uppercase
-```
+<CodeBlock className="language-d2">
+    {StylesTextTransform}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-text-transform.svg2')}}></div>
 
@@ -341,14 +291,9 @@ Currently the set of supported keywords are:
 - `stroke-dash`
 - `double-border`: two frames, which is a popular framing method
 
-```d2
-x -> y: hi
-style: {
-  fill: LightBlue
-  stroke: FireBrick
-  stroke-width: 2
-}
-```
+<CodeBlock className="language-d2">
+    {StylesRoot}
+</CodeBlock>
 
 <div style={{width: "400px", margin: "20px auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-root.svg2')}}></div>
 

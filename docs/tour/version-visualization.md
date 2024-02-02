@@ -1,6 +1,10 @@
 ---
 pagination_next: tour/imported-template
 ---
+import CodeBlock from '@theme/CodeBlock';
+import ImportsVVHistory from '@site/static/d2/imports-vv-history.d2';
+import ImportsVVUsersCurrent from '@site/static/d2/imports-vv-users-current.d2';
+import ImportsVVUsersV01 from '@site/static/d2/imports-vv-users-v0.1.d2';
 
 # Version visualization
 
@@ -10,38 +14,19 @@ You want to understand how the schema of a system has evolved over time. As long
 diagram is modularized with imports, such a visualization is easy to whip up.
 
 - `history.d2`
-```d2
-direction: right
-Users 1: Users Table (v0.1) {
-  ...@"users-v0.1"
-}
-
-Users 2: Users Table (current) {
-  ...@"users-current"
-}
-
-Users 1 -> Users 2
-```
+<CodeBlock className="language-d2-incomplete">
+    {ImportsVVHistory}
+</CodeBlock>
 
 - `users.d2` (latest version, 0.2)
-```d2
-users: {
-  id: int {constraint: primary_key}
-  email: int {constraint: foreign_key}
-  name: string
-  password: text
-  created_at: timestamp
-  last_updated: timestamp
-}
+<CodeBlock className="language-d2-incomplete">
+    {ImportsVVUsersCurrent}
+</CodeBlock>
 
-emails: {
-  id: int {constraint: [primary_key; unique]}
-  local: string
-  domain: string
-  verified: boolean
-}
-users.email -> emails.id
-```
+- `users.d2` (0.1)
+<CodeBlock className="language-d2-incomplete">
+    {ImportsVVUsersV01}
+</CodeBlock>
 
 Since you want how `users.d2` looked like at `v0.1`, you use `git` to get that version:
 
@@ -61,7 +46,7 @@ the two results. The evaluation starts by comparing their design decisions in an
 overarching diagram projected in a dark room behind a closed door.
 
 - `compare.d2`
-```d2
+```d2-incomplete
 Team Alpha: {
   Quick facts: |md
     - 3 L6 engineers
