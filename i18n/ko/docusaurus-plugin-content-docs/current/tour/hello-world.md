@@ -2,6 +2,9 @@
 pagination_next: tour/shapes
 ---
 
+import CodeBlock from '@theme/CodeBlock';
+import HelloWorld from '@site/static/d2/hello-world.d2';
+
 # Hello World
 
 ```d2

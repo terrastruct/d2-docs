@@ -3,6 +3,9 @@ sidebar_label: D2란?
 pagination_next: tour/experience
 ---
 
+import CodeBlock from '@theme/CodeBlock';
+import Example from '@site/static/bespoke-d2/terminal-theme.d2';
+
 # D2 둘러보기
 
 **D2**는 텍스트를 다이어그램으로 변환하는 다이어그램 스크립트 언어입니다.

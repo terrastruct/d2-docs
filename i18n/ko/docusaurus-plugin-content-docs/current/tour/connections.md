@@ -1,3 +1,11 @@
+import CodeBlock from '@theme/CodeBlock';
+import Connections1 from '@site/static/d2/connections-1.d2';
+import Connections2 from '@site/static/d2/connections-2.d2';
+import Connections3 from '@site/static/d2/connections-3.d2';
+import Connections4 from '@site/static/d2/connections-4.d2';
+import Connections5 from '@site/static/d2/connections-5.d2';
+import ConnectionsReference from '@site/static/d2/connections-reference.d2';
+
 # 커넥션(Connections)
 
 커넥션은 셰이프 간의 관계를 정의합니다.

@@ -1,3 +1,7 @@
+import CodeBlock from '@theme/CodeBlock';
+import Classes1 from '@site/static/d2/classes-1.d2';
+import Classes2 from '@site/static/d2/classes-2.d2';
+
 # UML 클래스
 
 ## 기본

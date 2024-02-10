@@ -1,3 +1,26 @@
+import CodeBlock from '@theme/CodeBlock';
+import StylesOpacity from '@site/static/d2/styles-opacity.d2';
+import StylesStroke from '@site/static/d2/styles-stroke.d2';
+import StylesFill from '@site/static/d2/styles-fill.d2';
+import StylesFillTransparent from '@site/static/d2/styles-fill-transparent.d2';
+import StylesFillPattern from '@site/static/d2/styles-fill-pattern.d2';
+import StylesStrokeWidth from '@site/static/d2/styles-stroke-width.d2';
+import StylesStrokeDash from '@site/static/d2/styles-stroke-dash.d2';
+import StylesBorderRadius from '@site/static/d2/styles-border-radius.d2';
+import Pill from '@site/static/d2/pill.d2';
+import StylesShadow from '@site/static/d2/styles-shadow.d2';
+import Styles3d from '@site/static/d2/styles-3d.d2';
+import StylesMultiple from '@site/static/d2/styles-multiple.d2';
+import StylesDoubleBorder from '@site/static/d2/styles-double-border.d2';
+import StylesFont from '@site/static/d2/styles-font.d2';
+import StylesFontSize from '@site/static/d2/styles-font-size.d2';
+import StylesFontColor from '@site/static/d2/styles-font-color.d2';
+import StylesTableColor from '@site/static/d2/styles-table-color.d2';
+import StylesAnimated from '@site/static/d2/styles-animated.d2';
+import StylesTextDecoration from '@site/static/d2/styles-text-decoration.d2';
+import StylesTextTransform from '@site/static/d2/styles-text-transform.d2';
+import StylesRoot from '@site/static/d2/styles-root.d2';
+
 # 스타일
 
 셰이프의 스타일은 `style` 필드 아래에서 다음 예약 키워드들로 설정할 수 있습니다.

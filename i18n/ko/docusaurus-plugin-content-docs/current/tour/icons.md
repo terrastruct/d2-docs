@@ -2,6 +2,11 @@
 sidebar_label: 아이콘, 이미지
 ---
 
+import CodeBlock from '@theme/CodeBlock';
+import Icons1 from '@site/static/d2/icons-1.d2';
+import IconPlacement from '@site/static/d2/icon-placement.d2';
+import IconsImage from '@site/static/d2/icons-image.d2';
+
 # 아이콘
 
 :::tip

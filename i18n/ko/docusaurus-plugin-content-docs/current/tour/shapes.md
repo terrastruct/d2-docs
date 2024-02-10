@@ -1,3 +1,7 @@
+import CodeBlock from '@theme/CodeBlock';
+import Shapes1 from '@site/static/d2/shapes-1.d2';
+import Shapes2 from '@site/static/d2/shapes-2.d2';
+
 # 셰이프(Shape)
 
 ## 기본

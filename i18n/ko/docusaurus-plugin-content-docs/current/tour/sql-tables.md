@@ -1,3 +1,8 @@
+import CodeBlock from '@theme/CodeBlock';
+import Tables1 from '@site/static/d2/tables-1.d2';
+import Tables2 from '@site/static/d2/tables-2.d2';
+import Tables3 from '@site/static/d2/tables-3.d2';
+
 # SQL 테이블
 
 ## 기본

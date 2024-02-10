@@ -1,3 +1,14 @@
+import CodeBlock from '@theme/CodeBlock';
+import SequenceDiagrams1 from '@site/static/d2/sequence-diagrams-1.d2';
+import SequenceDiagrams2 from '@site/static/d2/sequence-diagrams-2.d2';
+import SequenceDiagrams3 from '@site/static/d2/sequence-diagrams-3.d2';
+import SequenceDiagrams4 from '@site/static/d2/sequence-diagrams-4.d2';
+import SequenceDiagramsScope from '@site/static/d2/sequence-diagrams-scope.d2';
+import SequenceDiagramsGroup from '@site/static/d2/sequence-diagrams-group.d2';
+import SequenceDiagramsNote from '@site/static/d2/sequence-diagrams-note.d2';
+import SequenceDiagramsSelf from '@site/static/d2/sequence-diagrams-self.d2';
+import SequenceDiagramsLifeline from '@site/static/d2/sequence-diagrams-lifeline.d2';
+
 # 시퀀스 다이어그램
 
 시퀀스 다이어그램은 객체에 `shape: sequence_diagram`을 설정해 생성할 수 있습니다.

@@ -3,6 +3,13 @@ sidebar_label: 텍스트, 코드
 pagination_next: tour/icons
 ---
 
+import CodeBlock from '@theme/CodeBlock';
+import Markdown from '@site/static/d2/markdown.d2';
+import Text2 from '@site/static/d2/text-2.d2';
+import Code2 from '@site/static/d2/code-2.d2';
+import NonMarkdownText from '@site/static/d2/non-markdown-text.d2';
+import Latex from '@site/static/d2/latex.d2';
+
 # 텍스트
 
 ## D2에서는 Markdown으로 독립적인 텍스트 블록을 만들 수 있습니다.

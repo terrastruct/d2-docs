@@ -2,6 +2,9 @@
 pagination_next: tour/style
 ---
 
+import CodeBlock from '@theme/CodeBlock';
+import TerminalTheme from '@site/static/bespoke-d2/terminal-theme.d2';
+
 # 테마
 
 D2에는 당신의 다이어그램을 블로그나 위키에 삽입할 수 있도록 고급스럽고 전문적으로 보일 수 있도록 하는 다양한 테마가 있습니다.

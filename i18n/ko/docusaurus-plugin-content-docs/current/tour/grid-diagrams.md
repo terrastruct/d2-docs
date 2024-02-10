@@ -1,3 +1,13 @@
+import CodeBlock from '@theme/CodeBlock';
+import Grid from '@site/static/d2/grid.d2';
+import Grid2 from '@site/static/d2/grid-2.d2';
+import Grid3 from '@site/static/d2/grid-3.d2';
+import Grid4 from '@site/static/d2/grid-4.d2';
+import GridDimensions from '@site/static/d2/grid-dimensions.d2';
+import GridFill from '@site/static/d2/grid-fill.d2';
+import GridNestedGrid from '@site/static/d2/grid-nested-grid.d2';
+import Table from '@site/static/d2/table.d2';
+
 # 그리드 다이어그램
 
 그리드 다이어그램을 사용하면 구조화된 그리드에 객체를 표시할 수 있습니다.
