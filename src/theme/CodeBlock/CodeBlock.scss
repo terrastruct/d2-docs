@@ -23,25 +23,26 @@
   box-sizing: border-box;
 
   @media (max-width: 996px) {
-    overflow: hidden;
-
-    .Copy {
+    .Copy,
+    .PlaygroundLink {
       visibility: visible;
     }
   }
 
   &:hover {
-    .Copy {
+    .Copy,
+    .PlaygroundLink {
       visibility: visible;
     }
   }
 }
 
-.Copy {
+.Copy,
+.PlaygroundLink {
   z-index: 1;
   position: absolute;
   top: 0.8rem;
-  right: 0.8rem;
+  right: 1.2rem;
   background: var(--copy-bg);
   border: 1px solid var(--copy-border);
   display: flex;
@@ -65,16 +66,19 @@
   &:hover {
     background: var(--copy-hover-bg);
 
-    .Copy--Tooltip {
+    .Copy--Tooltip,
+    .PlaygroundLink--Tooltip {
       visibility: visible;
     }
 
-    .Copy--Arrow {
+    .Copy--Arrow,
+    .PlaygroundLink--Arrow {
       visibility: visible;
     }
   }
 
-  .Copy--Tooltip {
+  .Copy--Tooltip,
+  .PlaygroundLink--Tooltip {
     position: absolute;
     top: -39px;
     white-space: nowrap;
@@ -88,7 +92,8 @@
     font-family: var(--ifm-font-family-base) !important;
   }
 
-  .Copy--Arrow {
+  .Copy--Arrow,
+  .PlaygroundLink--Arrow {
     visibility: hidden;
     position: absolute;
     margin: -47px 0 0 0px;
@@ -98,4 +103,8 @@
     border-right: 6px solid transparent;
     border-top: 6px solid var(--steel-900);
   }
+}
+
+.PlaygroundLink {
+  right: 3.6rem;
 }

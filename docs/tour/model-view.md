@@ -1,6 +1,10 @@
 ---
 pagination_next: tour/modular-classes
 ---
+import CodeBlock from '@theme/CodeBlock';
+import ImportsMVModels from '@site/static/d2/imports-mv-models.d2';
+import ImportsMVAccessView from '@site/static/d2/imports-mv-access-view.d2';
+import ImportsMVSSHView from '@site/static/d2/imports-mv-ssh-view.d2';
 
 # Model-view
 
@@ -8,37 +12,20 @@ A popular pattern defines your models once, and then reuses it across a number o
 different views.
 
 ## `models.d2`
-```d2
-postgres: {
-  shape: cylinder
-  icon: https://icons.terrastruct.com/dev%2Fpostgresql.svg
-}
-it: IT Guy {
-  shape: person
-  style: {
-    fill: maroon
-  }
-}
-vpn: {
-  style: {
-    shadow: true
-  }
-  tooltip: IP is 192.2.2.1
-}
-```
+<CodeBlock className="language-d2-incomplete">
+    {ImportsMVModels}
+</CodeBlock>
 
 ## `access-view.d2`
-```d2
-...@models.d2
-it -> vpn -> postgres
-```
+<CodeBlock className="language-d2-incomplete">
+    {ImportsMVAccessView}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/imports-mv-access-view.svg2')}}></div>
 
 ## `ssh-view.d2`
-```d2
-...@models.d2
-it -> postgres: ssh, bypassing VPN
-```
+<CodeBlock className="language-d2-incomplete">
+    {ImportsMVSSHView}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/imports-mv-ssh-view.svg2')}}></div>

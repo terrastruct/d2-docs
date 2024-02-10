@@ -1,3 +1,8 @@
+import CodeBlock from '@theme/CodeBlock';
+import ImportsNested from '@site/static/bespoke-d2/imports-nested.d2';
+import ImportsNestedServiceB from '@site/static/d2/imports-nested-serviceB.d2';
+import ImportsNestedData from '@site/static/d2/imports-nested-data.d2';
+
 # Nested composition
 
 Imports make large compositions much more manageable.
@@ -9,46 +14,19 @@ Rendering `overview.d2` gives us a nested diagram while each file is kept flat a
 readable.
 
 ### `overview.d2`
-```d2
-serviceA -> serviceB
-serviceB.link: layers.serviceB
-layers: {
-  serviceB: @serviceB.d2
-}
-```
+<CodeBlock className="language-d2-incomplete">
+    {ImportsNested}
+</CodeBlock>
 
 ### `serviceB.d2`
-```d2
-aws vault: {
-  key
-  token
-}
-stripe: {
-  customer id
-}
-aws vault.key -> data
-aws vault.token -> data
-stripe.customer id -> data
-data.link: layers.data
-layers: {
-  data: @data.d2
-}
-```
+<CodeBlock className="language-d2-incomplete">
+    {ImportsNestedServiceB}
+</CodeBlock>
 
 ### `data.d2`
-```d2
-users: {
-  shape: sql_table
-  id: int
-  token: string
-  customer_id: string
-}
-
-# Continue nesting as needed!
-# layers: {
-#   ...
-# }
-```
+<CodeBlock className="language-d2-incomplete">
+    {ImportsNestedData}
+</CodeBlock>
 
 ## Render of `overview.d2`
 

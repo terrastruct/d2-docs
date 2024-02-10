@@ -14,12 +14,15 @@ import lightTheme from "@site/src/d2-vscode/themes/light-color-theme.json";
 import darkTheme from "@site/src/d2-vscode/themes/dark-color-theme.json";
 import Clipboard from "@site/static/icons/clipboard.svg";
 import CheckCircle from "@site/static/icons/checkcircle.svg";
+import ExternalLink from "@site/static/icons/externallink.svg";
 
 import metadataConsts from "./metadata-consts";
 
 import goGrammar from "shiki/languages/go.tmLanguage.json";
 import jsGrammar from "shiki/languages/javascript.tmLanguage.json";
 import shGrammar from "shiki/languages/shellscript.tmLanguage.json";
+
+import pako from "pako";
 
 import "./CodeBlock.scss";
 
@@ -38,13 +41,18 @@ export default function D2CodeBlock(props) {
     return null;
   }
 
+  let lang = props.className;
+  if (props.className?.endsWith("-incomplete")) {
+    lang = "d2";
+  }
   let scope = "plaintext";
   if (props.className) {
-    scope = `source.${props.className.replace(/^language-/, "")}`;
+    scope = `source.${lang.replace(/^language-/, "")}`;
   }
 
   let [tmGrammar, setTMGrammar] = React.useState(getTextMateGrammar(scope));
-  const [tooltipText, setTooltipText] = React.useState("Copy to clipboard");
+  const [clipboardTooltipText, setClipboardTooltipText] =
+    React.useState("Copy to clipboard");
 
   React.useEffect(() => {
     if (tmGrammar) {
@@ -120,20 +128,49 @@ export default function D2CodeBlock(props) {
     }
   }
 
+  function base64url_encode(buffer) {
+    return btoa(Array.from(buffer, (b) => String.fromCharCode(b)).join(""))
+      .replace(/\+/g, "-")
+      .replace(/\//g, "_");
+  }
+
+  function compressAndEncodeScript() {
+    const textEncoder = new TextEncoder();
+    const uint8Array = textEncoder.encode(code);
+    const deflate = new pako.Deflate({ level: 9, windowBits: -15 });
+    deflate.push(uint8Array, true);
+
+    return base64url_encode(deflate.result);
+  }
+
   return (
     <section className={clsx("CodeBlock", props.containerClassName)}>
       <button
         className="Copy"
-        onMouseLeave={() => setTooltipText("Copy to clipboard")}
+        onMouseLeave={() => setClipboardTooltipText("Copy to clipboard")}
         onClick={() => {
           navigator.clipboard.writeText(code);
-          setTooltipText("Copied");
+          setClipboardTooltipText("Copied");
         }}
       >
-        <div className="Copy--Tooltip">{tooltipText}</div>
+        <div className="Copy--Tooltip">{clipboardTooltipText}</div>
         <div className="Copy--Arrow"></div>
-        {tooltipText === "Copied" ? <CheckCircle /> : <Clipboard />}
+        {clipboardTooltipText === "Copied" ? <CheckCircle /> : <Clipboard />}
       </button>
+      {props.className === "language-d2" && (
+        <button
+          className="PlaygroundLink"
+          onClick={() => {
+            const playgroundURL = new URL("https://play.d2lang.com");
+            playgroundURL.searchParams.set("script", compressAndEncodeScript());
+            window.open(playgroundURL, "_blank");
+          }}
+        >
+          <div className="PlaygroundLink--Tooltip">{"Open in Playground"}</div>
+          <div className="Copy--Arrow"></div>
+          <ExternalLink />
+        </button>
+      )}
       <pre style={preStyle}>{children}</pre>
     </section>
   );

@@ -1,6 +1,9 @@
 ---
 pagination_next: tour/imports-use-cases
 ---
+import CodeBlock from '@theme/CodeBlock';
+import ImportsTargeted from '@site/static/d2/imports-targeted.d2';
+import ImportsTargetedPeople from '@site/static/d2/imports-targeted-people.d2';
 
 # Syntax
 
@@ -17,13 +20,13 @@ In the next section, we'll see examples of common import use cases.
 ### 1. Regular import
 
 - `x.d2`
-```d2
+```d2-incomplete
 x: {
   shape: circle
 }
 ```
 - `y.d2`
-```d2
+```d2-incomplete
 a: @x.d2
 a -> b
 ```
@@ -34,13 +37,13 @@ value.
 ### 2. Spread import
 
 - `x.d2`
-```d2
+```d2-incomplete
 x: {
   shape: circle
 }
 ```
 - `y.d2`
-```d2
+```d2-incomplete
 a: {
   ...@x.d2
 }
@@ -58,13 +61,13 @@ Spread imports only work within maps. Something like `a: ...@x.d2` is an invalid
 Above, we wrote the full file name for clarity, but the correct usage is to just specify
 the file name without the suffix. If you run D2's autoformatter, it'll change
 
-```d2
+```d2-incomplete
 x: @x.d2
 ```
 
 into
 
-```d2
+```d2-incomplete
 x: @x
 ```
 
@@ -80,34 +83,16 @@ You don't have to import the full file.
 For example, if you have a file that defines all the people in your organization, and you
 just want to show some relations between managers, you can import a specific object.
 
+
 `donut-flowchart.d2`
-```d2
-...@people.management
-joe -> donuts: loves
-jan -> donuts: brings
-```
+<CodeBlock className="language-d2-incomplete">
+    {ImportsTargeted}
+</CodeBlock>
 
 `people.d2`
-```d2
-management: {
-  joe: {
-    shape: person
-    label: Joe Donutlover
-  }
-  jan: {
-    shape: person
-    label: Jan Donutbaker
-  }
-}
-
-# Notice how these do not appear in the rendered diagram
-employees: {
-  toby: {
-    shape: person
-    label: Toby Simonton
-  }
-}
-```
+<CodeBlock className="language-d2-incomplete">
+    {ImportsTargetedPeople}
+</CodeBlock>
 
 :::info
 Since `.` is used for targeting, if you want to import from a file with `.` in its name,
@@ -127,7 +112,7 @@ Not to the executing path.
 Consider that your working directory is `/Users/You/dev`. Your D2 files:
 
 - `/Users/you/dev/d2-stuff/x.d2`
-```d2
+```d2-incomplete
 y: @../y.d2
 ```
 

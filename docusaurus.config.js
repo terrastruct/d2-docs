@@ -155,6 +155,10 @@ const config = {
               type: "asset",
             },
             {
+              test: /\.d2/,
+              type: "asset/source",
+            },
+            {
               test: new RegExp(`d2-vscode/syntaxes/.*\.json$`),
               type: "asset",
             },

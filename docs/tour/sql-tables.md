@@ -1,19 +1,17 @@
+import CodeBlock from '@theme/CodeBlock';
+import Tables1 from '@site/static/d2/tables-1.d2';
+import Tables2 from '@site/static/d2/tables-2.d2';
+import Tables3 from '@site/static/d2/tables-3.d2';
+
 # SQL Tables
 
 ## Basics
 
 You can easily diagram entity-relationship diagrams (ERDs) in D2 by using the `sql_table` shape. Here's a minimal example:
 
-```d2
-my_table: {
-  shape: sql_table
-  # This is defined using the shorthand syntax for labels discussed in the containers section.
-  # But here it's for the type of a constraint.
-  # The id field becomes a map that looks like {type: int; constraint: primary_key}
-  id: int {constraint: primary_key}
-  last_updated: timestamp with time zone
-}
-```
+<CodeBlock className="language-d2">
+    {Tables1}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/tables-1.svg2')}}></div>
 
@@ -43,23 +41,9 @@ x: int { constraint: [primary_key; unique] }
 
 Here's an example of how you'd define a foreign key connection between two tables:
 
-```d2
-objects: {
-  shape: sql_table
-  id: int {constraint: primary_key}
-  disk: int {constraint: foreign_key}
-
-  json: jsonb  {constraint: unique}
-  last_updated: timestamp with time zone
-}
-
-disks: {
-  shape: sql_table
-  id: int {constraint: primary_key}
-}
-
-objects.disk -> disks.id
-```
+<CodeBlock className="language-d2">
+    {Tables2}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/tables-2.svg2')}}></div>
 
@@ -73,22 +57,8 @@ connections point to the exact row.
 Like all other shapes, you can nest `sql_tables` into containers and define edges
 to them from other shapes. Here's an example:
 
-```d2
-cloud: {
-  disks: {
-    shape: sql_table
-    id: int {constraint: primary_key}
-  }
-  blocks: {
-    shape: sql_table
-    id: int {constraint: primary_key}
-    disk: int {constraint: foreign_key}
-    blob: blob
-  }
-  blocks.disk -> disks.id
-
-  AWS S3 Vancouver -> disks
-}
-```
+<CodeBlock className="language-d2">
+    {Tables3}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/tables-3.svg2')}}></div>

@@ -11,7 +11,10 @@ conversation 2: {
   bob -> alice: hello
 }
 
+# Recursively target all shapes...
 **: {
+  # ... that are sequence diagrams
   &shape: sequence_diagram
+  # Then recursively set all shapes in them to person
   **: {shape: person}
 }

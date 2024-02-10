@@ -1,3 +1,7 @@
+import CodeBlock from '@theme/CodeBlock';
+import Tooltip from '@site/static/d2/tooltip.d2';
+import Links from '@site/static/d2/links.d2';
+
 # Interactive
 
 ## Tooltips
@@ -10,11 +14,9 @@ Tooltips are text that appear on hover. They serve two purposes:
     - Your diagram is getting messy. Instead of adding more text, you can tuck some into
       tooltips.
 
-```d2
-x: { tooltip: Total abstinence is easier than perfect moderation }
-y: { tooltip: Gee, I feel kind of LIGHT in the head now,\nknowing I can't make my satellite dish PAYMENTS! }
-x -> y
-```
+<CodeBlock className="language-d2">
+    {Tooltip}
+</CodeBlock>
 
 Try it out, hover over `x` and `y`. Notice that they have an icon indicating that they
 have a tooltip.
@@ -39,15 +41,9 @@ tooltips.
 
 Links are like tooltips, except you click to go to an external link.
 
-```d2
-x: I'm a Mac {
-  link: https://apple.com
-}
-y: And I'm a PC {
-  link: https://microsoft.com
-}
-x -> y: gazoontite
-```
+<CodeBlock className="language-d2">
+    {Links}
+</CodeBlock>
 
 Try clicking on each.
 

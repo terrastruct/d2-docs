@@ -1,43 +1,16 @@
+import CodeBlock from '@theme/CodeBlock';
+import StyleClasses1 from '@site/static/d2/style-classes-1.d2';
+import StyleClasses2 from '@site/static/d2/style-classes-2.d2';
+import MultipleClasses from '@site/static/d2/multiple-classes.d2';
+import OrderedClasses from '@site/static/d2/ordered-classes.d2';
+
 # Classes
 
 Classes let you aggregate attributes and reuse them.
 
-```d2
-direction: right
-classes: {
-  load balancer: {
-    label: load\nbalancer
-    width: 100
-    height: 200
-    style: {
-      stroke-width: 0
-      fill: "#44C7B1"
-      shadow: true
-      border-radius: 5
-    }
-  }
-  unhealthy: {
-    style: {
-      fill: "#FE7070"
-      stroke: "#F69E03"
-    }
-  }
-}
-
-web traffic -> web lb
-web lb.class: load balancer
-
-web lb -> api1
-web lb -> api2
-web lb -> api3
-
-api2.class: unhealthy
-
-api1 -> cache lb
-api3 -> cache lb
-
-cache lb.class: load balancer
-```
+<CodeBlock className="language-d2">
+    {StyleClasses1}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/style-classes-1.svg2')}}></div>
 
@@ -65,15 +38,9 @@ a -> b
 If your object defines an attribute that the class also has defined, the object's
 attribute overrides the class attribute.
 
-```d2
-classes: {
-  unhealthy: {
-    style.fill: red
-  }
-}
-x.class: unhealthy
-x.style.fill: orange
-```
+<CodeBlock className="language-d2">
+    {StyleClasses2}
+</CodeBlock>
 
 <div style={{width: 100, margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/style-classes-2.svg2')}}></div>
 
@@ -81,20 +48,9 @@ x.style.fill: orange
 
 You may use arrays for the value as well to apply multiple classes.
 
-```d2
-classes: {
-  d2: {
-    label: ""
-    icon: https://play.d2lang.com/assets/icons/d2-logo.svg
-  }
-  sphere: {
-    shape: circle
-    style.stroke-width: 0
-  }
-}
-
-logo.class: [d2; sphere]
-```
+<CodeBlock className="language-d2">
+    {MultipleClasses}
+</CodeBlock>
 
 <div style={{width: 200, margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/multiple-classes.svg2')}}></div>
 
@@ -102,19 +58,9 @@ logo.class: [d2; sphere]
 
 When multiple classes are given, they are applied left-to-right.
 
-```d2
-classes: {
-  uno: {
-    label: 1
-  }
-  dos: {
-    label: 2
-  }
-}
-
-x.class: [uno; dos]
-y.class: [dos; uno]
-```
+<CodeBlock className="language-d2">
+    {OrderedClasses}
+</CodeBlock>
 
 <div style={{width: 200, margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/ordered-classes.svg2')}}></div>
 

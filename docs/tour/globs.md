@@ -1,3 +1,17 @@
+import CodeBlock from '@theme/CodeBlock';
+import GlobsIntro from '@site/static/d2/globs-intro.d2';
+import GlobsLazy from '@site/static/d2/globs-lazy.d2';
+import GlobsCasing from '@site/static/d2/globs-casing.d2';
+import GlobsMultiple from '@site/static/d2/globs-multiple.d2';
+import GlobsConnections from '@site/static/d2/globs-connections.d2';
+import GlobsIndexedConnections from '@site/static/d2/globs-indexed-connections.d2';
+import GlobsScope from '@site/static/d2/globs-scope.d2';
+import GlobsRecursive from '@site/static/d2/globs-recursive.d2';
+import GlobsRecursive2 from '@site/static/d2/globs-recursive-2.d2';
+import GlobsFilter from '@site/static/d2/globs-filter.d2';
+import GlobsFilter2 from '@site/static/d2/globs-filter-2.d2';
+import GlobsNested from '@site/static/d2/globs-nested.d2';
+
 # Globs
 
 :::note Etymology
@@ -8,17 +22,9 @@
 
 Globs are a powerful language feature to make global changes in one line.
 
-```d2
-iphone 10
-iphone 11 mini
-iphone 11 pro
-iphone 12 mini
-
-*.height: 300
-*.width: 140
-*mini.height: 200
-*pro.height: 400
-```
+<CodeBlock className="language-d2">
+    {GlobsIntro}
+</CodeBlock>
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-intro.svg2')}}></div>
 
@@ -31,37 +37,25 @@ In the following example, the instructions are as follows:
    criteria. This does, so it applies to `b`.
 4. Same with `c`.
 
-```d2
-a
-
-* -> y
-
-b
-c
-```
+<CodeBlock className="language-d2">
+    {GlobsLazy}
+</CodeBlock>
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-lazy.svg2')}}></div>
 
 ## Globs are case insensitive
 
-```d2
-diddy kong
-Donkey Kong
-
-*kong.style.fill: brown
-```
+<CodeBlock className="language-d2">
+    {GlobsCasing}
+</CodeBlock>
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-casing.svg2')}}></div>
 
 ## Globs can appear multiple times
 
-```d2
-teacher
-thriller
-thrifter
-
-t*h*r.shape: person
-```
+<CodeBlock className="language-d2">
+    {GlobsMultiple}
+</CodeBlock>
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-multiple.svg2')}}></div>
 
@@ -69,19 +63,9 @@ t*h*r.shape: person
 
 You can use globs to create connections.
 
-```d2
-vars: {
-  d2-config: {
-    layout-engine: elk
-  }
-}
-
-Spiderman 1
-Spiderman 2
-Spiderman 3
-
-* -> *: 👉
-```
+<CodeBlock className="language-d2">
+    {GlobsConnections}
+</CodeBlock>
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-connections.svg2')}}></div>
 
@@ -92,17 +76,9 @@ expect from globs, we feel it is more pragmatic for this to be the behavior.
 
 You can also use globs to target modifying existing connections.
 
-```d2
-lady 1
-lady 2
-
-barbie
-
-lady 1 -> barbie: hi barbie
-lady 2 -> barbie: hi barbie
-
-(lady* -> barbie)[*].style.stroke: pink
-```
+<CodeBlock className="language-d2">
+    {GlobsIndexedConnections}
+</CodeBlock>
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-indexed-connections.svg2')}}></div>
 
@@ -110,22 +86,9 @@ lady 2 -> barbie: hi barbie
 
 Notice that in the below example, globs only apply to the scope they are specified in.
 
-```d2
-foods: {
-  pizzas: {
-    cheese
-    sausage
-    pineapple
-    *.shape: circle
-  }
-  humans: {
-    john
-    james
-    *.shape: person
-  }
-  humans.* -> pizzas.pineapple: eats
-}
-```
+<CodeBlock className="language-d2">
+    {GlobsScope}
+</CodeBlock>
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-scope.svg2')}}></div>
 
@@ -133,29 +96,15 @@ foods: {
 
 `**` means target recursively.
 
-```d2
-a: {
-  b: {
-    c
-  }
-}
-
-**.style.border-radius: 7
-```
+<CodeBlock className="language-d2">
+    {GlobsRecursive}
+</CodeBlock>
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-recursive.svg2')}}></div>
 
-```d2
-zone-A: {
-  machine A
-  machine B: {
-    submachine A
-    submachine B
-  }
-}
-
-zone-A.** -> load balancer
-```
+<CodeBlock className="language-d2">
+    {GlobsRecursive2}
+</CodeBlock>
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-recursive-2.svg2')}}></div>
 
@@ -170,39 +119,18 @@ diagramming: it only applies to non-container (AKA leaf) shapes.
 
 Use `&` to filter what globs target.
 
-```d2
-bravo team.shape: person
-charlie team.shape: person
-command center.shape: cloud
-hq.shape: rectangle
-
-*: {
-  &shape: person
-  style.multiple: true
-}
-```
+<CodeBlock className="language-d2">
+    {GlobsFilter}
+</CodeBlock>
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter.svg2')}}></div>
 
 If the filtered attribute has an array value, the filter will match if it matches any
 element of the array.
 
-```d2
-the-little-cannon: {
-  class: [server; deployed]
-}
-dino: {
-  class: [internal; deployed]
-}
-catapult: {
-  class: [server]
-}
-
-*: {
-  &class: server
-  style.multiple: true
-}
-```
+<CodeBlock className="language-d2">
+    {GlobsFilter2}
+</CodeBlock>
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter-2.svg2')}}></div>
 
@@ -214,28 +142,9 @@ We are working on adding more filters, as well as the "not-filter", `!&`.
 
 You can nest globs, combining the features above.
 
-```d2
-conversation 1: {
-  shape: sequence_diagram
-  alice -> bob: hi
-  bob -> alice: hi
-}
-
-conversation 2: {
-  shape: sequence_diagram
-  alice -> bob: hello again
-  alice -> bob: hello?
-  bob -> alice: hello
-}
-
-# Recursively target all shapes...
-**: {
-  # ... that are sequence diagrams
-  &shape: sequence_diagram
-  # Then recursively set all shapes in them to person
-  **: {shape: person}
-}
-```
+<CodeBlock className="language-d2">
+    {GlobsNested}
+</CodeBlock>
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-nested.svg2')}}></div>
 
