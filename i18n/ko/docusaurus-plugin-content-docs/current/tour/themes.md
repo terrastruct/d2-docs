@@ -13,7 +13,7 @@ D2에는 당신의 다이어그램을 블로그나 위키에 삽입할 수 있�
 <img width={400} src={require('@site/static/img/screenshots/themes/theme_2.png').default} alt="mixed berry blue theme"/>
 <img width={400} src={require('@site/static/img/screenshots/themes/theme_3.png').default} alt="vanilla nitro cola theme"/>
 
-### 테이블과 같은 특별한 셰이프에도 적용됩니다.
+### 테이블과 같은 특별한 도형에도 적용됩니다.
 
 # "Grape soda" 테마 적용
 
@@ -77,7 +77,7 @@ D2_DARK_THEME=200 d2 input.d2
 
 예를 들어 `Terminal` 테마를 적용하면 다음 속성들이 기본값으로 설정됩니다.
 
-- 모든 라벨이 대문자로 표기됩니다.
+- 모든 레이블이 대문자로 표기됩니다.
 - 테두리가 둥글지 않습니다.
 - 글꼴의 폭이 고정됩니다.
 - 모든 컨테이너에 대해 `fill-pattern`이 `dots`으로 설정됩니다.
@@ -86,7 +86,7 @@ D2_DARK_THEME=200 d2 input.d2
 <div style={{width: "100%", margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/terminal-theme.svg2')}}></div>
 
 ELK 엔진으로 렌더링된 위 다이어그램의 소스 코드는 다음과 같습니다.
-특수 테마는 다른 기본값을 사용하기 때문에 라벨의 대소문자 적용 여부와 같은 다이어그램에 표시된 많은 속성들이 소스에 표시되지 않습니다.
+특수 테마는 다른 기본값을 사용하기 때문에 레이블의 대소문자 적용 여부와 같은 다이어그램에 표시된 많은 속성들이 소스에 표시되지 않습니다.
 
 ```d2
 network: {

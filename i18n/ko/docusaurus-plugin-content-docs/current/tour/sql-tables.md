@@ -7,14 +7,14 @@ import Tables3 from '@site/static/d2/tables-3.d2';
 
 ## 기본
 
-D2에서 셰이프를 `sql_table`로 설정한다면 계체-관계 다이어그램(ERD)을 쉽게 나타낼 수 있습니다.
+D2에서 도형을 `sql_table`로 설정한다면 계체-관계 다이어그램(ERD)을 쉽게 나타낼 수 있습니다.
 다음은 기본적인 예시입니다.
 
 ```d2
 my_table: {
   shape: sql_table
   # 여기서 제약 조건(constraint)의 타입은 컨테이너 문서에서 설명한 약식 정의 방식으로 정의됩니다.
-  # id 필드는 다음과 같은 셰이프로 매핑됩니다. {type: int; constraint: primary_key}
+  # id 필드는 다음과 같은 도형으로 매핑됩니다. {type: int; constraint: primary_key}
   id: int {constraint: primary_key}
   last_updated: timestamp with time zone
 }
@@ -22,7 +22,7 @@ my_table: {
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/tables-1.svg2')}}></div>
 
-SQL 테이블 셰이프에서 각 키는 행을 정의합니다.
+SQL 테이블 도형에서 각 키는 행을 정의합니다.
 각 행의 콜론 다음에 오는 기본 값은 해당 값의 타입을 정의합니다.
 
 각 행의 제약 조건은 해당 SQL 제약 조건을 정의하며, D2는 그걸 인식하고 다음과 같이 축약하여 표시합니다.
@@ -47,7 +47,7 @@ x: int { constraint: [primary_key; unique] }
 
 ## 외래 키(Foreign Keys)
 
-다음은 두 테이블 간의 외래 키에 대한 커넥션을 정의하는 방법에 대한 예시입니다.
+다음은 두 테이블 간의 외래 키에 대한 연결을 정의하는 방법에 대한 예시입니다.
 
 ```d2
 objects: {
@@ -77,7 +77,7 @@ objects.disk -> disks.id
 
 ## 예시
 
-다른 모든 셰이프와 마찬가지로 `sql_tables`를 컨테이너 안에 중첩하고 다른 셰이프를 정의해 연결할 수 있습니다. 예를 들면 다음과 같습니다.
+다른 모든 도형과 마찬가지로 `sql_tables`를 컨테이너 안에 중첩하고 다른 도형을 정의해 연결할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```d2
 cloud: {

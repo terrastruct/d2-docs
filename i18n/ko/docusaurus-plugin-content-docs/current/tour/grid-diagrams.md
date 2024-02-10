@@ -101,7 +101,6 @@ Non-voters
 ```d2
 grid-rows: 4
 grid-columns: 2
-# 여러 셰이프들
 ```
 
 `grid-rows`가 먼저 정의되므로 객체는 가로 방향으로 먼저 채워집니다.
@@ -113,7 +112,6 @@ grid-columns: 2
 ```d2
 grid-columns: 2
 grid-rows: 4
-# 여러 셰이프들
 ```
 
 아래와 같이 다른 방향으로 채워질 것입니다.
