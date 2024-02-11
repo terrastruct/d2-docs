@@ -380,5 +380,5 @@ style: {
 <div style={{width: "400px", margin: "20px auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/styles-root.svg2')}}></div>
 
 :::info
-이 문서의 모든 다이어그램은 `pad=0`으로 렌더링됩니다.
+이 문서의 모든 다이어그램은 `pad=0`(환경 변수)으로 렌더링됩니다.
 :::
