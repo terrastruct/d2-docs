@@ -42,3 +42,4 @@ issue and we're happy to include your's!
 - D2 image service: [https://github.com/Watt3r/d2-live](https://github.com/Watt3r/d2-live)
 - MkDocs plugin: [https://github.com/landmaj/mkdocs-d2-plugin](https://github.com/landmaj/mkdocs-d2-plugin)
 - C# & dotnet SDK: [https://github.com/Stephanvs/d2lang-cs](https://github.com/Stephanvs/d2lang-cs)
+- Diagrams icons for D2: [https://github.com/denis-ismailaj/d2-diagrams-icons](https://github.com/denis-ismailaj/d2-diagrams-icons)
