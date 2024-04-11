@@ -114,6 +114,7 @@ Available patterns:
 - `dots`
 - `lines`
 - `grain`
+- `none` (for cancelling out ones set by certain themes)
 
 <CodeBlock className="language-d2">
     {StylesFillPattern}
