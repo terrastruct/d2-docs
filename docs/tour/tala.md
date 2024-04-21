@@ -11,6 +11,9 @@ open-source D2, and proprietary, closed-source TALA. You can download it here:
 
 [https://terrastruct.com/tala/](https://terrastruct.com/tala/)
 
+For the most up-to-date information, please see the [official TALA
+manual](https://github.com/terrastruct/TALA/blob/master/TALA_User_Manual.pdf).
+
 ## Pros
 
 - As a general orthogonal layout engine, TALA is not constrained to one type like
@@ -60,8 +63,8 @@ open-source D2, and proprietary, closed-source TALA. You can download it here:
 
 TALA's core algorithms use randomness in its initial placements and iterations. If you are
 not satisfied with a layout, you can produce different ones by specifying the seed with
-`--tala-seed` flag. For example, these are the same diagrams as the above, with
-`--tala-seed=2`.
+`--tala-seeds` flag. For example, these are the same diagrams as the above, with
+`--tala-seeds=2`.
 
 <div style={{display: "inline-flex", alignItems: "center", width: "100%"}}>
   <div style={{width: "50%"}}
