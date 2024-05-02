@@ -3,6 +3,13 @@ sidebar_label: 텍스트, 코드
 pagination_next: tour/icons
 ---
 
+import CodeBlock from '@theme/CodeBlock';
+import Markdown from '@site/static/d2/markdown.d2';
+import Text2 from '@site/static/d2/text-2.d2';
+import Code2 from '@site/static/d2/code-2.d2';
+import NonMarkdownText from '@site/static/d2/non-markdown-text.d2';
+import Latex from '@site/static/d2/latex.d2';
+
 # 텍스트
 
 ## D2에서는 Markdown으로 독립적인 텍스트 블록을 만들 수 있습니다.
@@ -66,9 +73,9 @@ D2는 최신 버전의 MathJax에서 실행되며, 여러모로 유용하지만 
 :::
 
 :::note
-참고로 아직은 LaTex를 라벨에는 적용할 수 없습니다.
+참고로 아직은 LaTex를 레이블에는 적용할 수 없습니다.
 따라서 위의 예시에서는 중첩 구문을 사용했습니다.
-라벨에 적용하는 기능은 곧 출시될 예정입니다.
+레이블에 적용하는 기능은 곧 출시될 예정입니다.
 :::
 
 ## 코드
@@ -90,7 +97,7 @@ explanation: |go
 ## 고급 기능: Markdown이 아닌 텍스트
 
 경우에 따라 Markdown이 아닌 텍스트가 필요할 수 있습니다.
-Markdown 또는 D2가 사용하는 GitHub 스타일의 Markdown이 마음에 들지 않거나, 셰이프를 텍스트로 빠르게 변경하고 싶을 수 있습니다.
+Markdown 또는 D2가 사용하는 GitHub 스타일의 Markdown이 마음에 들지 않거나, 도형 타입을 텍스트로 빠르게 변경하고 싶을 수 있습니다.
 그럴 경우 `shape: text`를 설정하기만 하면 됩니다.
 
 ```d2
@@ -109,8 +116,6 @@ results -> favorable -> will of the people
 ```
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/non-markdown-text.svg2')}}></div>
-
-## Advanced: Block strings
 
 ## 고급 기능: 블록 문자열
 

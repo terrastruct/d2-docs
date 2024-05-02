@@ -1,6 +1,16 @@
+import CodeBlock from '@theme/CodeBlock';
+import Grid from '@site/static/d2/grid.d2';
+import Grid2 from '@site/static/d2/grid-2.d2';
+import Grid3 from '@site/static/d2/grid-3.d2';
+import Grid4 from '@site/static/d2/grid-4.d2';
+import GridDimensions from '@site/static/d2/grid-dimensions.d2';
+import GridFill from '@site/static/d2/grid-fill.d2';
+import GridNestedGrid from '@site/static/d2/grid-nested-grid.d2';
+import Table from '@site/static/d2/table.d2';
+
 # 그리드 다이어그램
 
-그리드 다이어그램을 사용하면 구조화된 그리드에 개체를 표시할 수 있습니다.
+그리드 다이어그램을 사용하면 구조화된 그리드에 객체를 표시할 수 있습니다.
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid.svg2')}}></div>
 
@@ -8,7 +18,7 @@
 위 다이어그램의 소스코드는 페이지 하단에 있습니다.
 :::
 
-두 개의 키워드만으로 이 모든 걸 할 수 있습니다.
+다음 두 개의 키워드만으로 이 모든 걸 할 수 있습니다.
 
 - `grid-rows`
 - `grid-columns`
@@ -65,7 +75,7 @@ The American Government.width: 400
 
 ## 셀 확장
 
-행이나 열 중 하나에 대해서만 너비나 높이를 정의하면 해당 개체가 확장됩니다.
+행이나 열 중 하나에 대해서만 너비나 높이를 정의하면 해당 객체가 확장됩니다.
 
 ```d2
 grid-rows: 3
@@ -91,19 +101,17 @@ Non-voters
 ```d2
 grid-rows: 4
 grid-columns: 2
-# 여러 셰이프들
 ```
 
-`grid-rows`가 먼저 정의되므로 객체는 열로 이동하기 전에 행을 채웁니다.
+`grid-rows`가 먼저 정의되므로 객체는 가로 방향으로 먼저 채워집니다.
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-row-dominant.svg2')}}></div>
 
-하지만 만약 반대라면:
+반대의 경우는 다음과 같습니다.
 
 ```d2
 grid-columns: 2
 grid-rows: 4
-# bunch of shapes
 ```
 
 아래와 같이 다른 방향으로 채워질 것입니다.
@@ -125,7 +133,7 @@ grid-rows: 4
 - `horizontal-gap`
 - `grid-gap`
 
-`grid-gap`을 설정하는 것은 `vertical-gap`과 ​​`horizontal-gap`을 동시에 설정하는 것과 같습니다.
+`grid-gap` 설정은 `vertical-gap`과 ​​`horizontal-gap`을 동시에 설정하는 것과 같습니다.
 
 `vertical-gap` 또는 `horizontal-gap`으로 `grid-gap`을 재정의할 수 있습니다.
 
@@ -135,7 +143,7 @@ grid-rows: 4
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/japan.svg2')}}></div>
 
-> [D2 소스 코드](https://github.com/terrastruct/d2/blob/master/docs/examples/japan-grid/japan.d2)
+> [소스 코드](https://github.com/terrastruct/d2/blob/master/docs/examples/japan-grid/japan.d2)
 
 ### 또는 테이블형 데이터에도 저장 가능합니다.
 
@@ -185,7 +193,7 @@ D2의 일반 객체처럼 그리드와 다른 객체를 연결할 수 있습니�
 
 ## 중첩
 
-D2의 현재 버전에서는 그리드 다이어그램 내에 그리드 다이어그램을 중첩할 수 있습니다.
+D2의 현재 버전에서는 그리드 다이어그램 내에 또다른 그리드 다이어그램을 중첩할 수 있습니다.
 다른 유형의 중첩도 곧 제공될 예정입니다.
 
 ```d2
@@ -205,7 +213,7 @@ footer
 
 ## 소스 코드
 
-이 페이지 상단의 이미지에 대한 소스 코드입니다.
+다음은 이 페이지 상단의 이미지에 대한 소스 코드입니다.
 
 ```d2
 grid-rows: 5

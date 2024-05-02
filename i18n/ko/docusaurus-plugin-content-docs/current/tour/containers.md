@@ -1,8 +1,14 @@
-# 컨테이너(Containers)
+import CodeBlock from '@theme/CodeBlock';
+import Containers1 from '@site/static/d2/containers-1.d2';
+import Containers2 from '@site/static/d2/containers-2.d2';
+import Containers3 from '@site/static/d2/containers-3.d2';
+import ContainersUnderscore from '@site/static/d2/containers-underscore.d2';
+
+# 컨테이너(Container)
 
 ```d2
 server
-# 셰이프 안에 셰이프를 선언
+# 도형 안에 도형을 선언
 server.process
 
 # 컨테이너와 자식을 동시에 선언할 수 있습니다.
@@ -35,9 +41,9 @@ clouds: {
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/containers-2.svg2')}}></div>
 
-## 컨테이너 라벨
+## 컨테이너 레이블
 
-컨테이너 라벨을 정의하는 방법에는 두 가지가 있습니다.
+컨테이너 레이블을 정의하는 방법에는 두 가지가 있습니다.
 
 ### 1. 약식 정의
 
@@ -82,7 +88,6 @@ ci.deploys -> clouds
 
 ## 부모 참조
 
-Sometimes you want to reference something outside of the container from within. The underscore (`_`) refers to parent.
 내부에서 컨테이너 외부의 무언가를 참조하고 싶을 때 사용합니다.
 언더바 기호(`_`)로 외부의 다른 부모 컨테이너를 참조하고 있다는 것을 나타냅니다.
 

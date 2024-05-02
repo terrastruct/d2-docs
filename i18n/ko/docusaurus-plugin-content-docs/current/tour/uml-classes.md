@@ -1,3 +1,7 @@
+import CodeBlock from '@theme/CodeBlock';
+import Classes1 from '@site/static/d2/classes-1.d2';
+import Classes2 from '@site/static/d2/classes-2.d2';
+
 # UML 클래스
 
 ## 기본
@@ -16,7 +20,7 @@ MyClass: {
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/classes-1.svg2')}}></div>
 
-`class` 셰이프의 각 키들은 필드 또는 메서드를 정의합니다.
+`class` 도형의 각 키들은 필드 또는 메서드를 정의합니다.
 
 필드 키의 값은 필드의 타입을 의미합니다.
 
