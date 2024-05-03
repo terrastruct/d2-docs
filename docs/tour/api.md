@@ -1,5 +1,5 @@
 ---
-pagination_next: tour/studio
+pagination_next: tour/man
 ---
 
 # D2 Oracle
