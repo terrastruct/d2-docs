@@ -7,6 +7,8 @@ import GridDimensions from '@site/static/d2/grid-dimensions.d2';
 import GridFill from '@site/static/d2/grid-fill.d2';
 import GridNestedGrid from '@site/static/d2/grid-nested-grid.d2';
 import Table from '@site/static/d2/table.d2';
+import GridUnaligned from '@site/static/d2/grid-unaligned.d2';
+import GridAligned from '@site/static/d2/grid-aligned.d2';
 
 # Grid Diagrams
 
@@ -167,6 +169,27 @@ soon.
 </CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-nested-grid.svg2')}}></div>
+
+## Aligning with invisible elements
+
+A common technique to align grid elements to your liking is to pad the grid with invisible
+elements.
+
+Consider the following diagram.
+
+<CodeBlock className="language-d2">
+    {GridUnaligned}
+</CodeBlock>
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-unaligned.svg2')}}></div>
+
+It'd be nicer if it were centered. This can be achieved by adding 2 invisible elements.
+
+<CodeBlock className="language-d2">
+    {GridAligned}
+</CodeBlock>
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-aligned.svg2')}}></div>
 
 ## Source code
 
