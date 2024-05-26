@@ -72,7 +72,7 @@ scenarios: {
 
     (github.master.workflows -> aws.builders)[0].style.opacity: 0.1
 
-    local.code -> aws.ec2: {
+    (local.code -> aws.ec2)[0]: {
       style.opacity: 1
       style.stroke-dash: 5
       style.stroke: "#167c3c"
