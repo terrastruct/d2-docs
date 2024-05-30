@@ -31,7 +31,7 @@ function Footer() {
             Created by <img src="/img/terrastruct_logo.svg" />
           </span>
         </a>
-        |<span>© 2023 Terrastruct, Inc.</span>
+        |<span>© 2024 Terrastruct, Inc.</span>
       </div>
       <div className="Footer__Mobile">
         <div className="Footer__Mobile--Bar">
