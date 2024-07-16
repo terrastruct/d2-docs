@@ -37,7 +37,9 @@ Mermaid:
 A[(Christmas)]
 ```
 
-D2's is a little less compact but a lot more readable.
+D2's is a little less compact but a lot more readable. It's also more writeable, by which
+I mean you don't forget that a cylinder is called a cylinder, but it's easy to forget that
+`[(x)]` is a cylinder.
 
 ## Warnings > errors
 
@@ -64,3 +66,60 @@ modularize your diagram into multiple files. There's a language API to programma
 edit and write D2. All of these are antithetical to a web library for browser rendering.
 D2 intends to ship and maintain a web library for that purpose, but it'll be trimmed down
 from the full feature set and secondary in priority.
+
+## Singular use case: documenting software
+
+D2 is focused on being useful to software engineers for documenting software. We are not a
+general-purpose visualization tool. Other languages may support mind maps, Gantt charts,
+Sankey, venn diagrams, and have the capability to draw a map of the United States. D2 does
+none of those and will not support these.
+
+In D2, these are considered bloat. Stretching a language thin across such a large surface
+area of different diagram types essentially splits it into N different mini-DSLs within a
+DSL. Syntax can hardly evolve when it has to support N completely different diagram types.
+And it's counter to the original purpose of a DSL which is to make a subset task more
+convenient.
+
+## Design the system, not the diagram
+
+The purpose of D2 is to describe the system you're documenting. The language should make a
+clear separation between design of the system and design of the diagram.
+
+Consider what it takes to customize styles in a Graphviz diagram:
+
+```
+digraph "Linux_kernel_diagram" {
+	fontname="Helvetica,Arial,sans-serif"
+	node [fontname="Helvetica,Arial,sans-serif"]
+	edge [fontname="Helvetica,Arial,sans-serif"]
+	graph [
+		newrank = true,
+		nodesep = 0.3,
+		ranksep = 0.2,
+		overlap = true,
+		splines = false,
+	]
+	node [
+		fixedsize = false,
+		fontsize = 24,
+		height = 1,
+		shape = box,
+		style = "filled,setlinewidth(5)",
+		width = 2.2
+	]
+	edge [
+		arrowhead = none,
+		arrowsize = 0.5,
+		labelfontname = "Ubuntu",
+		weight = 10,
+		style = "filled,setlinewidth(5)"
+	]
+```
+
+Imagine if you couldn't separate HTML and CSS and it all had to be inlined.
+
+Of course, good aesthetics are essential to good documentation. D2 certianly prioritizes
+aesthetics, but it must be decoupled with the content.
+
+D2 is the only language that allows you to define just nodes and edges, and import all the
+styles in a separate file, and swap out that file for different aesthetics.
