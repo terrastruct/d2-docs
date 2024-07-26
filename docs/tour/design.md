@@ -118,7 +118,7 @@ digraph "Linux_kernel_diagram" {
 
 Imagine if you couldn't separate HTML and CSS and it all had to be inlined.
 
-Of course, good aesthetics are essential to good documentation. D2 certianly prioritizes
+Of course, good aesthetics are essential to good documentation. D2 certainly prioritizes
 aesthetics, but it must be decoupled with the content.
 
 D2 is the only language that allows you to define just nodes and edges, and import all the
