@@ -10,6 +10,8 @@ import GlobsRecursive from '@site/static/d2/globs-recursive.d2';
 import GlobsRecursive2 from '@site/static/d2/globs-recursive-2.d2';
 import GlobsFilter from '@site/static/d2/globs-filter.d2';
 import GlobsFilter2 from '@site/static/d2/globs-filter-2.d2';
+import GlobsFilterGlobValue from '@site/static/d2/globs-filter-glob-value.d2';
+import GlobsInverseFilter from '@site/static/d2/globs-inverse-filter.d2';
 import GlobsNested from '@site/static/d2/globs-nested.d2';
 
 # Globs
@@ -125,6 +127,8 @@ Use `&` to filter what globs target.
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter.svg2')}}></div>
 
+### Filters on array values
+
 If the filtered attribute has an array value, the filter will match if it matches any
 element of the array.
 
@@ -134,9 +138,26 @@ element of the array.
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter-2.svg2')}}></div>
 
-:::info
-We are working on adding more filters, as well as the "not-filter", `!&`.
-:::
+### Globs as filter values
+
+Globs can also appear in the value of a filter. `*` by itself as a value for a filter
+means the key must be specified.
+
+<CodeBlock className="language-d2">
+    {GlobsFilterGlobValue}
+</CodeBlock>
+
+<div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter-glob-value.svg2')}}></div>
+
+## Inverse filters
+
+Use `!&` to inverse-filter what globs target.
+
+<CodeBlock className="language-d2">
+    {GlobsInverseFilter}
+</CodeBlock>
+
+<div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-inverse-filter.svg2')}}></div>
 
 ## Nested globs
 
