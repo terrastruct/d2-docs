@@ -1,7 +1,7 @@
 import CodeBlock from '@theme/CodeBlock';
 import ImportsNested from '@site/static/bespoke-d2/imports-nested.d2';
-import ImportsNestedServiceB from '@site/static/d2/imports-nested-serviceB.d2';
-import ImportsNestedData from '@site/static/d2/imports-nested-data.d2';
+import ServiceB from '@site/static/bespoke-d2/serviceB.d2';
+import Data from '@site/static/bespoke-d2/data.d2';
 
 # Nested composition
 
@@ -20,12 +20,12 @@ readable.
 
 ### `serviceB.d2`
 <CodeBlock className="language-d2-incomplete">
-    {ImportsNestedServiceB}
+    {ServiceB}
 </CodeBlock>
 
 ### `data.d2`
 <CodeBlock className="language-d2-incomplete">
-    {ImportsNestedData}
+    {Data}
 </CodeBlock>
 
 ## Render of `overview.d2`

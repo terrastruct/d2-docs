@@ -1,0 +1,15 @@
+aws vault: {
+  key
+  token
+}
+stripe: {
+  customer id
+}
+aws vault.key -> data
+aws vault.token -> data
+stripe.customer id -> data
+data.link: layers.data
+
+layers: {
+  data: @data
+}

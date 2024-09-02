@@ -3,8 +3,8 @@ pagination_next: tour/imported-template
 ---
 import CodeBlock from '@theme/CodeBlock';
 import ImportsVVHistory from '@site/static/d2/imports-vv-history.d2';
-import ImportsVVUsersCurrent from '@site/static/d2/imports-vv-users-current.d2';
-import ImportsVVUsersV01 from '@site/static/d2/imports-vv-users-v0.1.d2';
+import UsersCurrent from '@site/static/d2/users-current.d2';
+import UsersV01 from '@site/static/d2/users-v0.1.d2';
 
 # Version visualization
 
@@ -20,12 +20,12 @@ diagram is modularized with imports, such a visualization is easy to whip up.
 
 - `users.d2` (latest version, 0.2)
 <CodeBlock className="language-d2-incomplete">
-    {ImportsVVUsersCurrent}
+    {UsersCurrent}
 </CodeBlock>
 
 - `users.d2` (0.1)
 <CodeBlock className="language-d2-incomplete">
-    {ImportsVVUsersV01}
+    {UsersV01}
 </CodeBlock>
 
 Since you want how `users.d2` looked like at `v0.1`, you use `git` to get that version:

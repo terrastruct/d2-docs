@@ -1,5 +1,5 @@
 import CodeBlock from '@theme/CodeBlock';
-import ImportsClasses from '@site/static/d2/imports-classes.d2';
+import Classes from '@site/static/d2/classes.d2';
 import ImportsClassesMain from '@site/static/d2/imports-classes-main.d2';
 
 # Modular classes
@@ -8,7 +8,7 @@ This pattern mirrors web development, separating HTML and CSS.
 
 ## `classes.d2`
 <CodeBlock className="language-d2-incomplete">
-    {ImportsClasses}
+    {Classes}
 </CodeBlock>
 
 ## `main.d2`
