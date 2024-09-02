@@ -2,7 +2,7 @@
 pagination_next: tour/modular-classes
 ---
 import CodeBlock from '@theme/CodeBlock';
-import ImportsMVModels from '@site/static/d2/imports-mv-models.d2';
+import Models from '@site/static/d2/models.d2';
 import ImportsMVAccessView from '@site/static/d2/imports-mv-access-view.d2';
 import ImportsMVSSHView from '@site/static/d2/imports-mv-ssh-view.d2';
 
@@ -13,7 +13,7 @@ different views.
 
 ## `models.d2`
 <CodeBlock className="language-d2-incomplete">
-    {ImportsMVModels}
+    {Models}
 </CodeBlock>
 
 ## `access-view.d2`

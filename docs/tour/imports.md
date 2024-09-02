@@ -3,7 +3,7 @@ pagination_next: tour/imports-use-cases
 ---
 import CodeBlock from '@theme/CodeBlock';
 import ImportsTargeted from '@site/static/d2/imports-targeted.d2';
-import ImportsTargetedPeople from '@site/static/d2/imports-targeted-people.d2';
+import People from '@site/static/d2/people.d2';
 
 # Syntax
 
@@ -91,7 +91,7 @@ just want to show some relations between managers, you can import a specific obj
 
 `people.d2`
 <CodeBlock className="language-d2-incomplete">
-    {ImportsTargetedPeople}
+    {People}
 </CodeBlock>
 
 :::info
