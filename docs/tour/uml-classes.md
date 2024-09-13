@@ -1,6 +1,7 @@
 import CodeBlock from '@theme/CodeBlock';
 import Classes1 from '@site/static/d2/classes-1.d2';
 import Classes2 from '@site/static/d2/classes-2.d2';
+import Classes3 from '@site/static/bespoke-d2/classes-3.d2';
 
 # UML Classes
 
@@ -42,3 +43,11 @@ Here's an example with differing visibilities and more complex types:
 </CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/classes-2.svg2')}}></div>
+
+## Full example
+
+<CodeBlock className="language-d2" layout="elk">
+    {Classes3}
+</CodeBlock>
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/classes-3.svg2')}}></div>

@@ -163,6 +163,9 @@ export default function D2CodeBlock(props) {
           onClick={() => {
             const playgroundURL = new URL("https://play.d2lang.com");
             playgroundURL.searchParams.set("script", compressAndEncodeScript());
+            if (props.layout) {
+              playgroundURL.searchParams.set("layout", props.layout);
+            }
             window.open(playgroundURL, "_blank");
           }}
         >
