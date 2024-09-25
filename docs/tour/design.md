@@ -123,3 +123,15 @@ aesthetics, but it must be decoupled with the content.
 
 D2 is the only language that allows you to define just nodes and edges, and import all the
 styles in a separate file, and swap out that file for different aesthetics.
+
+## Whiteboard-fit
+
+While "graph" and "diagram" are often interchangeable terms, for D2's purposes, a diagram
+is a simplified representation that can fit on a large whiteboard. After a certain number
+of nodes and edges, e.g. 1000 nodes, the representation becomes more like a graph from
+graph theory than a software architecture diagram. Their use case is less understanding
+each individual shape and connection and more seeing the general patterns. D2 is not
+designed for this use case. There are much better tools for that.
+
+
+<img src={require('@site/static/img/screenshots/graph.png').default} width="300" alt="graph example"/>
