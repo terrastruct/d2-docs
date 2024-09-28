@@ -68,7 +68,7 @@ Float between `0` and `1`.
 
 ## Stroke
 
-CSS color name or hex code.
+CSS color name, hex code, or a subset of CSS gradient strings.
 
 <CodeBlock className="language-d2">
     {StylesStroke}
@@ -85,7 +85,7 @@ already used to control header's `fill`).
 
 ## Fill
 
-CSS color name or hex code.
+CSS color name, hex code, or a subset of CSS gradient strings.
 
 <CodeBlock className="language-d2">
     {StylesFill}
@@ -228,7 +228,7 @@ Integer between `8` and `100`.
 
 ## Font Color
 
-CSS color name or hex code.
+CSS color name, hex code, or a subset of CSS gradient strings.
 
 <CodeBlock className="language-d2">
     {StylesFontColor}

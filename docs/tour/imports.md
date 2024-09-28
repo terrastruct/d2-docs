@@ -123,9 +123,3 @@ Unnecessary relative imports are removed by autoformat.
 
 `@./x` will be autoformatted to `@x`.
 :::
-
-:::caution
-Absolute imports are not currently available. We are considering designs to set a root, so
-that you can import like `@~/my/d2/x.d2`. If you have a use case for absolute imports,
-please file an issue (or upvote an existing one) on GitHub.
-:::
