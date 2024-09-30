@@ -16,9 +16,9 @@ Grid diagrams let you display objects in a structured grid.
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid.svg2')}}></div>
 
-:::info
-Source code for this is at the bottom of the page.
-:::
+<CodeBlock className="language-d2" expandeable={true}>
+    {Grid}
+</CodeBlock>
 
 Two keywords do all the magic:
 - `grid-rows`
@@ -120,21 +120,25 @@ Setting `grid-gap` is equivalent to setting both `vertical-gap` and `horizontal-
 
 `vertical-gap` and `horizontal-gap` can override `grid-gap`.
 
+### Gap size 0
+
 `grid-gap: 0` in particular can create some interesting constructions:
 
-### Like this map of Japan
+#### Like this map of Japan
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/japan.svg2')}}></div>
 
 > [D2 source](https://github.com/terrastruct/d2/blob/master/docs/examples/japan-grid/japan.d2)
 
-### Or a table of data
+#### Or a table of data
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/table.svg2')}}></div>
 
 <CodeBlock className="language-d2">
     {Table}
 </CodeBlock>
+
+### Gap size 0
 
 ## Connections
 
@@ -191,10 +195,3 @@ It'd be nicer if it were centered. This can be achieved by adding 2 invisible el
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-aligned.svg2')}}></div>
 
-## Source code
-
-This is the script for the image at the top of this page.
-
-<CodeBlock className="language-d2">
-    {Grid}
-</CodeBlock>
