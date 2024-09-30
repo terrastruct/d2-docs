@@ -147,3 +147,7 @@
 .CodeBlock.expanded pre::before {
   display: none;
 }
+
+.CodeBlock.expanded.expandeable pre {
+  padding-bottom: 4rem;
+}

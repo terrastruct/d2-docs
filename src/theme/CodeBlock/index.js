@@ -80,7 +80,7 @@ export default function D2CodeBlock(props) {
     // Just a large enough value to fit all
     maxHeight: isExpanded ? "6000px" : "200px",
     overflow: "hidden",
-    transition: "max-height 0.5s ease",
+    transition: "max-height 1s ease",
   };
   const { colorMode } = docusaurusThemeCommon.useColorMode();
   switch (colorMode) {
@@ -153,7 +153,10 @@ export default function D2CodeBlock(props) {
 
   return (
     <section
-      className={clsx("CodeBlock", props.containerClassName, { expanded: isExpanded })}
+      className={clsx("CodeBlock", props.containerClassName, {
+        expanded: isExpanded,
+        expandeable: props.expandeable,
+      })}
     >
       <button
         className="Copy"

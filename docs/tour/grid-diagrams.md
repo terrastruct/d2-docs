@@ -9,6 +9,8 @@ import GridNestedGrid from '@site/static/d2/grid-nested-grid.d2';
 import Table from '@site/static/d2/table.d2';
 import GridUnaligned from '@site/static/d2/grid-unaligned.d2';
 import GridAligned from '@site/static/d2/grid-aligned.d2';
+import GridPadding1 from '@site/static/d2/grid-padding-1.d2';
+import GridPadding2 from '@site/static/d2/grid-padding-2.d2';
 
 # Grid Diagrams
 
@@ -195,3 +197,26 @@ It'd be nicer if it were centered. This can be achieved by adding 2 invisible el
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-aligned.svg2')}}></div>
 
+## Troubleshooting
+
+### Why is there extra padding in one cell?
+
+Elements in a grid column have the same width and elements in a grid row have the same
+height.
+
+So in this example, a small empty space in "Backend Node" is present.
+
+<CodeBlock className="language-d2" expandeable={true}>
+    {GridPadding1}
+</CodeBlock>
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-padding-1.svg2')}}></div>
+
+It's due to the label of "Flask Pod" being slightly longer than "Next Pod". So the way we
+fix that is to set `width`s to match.
+
+<CodeBlock className="language-d2" expandeable={true}>
+    {GridPadding2}
+</CodeBlock>
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-padding-2.svg2')}}></div>
