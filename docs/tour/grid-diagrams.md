@@ -9,6 +9,8 @@ import GridNestedGrid from '@site/static/d2/grid-nested-grid.d2';
 import Table from '@site/static/d2/table.d2';
 import GridUnaligned from '@site/static/d2/grid-unaligned.d2';
 import GridAligned from '@site/static/d2/grid-aligned.d2';
+import GridPadding1 from '@site/static/d2/grid-padding-1.d2';
+import GridPadding2 from '@site/static/d2/grid-padding-2.d2';
 
 # Grid Diagrams
 
@@ -16,9 +18,9 @@ Grid diagrams let you display objects in a structured grid.
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid.svg2')}}></div>
 
-:::info
-Source code for this is at the bottom of the page.
-:::
+<CodeBlock className="language-d2" expandeable={true}>
+    {Grid}
+</CodeBlock>
 
 Two keywords do all the magic:
 - `grid-rows`
@@ -120,21 +122,25 @@ Setting `grid-gap` is equivalent to setting both `vertical-gap` and `horizontal-
 
 `vertical-gap` and `horizontal-gap` can override `grid-gap`.
 
+### Gap size 0
+
 `grid-gap: 0` in particular can create some interesting constructions:
 
-### Like this map of Japan
+#### Like this map of Japan
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/japan.svg2')}}></div>
 
 > [D2 source](https://github.com/terrastruct/d2/blob/master/docs/examples/japan-grid/japan.d2)
 
-### Or a table of data
+#### Or a table of data
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/table.svg2')}}></div>
 
 <CodeBlock className="language-d2">
     {Table}
 </CodeBlock>
+
+### Gap size 0
 
 ## Connections
 
@@ -191,10 +197,26 @@ It'd be nicer if it were centered. This can be achieved by adding 2 invisible el
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-aligned.svg2')}}></div>
 
-## Source code
+## Troubleshooting
 
-This is the script for the image at the top of this page.
+### Why is there extra padding in one cell?
 
-<CodeBlock className="language-d2">
-    {Grid}
+Elements in a grid column have the same width and elements in a grid row have the same
+height.
+
+So in this example, a small empty space in "Backend Node" is present.
+
+<CodeBlock className="language-d2" expandeable={true}>
+    {GridPadding1}
 </CodeBlock>
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-padding-1.svg2')}}></div>
+
+It's due to the label of "Flask Pod" being slightly longer than "Next Pod". So the way we
+fix that is to set `width`s to match.
+
+<CodeBlock className="language-d2" expandeable={true}>
+    {GridPadding2}
+</CodeBlock>
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/grid-padding-2.svg2')}}></div>

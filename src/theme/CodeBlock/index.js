@@ -50,6 +50,10 @@ export default function D2CodeBlock(props) {
     scope = `source.${lang.replace(/^language-/, "")}`;
   }
 
+  const [isExpanded, setIsExpanded] = React.useState(!props.expandeable);
+  const toggleExpand = () => {
+    setIsExpanded((prev) => !prev);
+  };
   let [tmGrammar, setTMGrammar] = React.useState(getTextMateGrammar(scope));
   const [clipboardTooltipText, setClipboardTooltipText] =
     React.useState("Copy to clipboard");
@@ -73,6 +77,10 @@ export default function D2CodeBlock(props) {
   let preStyle = {
     position: "relative",
     lineHeight: "25px",
+    // Just a large enough value to fit all
+    maxHeight: isExpanded ? "6000px" : "200px",
+    overflow: "hidden",
+    transition: "max-height 1s ease",
   };
   const { colorMode } = docusaurusThemeCommon.useColorMode();
   switch (colorMode) {
@@ -144,7 +152,12 @@ export default function D2CodeBlock(props) {
   }
 
   return (
-    <section className={clsx("CodeBlock", props.containerClassName)}>
+    <section
+      className={clsx("CodeBlock", props.containerClassName, {
+        expanded: isExpanded,
+        expandeable: props.expandeable,
+      })}
+    >
       <button
         className="Copy"
         onMouseLeave={() => setClipboardTooltipText("Copy to clipboard")}
@@ -175,6 +188,13 @@ export default function D2CodeBlock(props) {
         </button>
       )}
       <pre style={preStyle}>{children}</pre>
+      {props.expandeable && (
+        <div className="ExpandToggleWrapper">
+          <button className="ExpandToggle" onMouseDown={toggleExpand}>
+            {isExpanded ? "See less" : "See more"}
+          </button>
+        </div>
+      )}
     </section>
   );
 }

@@ -1,0 +1,97 @@
+classes: {
+  kuber: {
+    style: {
+      fill: "white"
+      stroke: "#aeb5bd"
+      border-radius: 4
+      stroke-dash: 3
+    }
+  }
+  sys: {
+    label: ""
+    style: {
+      fill: "#AFBFDF"
+      stroke: "#aeb5bd"
+    }
+  }
+  node: {
+    grid-gap: 0
+    style: {
+      fill: "#ebf3e6"
+      border-radius: 8
+      stroke: "#aeb5bd"
+    }
+  }
+  clust: {
+    style: {
+      fill: "#A7CC9E"
+      stroke: "#aeb5bd"
+    }
+  }
+  deploy: {
+    grid-gap: 0
+    style: {
+      fill: "#ffe6d5"
+      stroke: "#aeb5bd"
+      # border-radius: 4
+    }
+  }
+  nextpod: {
+    icon: https://www.svgrepo.com/show/378440/nextjs-fill.svg
+    style: {
+      fill: "#ECECEC"
+      stroke: "#aeb5bd"
+      # border-radius: 4
+    }
+  }
+  flaskpod: {
+    icon: https://www.svgrepo.com/show/508915/flask.svg
+    style: {
+      fill: "#ECECEC"
+      stroke: "#aeb5bd"
+      # border-radius: 4
+    }
+  }
+}
+
+classes
+
+Kubernetes: {
+  grid-columns: 2
+  system: {
+    grid-columns: 1
+    Backend Node: {
+      grid-columns: 2
+      ClusterIP\nService 1
+      Deployment 1: {
+        grid-rows: 3
+        NEXT POD 1
+        NEXT POD 2
+        NEXT POD 3
+      }
+    }
+    Frontend Node: {
+      grid-columns: 2
+      ClusterIP\nService 2
+      Deployment 2: {
+        grid-rows: 3
+        FLASK POD 1
+        FLASK POD 2
+        FLASK POD 3
+      }
+    }
+  }
+}
+
+kubernetes.class: kuber
+kubernetes.system.class: sys
+
+kubernetes.system.backend node.class: node
+kubernetes.system.backend node.clusterip\nservice 1.class: clust
+kubernetes.system.backend node.deployment 1.class: deploy
+kubernetes.system.backend node.deployment 1.next pod*.class: nextpod
+
+kubernetes.system.frontend node.class: node
+kubernetes.system.frontend node.clusterip\nservice 2.class: clust
+kubernetes.system.frontend node.deployment 2.class: deploy
+kubernetes.system.frontend node.deployment 2.flask pod*.class: flaskpod
