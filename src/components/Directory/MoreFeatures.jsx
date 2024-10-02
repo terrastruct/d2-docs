@@ -10,7 +10,7 @@ const moreFeatures = [
     href: "/tour/install",
   },
   {
-    title: "Most major OS's",
+    title: "Most major OSes",
     description:
       "MacOS, Linux, and Windows. D2 is included in many popular package managers like Homebrew and Winget.",
     icon: "os.svg",
