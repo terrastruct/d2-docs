@@ -10,6 +10,8 @@
 * [Layouts](#layouts)
   + [Can an object be part of more than 1 container?](#can-an-object-be-part-of-more-than-1-container)
   + [Can I specify ports?](#can-i-specify-ports)
+* [Exports](#exports)
+  + [No interactivity in SVG export](#no-interactivity-in-svg-export)
 
 ## General
 
@@ -60,3 +62,49 @@ Not currently and not in the near future. See
 
 Not currently, but in the near future. See
 [discussion](https://github.com/terrastruct/d2/discussions/605) for more.
+
+## Exports
+
+### No interactivity in SVG export
+
+SVG exports can have some interactive elements when using links and tooltips. However,
+interactivity in SVG can be disabled depending on environment. There are several ways to
+include SVGs on a web page.
+
+tldr; when it's treated as an image, the interactivity is lost.
+
+<table>
+  <thead>
+    <tr>
+      <th>Embedding Method</th>
+      <th>Link Clickable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Inline SVG (&lt;svg&gt;)</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>&lt;img&gt; tag</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>&lt;object&gt; tag</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>&lt;iframe&gt; tag</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>CSS background image</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>&lt;embed&gt; tag</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
