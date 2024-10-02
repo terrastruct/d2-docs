@@ -10,6 +10,8 @@
 * [Layouts](#layouts)
   + [Can an object be part of more than 1 container?](#can-an-object-be-part-of-more-than-1-container)
   + [Can I specify ports?](#can-i-specify-ports)
+* [Exports](#exports)
+  + [No interactivity in SVG export](#no-interactivity-in-svg-export)
 
 ## General
 
