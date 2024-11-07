@@ -81,3 +81,21 @@ In other words, if you call `D2_PAD=2 d2 --theme=1 input.d2`, it doesn't matter 
 `theme-id` and `pad` are set to in `input.d2`'s `d2-config`; it will use the options from
 the command.
 :::
+
+:::info `data`
+`data` is an anything-goes map of key-value pairs. This is used in contexts where
+third-party software read configuration, such as when D2 is used as a library, or D2 is
+run with an external plugin.
+
+For example,
+
+```d2
+vars: {
+  d2-config: {
+    data: {
+      power-level: 9000
+    }
+  }
+}
+```
+:::
