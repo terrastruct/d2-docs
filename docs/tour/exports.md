@@ -22,7 +22,7 @@ For example, `d2 in.d2` will produce a file named `in.svg`.
 The resulting SVG has CSS injected into it. This, along with the use of HTML
 `<foreignObject>`s used to make Markdown work, means that the SVG is meant to be viewed in
 a web context. For example, opening it up in your browser, embedding it onto a webpage. It
-will not look right without a web context, like in Inkscape or Adobe Illustrator.
+may not look right without a web context, like in Inkscape or Adobe Illustrator.
 
 On the CLI, if you pass in `-`
 - for the input, it reads D2 from stdin
