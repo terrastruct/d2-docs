@@ -40,7 +40,7 @@ D2는 중국어, 일본어, 한국어, 심지어 이모지와 같은 비라틴 �
 plankton -> formula: will steal
 formula: {
   equation: |latex
-    \\lim_{h \\rightarrow 0 } \\frac{f(x+h)-f(x)}{h}
+    \lim_{h \rightarrow 0 } \frac{f(x+h)-f(x)}{h}
   |
 }
 ```

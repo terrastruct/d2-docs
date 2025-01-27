@@ -38,8 +38,6 @@ You can use `latex` or `tex` to specify a LaTeX language block.
 
 A few things to note about LaTeX blocks:
 
-- You must escape `\`, as these are escape characters. Note the usage of `\\` in the above
-  example.
 - LaTeX blocks do not respect `font-size` styling. Instead, you must style these inside
   the Latex script itself with commands:
   - `\tiny{ }`
