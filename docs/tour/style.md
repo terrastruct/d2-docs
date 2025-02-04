@@ -16,7 +16,7 @@ import StylesFont from '@site/static/d2/styles-font.d2';
 import StylesFontSize from '@site/static/d2/styles-font-size.d2';
 import StylesFontColor from '@site/static/d2/styles-font-color.d2';
 import StylesTableColor from '@site/static/d2/styles-table-color.d2';
-import StylesAnimated from '@site/static/d2/styles-animated.d2';
+import StylesAnimated from '@site/static/bespoke-d2/styles-animated.d2';
 import StylesTextDecoration from '@site/static/d2/styles-text-decoration.d2';
 import StylesTextTransform from '@site/static/d2/styles-text-transform.d2';
 import StylesRoot from '@site/static/d2/styles-root.d2';
