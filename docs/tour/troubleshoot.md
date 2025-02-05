@@ -3,7 +3,7 @@
 * [It won't compile a specific label or value](#it-wont-compile-a-specific-label-or-value)
 * [The text is rendered too wide/long](#the-text-is-rendered-too-widelong)
 * [Connections look cluttered](#connections-look-cluttered)
-* [I can't use reserved keywords](#i-cant-use-reserved-keywords)
+* [Reserved keywords as regular keys](#reserved-keywords-as-regular-keys)
 * [My diagram is breaking with HTML in Markdown](#my-diagram-is-breaking-with-html-in-markdown)
 * [Markdown SVGs won't render in certain SVG viewers](#markdown-svgs-wont-render-in-certain-svg-viewers)
 * [My SVG isn't interactive when I embed into HTML](#my-svg-isnt-interactive-when-i-embed-into-html)
@@ -34,14 +34,13 @@ D2 adds a minimal amount of padding to shapes past the label dimensions. When a 
 many connections, increasing dimensions will give it more surface area for the connections
 to route aesthetically to.
 
-## I can't use reserved keywords
+## Reserved keywords as regular keys
 
-We're working on a better system here to escape reserved keywords, but for now you can
-relabel:
+If you'd like to use a reserved keyword as a key, just quote it:
 
 ```d2
 x: {
-  width_: width
+  "width": width
 }
 ```
 

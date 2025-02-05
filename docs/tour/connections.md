@@ -109,6 +109,8 @@ To override the default arrowhead shape or give a label next to arrowheads, defi
   - Can be further styled as `style.filled: true`.
 - `circle`
   - Can be further styled as `style.filled: true`.
+- `box`
+  - Can be further styled as `style.filled: true`.
 - `cf-one`, `cf-one-required` (cf stands for crows foot)
 - `cf-many`, `cf-many-required`
 :::

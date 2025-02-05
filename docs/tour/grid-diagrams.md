@@ -11,6 +11,7 @@ import GridUnaligned from '@site/static/d2/grid-unaligned.d2';
 import GridAligned from '@site/static/d2/grid-aligned.d2';
 import GridPadding1 from '@site/static/d2/grid-padding-1.d2';
 import GridPadding2 from '@site/static/d2/grid-padding-2.d2';
+import MdTable from '@site/static/d2/md-table.d2';
 
 # Grid Diagrams
 
@@ -139,6 +140,17 @@ Setting `grid-gap` is equivalent to setting both `vertical-gap` and `horizontal-
 <CodeBlock className="language-d2">
     {Table}
 </CodeBlock>
+
+:::info
+You may find it easier to just use Markdown tables though, especially if there are
+duplicate cells.
+
+<CodeBlock className="language-d2">
+    {MdTable}
+</CodeBlock>
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/md-table.svg2')}}></div>
+:::
 
 ### Gap size 0
 
