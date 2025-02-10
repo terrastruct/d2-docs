@@ -43,3 +43,4 @@ issue and we're happy to include your's!
 - MkDocs plugin: [https://github.com/landmaj/mkdocs-d2-plugin](https://github.com/landmaj/mkdocs-d2-plugin)
 - C# & dotnet SDK: [https://github.com/Stephanvs/d2lang-cs](https://github.com/Stephanvs/d2lang-cs)
 - Zed extension: [https://github.com/gabeidx/zed-d2](https://github.com/gabeidx/zed-d2)
+- Hexo blog extension: [https://github.com/leverimmy/hexo-d2](https://github.com/leverimmy/hexo-d2)
