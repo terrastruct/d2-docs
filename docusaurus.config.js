@@ -12,16 +12,13 @@ const config = {
 
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "ko", "zh-cn"],
+    locales: ["en", "ko"],
     localeConfigs: {
       en: {
         label: "English",
       },
       ko: {
         label: "Korean (한국어)",
-      // },
-      // 'zh-cn': {
-      //   label: "Chinese Simplified (简体中文)",
       }
     },
   },
