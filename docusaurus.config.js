@@ -12,7 +12,7 @@ const config = {
 
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "ko"],
+    locales: ["en", "ko", "zh-cn"],
     localeConfigs: {
       en: {
         label: "English",
@@ -20,6 +20,9 @@ const config = {
       ko: {
         label: "Korean (한국어)",
       },
+      'zh-cn': {
+        label: "Chinese Simplified (简体中文)",
+      }
     },
   },
 
