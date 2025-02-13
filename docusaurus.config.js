@@ -19,7 +19,7 @@ const config = {
       },
       ko: {
         label: "Korean (한국어)",
-      }
+      },
     },
   },
 
