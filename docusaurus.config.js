@@ -19,9 +19,9 @@ const config = {
       },
       ko: {
         label: "Korean (한국어)",
-      },
-      'zh-cn': {
-        label: "Chinese Simplified (简体中文)",
+      // },
+      // 'zh-cn': {
+      //   label: "Chinese Simplified (简体中文)",
       }
     },
   },
