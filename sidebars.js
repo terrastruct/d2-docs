@@ -76,6 +76,7 @@ const sidebars = {
         "tour/globs",
         "tour/comments",
         "tour/overrides",
+        "tour/legend",
         "tour/auto-formatter",
       ],
     },
