@@ -4,6 +4,7 @@ pagination_next: tour/icons
 ---
 import CodeBlock from '@theme/CodeBlock';
 import Markdown from '@site/static/d2/markdown.d2';
+import MarkdownLabel from '@site/static/d2/markdown-label.d2';
 import Text2 from '@site/static/d2/text-2.d2';
 import Code2 from '@site/static/d2/code-2.d2';
 import NonMarkdownText from '@site/static/d2/non-markdown-text.d2';
@@ -18,6 +19,16 @@ import Latex from '@site/static/d2/latex.d2';
 </CodeBlock>
 
 <div style={{width: 300, margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/markdown.svg2')}}></div>
+
+## Markdown label
+
+If you want to set a Markdown label on a shape, you must explicitly declare the shape.
+
+<CodeBlock className="language-d2">
+    {MarkdownLabel}
+</CodeBlock>
+
+<div style={{width: 300, margin: "0 auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/markdown-label.svg2')}}></div>
 
 ## Most languages are supported
 
@@ -55,11 +66,6 @@ A few things to note about LaTeX blocks:
 D2 runs on the latest version of MathJax, which has a lot of nice things but unfortunately
 does not have linebreaks. You can kind of get around this with the `displaylines` command.
 See below.
-:::
-
-:::note
-Currently cannot be applied to labels, which is why the above example nests an object.
-This is coming soon.
 :::
 
 ## Code
