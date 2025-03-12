@@ -14,9 +14,12 @@ NAME
      d2 – compiles and renders d2 diagrams into svgs.
 
 SYNOPSIS
-     d2 [--watch false] [--theme 0] file.d2 [file.svg | file.png]
+     d2 [--watch false] [--theme 0] [--salt string] file.d2
+	[file.svg | file.png]
      d2 layout [name]
      d2 fmt file.d2 ...
+     d2 play file.d2
+     d2 validate file.d2
 
 DESCRIPTION
      d2 compiles and renders file.d2 to file.svg | file.png.
@@ -88,7 +91,7 @@ OPTIONS
      --animate-interval 0
 		 If given, multiple boards are packaged as 1 SVG which
 		 transitions through each board at the interval (in
-		 milliseconds). Can only be used with SVG exports.
+		 milliseconds). Can only be used with SVG and GIF exports.
 
      --browser true
 		 Browser executable that watch opens. Setting to 0 opens no
@@ -125,10 +128,29 @@ OPTIONS
 		 out and exiting. When rendering a large diagram, it is
 		 recommended to increase this value.
 
+     --check false
+		 Check that the specified files are formatted correctly.
+
+     --salt string
+		 Add a salt value to ensure the output uses unique IDs. This
+		 is useful when generating multiple identical diagrams to be
+		 included in the same HTML doc, so that duplicate id's do not
+		 cause invalid HTML. The salt value is a string that will be
+		 appended to IDs in the output..
+
      -h, --help  Print usage information and exit.
 
      -v, --version
 		 Print version information and exit.
+
+     --stdout-format string
+		 Set the output format when writing to stdout. Supported
+		 formats are: png, svg. Only used when output is set to stdout
+		 (-).
+
+     --no-xml-tag false
+		 Omit XML tag (<?xml ...?>) from output SVG files. Useful when
+		 generating SVGs for direct HTML embedding.
 
 SUBCOMMANDS
      layout	 Lists available layout engine options with short help.
@@ -140,11 +162,88 @@ SUBCOMMANDS
      themes	 Lists available themes.
 
      fmt file.d2 ...
-		 Format all passed files.
+		 Format all passed files
+
+     play file.d2
+		 Opens the file in playground, an online web viewer
+		 (https://play.d2lang.com)
+
+     validate file.d2
+		 Validates file.d2
+
+ENVIRONMENT VARIABLES
+     Many flags can also be set with environment variables.
+
+     D2_WATCH
+	     See -w[atch] flag.
+
+     D2_LAYOUT
+	     See -l[ayout] flag.
+
+     D2_THEME
+	     See -t[heme] flag.
+
+     D2_DARK_THEME
+	     See --dark-theme flag.
+
+     D2_PAD  See --pad flag.
+
+     D2_CENTER
+	     See --center flag.
+
+     D2_SKETCH
+	     See -s[ketch] flag.
+
+     D2_BUNDLE
+	     See -b[undle] flag.
+
+     D2_FORCE_APPENDIX
+	     See --force-appendix flag.
+
+     D2_FONT_REGULAR
+	     See --font-regular flag.
+
+     D2_FONT_ITALIC
+	     See --font-italic flag.
+
+     D2_FONT_BOLD
+	     See --font-bold flag.
+
+     D2_FONT_SEMIBOLD
+	     See --font-semibold flag.
+
+     D2_ANIMATE_INTERVAL
+	     See --animate-interval flag.
+
+     D2_TIMEOUT
+	     See --timeout flag.
+
+     D2_CHECK
+	     See --check flag.
+
+     DEBUG   See -d[ebug] flag.
+
+     IMG_CACHE
+	     See --img-cache flag.
+
+     HOST    See -h[ost] flag.
+
+     PORT    See -p[ort] flag.
+
+     BROWSER
+	     See --browser flag.
+
+     D2_STDOUT_FORMAT
+	     See --stdout-format flag.
+
+     D2_NO_XML_TAG
+	     See --no-xml-tag flag.
 
 SEE ALSO
      d2plugin-tala(1)
 
 AUTHORS
      Terrastruct Inc.
+
+macOS 14.1			March 12, 2025			    macOS 14.1
 ```
