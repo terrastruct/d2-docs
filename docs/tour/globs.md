@@ -178,6 +178,11 @@ Connections can be filtered by properties on their source and destination shapes
 
 Endpoint filters also work with IDs, e.g. `&src: b`.
 
+:::info
+Endpoint IDs are absolute. For example, `a.c` instead of just `c`, even if the glob is
+declared within `a`.
+:::
+
 ## Inverse filters
 
 Use `!&` to inverse-filter what globs target.
