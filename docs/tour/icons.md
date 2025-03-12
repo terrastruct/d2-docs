@@ -24,10 +24,6 @@ You can use any URL as value.
 <div style={{width: "200px", margin: "0 auto 20px auto"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/icons-1.svg2')}}></div>
 
 :::info
-Icons on connections coming soon.
-:::
-
-:::info
 Using the D2 CLI locally? You can specify local images like `icon: ./my_cat.png`.
 :::
 
