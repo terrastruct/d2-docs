@@ -1,0 +1,35 @@
+a: {
+  shape: circle
+  style: {
+    fill: blue
+    opacity: 0.8
+  }
+}
+b: {
+  shape: rectangle
+  style: {
+    fill: red
+    opacity: 0.5
+  }
+}
+c: {
+  shape: diamond
+  style.fill: green
+  style.opacity: 0.8
+}
+(* -> *)[*]: {
+  &src.style.fill: blue
+  style.stroke-dash: 3
+}
+(* -> *)[*]: {
+  &dst.style.opacity: 0.8
+  style.stroke: cyan
+}
+(* -> *)[*]: {
+  &src.shape: rectangle
+  &dst.style.fill: green
+  style.stroke-width: 5
+}
+a -> b
+b -> c
+a -> c

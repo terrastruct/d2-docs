@@ -1,0 +1,28 @@
+# -----
+# Models
+# -----
+restaurants: Restaurants {
+  style.stroke-dash: 2
+  *.style.fill: "#66c4e3"
+  chip: Chipotle
+  cfa: Chick-Fil-A
+  bk: Burger King
+
+  chip -> bk: competes with
+}
+
+diners: Diners {
+  daniel
+  zack
+}
+
+# -----
+# Model Relationships
+# -----
+diners -> restaurants: eat at
+
+diners.daniel -> restaurants.chip: likes
+diners.daniel -> restaurants.cfa: dislikes
+
+diners.zack -> restaurants.bk: likes
+diners.zack -> restaurants.chip: likes
