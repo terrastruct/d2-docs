@@ -63,7 +63,7 @@ internet_banking_system.database: |md
 
   Stores user registration information, hashed authentication credentials, access logs, etc.
 | {
-  shape: rectangle
+  shape: cylinder
 }
 
 email_system: |md
@@ -87,11 +87,12 @@ mainframe: |md
 # Connections
 customer -> internet_banking_system.web_app: "Visits bigbank.com/ib using\n[HTTPS]"
 internet_banking_system.web_app -> internet_banking_system.spa: "Delivers to the customer's web browser"
-customer -> internet_banking_system.spa: "Views account balances, and makes payments using"
-customer -> internet_banking_system.mobile_app: "Views account balances, and makes payments using"
+customer -> internet_banking_system.spa: "Views account balances,\nand makes payments using"
+customer -> internet_banking_system.mobile_app: "Views account balances,\nand makes payments using"
 internet_banking_system.spa -> internet_banking_system.api_app: "Makes API calls to\n[JSON/HTTPS]"
 internet_banking_system.mobile_app -> internet_banking_system.api_app: "Makes API calls to\n[JSON/HTTPS]"
 internet_banking_system.api_app -> mainframe: "Makes API calls to\n[XML/HTTPS]"
 customer -> email_system: "Sends e-mails to"
 internet_banking_system.api_app -> email_system: "Sends e-mail using"
 internet_banking_system.database <-> internet_banking_system.api_app: "Reads from and writes to\n[SQL/TCP]"
+
