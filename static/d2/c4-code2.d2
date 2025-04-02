@@ -1,0 +1,70 @@
+notification_manager: |go
+    func NewNotificationManager(config *Config) *NotificationManager
+    func (m *NotificationManager) SendNotification(userID string, message *Message) error
+    func (m *NotificationManager) SendBulkNotifications(userIDs []string, message *Message) []error
+  |
+
+  channel_router: |go
+    func NewChannelRouter(channels []Channel) *ChannelRouter
+    func (r *ChannelRouter) RouteNotification(userID string, message *Message) (Channel, error)
+    func (r *ChannelRouter) GetUserPreferences(userID string) (*UserPreferences, error)
+  |
+
+  email_channel: |go
+    func NewEmailChannel(smtpConfig *SMTPConfig) *EmailChannel
+    func (c *EmailChannel) Send(userID string, message *Message) error
+    func (c *EmailChannel) FormatMessage(message *Message) (string, error)
+  |
+
+  sms_channel: |go
+    func NewSMSChannel(twilioConfig *TwilioConfig) *SMSChannel
+    func (c *SMSChannel) Send(userID string, message *Message) error
+    func (c *SMSChannel) FormatMessage(message *Message) (string, error)
+  |
+
+  push_channel: |go
+    func NewPushChannel(fcmConfig *FCMConfig) *PushChannel
+    func (c *PushChannel) Send(userID string, message *Message) error
+    func (c *PushChannel) FormatMessage(message *Message) (map[string]interface{}, error)
+  |
+
+  template_engine: |go
+    func NewTemplateEngine(templateDir string) *TemplateEngine
+    func (e *TemplateEngine) RenderTemplate(templateName string, data map[string]interface{}) (string, error)
+    func (e *TemplateEngine) RegisterHelper(name string, helper interface{}) error
+  |
+
+  notification_manager -> channel_router: {
+    label: "uses"
+    style.stroke: "#FF6347"
+  }
+
+  channel_router -> email_channel: {
+    label: "routes to"
+    style.stroke-dash: 3
+  }
+
+  channel_router -> sms_channel: {
+    label: "routes to"
+    style.stroke-dash: 3
+  }
+
+  channel_router -> push_channel: {
+    label: "routes to"
+    style.stroke-dash: 3
+  }
+
+  email_channel -> template_engine: {
+    label: "renders"
+    style.stroke: "#4682B4"
+  }
+
+  sms_channel -> template_engine: {
+    label: "renders"
+    style.stroke: "#4682B4"
+  }
+
+  push_channel -> template_engine: {
+    label: "renders"
+    style.stroke: "#4682B4"
+  }
