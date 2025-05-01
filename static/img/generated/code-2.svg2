@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-d2-version="v0.6.9-HEAD" preserveAspectRatio="xMidYMid meet" viewBox="0 0 690 122"><svg class="d2-1753623619 d2-svg" width="690" height="122" viewBox="-1 -1 690 122"><rect x="-1.000000" y="-1.000000" width="690.000000" height="122.000000" rx="0.000000" class=" fill-N7" stroke-width="0" /><style type="text/css"><![CDATA[
+<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-d2-version="v0.7.0-HEAD" preserveAspectRatio="xMidYMid meet" viewBox="0 0 690 122"><svg class="d2-1753623619 d2-svg" width="690" height="122" viewBox="-1 -1 690 122"><rect x="-1.000000" y="-1.000000" width="690.000000" height="122.000000" rx="0.000000" class=" fill-N7" stroke-width="0" /><style type="text/css"><![CDATA[
 .d2-1753623619 .text-mono {
 	font-family: "d2-1753623619-font-mono";
 }
@@ -178,5 +178,5 @@
 </tspan></text><text class="text-mono" x="0" y="4.900000em"><tspan fill="#cdd6f4"></tspan><tspan fill="#cdd6f4">ctx</tspan><tspan fill="#cdd6f4">,</tspan><tspan fill="#cdd6f4">&#160;</tspan><tspan fill="#cdd6f4">cancelFn</tspan><tspan fill="#cdd6f4">&#160;</tspan><tspan fill="#89dceb" class="text-mono-bold">:=</tspan><tspan fill="#cdd6f4">&#160;</tspan><tspan fill="#cdd6f4">context</tspan><tspan fill="#cdd6f4">.</tspan><tspan fill="#89b4fa">WithTimeout</tspan><tspan fill="#cdd6f4">(</tspan><tspan fill="#cdd6f4">c</tspan><tspan fill="#cdd6f4">.</tspan><tspan fill="#cdd6f4">Request</tspan><tspan fill="#cdd6f4">.</tspan><tspan fill="#89b4fa">Context</tspan><tspan fill="#cdd6f4">(</tspan><tspan fill="#cdd6f4">)</tspan><tspan fill="#cdd6f4">,</tspan><tspan fill="#cdd6f4">&#160;</tspan><tspan fill="#cdd6f4">AWS_TIMEOUT</tspan><tspan fill="#cdd6f4">)</tspan><tspan fill="#cdd6f4">
 </tspan></text><text class="text-mono" x="0" y="6.200000em"><tspan fill="#cdd6f4"></tspan><tspan fill="#cba6f7">defer</tspan><tspan fill="#cdd6f4">&#160;</tspan><tspan fill="#89b4fa">cancelFn</tspan><tspan fill="#cdd6f4">(</tspan><tspan fill="#cdd6f4">)</tspan></text></g></g></g><mask id="d2-1753623619" maskUnits="userSpaceOnUse" x="-1" y="-1" width="690" height="122">
 <rect x="-1" y="-1" width="690" height="122" fill="white"></rect>
-<rect x="0.000000" y="0.000000" width="672" height="104" fill="rgba(0,0,0,0.75)"></rect>
+<rect x="-2.000000" y="0.000000" width="676" height="104" fill="rgba(0,0,0,0.75)"></rect>
 </mask></svg></svg>
