@@ -1,0 +1,56 @@
+api_server: |go
+  func StartServer(port int) error
+  func SetupRoutes(router *mux.Router)
+  func AuthMiddleware(next http.Handler) http.Handler
+|
+
+graphql_handler: |go
+  func NewHandler(schema *graphql.Schema) *Handler
+  func ServeHTTP(w http.ResponseWriter, r *http.Request)
+  func ExecuteQuery(query string, variables map[string]interface{}) *Result
+|
+
+resolvers: |go
+  func AccountResolver(p graphql.ResolveParams) (interface{}, error)
+  func TransactionResolver(p graphql.ResolveParams) (interface{}, error)
+  func UserResolver(p graphql.ResolveParams) (interface{}, error)
+|
+
+schema: |go
+  func BuildSchema() (*graphql.Schema, error)
+  func RegisterTypes(schema *graphql.Schema)
+  func RegisterQueries(schema *graphql.Schema)
+  func RegisterMutations(schema *graphql.Schema)
+|
+
+clients: |go
+  func NewAccountClient(baseURL string) *AccountClient
+  func NewTransactionClient(baseURL string) *TransactionClient
+  func (c *AccountClient) GetAccount(id string) (*Account, error)
+  func (c *TransactionClient) ListTransactions(accountID string) ([]*Transaction, error)
+|
+
+api_server -> graphql_handler: {
+  label: "uses"
+}
+
+graphql_handler -> resolvers: {
+  label: "calls"
+  style.stroke-dash: 3
+}
+
+graphql_handler -> schema: {
+  label: "uses"
+  style.stroke: "#4682B4"
+}
+
+resolvers -> clients: {
+  label: "calls"
+  style.stroke-width: 2
+}
+
+schema -> resolvers: {
+  label: "references"
+  style.stroke-dash: 5
+  style.stroke: "#2E8B57"
+}
