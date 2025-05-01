@@ -298,35 +298,35 @@ notification_system -> investment_platform: {
 layers: {
   banking: {
     api_server: |go
-    func StartServer(port int) error
-    func SetupRoutes(router *mux.Router)
-    func AuthMiddleware(next http.Handler) http.Handler
+      func StartServer(port int) error
+      func SetupRoutes(router *mux.Router)
+      func AuthMiddleware(next http.Handler) http.Handler
     |
 
     graphql_handler: |go
-    func NewHandler(schema *graphql.Schema) *Handler
-    func ServeHTTP(w http.ResponseWriter, r *http.Request)
-    func ExecuteQuery(query string, variables map[string]interface{}) *Result
+      func NewHandler(schema *graphql.Schema) *Handler
+      func ServeHTTP(w http.ResponseWriter, r *http.Request)
+      func ExecuteQuery(query string, variables map[string]interface{}) *Result
     |
 
     resolvers: |go
-    func AccountResolver(p graphql.ResolveParams) (interface{}, error)
-    func TransactionResolver(p graphql.ResolveParams) (interface{}, error)
-    func UserResolver(p graphql.ResolveParams) (interface{}, error)
+      func AccountResolver(p graphql.ResolveParams) (interface{}, error)
+      func TransactionResolver(p graphql.ResolveParams) (interface{}, error)
+      func UserResolver(p graphql.ResolveParams) (interface{}, error)
     |
 
     schema: |go
-    func BuildSchema() (*graphql.Schema, error)
-    func RegisterTypes(schema *graphql.Schema)
-    func RegisterQueries(schema *graphql.Schema)
-    func RegisterMutations(schema *graphql.Schema)
+      func BuildSchema() (*graphql.Schema, error)
+      func RegisterTypes(schema *graphql.Schema)
+      func RegisterQueries(schema *graphql.Schema)
+      func RegisterMutations(schema *graphql.Schema)
     |
 
     clients: |go
-    func NewAccountClient(baseURL string) *AccountClient
-    func NewTransactionClient(baseURL string) *TransactionClient
-    func (c *AccountClient) GetAccount(id string) (*Account, error)
-    func (c *TransactionClient) ListTransactions(accountID string) ([]*Transaction, error)
+      func NewAccountClient(baseURL string) *AccountClient
+      func NewTransactionClient(baseURL string) *TransactionClient
+      func (c *AccountClient) GetAccount(id string) (*Account, error)
+      func (c *TransactionClient) ListTransactions(accountID string) ([]*Transaction, error)
     |
 
     api_server -> graphql_handler: {
@@ -356,39 +356,39 @@ layers: {
   }
   notification: {
     notification_manager: |go
-    func NewNotificationManager(config *Config) *NotificationManager
-    func (m *NotificationManager) SendNotification(userID string, message *Message) error
-    func (m *NotificationManager) SendBulkNotifications(userIDs []string, message *Message) []error
+      func NewNotificationManager(config *Config) *NotificationManager
+      func (m *NotificationManager) SendNotification(userID string, message *Message) error
+      func (m *NotificationManager) SendBulkNotifications(userIDs []string, message *Message) []error
     |
 
     channel_router: |go
-    func NewChannelRouter(channels []Channel) *ChannelRouter
-    func (r *ChannelRouter) RouteNotification(userID string, message *Message) (Channel, error)
-    func (r *ChannelRouter) GetUserPreferences(userID string) (*UserPreferences, error)
+      func NewChannelRouter(channels []Channel) *ChannelRouter
+      func (r *ChannelRouter) RouteNotification(userID string, message *Message) (Channel, error)
+      func (r *ChannelRouter) GetUserPreferences(userID string) (*UserPreferences, error)
     |
 
     email_channel: |go
-    func NewEmailChannel(smtpConfig *SMTPConfig) *EmailChannel
-    func (c *EmailChannel) Send(userID string, message *Message) error
-    func (c *EmailChannel) FormatMessage(message *Message) (string, error)
+      func NewEmailChannel(smtpConfig *SMTPConfig) *EmailChannel
+      func (c *EmailChannel) Send(userID string, message *Message) error
+      func (c *EmailChannel) FormatMessage(message *Message) (string, error)
     |
 
     sms_channel: |go
-    func NewSMSChannel(twilioConfig *TwilioConfig) *SMSChannel
-    func (c *SMSChannel) Send(userID string, message *Message) error
-    func (c *SMSChannel) FormatMessage(message *Message) (string, error)
+      func NewSMSChannel(twilioConfig *TwilioConfig) *SMSChannel
+      func (c *SMSChannel) Send(userID string, message *Message) error
+      func (c *SMSChannel) FormatMessage(message *Message) (string, error)
     |
 
     push_channel: |go
-    func NewPushChannel(fcmConfig *FCMConfig) *PushChannel
-    func (c *PushChannel) Send(userID string, message *Message) error
-    func (c *PushChannel) FormatMessage(message *Message) (map[string]interface{}, error)
+      func NewPushChannel(fcmConfig *FCMConfig) *PushChannel
+      func (c *PushChannel) Send(userID string, message *Message) error
+      func (c *PushChannel) FormatMessage(message *Message) (map[string]interface{}, error)
     |
 
     template_engine: |go
-    func NewTemplateEngine(templateDir string) *TemplateEngine
-    func (e *TemplateEngine) RenderTemplate(templateName string, data map[string]interface{}) (string, error)
-    func (e *TemplateEngine) RegisterHelper(name string, helper interface{}) error
+      func NewTemplateEngine(templateDir string) *TemplateEngine
+      func (e *TemplateEngine) RenderTemplate(templateName string, data map[string]interface{}) (string, error)
+      func (e *TemplateEngine) RegisterHelper(name string, helper interface{}) error
     |
 
     notification_manager -> channel_router: {
