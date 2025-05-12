@@ -1,0 +1,429 @@
+atm_system: |md
+  ## ATM Banking System
+  [Software System]
+
+  Allows customers to perform financial transactions via physical terminals.
+| {
+  shape: rectangle
+  style.fill: "#87CEEB"
+  class: [hardware-interface; customer-facing; transaction-processing]
+}
+
+fraud_detection: |md
+  ## Fraud Detection System
+  [Software System]
+
+  Monitors transactions for suspicious activity using ML algorithms.
+| {
+  shape: hexagon
+  style.stroke-width: 2
+  style.stroke: "#FF0000"
+  class: [security; machine-learning; transaction-processing]
+}
+
+customer_service: |md
+  ## Customer Service Portal
+  [Software System]
+
+  Tools for customer service representatives to assist clients.
+| {
+  shape: c4-person
+  style.fill: "#98FB98"
+  class: [staff-facing; web-portal; support]
+}
+
+notification_system: |md
+  ## Notification System
+  [Container: Java]
+
+  Sends alerts and notifications to customers via multiple channels.
+| {
+  shape: rectangle
+  style.stroke-dash: 5
+  class: [java; customer-facing; communication]
+}
+
+payment_gateway: |md
+  ## Payment Gateway
+  [Container: Python & Django]
+
+  Processes payments and interfaces with external payment networks.
+| {
+  shape: diamond
+  style.fill: "#FFD700"
+  class: [python; transaction-processing; external-interface]
+}
+
+backup_system: |md
+  ## Backup System
+  [Container: Azure Cloud Storage]
+
+  Automated backup of critical banking data.
+| {
+  shape: cylinder
+  style.fill: "#D3D3D3"
+  class: [cloud; data-storage; infrastructure]
+}
+
+admin_portal: |md
+  ## Administrative Portal
+  [Container: React]
+
+  Administrative interface for system maintenance and user management.
+| {
+  shape: rectangle
+  style.stroke-width: 3
+  class: [web-portal; staff-facing; javascript]
+}
+
+security_system: |md
+  ## Security System
+  [Software System]
+
+  Manages authentication, authorization, and security policies.
+| {
+  shape: hexagon
+  style.fill: "#F08080"
+  class: [security; infrastructure; core-banking]
+}
+
+reporting_engine: |md
+  ## Reporting Engine
+  [Container: Python & Pandas]
+
+  Generates reports and analytics for internal stakeholders.
+| {
+  shape: rectangle
+  style.3d: true
+  class: [python; analytics; staff-facing]
+}
+
+logging_service: |md
+  ## Logging Service
+  [Container: ELK Stack]
+
+  Centralized logging for auditing and debugging purposes.
+| {
+  shape: parallelogram
+  style.fill: "#FFDAB9"
+  class: [infrastructure; monitoring; security]
+}
+
+compliance_system: |md
+  ## Compliance System
+  [Software System]
+
+  Ensures banking activities comply with regulations.
+| {
+  shape: hexagon
+  style.fill: "#E6E6FA"
+  class: [legal; core-banking; monitoring]
+}
+
+chatbot: |md
+  ## Customer Chatbot
+  [Container: Node.js & NLP]
+
+  AI-powered chat interface for customer support.
+| {
+  shape: c4-person
+  style.fill: "#B0E0E6"
+  class: [javascript; customer-facing; machine-learning]
+}
+
+kyc_system: |md
+  ## KYC Verification
+  [Software System]
+
+  Know Your Customer identity verification process.
+| {
+  shape: c4-person
+  style.stroke: "#800080"
+  class: [legal; security; customer-facing]
+}
+
+loan_processor: |md
+  ## Loan Processing System
+  [Container: Java EE]
+
+  Handles loan applications and approval workflows.
+| {
+  shape: rectangle
+  style.fill: "#FFFACD"
+  class: [java; core-banking; workflow]
+}
+
+investment_platform: |md
+  ## Investment Platform
+  [Software System]
+
+  Provides trading and investment capabilities to customers.
+| {
+  shape: parallelogram
+  style.fill: "#90EE90"
+  class: [financial-services; customer-facing; transaction-processing]
+}
+
+account_manager: |md
+  ## Account Management
+  [Container: Java & Spring Boot]
+
+  Core functions for creating and managing customer accounts.
+| {
+  shape: rectangle
+  style.double-border: true
+  class: [java; core-banking; data-storage]
+}
+
+bill_payment: |md
+  ## Bill Payment Service
+  [Container: Node.js]
+
+  Allows customers to schedule and pay bills electronically.
+| {
+  shape: rectangle
+  style.fill: "#F0F8FF"
+  class: [javascript; customer-facing; transaction-processing]
+}
+
+transaction_processor: |md
+  ## Transaction Processor
+  [Container: Scala]
+
+  High-performance engine for processing financial transactions.
+| {
+  shape: oval
+  style.fill: "#FAFAD2"
+  class: [jvm; transaction-processing; core-banking]
+}
+
+data_warehouse: |md
+  ## Data Warehouse
+  [Container: Snowflake]
+
+  Enterprise data repository for analytics and business intelligence.
+| {
+  shape: cylinder
+  style.multiple: true
+  class: [data-storage; analytics; cloud]
+}
+
+mobile_banking_api: |md
+  ## Mobile Banking API
+  [Container: GraphQL & Node.js]
+
+  API gateway specifically optimized for mobile client applications.
+| {
+  shape: rectangle
+  style.fill: "#87CEEB"
+  class: [javascript; customer-facing; api]
+}
+
+**: suspend
+**: unsuspend {
+  &class: customer-facing
+}
+
+notification_system.link: layers.notification
+mobile_banking_api.link: layers.banking
+
+vars: {
+  d2-legend: {
+    banking: Banking {
+      style.fill: "#87CEEB"
+    }
+    banking -> x: Alerting {
+      style.stroke-dash: 5
+      style.stroke: "#2E8B57"
+    }
+    banking -> y: Authentication {
+      style.stroke-width: 2
+      style.stroke: "#800080"
+    }
+    x.style.opacity: 0
+    y.style.opacity: 0
+  }
+}
+
+atm_system -> mobile_banking_api: {
+  source-arrowhead: {
+    shape: triangle
+  }
+  target-arrowhead: {
+    shape: triangle
+  }
+  label: "Integration"
+  style.stroke: "#4682B4"
+}
+
+notification_system -> chatbot: {
+  label: "Sends alerts via"
+  style.stroke-dash: 5
+  style.stroke: "#2E8B57"
+}
+
+kyc_system -> investment_platform: {
+  label: "Verifies identity"
+  style.stroke-width: 2
+  style.stroke: "#800080"
+}
+
+mobile_banking_api -> bill_payment: {
+  label: "Provides access"
+  style.stroke: "#FF6347"
+}
+
+chatbot -> investment_platform: {
+  label: "Answers questions"
+  style.stroke-dash: 3
+  style.stroke: "#B0E0E6"
+}
+
+atm_system -> bill_payment: {
+  label: "Allows payments"
+  style.stroke: "#87CEEB"
+}
+
+kyc_system -> mobile_banking_api: {
+  label: "Authenticates"
+  style.stroke: "#800080"
+}
+
+notification_system -> investment_platform: {
+  label: "Sends alerts"
+  style.stroke-dash: 5
+  style.stroke: "#2E8B57"
+}
+
+layers: {
+  banking: {
+    api_server: |go
+      func StartServer(port int) error
+      func SetupRoutes(router *mux.Router)
+      func AuthMiddleware(next http.Handler) http.Handler
+    |
+
+    graphql_handler: |go
+      func NewHandler(schema *graphql.Schema) *Handler
+      func ServeHTTP(w http.ResponseWriter, r *http.Request)
+      func ExecuteQuery(query string, variables map[string]interface{}) *Result
+    |
+
+    resolvers: |go
+      func AccountResolver(p graphql.ResolveParams) (interface{}, error)
+      func TransactionResolver(p graphql.ResolveParams) (interface{}, error)
+      func UserResolver(p graphql.ResolveParams) (interface{}, error)
+    |
+
+    schema: |go
+      func BuildSchema() (*graphql.Schema, error)
+      func RegisterTypes(schema *graphql.Schema)
+      func RegisterQueries(schema *graphql.Schema)
+      func RegisterMutations(schema *graphql.Schema)
+    |
+
+    clients: |go
+      func NewAccountClient(baseURL string) *AccountClient
+      func NewTransactionClient(baseURL string) *TransactionClient
+      func (c *AccountClient) GetAccount(id string) (*Account, error)
+      func (c *TransactionClient) ListTransactions(accountID string) ([]*Transaction, error)
+    |
+
+    api_server -> graphql_handler: {
+      label: "uses"
+    }
+
+    graphql_handler -> resolvers: {
+      label: "calls"
+      style.stroke-dash: 3
+    }
+
+    graphql_handler -> schema: {
+      label: "uses"
+      style.stroke: "#4682B4"
+    }
+
+    resolvers -> clients: {
+      label: "calls"
+      style.stroke-width: 2
+    }
+
+    schema -> resolvers: {
+      label: "references"
+      style.stroke-dash: 5
+      style.stroke: "#2E8B57"
+    }
+  }
+  notification: {
+    notification_manager: |go
+      func NewNotificationManager(config *Config) *NotificationManager
+      func (m *NotificationManager) SendNotification(userID string, message *Message) error
+      func (m *NotificationManager) SendBulkNotifications(userIDs []string, message *Message) []error
+    |
+
+    channel_router: |go
+      func NewChannelRouter(channels []Channel) *ChannelRouter
+      func (r *ChannelRouter) RouteNotification(userID string, message *Message) (Channel, error)
+      func (r *ChannelRouter) GetUserPreferences(userID string) (*UserPreferences, error)
+    |
+
+    email_channel: |go
+      func NewEmailChannel(smtpConfig *SMTPConfig) *EmailChannel
+      func (c *EmailChannel) Send(userID string, message *Message) error
+      func (c *EmailChannel) FormatMessage(message *Message) (string, error)
+    |
+
+    sms_channel: |go
+      func NewSMSChannel(twilioConfig *TwilioConfig) *SMSChannel
+      func (c *SMSChannel) Send(userID string, message *Message) error
+      func (c *SMSChannel) FormatMessage(message *Message) (string, error)
+    |
+
+    push_channel: |go
+      func NewPushChannel(fcmConfig *FCMConfig) *PushChannel
+      func (c *PushChannel) Send(userID string, message *Message) error
+      func (c *PushChannel) FormatMessage(message *Message) (map[string]interface{}, error)
+    |
+
+    template_engine: |go
+      func NewTemplateEngine(templateDir string) *TemplateEngine
+      func (e *TemplateEngine) RenderTemplate(templateName string, data map[string]interface{}) (string, error)
+      func (e *TemplateEngine) RegisterHelper(name string, helper interface{}) error
+    |
+
+    notification_manager -> channel_router: {
+      label: "uses"
+      style.stroke: "#FF6347"
+    }
+
+    channel_router -> email_channel: {
+      label: "routes to"
+      style.stroke-dash: 3
+    }
+
+    channel_router -> sms_channel: {
+      label: "routes to"
+      style.stroke-dash: 3
+    }
+
+    channel_router -> push_channel: {
+      label: "routes to"
+      style.stroke-dash: 3
+    }
+
+    email_channel -> template_engine: {
+      label: "renders"
+      style.stroke: "#4682B4"
+    }
+
+    sms_channel -> template_engine: {
+      label: "renders"
+      style.stroke: "#4682B4"
+    }
+
+    push_channel -> template_engine: {
+      label: "renders"
+      style.stroke: "#4682B4"
+    }
+  }
+}
