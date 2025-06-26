@@ -16,6 +16,7 @@ TTF files through the following flags:
 - `--font-regular`
 - `--font-italic`
 - `--font-bold`
+- `--fond-semibold`
 
 These should point to a `.ttf` file, for example:
 
@@ -25,8 +26,8 @@ d2 --font-regular=./helvetica-regular.ttf input.d2
 
 It's advisable to supply either none or all of the fonts, for consistency. If you supply
 one but not all of the fonts, it will fall back to Source Sans Pro for the missing styles.
-For example, if you give a `--font-regular` and `--font-bold`, then the italic will remain
-as Source Sans Pro Italic.
+For example, if you give a `--font-regular`, `--font-bold`, and `--font-semibold`, then the
+talic will remain as Source Sans Pro Italic.
 
 :::info
 Do you want to customize the fonts for code or sketch mode? Please raise an Issue on
