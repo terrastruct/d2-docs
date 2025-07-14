@@ -51,7 +51,7 @@ brevity.
 - [font](#font)
 - [font-size](#font-size)
 - [font-color](#font-color)
-- [animated](#animated) (connection only)
+- [animated](#animated)
 - [bold, italic, underline](#bold-italic-underline)
 - [text-transform](#text-transform)
 - [root](#root)
