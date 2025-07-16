@@ -153,62 +153,8 @@ my_code: |`ts
 
 D2에는 다음 LaTeX 플러그인들이 포함되어 있습니다.
 
-```d2
-amscd plugin: {
-  ex: |tex
-    \\begin{CD} B @>{\\text{very long label}}>> C S^{{\\mathcal{W}}_\\Lambda}\\otimes T @>j>> T\\\\ @VVV V \\end{CD}
-  |
-}
-
-braket plugin: {
-  ex: |tex
-    \\bra{a}\\ket{b}
-  |
-}
-
-cancel plugin: {
-  ex: |tex
-    \\cancel{Culture + 5}
-  |
-}
-
-color plugin: {
-  ex: |tex
-    \\textcolor{red}{y} = \\textcolor{green}{\\sin} x
-  |
-}
-
-gensymb plugin: {
-  ex: |tex
-    \\lambda = 10.6\\,\\micro\\mathrm{m}
-  |
-}
-
-mhchem plugin: {
-  ex: |tex
-    \\ce{SO4^2- + Ba^2+ -> BaSO4 v}
-  |
-}
-
-physics plugin: {
-  ex: |tex
-    \\var{F[g(x)]}
-    \\dd(\\cos\\theta)
-  |
-}
-
-multilines: {
-  ex: |tex
-    \\displaylines{x = a + b \\\\ y = b + c}
-    \\sum_{k=1}^{n} h_{k} \\int_{0}^{1} \\bigl(\\partial_{k} f(x_{k-1}+t h_{k} e_{k}) -\\partial_{k} f(a)\\bigr) \\,dt
-  |
-}
-
-# 두 줄로 보여주기 위한 코드
-amscd plugin -> braket plugin: {style.opacity: 0}
-cancel plugin -> color plugin: {style.opacity: 0}
-gensymb plugin -> mhchem plugin: {style.opacity: 0}
-physics plugin -> multilines: {style.opacity: 0}
-```
+<CodeBlock className="language-d2">
+    {Latex}
+</CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/latex.svg2')}}></div>
