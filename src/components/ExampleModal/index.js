@@ -28,11 +28,27 @@ const ExampleModal = ({ isOpen, onClose, title, svgContent, code, layout }) => {
     };
   }, [isOpen, isFullscreen, onClose]);
 
+  // Prevent body scroll when modal is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   const handleOverlayClick = (e) => {
-    // Only close on mousedown (full click), not on keyup or other events
-    if (e.type === "mousedown" && e.target === e.currentTarget) {
+    // Close on mousedown or touchstart, but only if target is the overlay itself
+    if (
+      (e.type === "mousedown" || e.type === "touchstart") &&
+      e.target === e.currentTarget
+    ) {
       onClose();
     }
   };
@@ -61,7 +77,11 @@ const ExampleModal = ({ isOpen, onClose, title, svgContent, code, layout }) => {
   };
 
   return (
-    <div className="example-modal-overlay" onMouseDown={handleOverlayClick}>
+    <div
+      className="example-modal-overlay"
+      onMouseDown={handleOverlayClick}
+      onTouchStart={handleOverlayClick}
+    >
       <div className="example-modal-content">
         <div className="example-modal-header">
           <div className="example-modal-header-content">
@@ -102,6 +122,11 @@ const ExampleModal = ({ isOpen, onClose, title, svgContent, code, layout }) => {
           <div
             className="example-modal-fullscreen-overlay"
             onMouseDown={(e) => {
+              if (e.target === e.currentTarget) {
+                setIsFullscreen(false);
+              }
+            }}
+            onTouchStart={(e) => {
               if (e.target === e.currentTarget) {
                 setIsFullscreen(false);
               }

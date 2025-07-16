@@ -1,5 +1,7 @@
 # Roadmap
 
+import WebPImage from '@site/src/components/WebPImage';
+
 :::info TLDR
 [https://github.com/terrastruct/d2/issues?q=is%3Aopen+is%3Aissue+label%3Afeature](https://github.com/terrastruct/d2/issues?q=is%3Aopen+is%3Aissue+label%3Afeature)
 :::
@@ -29,7 +31,7 @@ constraints. These are the types of diagrams that an algorithm can get right --
   display: "flex",
   alignItems: "center",
 }}>
-  <img src={require('@site/static/img/screenshots/freeform.png').default} alt="freeform diagram example. Source: https://vickiboykis.com/2022/11/18/some-notes-on-the-stable-diffusion-safety-filter/" width="50%"/>
+  <WebPImage src={require('@site/static/img/screenshots/freeform.png').default} alt="freeform diagram example. Source: https://vickiboykis.com/2022/11/18/some-notes-on-the-stable-diffusion-safety-filter/" width="50%"/>
   <img src={require('@site/static/img/screenshots/automatable.png').default} alt="automatable diagram example" width="50%" />
 </div>
 

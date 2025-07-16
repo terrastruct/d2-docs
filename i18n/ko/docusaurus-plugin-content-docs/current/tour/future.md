@@ -1,5 +1,7 @@
 # 로드맵
 
+import WebPImage from '@site/src/components/WebPImage';
+
 :::info 간략 요약
 D2 프로젝트의 현재 작업들에 대한 자세한 내용은 [여기](https://github.com/terrastruct/d2/issues?q=is%3Aopen+is%3Aissue+label%3Afeature)를 확인하세요.
 :::
@@ -28,7 +30,7 @@ D2 프로젝트의 장기적인 목표는 실무에서 쓰이는 높은 수준�
   display: "flex",
   alignItems: "center",
 }}>
-  <img src={require('@site/static/img/screenshots/freeform.png').default} alt="freeform diagram example. Source: https://vickiboykis.com/2022/11/18/some-notes-on-the-stable-diffusion-safety-filter/" width="50%"/>
+  <WebPImage src={require('@site/static/img/screenshots/freeform.png').default} alt="freeform diagram example. Source: https://vickiboykis.com/2022/11/18/some-notes-on-the-stable-diffusion-safety-filter/" width="50%"/>
   <img src={require('@site/static/img/screenshots/automatable.png').default} alt="automatable diagram example" width="50%" />
 </div>
 

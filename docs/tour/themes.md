@@ -2,6 +2,7 @@
 pagination_next: tour/style
 ---
 import CodeBlock from '@theme/CodeBlock';
+import WebPImage from '@site/src/components/WebPImage';
 import TerminalTheme from '@site/static/bespoke-d2/terminal-theme.d2';
 
 # Themes
@@ -9,9 +10,9 @@ import TerminalTheme from '@site/static/bespoke-d2/terminal-theme.d2';
 D2 comes with many themes that make your diagram look professional and ready to insert
 into blogs and wikis.
 
-<img width={700} src={require('@site/static/img/screenshots/themes/theme_overview.png').default} alt="D2 theme choices"/>
-<img width={400} src={require('@site/static/img/screenshots/themes/theme_2.png').default} alt="mixed berry blue theme"/>
-<img width={400} src={require('@site/static/img/screenshots/themes/theme_3.png').default} alt="vanilla nitro cola theme"/>
+<WebPImage width={700} src={require('@site/static/img/screenshots/themes/theme_overview.png').default} webpSrc={require('@site/static/img/screenshots/themes/theme_overview.webp').default} alt="D2 theme choices"/>
+<WebPImage width={400} src={require('@site/static/img/screenshots/themes/theme_2.png').default} webpSrc={require('@site/static/img/screenshots/themes/theme_2.webp').default} alt="mixed berry blue theme"/>
+<WebPImage width={400} src={require('@site/static/img/screenshots/themes/theme_3.png').default} webpSrc={require('@site/static/img/screenshots/themes/theme_3.webp').default} alt="vanilla nitro cola theme"/>
 
 ### They apply to special shapes like tables too
 
@@ -74,7 +75,7 @@ to give a surprise to dark mode users).
 
 An example of a dark theme (this one's an image not an SVG, so it won't change according
 to your system preference).
-<img width={600} src={require('@site/static/img/screenshots/themes/dark.png').default} alt="dark theme"/>
+<WebPImage width={600} src={require('@site/static/img/screenshots/themes/dark.png').default} webpSrc={require('@site/static/img/screenshots/themes/dark.webp').default} alt="dark theme"/>
 
 ## Special themes
 
@@ -136,8 +137,7 @@ vars: {
 
 ### Color codes
 
-<img width={700} src={require('@site/static/img/color-code.png').default} alt="D2 color
-codes"/>
+<WebPImage width={700} src={require('@site/static/img/color-code.png').default} webpSrc={require('@site/static/img/color-code.webp').default} alt="D2 color codes"/>
 
 :::info
 Not all color codes are currently used right now, but that may change in the future for

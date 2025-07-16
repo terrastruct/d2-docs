@@ -1,7 +1,8 @@
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
+import { themes } from "prism-react-renderer";
 
-const config = {
+const config: Config = {
   title: "D2 Documentation",
   tagline: "D2 is a modern DSL that turns text to diagrams.",
   url: "https://d2lang.com",
@@ -9,6 +10,57 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
+
+  future: {
+    experimental_faster: true,
+    v4: true,
+  },
+
+  headTags: [
+    {
+      tagName: "script",
+      attributes: {
+        type: "application/ld+json",
+      },
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org/",
+        "@type": "SoftwareApplication",
+        name: "D2",
+        description: "A modern DSL that turns text to diagrams",
+        url: "https://d2lang.com",
+        applicationCategory: "DeveloperApplication",
+        operatingSystem: "Cross-platform",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+        },
+        author: {
+          "@type": "Organization",
+          name: "Terrastruct",
+          url: "https://terrastruct.com",
+        },
+        sameAs: [
+          "https://github.com/terrastruct/d2",
+          "https://discord.com/invite/pbUXgvmTpU",
+        ],
+      }),
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "manifest",
+        href: "/manifest.json",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preconnect",
+        href: "https://DWAXJIMTZU-dsn.algolia.net",
+      },
+    },
+  ],
 
   i18n: {
     defaultLocale: "en",
@@ -29,13 +81,30 @@ const config = {
       {
         docs: {
           routeBasePath: "/",
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: "./sidebars.ts",
           breadcrumbs: false,
         },
-        theme: {
-          customCss: [require.resolve("./src/styles/custom.scss")],
+        blog: {
+          showReadingTime: true,
+          readingTime: ({ content, frontMatter, defaultReadingTime }) =>
+            frontMatter.hide_reading_time ? undefined : defaultReadingTime({ content }),
+          blogTitle: "D2 Blog",
+          blogDescription:
+            "Latest news, updates, and tutorials about D2 - the modern text-to-diagram language",
+          blogSidebarCount: "ALL",
+          blogSidebarTitle: "Recent Posts",
+          feedOptions: {
+            type: "all",
+            title: "D2 Blog Feed",
+            description: "Stay updated with the latest D2 news and tutorials",
+            copyright: `Copyright © ${new Date().getFullYear()} Terrastruct, Inc.`,
+            language: "en",
+          },
         },
-      },
+        theme: {
+          customCss: ["./src/styles/custom.scss"],
+        },
+      } satisfies Preset.Options,
     ],
   ],
 
@@ -45,14 +114,36 @@ const config = {
       {
         name: "keywords",
         content:
-          "diagrams, software architecture, text to diagram, graphviz alternative, mermaidjs alternative, plantuml alternative",
+          "diagrams, software architecture, text to diagram, graphviz alternative, mermaidjs alternative, plantuml alternative, d2 language, d2lang, sequence diagrams, flowcharts",
+      },
+      {
+        name: "author",
+        content: "Terrastruct",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
+        property: "og:site_name",
+        content: "D2 Documentation",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:site",
+        content: "@terrastruct",
+      },
+      {
+        name: "twitter:creator",
+        content: "@terrastruct",
       },
     ],
-    themeConfig: {
-      docs: {
-        sidebar: {
-          hideable: true,
-        },
+    docs: {
+      sidebar: {
+        hideable: true,
       },
     },
     navbar: {
@@ -91,11 +182,6 @@ const config = {
           position: "right",
           label: "Playground",
         },
-        // TODO enable when a language has been translated
-        // {
-        //   type: "localeDropdown",
-        //   position: "right",
-        // },
         {
           type: "custom-iconLink",
           position: "right",
@@ -124,8 +210,8 @@ const config = {
       respectPrefersColorScheme: true,
     },
     prism: {
-      theme: lightCodeTheme,
-      darkTheme: darkCodeTheme,
+      theme: themes.github,
+      darkTheme: themes.dracula,
     },
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} <a href="https://terrastruct.com">Terrastruct, Inc.</a>`,
@@ -135,7 +221,7 @@ const config = {
       apiKey: "5c73ff6e63896f9a247aecc8dcecb0ef",
       indexName: "d2lang",
     },
-  },
+  } satisfies Preset.ThemeConfig,
 
   plugins: [
     "docusaurus-plugin-sass",
@@ -191,4 +277,4 @@ const config = {
   ],
 };
 
-module.exports = config;
+export default config;

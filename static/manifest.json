@@ -1,0 +1,16 @@
+{
+  "name": "D2 Documentation",
+  "short_name": "D2 Docs",
+  "description": "Complete documentation for D2, a modern DSL that turns text to diagrams",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4C566A",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

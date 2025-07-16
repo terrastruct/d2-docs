@@ -1,4 +1,6 @@
-const sidebars = {
+import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
+
+const sidebars: SidebarsConfig = {
   tourSidebar: [
     {
       type: "category",
@@ -216,4 +218,4 @@ const sidebars = {
   ],
 };
 
-module.exports = sidebars;
+export default sidebars;

@@ -1,5 +1,7 @@
 # Design decisions
 
+import WebPImage from '@site/src/components/WebPImage';
+
 The following are design decisions that guide the development of D2. We've tried our best
 to avoid the mistakes of the past and take inspiration from the most successful modern
 programming and configuration languages.
@@ -134,4 +136,4 @@ each individual shape and connection and more seeing the general patterns. D2 is
 designed for this use case. There are much better tools for that.
 
 
-<img src={require('@site/static/img/screenshots/graph.png').default} width="300" alt="graph example"/>
+<WebPImage src={require('@site/static/img/screenshots/graph.png').default} width="300" alt="graph example"/>

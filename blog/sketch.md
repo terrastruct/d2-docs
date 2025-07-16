@@ -18,6 +18,8 @@ When you pass the `sketch` flag like so, you'll get a diagram that kind of looks
 d2 --sketch input.d2
 ```
 
+<!-- truncate -->
+
 <div dangerouslySetInnerHTML={{__html: require('@site/static/blog/sketch/main.svg2')}}></div>
 
 

@@ -61,14 +61,25 @@
   text-decoration: underline;
 }
 
-.example-modal-section .CodeBlock pre {
-  overflow-x: auto !important;
+.example-modal-section:last-child .CodeBlock pre {
+  overflow: visible !important;
   white-space: pre !important;
 }
 
-.example-modal-section pre {
-  overflow-x: auto !important;
+.example-modal-section:last-child pre {
+  overflow: visible !important;
   white-space: pre !important;
+}
+
+.example-modal-section:last-child .CodeBlock {
+  overflow: visible !important;
+  height: 100%;
+}
+
+.example-modal-section:last-child .CodeBlock pre {
+  border: none !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
 }
 
 .example-modal-svg-container {
@@ -91,7 +102,8 @@
   align-items: center;
   justify-content: center;
   z-index: 2000;
-  padding: 2rem;
+  padding: 1rem;
+  overflow: hidden;
 }
 
 .example-modal-fullscreen-content {
@@ -127,11 +139,12 @@
 }
 
 .example-modal-fullscreen-content .embedSVG {
-  width: 95vw;
-  height: 95vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .example-modal-fullscreen-content .embedSVG svg {
@@ -139,6 +152,9 @@
   height: auto;
   max-width: 95vw;
   max-height: 95vh;
+  min-width: 300px;
+  min-height: 300px;
+  object-fit: contain;
 }
 
 .example-modal-close {
@@ -169,14 +185,18 @@
 
 .example-modal-section {
   flex: 1;
-  padding: 1.5rem;
   overflow: auto;
   display: flex;
   flex-direction: column;
 }
 
 .example-modal-section:first-child {
+  padding: 1.5rem;
   border-right: 1px solid var(--border);
+}
+
+.example-modal-section:last-child {
+  padding: 0;
 }
 
 .example-modal-section .embedSVG {
@@ -187,6 +207,8 @@
   margin-bottom: 0;
   height: 100%;
   min-height: 400px;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .example-modal-section .embedSVG svg {
@@ -224,23 +246,64 @@
     max-height: 50vh;
   }
 
-  .example-modal-section {
+  .example-modal-section:first-child {
     padding: 1rem;
+  }
+
+  .example-modal-section:last-child {
+    padding: 0;
+  }
+
+  .example-modal-section:last-child .CodeBlock pre {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
   }
 
   .example-modal-section .embedSVG {
     min-height: 200px;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
   }
 
   .example-modal-header-content {
+    flex-direction: column;
+    align-items: flex-start;
     gap: 0.5rem;
   }
 
   .example-modal-header h2 {
     font-size: 1.25rem;
+    margin-bottom: 0;
   }
 
   .example-modal-playground {
     font-size: 12px;
+    margin-left: 0;
+  }
+
+  .example-modal-fullscreen-overlay {
+    padding: 0.5rem;
+  }
+
+  .example-modal-fullscreen-content .embedSVG {
+    width: 100%;
+    height: 100%;
+  }
+
+  .example-modal-fullscreen-content .embedSVG svg {
+    max-width: 98vw;
+    max-height: 85vh;
+    min-width: 350px;
+    min-height: 350px;
+    width: 98vw !important;
+    height: auto !important;
+  }
+
+  .example-modal-fullscreen-close {
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
   }
 }
