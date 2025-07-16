@@ -49,4 +49,4 @@ codes with a media query.
 
 Shoutout to first-time contributor
 [https://github.com/vfosnar](https://github.com/vfosnar), who came up with the idea and
-juggled commits in between high school exams to implement this <3.
+juggled commits in between high school exams to implement this &lt;3.
