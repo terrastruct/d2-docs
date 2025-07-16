@@ -1,5 +1,7 @@
 # TALA
 
+**[🔗 Gallery](/examples/tala)**
+
 Proprietary layout engine developed by Terrastruct, designed specifically for software
 architecture diagrams.
 
@@ -35,40 +37,3 @@ manual](https://github.com/terrastruct/TALA/blob/master/TALA_User_Manual.pdf).
   engines have.
 - More random than other layout engines. A small change to a label can cascade into an
   entirely different layout.
-
-## Gallery
-
-<div style={{display: "inline-flex", alignItems: "center", width: "100%"}}>
-  <div style={{width: "50%"}}
-  className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample1-tala.svg2')}}></div>
-  <div style={{width: "50%"}}
-  className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample2-tala.svg2')}}></div>
-</div>
-
-<div style={{display: "inline-flex", alignItems: "center", width: "100%"}}>
-  <div style={{width: "50%"}}
-  className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample3-tala.svg2')}}></div>
-  <div style={{width: "50%"}}
-  className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample4-tala.svg2')}}></div>
-</div>
-
-<div style={{display: "inline-flex", alignItems: "center", width: "100%"}}>
-  <div style={{width: "50%"}}
-  className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample5-tala.svg2')}}></div>
-  <div style={{width: "50%"}}
-  className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample6-tala.svg2')}}></div>
-</div>
-
-## Using a different seed
-
-TALA's core algorithms use randomness in its initial placements and iterations. If you are
-not satisfied with a layout, you can produce different ones by specifying the seed with
-`--tala-seeds` flag. For example, these are the same diagrams as the above, with
-`--tala-seeds=2`.
-
-<div style={{display: "inline-flex", alignItems: "center", width: "100%"}}>
-  <div style={{width: "50%"}}
-  className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample5-tala-2.svg2')}}></div>
-  <div style={{width: "50%"}}
-  className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample6-tala-2.svg2')}}></div>
-</div>

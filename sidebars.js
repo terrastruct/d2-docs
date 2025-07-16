@@ -206,6 +206,14 @@ const sidebars = {
       ],
     },
   ],
+  examplesSidebar: [
+    {
+      type: "category",
+      label: "Examples",
+      link: { type: "doc", id: "examples/overview" },
+      items: ["examples/overview", "examples/dagre", "examples/elk", "examples/tala"],
+    },
+  ],
 };
 
 module.exports = sidebars;

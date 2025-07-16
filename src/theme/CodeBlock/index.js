@@ -170,7 +170,7 @@ export default function D2CodeBlock(props) {
         <div className="Copy--Arrow"></div>
         {clipboardTooltipText === "Copied" ? <CheckCircle /> : <Clipboard />}
       </button>
-      {props.className === "language-d2" && (
+      {props.className === "language-d2" && !props.hidePlaygroundLink && (
         <button
           className="PlaygroundLink"
           onClick={() => {

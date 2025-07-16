@@ -76,6 +76,12 @@ const config = {
         },
         {
           type: "doc",
+          docId: "examples/overview",
+          position: "left",
+          label: "Examples",
+        },
+        {
+          type: "doc",
           docId: "releases/intro",
           position: "left",
           label: "Releases",

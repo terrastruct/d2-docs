@@ -4,6 +4,8 @@ pagination_next: tour/elk
 
 # Dagre
 
+**[🔗 Gallery](/examples/dagre)**
+
 Dagre is D2's default layout engine.
 
 ## Reference
@@ -30,26 +32,3 @@ Dagre is D2's default layout engine.
   considerations that are missed due to the shim.
 - Multi-segment edge routes are curved, instead of orthogonal. Can result in unaesthetic
   squiggly lines.
-
-## Gallery
-
-<div style={{display: "inline-flex", alignItems: "center", width: "100%"}}>
-  <div style={{width: "50%"}}
-  className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample1-dagre.svg2')}}></div>
-  <div style={{width: "50%"}}
-  className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample2-dagre.svg2')}}></div>
-</div>
-
-<div style={{display: "inline-flex", alignItems: "center", width: "100%"}}>
-  <div style={{width: "50%"}}
-  className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample3-dagre.svg2')}}></div>
-  <div style={{width: "50%"}}
-  className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample4-dagre.svg2')}}></div>
-</div>
-
-<div style={{display: "inline-flex", alignItems: "center", width: "100%"}}>
-  <div style={{width: "50%"}}
-  className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample5-dagre.svg2')}}></div>
-  <div style={{width: "50%"}}
-  className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/layout_gallery/sample6-dagre.svg2')}}></div>
-</div>

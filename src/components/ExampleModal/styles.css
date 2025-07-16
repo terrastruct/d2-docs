@@ -1,0 +1,246 @@
+.example-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.example-modal-content {
+  background: #ffffff !important;
+  border-radius: 8px;
+  max-width: 95vw;
+  max-height: 95vh;
+  width: 1200px;
+  height: 800px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.example-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.example-modal-header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.example-modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.example-modal-playground {
+  align-items: center;
+  font-size: 14px;
+  color: var(--steel-700);
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 0.2rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.example-modal-playground:hover {
+  text-decoration: underline;
+}
+
+.example-modal-section .CodeBlock pre {
+  overflow-x: auto !important;
+  white-space: pre !important;
+}
+
+.example-modal-section pre {
+  overflow-x: auto !important;
+  white-space: pre !important;
+}
+
+.example-modal-svg-container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.example-modal-fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 2rem;
+}
+
+.example-modal-fullscreen-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-modal-fullscreen-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.example-modal-fullscreen-close:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.example-modal-fullscreen-content .embedSVG {
+  width: 95vw;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-modal-fullscreen-content .embedSVG svg {
+  width: auto;
+  height: auto;
+  max-width: 95vw;
+  max-height: 95vh;
+}
+
+.example-modal-close {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--ifm-font-color-base);
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.example-modal-close:hover {
+  background-color: var(--button-hover);
+}
+
+.example-modal-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.example-modal-section {
+  flex: 1;
+  padding: 1.5rem;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.example-modal-section:first-child {
+  border-right: 1px solid var(--border);
+}
+
+.example-modal-section .embedSVG {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  height: 100%;
+  min-height: 400px;
+}
+
+.example-modal-section .embedSVG svg {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .example-modal-content {
+    width: 90vw;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .example-modal-overlay {
+    padding: 1rem;
+  }
+
+  .example-modal-content {
+    width: 95vw;
+    height: 90vh;
+  }
+
+  .example-modal-body {
+    flex-direction: column;
+  }
+
+  .example-modal-section:first-child {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    max-height: 50vh;
+  }
+
+  .example-modal-section {
+    padding: 1rem;
+  }
+
+  .example-modal-section .embedSVG {
+    min-height: 200px;
+  }
+
+  .example-modal-header-content {
+    gap: 0.5rem;
+  }
+
+  .example-modal-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .example-modal-playground {
+    font-size: 12px;
+  }
+}
