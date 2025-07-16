@@ -109,7 +109,7 @@ g, _, _ := d2oracle.Create(g, "a")
 g, _ = d2oracle.Set(g, "a.style.fill", nil, "red")
 ```
 
-If the attribute is arleady set, it is overwritten.
+If the attribute is already set, it is overwritten.
 
 ```go
 // D2 graph: "a.style.fill: red"
