@@ -28,3 +28,19 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets._GITHUB_TOKEN }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+  spell-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install cspell
+        run: npm install -g cspell
+      - name: Run spell check
+        run: |
+          ERRORS=$(cspell "**/*.md" --config .cspell.json --no-exit-code --quiet | grep 'fix:' || true)
+          if [ -n "$ERRORS" ]; then
+            echo "Spelling errors found:"
+            echo "$ERRORS"
+            exit 1
+          else
+            echo "No spelling errors found"
+          fi
