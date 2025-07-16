@@ -16,6 +16,8 @@ Brief factsheet:
 - Easily split into 2 separate SVGs (the default behavior of CLI when a flag is not passed
   in to animate).
 
+<!-- truncate -->
+
 ## Use cases
 
 ### Show change

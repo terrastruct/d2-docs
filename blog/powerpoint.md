@@ -18,6 +18,8 @@ art](https://github.com/terrastruct/d2/issues/1218#issuecomment-1512628007). And
 Markdown and Powerpoint, D2 is the easiest way to programmatically create PowerPoint
 presentations.
 
+<!-- truncate -->
+
 Let's look at a simple example first, and then a complex one at the end.
 
 ## Simple example

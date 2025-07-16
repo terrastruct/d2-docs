@@ -16,6 +16,8 @@ d2 --theme=0 --dark-theme=200 input.d2
 
 How does this work? How can a diagram have two themes?
 
+<!-- truncate -->
+
 Try opening up your system preferences and toggling between light and dark mode.
 
 <div dangerouslySetInnerHTML={{__html: require('@site/static/blog/dark_mode/main.svg2')}}></div>
