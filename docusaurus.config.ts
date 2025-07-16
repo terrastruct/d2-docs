@@ -11,11 +11,42 @@ const config: Config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
-  // Enable faster builds with Rspack and v4 future flags
   future: {
     experimental_faster: true,
     v4: true,
   },
+
+  headTags: [
+    {
+      tagName: "script",
+      attributes: {
+        type: "application/ld+json",
+      },
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org/",
+        "@type": "SoftwareApplication",
+        name: "D2",
+        description: "A modern DSL that turns text to diagrams",
+        url: "https://d2lang.com",
+        applicationCategory: "DeveloperApplication",
+        operatingSystem: "Cross-platform",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+        },
+        author: {
+          "@type": "Organization",
+          name: "Terrastruct",
+          url: "https://terrastruct.com",
+        },
+        sameAs: [
+          "https://github.com/terrastruct/d2",
+          "https://discord.com/invite/pbUXgvmTpU",
+        ],
+      }),
+    },
+  ],
 
   i18n: {
     defaultLocale: "en",
@@ -43,6 +74,18 @@ const config: Config = {
           showReadingTime: true,
           readingTime: ({ content, frontMatter, defaultReadingTime }) =>
             frontMatter.hide_reading_time ? undefined : defaultReadingTime({ content }),
+          blogTitle: "D2 Blog",
+          blogDescription:
+            "Latest news, updates, and tutorials about D2 - the modern text-to-diagram language",
+          blogSidebarCount: "ALL",
+          blogSidebarTitle: "Recent Posts",
+          feedOptions: {
+            type: "all",
+            title: "D2 Blog Feed",
+            description: "Stay updated with the latest D2 news and tutorials",
+            copyright: `Copyright © ${new Date().getFullYear()} Terrastruct, Inc.`,
+            language: "en",
+          },
         },
         theme: {
           customCss: ["./src/styles/custom.scss"],
@@ -57,7 +100,31 @@ const config: Config = {
       {
         name: "keywords",
         content:
-          "diagrams, software architecture, text to diagram, graphviz alternative, mermaidjs alternative, plantuml alternative",
+          "diagrams, software architecture, text to diagram, graphviz alternative, mermaidjs alternative, plantuml alternative, d2 language, d2lang, sequence diagrams, flowcharts",
+      },
+      {
+        name: "author",
+        content: "Terrastruct",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
+        property: "og:site_name",
+        content: "D2 Documentation",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:site",
+        content: "@terrastruct",
+      },
+      {
+        name: "twitter:creator",
+        content: "@terrastruct",
       },
     ],
     docs: {
