@@ -7,6 +7,7 @@ image: https://raw.githubusercontent.com/terrastruct/d2-docs/master/static/img/s
 hide_table_of_contents: false
 ---
 import CodeBlock from '@theme/CodeBlock';
+import WebPImage from '@site/src/components/WebPImage';
 import Cult from '@site/static/bespoke-d2/cult.d2';
 
 D2 is a diagramming language, and it's versatile unlike any other. For example, you can
@@ -24,7 +25,7 @@ Let's look at a simple example first, and then a complex one at the end.
 
 ## Simple example
 
-<img src={require('@site/static/img/screenshots/cult_pptx.png').default} alt="powerpoint screenshot" style={{width:'100%'}}/>
+<WebPImage src={require('@site/static/img/screenshots/cult_pptx.png').default} alt="powerpoint screenshot" style={{width:'100%'}}/>
 
 - Download: [cult.pptx](@site/static/img/generated/cult.pptx)
 - Google Slides: [https://docs.google.com/presentation/d/1CnAPcvsh1B4J3nVppNDInm2oTquhCV58/view](https://docs.google.com/presentation/d/1CnAPcvsh1B4J3nVppNDInm2oTquhCV58/view)

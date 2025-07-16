@@ -1,4 +1,5 @@
 import CodeBlock from '@theme/CodeBlock';
+import WebPImage from '@site/src/components/WebPImage';
 import SequenceDiagrams1 from '@site/static/d2/sequence-diagrams-1.d2';
 import SequenceDiagrams2 from '@site/static/d2/sequence-diagrams-2.d2';
 import SequenceDiagrams3 from '@site/static/d2/sequence-diagrams-3.d2';
@@ -160,5 +161,5 @@ Lifeline edges (those lines going from top-down) inherit the actor's `stroke` an
 
 ## Glossary
 
-<img src={require('@site/static/img/screenshots/sequence_glossary.png').default}
+<WebPImage src={require('@site/static/img/screenshots/sequence_glossary.png').default}
 alt="sequence diagram glossary"/>
