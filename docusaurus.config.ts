@@ -46,6 +46,13 @@ const config: Config = {
         ],
       }),
     },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'manifest',
+        href: '/manifest.json',
+      },
+    },
   ],
 
   i18n: {
