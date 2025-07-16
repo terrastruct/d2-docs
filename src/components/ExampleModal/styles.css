@@ -254,6 +254,11 @@
     padding: 0;
   }
 
+  .example-modal-section:last-child .CodeBlock pre {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
+
   .example-modal-section .embedSVG {
     min-height: 200px;
     -webkit-tap-highlight-color: transparent;

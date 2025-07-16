@@ -28,6 +28,19 @@ const ExampleModal = ({ isOpen, onClose, title, svgContent, code, layout }) => {
     };
   }, [isOpen, isFullscreen, onClose]);
 
+  // Prevent body scroll when modal is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   const handleOverlayClick = (e) => {
@@ -93,10 +106,6 @@ const ExampleModal = ({ isOpen, onClose, title, svgContent, code, layout }) => {
                 className="embedSVG"
                 dangerouslySetInnerHTML={{ __html: svgContent }}
                 onClick={() => setIsFullscreen(true)}
-                onTouchStart={(e) => {
-                  e.preventDefault();
-                  setIsFullscreen(true);
-                }}
                 style={{ cursor: "zoom-in" }}
                 title="Click to view fullscreen"
               ></div>
