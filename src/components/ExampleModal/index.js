@@ -32,7 +32,10 @@ const ExampleModal = ({ isOpen, onClose, title, svgContent, code, layout }) => {
 
   const handleOverlayClick = (e) => {
     // Close on mousedown or touchstart, but only if target is the overlay itself
-    if ((e.type === "mousedown" || e.type === "touchstart") && e.target === e.currentTarget) {
+    if (
+      (e.type === "mousedown" || e.type === "touchstart") &&
+      e.target === e.currentTarget
+    ) {
       onClose();
     }
   };
@@ -61,8 +64,8 @@ const ExampleModal = ({ isOpen, onClose, title, svgContent, code, layout }) => {
   };
 
   return (
-    <div 
-      className="example-modal-overlay" 
+    <div
+      className="example-modal-overlay"
       onMouseDown={handleOverlayClick}
       onTouchStart={handleOverlayClick}
     >

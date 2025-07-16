@@ -1,6 +1,6 @@
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
-import {themes} from 'prism-react-renderer';
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
+import { themes } from "prism-react-renderer";
 
 const config: Config = {
   title: "D2 Documentation",
@@ -10,7 +10,7 @@ const config: Config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  
+
   // Enable faster builds with Rspack and v4 future flags
   future: {
     experimental_faster: true,
@@ -41,8 +41,8 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
-          readingTime: ({content, frontMatter, defaultReadingTime}) =>
-            frontMatter.hide_reading_time ? undefined : defaultReadingTime({content}),
+          readingTime: ({ content, frontMatter, defaultReadingTime }) =>
+            frontMatter.hide_reading_time ? undefined : defaultReadingTime({ content }),
         },
         theme: {
           customCss: ["./src/styles/custom.scss"],
