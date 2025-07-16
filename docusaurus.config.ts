@@ -16,6 +16,7 @@ const config: Config = {
     v4: true,
   },
 
+
   headTags: [
     {
       tagName: "script",
@@ -51,6 +52,13 @@ const config: Config = {
       attributes: {
         rel: 'manifest',
         href: '/manifest.json',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://DWAXJIMTZU-dsn.algolia.net',
       },
     },
   ],
