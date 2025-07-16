@@ -19,6 +19,7 @@ const InvolvedItem = (props) => {
         <img
           className="GetInvolved__Item--Image"
           src={require("@site/static/features/icons/" + props.img).default}
+          alt={props.title + " icon"}
         />
       </div>
     </div>

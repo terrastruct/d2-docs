@@ -17,7 +17,11 @@ export const Features = (props) => {
             ></div>
           )}
           {feature.img.endsWith("png") && (
-            <img className="Features__Item--Image" src={feature.img} />
+            <img
+              className="Features__Item--Image"
+              src={feature.img}
+              alt={feature.title}
+            />
           )}
         </div>
       </div>
@@ -44,6 +48,7 @@ export const Features = (props) => {
                 <img
                   className="Features__Item--Icon"
                   src={require("@site/static/features/icons/" + feature.icon).default}
+                  alt={feature.title + " icon"}
                 />
               )}
               <span className="Features__Item--Title">{feature.title}</span>

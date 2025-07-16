@@ -44,3 +44,9 @@ jobs:
           else
             echo "No spelling errors found"
           fi
+  alt-tags-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check for missing alt attributes
+        run: ./scripts/check-alt-tags.sh
