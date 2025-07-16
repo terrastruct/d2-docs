@@ -61,14 +61,25 @@
   text-decoration: underline;
 }
 
-.example-modal-section .CodeBlock pre {
-  overflow-x: auto !important;
+.example-modal-section:last-child .CodeBlock pre {
+  overflow: visible !important;
   white-space: pre !important;
 }
 
-.example-modal-section pre {
-  overflow-x: auto !important;
+.example-modal-section:last-child pre {
+  overflow: visible !important;
   white-space: pre !important;
+}
+
+.example-modal-section:last-child .CodeBlock {
+  overflow: visible !important;
+  height: 100%;
+}
+
+.example-modal-section:last-child .CodeBlock pre {
+  border: none !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
 }
 
 .example-modal-svg-container {
@@ -174,14 +185,18 @@
 
 .example-modal-section {
   flex: 1;
-  padding: 1.5rem;
   overflow: auto;
   display: flex;
   flex-direction: column;
 }
 
 .example-modal-section:first-child {
+  padding: 1.5rem;
   border-right: 1px solid var(--border);
+}
+
+.example-modal-section:last-child {
+  padding: 0;
 }
 
 .example-modal-section .embedSVG {
@@ -231,8 +246,12 @@
     max-height: 50vh;
   }
 
-  .example-modal-section {
+  .example-modal-section:first-child {
     padding: 1rem;
+  }
+  
+  .example-modal-section:last-child {
+    padding: 0;
   }
 
   .example-modal-section .embedSVG {
