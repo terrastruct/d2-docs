@@ -1,5 +1,6 @@
 ---
 sidebar_label: Overview
+pagination_next: examples/dagre
 ---
 
 # D2 examples

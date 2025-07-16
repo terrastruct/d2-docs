@@ -31,8 +31,8 @@ const ExampleModal = ({ isOpen, onClose, title, svgContent, code, layout }) => {
   if (!isOpen) return null;
 
   const handleOverlayClick = (e) => {
-    // Only close on mousedown (full click), not on keyup or other events
-    if (e.type === "mousedown" && e.target === e.currentTarget) {
+    // Close on mousedown or touchstart, but only if target is the overlay itself
+    if ((e.type === "mousedown" || e.type === "touchstart") && e.target === e.currentTarget) {
       onClose();
     }
   };
@@ -61,7 +61,11 @@ const ExampleModal = ({ isOpen, onClose, title, svgContent, code, layout }) => {
   };
 
   return (
-    <div className="example-modal-overlay" onMouseDown={handleOverlayClick}>
+    <div 
+      className="example-modal-overlay" 
+      onMouseDown={handleOverlayClick}
+      onTouchStart={handleOverlayClick}
+    >
       <div className="example-modal-content">
         <div className="example-modal-header">
           <div className="example-modal-header-content">
@@ -86,6 +90,10 @@ const ExampleModal = ({ isOpen, onClose, title, svgContent, code, layout }) => {
                 className="embedSVG"
                 dangerouslySetInnerHTML={{ __html: svgContent }}
                 onClick={() => setIsFullscreen(true)}
+                onTouchStart={(e) => {
+                  e.preventDefault();
+                  setIsFullscreen(true);
+                }}
                 style={{ cursor: "zoom-in" }}
                 title="Click to view fullscreen"
               ></div>
@@ -102,6 +110,11 @@ const ExampleModal = ({ isOpen, onClose, title, svgContent, code, layout }) => {
           <div
             className="example-modal-fullscreen-overlay"
             onMouseDown={(e) => {
+              if (e.target === e.currentTarget) {
+                setIsFullscreen(false);
+              }
+            }}
+            onTouchStart={(e) => {
               if (e.target === e.currentTarget) {
                 setIsFullscreen(false);
               }

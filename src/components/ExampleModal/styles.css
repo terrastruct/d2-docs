@@ -91,7 +91,8 @@
   align-items: center;
   justify-content: center;
   z-index: 2000;
-  padding: 2rem;
+  padding: 1rem;
+  overflow: hidden;
 }
 
 .example-modal-fullscreen-content {
@@ -127,11 +128,12 @@
 }
 
 .example-modal-fullscreen-content .embedSVG {
-  width: 95vw;
-  height: 95vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .example-modal-fullscreen-content .embedSVG svg {
@@ -139,6 +141,9 @@
   height: auto;
   max-width: 95vw;
   max-height: 95vh;
+  min-width: 300px;
+  min-height: 300px;
+  object-fit: contain;
 }
 
 .example-modal-close {
@@ -187,6 +192,8 @@
   margin-bottom: 0;
   height: 100%;
   min-height: 400px;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .example-modal-section .embedSVG svg {
@@ -230,17 +237,49 @@
 
   .example-modal-section .embedSVG {
     min-height: 200px;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
   }
 
   .example-modal-header-content {
+    flex-direction: column;
+    align-items: flex-start;
     gap: 0.5rem;
   }
 
   .example-modal-header h2 {
     font-size: 1.25rem;
+    margin-bottom: 0;
   }
 
   .example-modal-playground {
     font-size: 12px;
+    margin-left: 0;
+  }
+
+  .example-modal-fullscreen-overlay {
+    padding: 0.5rem;
+  }
+
+  .example-modal-fullscreen-content .embedSVG {
+    width: 100%;
+    height: 100%;
+  }
+
+  .example-modal-fullscreen-content .embedSVG svg {
+    max-width: 98vw;
+    max-height: 85vh;
+    min-width: 350px;
+    min-height: 350px;
+    width: 98vw !important;
+    height: auto !important;
+  }
+
+  .example-modal-fullscreen-close {
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
   }
 }
