@@ -20,8 +20,16 @@ export default function Home() {
   const renderDirectoryBanner = () => {
     return (
       <div className="Directory__Banner">
-        <img className="Directory__Banner--Circles" src="/img/directory/circles.svg" />
-        <img className="Directory__Banner--Icon" src="/img/d2_graphic.svg" />
+        <img
+          className="Directory__Banner--Circles"
+          src="/img/directory/circles.svg"
+          alt="Decorative circles"
+        />
+        <img
+          className="Directory__Banner--Icon"
+          src="/img/d2_graphic.svg"
+          alt="D2 logo"
+        />
         <h1>D2: Declarative Diagramming</h1>
         <p>A modern language that turns text to diagrams</p>
         <button
