@@ -220,6 +220,10 @@ const config: Config = {
       appId: "DWAXJIMTZU",
       apiKey: "5c73ff6e63896f9a247aecc8dcecb0ef",
       indexName: "d2lang",
+      contextualSearch: true,
+      searchParameters: {
+        facetFilters: [['docusaurus_tag:tour', 'docusaurus_tag:default']],
+      },
     },
   } satisfies Preset.ThemeConfig,
 
