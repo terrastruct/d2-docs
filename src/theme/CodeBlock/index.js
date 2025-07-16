@@ -79,7 +79,7 @@ export default function D2CodeBlock(props) {
     lineHeight: "25px",
     // Just a large enough value to fit all
     maxHeight: isExpanded ? "6000px" : "200px",
-    overflow: "hidden",
+    overflow: props.expandeable ? "hidden" : "auto",
     transition: "max-height 1s ease",
   };
   const { colorMode } = docusaurusThemeCommon.useColorMode();
