@@ -19,6 +19,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets._GITHUB_TOKEN }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DOCUSAURUS_IGNORE_SSG_WARNINGS: true
   nofixups:
     runs-on: ubuntu-latest
     steps:

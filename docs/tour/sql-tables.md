@@ -37,6 +37,17 @@ x: int { constraint: [primary_key; unique] }
 ```
 :::
 
+:::info Escaping reserved keywords
+If you'd like to use a reserved keyword, wrap it in quotes.
+
+```d2
+my_table: {
+  shape: sql_table
+  "label": string
+}
+```
+:::
+
 ## Foreign Keys
 
 Here's an example of how you'd define a foreign key connection between two tables:

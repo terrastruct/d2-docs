@@ -78,6 +78,14 @@ Change `md` to a programming language for code blocks
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/code-2.svg2')}}></div>
 
+:::info Supported syntax highlighting languages
+See the [Chroma library](https://github.com/alecthomas/chroma?tab=readme-ov-file#supported-languages) for a full list of supported languages.
+
+D2 also provides convenient short aliases: `md` → `markdown`, `tex` → `latex`, `js` → `javascript`, `go` → `golang`, `py` → `python`, `rb` → `ruby`, `ts` → `typescript`.
+
+If a language isn't recognized, D2 will fall back to plain text rendering without syntax highlighting.
+:::
+
 ## Advanced: Non-Markdown text
 
 In some cases, you may want non-Markdown text. Maybe you just don't like Markdown, or the

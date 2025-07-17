@@ -28,6 +28,18 @@ On the CLI, if you pass in `-`
 - for the input, it reads D2 from stdin
 - for the output, it writes SVG to stdout
 
+:::info Technical details on SVG exports This information might be useful if you're
+planning on doing post-processing on the SVG exports.
+
+**Element IDs**: All shape elements get CSS classes with base64-encoded IDs for safe CSS
+targeting. For example, a shape with ID `my-shape` gets class `bXktc2hhcGU` (base64
+encoding of "my-shape").
+
+**Unique identifiers**: Each diagram gets a deterministic hash prefix (e.g.,
+`d2-1234567890`) used for clip paths, gradients, and other SVG elements to prevent
+conflicts when multiple diagrams are on the same page.
+:::
+
 ## PNG
 
 ```shell
