@@ -1,6 +1,9 @@
 #!/bin/bash
 set -eu
 
+# Disable AWS CLI pager and auto-prompt for automated scripts
+export AWS_PAGER=""
+
 if [ -z ${D2_DOCS_CLOUDFRONT_ID} ]; then
   echo "missing env var D2_DOCS_CLOUDFRONT_ID"
   exit 1
@@ -17,9 +20,9 @@ if [ -z ${D2_DOCS_ALGOLIA_CRAWLER_API_KEY} ]; then
 fi
 
 DOCUSAURUS_IGNORE_SSG_WARNINGS=true npm run prod
-aws sts get-caller-identity
-aws s3 sync ./build ${D2_DOCS_S3_BUCKET} --delete --acl public-read
-aws cloudfront create-invalidation --distribution-id ${D2_DOCS_CLOUDFRONT_ID} --paths "/*"
+aws sts get-caller-identity --no-cli-pager
+aws s3 sync ./build ${D2_DOCS_S3_BUCKET} --delete --acl public-read --no-cli-pager
+aws cloudfront create-invalidation --distribution-id ${D2_DOCS_CLOUDFRONT_ID} --paths "/*" --no-cli-pager
 
 curl -H "Content-Type: application/json" \
   -X POST \
