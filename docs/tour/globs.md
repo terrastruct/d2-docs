@@ -15,6 +15,7 @@ import GlobsFilterEndpoints from '@site/static/d2/globs-filter-endpoints.d2';
 import GlobsFilterGlobValue from '@site/static/d2/globs-filter-glob-value.d2';
 import GlobsInverseFilter from '@site/static/d2/globs-inverse-filter.d2';
 import GlobsNested from '@site/static/d2/globs-nested.d2';
+import Defaults from '@site/static/d2/defaults.d2';
 
 # Globs
 
@@ -233,3 +234,13 @@ If you import a file, the globs declared inside it are usually not carried over.
 globs are the exception -- since they are global, importing a file with triple glob will
 carry that glob as well.
 :::
+
+## Changing defaults
+
+One common use case of globs is to change the default styling of a theme.
+
+<CodeBlock className="language-d2">
+    {Defaults}
+</CodeBlock>
+
+<div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/defaults.svg2')}}></div>
