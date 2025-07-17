@@ -105,9 +105,9 @@ use string quotes.
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/imports-targeted.svg2')}}></div>
 
-## Imports are relative to that file
+## Relative imports
 
-Not to the executing path.
+Relative imports are relative to the file, not the executing path.
 
 Consider that your working directory is `/Users/You/dev`. Your D2 files:
 
@@ -123,3 +123,15 @@ Unnecessary relative imports are removed by autoformat.
 
 `@./x` will be autoformatted to `@x`.
 :::
+
+## Absolute imports
+
+You can also use absolute paths for imports.
+
+```d2-incomplete
+# Unix/Linux/Mac
+x: @/absolute/path/to/file
+
+# Windows - must use quotes due to backslashes and colons
+x: @"C:\absolute\path\to\file"
+```
