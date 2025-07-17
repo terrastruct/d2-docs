@@ -23,6 +23,17 @@ Any key that contains `(` is a method, whose value is the return type.
 
 A method key without a value has a return type of void.
 
+:::info Escaping reserved keywords
+If you'd like to use a reserved keyword, wrap it in quotes.
+
+```d2
+my_class: {
+  shape: class
+  "label": string
+}
+```
+:::
+
 ## Visibilities
 
 You can also use UML-style prefixes to indicate field/method visibility.
