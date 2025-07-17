@@ -52,3 +52,16 @@ Keys are case-insensitive, so `postgresql` and `postgreSQL` will reference the s
 There are other values that `shape` can take, but they're special types that are covered
 in the next section.
 :::
+
+## 1:1 Ratio shapes
+
+Some shapes maintain a 1:1 aspect ratio, meaning their width and height are always equal.
+
+- `circle`
+- `square`
+
+For these shapes, if you have a long label that make the shape wider, D2 will also make
+the shape taller to maintain the 1:1 ratio.
+
+If you manually set `width` and `height` on a 1:1 ratio shape, both dimensions will be set
+to the larger of the two values to maintain the aspect ratio.
