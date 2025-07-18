@@ -58,6 +58,8 @@ jobs:
     if: github.ref == 'refs/heads/master' && github.event_name == 'push'
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: true
       - uses: actions/cache@v3
         with:
           path: ~/.cache/yarn/v6
@@ -70,6 +72,8 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-1
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
       - name: Deploy to production
         run: ./ci/deploy.sh
         env:
