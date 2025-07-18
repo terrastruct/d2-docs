@@ -20,7 +20,7 @@ if [ -z ${D2_DOCS_ALGOLIA_CRAWLER_API_KEY} ]; then
 fi
 
 DOCUSAURUS_IGNORE_SSG_WARNINGS=true npm run prod
-aws sts get-caller-identity --no-cli-pager
+aws sts get-caller-identity --no-cli-pager > /dev/null
 aws s3 sync ./build ${D2_DOCS_S3_BUCKET} --delete --acl public-read --no-cli-pager
 aws cloudfront create-invalidation --distribution-id ${D2_DOCS_CLOUDFRONT_ID} --paths "/*" --no-cli-pager
 
