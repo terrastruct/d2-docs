@@ -25,7 +25,7 @@ Let's look at a simple example first, and then a complex one at the end.
 
 ## Simple example
 
-<WebPImage src={require('@site/static/img/screenshots/cult_pptx.png').default} alt="powerpoint screenshot" style={{width:'100%'}}/>
+<WebPImage src={require('@site/static/img/screenshots/cult_pptx.png').default} webpSrc={require('@site/static/img/screenshots/cult_pptx.webp').default} alt="powerpoint screenshot" style={{width:'100%'}}/>
 
 - Download: [cult.pptx](@site/static/img/generated/cult.pptx)
 - Google Slides: [https://docs.google.com/presentation/d/1CnAPcvsh1B4J3nVppNDInm2oTquhCV58/view](https://docs.google.com/presentation/d/1CnAPcvsh1B4J3nVppNDInm2oTquhCV58/view)
@@ -46,7 +46,7 @@ The above is pure text. Let's look at an example with diagrams and images.
 
 Be sure to go into Present mode to click on objects and navigate around.
 
-<img src={require('@site/static/img/screenshots/wcc_pptx.png').default} alt="powerpoint screenshot" style={{width:'100%'}}/>
+<WebPImage src={require('@site/static/img/screenshots/wcc_pptx.png').default} webpSrc={require('@site/static/img/screenshots/wcc_pptx.webp').default} alt="powerpoint screenshot" style={{width:'100%'}}/>
 
 - Download: [wcc.pptx](@site/static/img/generated/wcc.pptx)
 - Google Slides: [https://docs.google.com/presentation/d/18rRh4izu3k_43On8PXtVYdqRxmoQJd4y/view](https://docs.google.com/presentation/d/18rRh4izu3k_43On8PXtVYdqRxmoQJd4y/view)

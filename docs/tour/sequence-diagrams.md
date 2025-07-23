@@ -161,5 +161,5 @@ Lifeline edges (those lines going from top-down) inherit the actor's `stroke` an
 
 ## Glossary
 
-<WebPImage src={require('@site/static/img/screenshots/sequence_glossary.png').default}
+<WebPImage src={require('@site/static/img/screenshots/sequence_glossary.png').default} webpSrc={require('@site/static/img/screenshots/sequence_glossary.webp').default}
 alt="sequence diagram glossary"/>

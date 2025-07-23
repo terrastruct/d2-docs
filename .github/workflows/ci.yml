@@ -52,8 +52,15 @@ jobs:
       - name: Check for missing alt attributes
         run: ./scripts/check-alt-tags.sh
 
+  webp-versions-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check for missing WebP versions
+        run: ./ci/check-webp-versions.sh
+
   deploy:
-    needs: [ci, nofixups, spell-check, alt-tags-check]
+    needs: [ci, nofixups, spell-check, alt-tags-check, webp-versions-check]
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master' && github.event_name == 'push'
     steps:
