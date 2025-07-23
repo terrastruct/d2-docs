@@ -7,6 +7,7 @@ image: https://raw.githubusercontent.com/terrastruct/d2-docs/master/static/img/b
 hide_table_of_contents: false
 ---
 import CodeBlock from '@theme/CodeBlock';
+import WebPImage from '@site/src/components/WebPImage';
 import Animated from '@site/static/blog/sketch/animated.d2';
 
 Sketch mode started out as a "wouldn't it be cool" weekend feature, and has since turned
@@ -44,7 +45,7 @@ RoughJS comes with many default `fill` patterns, but we thought they were all to
 for diagramming. For example, this is a render on Excalidraw, another diagramming tool
   that leverages RoughJS.
 
-<img src={require('@site/static/blog/sketch/excalidraw.png').default} alt="excalidraw hand-drawn example" style={{width:'50%'}}/>
+<WebPImage src={require('@site/static/blog/sketch/excalidraw.png').default} webpSrc={require('@site/static/blog/sketch/excalidraw.webp').default} alt="excalidraw hand-drawn example" style={{width:'50%'}}/>
 
 While this does emulate a color-pencil type of fill, true to a hand-drawn aesthetic, it
 also makes the contents hard to read. We looked into options like putting a mask on the
@@ -55,7 +56,7 @@ The solution that our designer came up with is to overlay a subtle texture of st
 blends into the background. And to make it visible on all colors, the method of blending
 changes depending on how bright the background color is.
 
-<img src={require('@site/static/blog/sketch/overlay.png').default} alt="streak texture overlays" style={{width:'100%'}}/>
+<WebPImage src={require('@site/static/blog/sketch/overlay.png').default} webpSrc={require('@site/static/blog/sketch/overlay.webp').default} alt="streak texture overlays" style={{width:'100%'}}/>
 
 If you inspect the main diagram of this post, you can see it in effect with the various
 brightness of fills.

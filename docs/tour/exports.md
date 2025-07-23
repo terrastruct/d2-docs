@@ -1,5 +1,7 @@
 # Exports
 
+import WebPImage from '@site/src/components/WebPImage';
+
 On the CLI, you may export `.d2` into
 * [SVG](#svg)
 * [PNG](#png)
@@ -78,7 +80,7 @@ For example, `animate` keyword won't show up in PDF exports like they would in S
 
 But `link`s can still be clickable in PDFs.
 
-<img src={require('@site/static/img/screenshots/linked_pdf.png').default} alt="linked PDF example in D2" width="500"/>
+<WebPImage src={require('@site/static/img/screenshots/linked_pdf.png').default} webpSrc={require('@site/static/img/screenshots/linked_pdf.webp').default} alt="linked PDF example in D2" width={500}/>
 
 ## PPTX
 

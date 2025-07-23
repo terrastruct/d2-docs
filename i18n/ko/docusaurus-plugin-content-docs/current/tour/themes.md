@@ -3,15 +3,16 @@ pagination_next: tour/style
 ---
 
 import CodeBlock from '@theme/CodeBlock';
+import WebPImage from '@site/src/components/WebPImage';
 import TerminalTheme from '@site/static/bespoke-d2/terminal-theme.d2';
 
 # 테마
 
 D2에는 당신의 다이어그램을 블로그나 위키에 삽입할 수 있도록 고급스럽고 전문적으로 보일 수 있도록 하는 다양한 테마가 있습니다.
 
-<img width={700} src={require('@site/static/img/screenshots/themes/theme_overview.png').default} alt="D2 theme choices"/>
-<img width={400} src={require('@site/static/img/screenshots/themes/theme_2.png').default} alt="mixed berry blue theme"/>
-<img width={400} src={require('@site/static/img/screenshots/themes/theme_3.png').default} alt="vanilla nitro cola theme"/>
+<WebPImage width={700} src={require('@site/static/img/screenshots/themes/theme_overview.png').default} webpSrc={require('@site/static/img/screenshots/themes/theme_overview.webp').default} alt="D2 theme choices"/>
+<WebPImage width={400} src={require('@site/static/img/screenshots/themes/theme_2.png').default} webpSrc={require('@site/static/img/screenshots/themes/theme_2.webp').default} alt="mixed berry blue theme"/>
+<WebPImage width={400} src={require('@site/static/img/screenshots/themes/theme_3.png').default} webpSrc={require('@site/static/img/screenshots/themes/theme_3.webp').default} alt="vanilla nitro cola theme"/>
 
 ### 테이블과 같은 특별한 도형에도 적용됩니다.
 
@@ -69,7 +70,7 @@ D2_DARK_THEME=200 d2 input.d2
 :::
 
 어두운 테마를 적용했을 때의 예시입니다.(이것은 SVG가 아닌 이미지이므로 시스템 기본 설정에 따라 변경되지 않습니다).
-<img width={600} src={require('@site/static/img/screenshots/themes/dark.png').default} alt="dark theme"/>
+<WebPImage width={600} src={require('@site/static/img/screenshots/themes/dark.png').default} webpSrc={require('@site/static/img/screenshots/themes/dark.webp').default} alt="dark theme"/>
 
 ## 특수 테마
 

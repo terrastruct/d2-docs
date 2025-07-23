@@ -2,6 +2,7 @@
 pagination_next: tour/dagre
 ---
 import CodeBlock from '@theme/CodeBlock';
+import WebPImage from '@site/src/components/WebPImage';
 import DirectionRight from '@site/static/d2/direction-right.d2';
 import DirectionUp from '@site/static/d2/direction-up.d2';
 
@@ -103,4 +104,4 @@ a: {
 }
 ```
 
-<img src={require('@site/static/img/screenshots/tala-direction.png').default} alt="directions in TALA" />
+<WebPImage src={require('@site/static/img/screenshots/tala-direction.png').default} webpSrc={require('@site/static/img/screenshots/tala-direction.webp').default} alt="directions in TALA" />

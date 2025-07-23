@@ -6,6 +6,7 @@ tags: [dark mode, show-and-tell]
 image: https://raw.githubusercontent.com/terrastruct/d2-docs/master/static/img/blog/dark_mode.png
 hide_table_of_contents: false
 ---
+import WebPImage from '@site/src/components/WebPImage';
 
 I want to briefly highlight a cool new feature in D2, which is that you can set both a
 light theme *and* a dark theme for diagrams in D2.
@@ -31,8 +32,8 @@ Try opening up your system preferences and toggling between light and dark mode.
 What you should have seen is the above diagram adapting to your preference. If you didn't
 want to follow along, here's two PNGs of what it would've transitioned between:
 
-<img src={require('@site/static/blog/dark_mode/permalight.png').default} alt="d2 cheat sheet" style={{width:'50%'}}/>
-<img src={require('@site/static/blog/dark_mode/permadark.png').default} alt="d2 cheat sheet" style={{width:'50%'}}/>
+<WebPImage src={require('@site/static/blog/dark_mode/permalight.png').default} webpSrc={require('@site/static/blog/dark_mode/permalight.webp').default} alt="d2 cheat sheet" style={{width:'50%'}}/>
+<WebPImage src={require('@site/static/blog/dark_mode/permadark.png').default} webpSrc={require('@site/static/blog/dark_mode/permadark.webp').default} alt="d2 cheat sheet" style={{width:'50%'}}/>
 
 This means that if your website already supports a responsive experience for visitors that
 prefer light mode and dark mode, it takes zero extra work to include a D2 diagram that'll

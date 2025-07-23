@@ -1,4 +1,5 @@
 import CodeBlock from '@theme/CodeBlock';
+import WebPImage from '@site/src/components/WebPImage';
 import Tooltip from '@site/static/d2/tooltip.d2';
 import Links from '@site/static/d2/links.d2';
 
@@ -28,7 +29,7 @@ When you export to a static format like PNG, D2 will
 1. Change all the icons to be numbered.
 2. Add an appendix, where each line corresponds to the number.
 
-<img align="center" width="500" src={require('@site/static/img/screenshots/tooltip.png').default} alt="d2 tooltip" />
+<WebPImage style={{textAlign: 'center'}} width={500} src={require('@site/static/img/screenshots/tooltip.png').default} webpSrc={require('@site/static/img/screenshots/tooltip.webp').default} alt="d2 tooltip" />
 
 :::caution
 Tooltips are implemented with HTML

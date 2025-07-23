@@ -1,4 +1,5 @@
 import CodeBlock from '@theme/CodeBlock';
+import WebPImage from '@site/src/components/WebPImage';
 import NearConstant from '@site/static/d2/near-constant.d2';
 import NearContainer from '@site/static/d2/near-container.d2';
 import NearExplanation from '@site/static/d2/near-explanation.d2';
@@ -114,7 +115,7 @@ explanation: |md
 
 Notice how the text is positioned near the `aws` node and not the `gcloud` node.
 
-<img src={require('@site/static/img/screenshots/text-2.png').default} alt="text near example" width="800"/>
+<WebPImage src={require('@site/static/img/screenshots/text-2.png').default} webpSrc={require('@site/static/img/screenshots/text-2.webp').default} alt="text near example" width={800}/>
 
 ## Top and left
 

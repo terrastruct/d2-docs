@@ -1,5 +1,8 @@
 # Discord plugin
-<img width={200} src={require('@site/static/img/d2_discord.png').default} alt="D2 + Discord"/>
+
+import WebPImage from '@site/src/components/WebPImage';
+
+<WebPImage width={200} src={require('@site/static/img/d2_discord.png').default} webpSrc={require('@site/static/img/d2_discord.webp').default} alt="D2 + Discord"/>
 
 ### The fastest way to explain what you mean mid-conversation
 
@@ -24,6 +27,7 @@ Configure your exports by using `/d2` inside Discord.
     textDecoration: "none",
     width: "236px",
     marginBottom: "1rem",
+    paddingTop: "1.4rem",
   }}
 >
   Add to Discord
