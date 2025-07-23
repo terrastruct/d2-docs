@@ -136,4 +136,4 @@ each individual shape and connection and more seeing the general patterns. D2 is
 designed for this use case. There are much better tools for that.
 
 
-<WebPImage src={require('@site/static/img/screenshots/graph.png').default} webpSrc={require('@site/static/img/screenshots/graph.webp').default} width="300" alt="graph example"/>
+<WebPImage src={require('@site/static/img/screenshots/graph.png').default} webpSrc={require('@site/static/img/screenshots/graph.webp').default} width={300} alt="graph example"/>

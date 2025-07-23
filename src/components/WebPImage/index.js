@@ -5,16 +5,19 @@ const WebPImage = ({ src, webpSrc, alt, className, style, width, height, ...prop
     throw new Error(`WebPImage component requires explicit webpSrc prop. Found src: ${src}`);
   }
 
+  const pictureStyle = {
+    display: 'block',
+    ...(width && !style?.width ? { width } : {}),
+    ...(height && !style?.height ? { height } : {}),
+    ...(style || {})
+  };
+
   return (
-    <picture>
+    <picture style={pictureStyle} className={className}>
       <source srcSet={webpSrc} type="image/webp" />
       <img
         src={src}
         alt={alt}
-        className={className}
-        style={style}
-        width={width}
-        height={height}
         loading="lazy"
         {...props}
       />
