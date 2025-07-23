@@ -28,6 +28,6 @@ importing existing D2 code and offboard the same way. No lock-in.
 Here's an example of a multi-layer D2 diagram presented in D2 studio's web interface:
 
 <a href="https://app.terrastruct.com/diagrams/2034296181">
-<WebPImage src={require('@site/static/img/screenshots/d2_studio.png').default}
+<WebPImage src={require('@site/static/img/screenshots/d2_studio.png').default} webpSrc={require('@site/static/img/screenshots/d2_studio.webp').default}
 alt="D2 Studio screenshot"/>
 </a>

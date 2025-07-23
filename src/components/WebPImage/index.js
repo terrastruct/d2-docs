@@ -1,12 +1,13 @@
 import React from "react";
 
 const WebPImage = ({ src, webpSrc, alt, className, style, width, height, ...props }) => {
-  // If webpSrc is provided, use it; otherwise try to derive it from src
-  const webpSource = webpSrc || src.replace(/\.png$/, ".webp");
+  if (!webpSrc) {
+    throw new Error(`WebPImage component requires explicit webpSrc prop. Found src: ${src}`);
+  }
 
   return (
     <picture>
-      <source srcSet={webpSource} type="image/webp" />
+      <source srcSet={webpSrc} type="image/webp" />
       <img
         src={src}
         alt={alt}

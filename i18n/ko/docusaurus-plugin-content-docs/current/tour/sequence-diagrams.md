@@ -286,5 +286,5 @@ alice.style: {
 
 ## 용어 정리
 
-<WebPImage src={require('@site/static/img/screenshots/sequence_glossary.png').default}
+<WebPImage src={require('@site/static/img/screenshots/sequence_glossary.png').default} webpSrc={require('@site/static/img/screenshots/sequence_glossary.webp').default}
 alt="sequence diagram glossary"/>

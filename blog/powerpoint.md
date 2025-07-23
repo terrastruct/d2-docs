@@ -25,7 +25,7 @@ Let's look at a simple example first, and then a complex one at the end.
 
 ## Simple example
 
-<WebPImage src={require('@site/static/img/screenshots/cult_pptx.png').default} alt="powerpoint screenshot" style={{width:'100%'}}/>
+<WebPImage src={require('@site/static/img/screenshots/cult_pptx.png').default} webpSrc={require('@site/static/img/screenshots/cult_pptx.webp').default} alt="powerpoint screenshot" style={{width:'100%'}}/>
 
 - Download: [cult.pptx](@site/static/img/generated/cult.pptx)
 - Google Slides: [https://docs.google.com/presentation/d/1CnAPcvsh1B4J3nVppNDInm2oTquhCV58/view](https://docs.google.com/presentation/d/1CnAPcvsh1B4J3nVppNDInm2oTquhCV58/view)
