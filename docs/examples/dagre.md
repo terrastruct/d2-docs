@@ -8,7 +8,7 @@ import ExampleGrid from '@site/src/components/ExampleGrid';
 
 # D2 examples: Dagre layout
 
-See [/tour/dagre](/tour/dagre).
+See [/tour/dagre](/tour/dagre/).
 
 <ExampleGrid examples={[
   {

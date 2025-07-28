@@ -11,7 +11,7 @@ The examples are split by layout engines. Each section features a set of diagram
 are common among every layout engine. This makes it easy for you to toggle between each
 page and see the differences. Each section may also have a set of diagrams which use
 features from that layout engine specifically. These are placed after the common set. See
-[the page on layouts](/tour/layouts) for more information on differences in layout
+[the page on layouts](/tour/layouts/) for more information on differences in layout
 engines.
 
 There is no particular system to these examples. They may be written by various authors

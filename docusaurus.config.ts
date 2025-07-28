@@ -10,6 +10,7 @@ const config: Config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
+  trailingSlash: true,
 
   future: {
     experimental_faster: true,
@@ -231,7 +232,7 @@ const config: Config = {
         fromExtensions: ["html", "htm"],
         redirects: [
           {
-            to: "/tour/intro",
+            to: "/tour/intro/",
             from: ["/tour"],
           },
         ],

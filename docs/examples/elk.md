@@ -8,7 +8,7 @@ import ExampleGrid from '@site/src/components/ExampleGrid';
 
 # D2 examples: ELK layout
 
-See [/tour/elk](/tour/elk).
+See [/tour/elk](/tour/elk/).
 
 <ExampleGrid examples={[
   {

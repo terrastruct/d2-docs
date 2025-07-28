@@ -131,7 +131,7 @@ import ExampleGrid from '@site/src/components/ExampleGrid';
 
 # D2 examples: Dagre layout
 
-See [/tour/dagre](/tour/dagre).
+See [/tour/dagre](/tour/dagre/).
 
 <ExampleGrid examples={[
 EOF
@@ -171,7 +171,7 @@ import ExampleGrid from '@site/src/components/ExampleGrid';
 
 # D2 examples: ELK layout
 
-See [/tour/elk](/tour/elk).
+See [/tour/elk](/tour/elk/).
 
 <ExampleGrid examples={[
 EOF
@@ -211,7 +211,7 @@ import ExampleGrid from '@site/src/components/ExampleGrid';
 
 # D2 examples: TALA layout
 
-See [/tour/tala](/tour/tala).
+See [/tour/tala](/tour/tala/).
 
 <ExampleGrid examples={[
 EOF

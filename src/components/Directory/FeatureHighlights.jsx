@@ -18,13 +18,13 @@ const featureHighlights = [
     description:
       "Themes by professional designers, each unique. Effortlessly ready for blogs, wikis, and presentations.",
     img: Themes,
-    href: "/tour/themes",
+    href: "/tour/themes/",
   },
   {
     title: "Sketch mode",
     description: "Our take on a beautiful, hand-drawn aesthetic.",
     img: Sketch,
-    href: "/tour/sketch",
+    href: "/tour/sketch/",
   },
   {
     title: "Animations",
@@ -62,7 +62,7 @@ const featureHighlights = [
     title: "Tables",
     description: "Show structured data like SQL tables.",
     img: Tables,
-    href: "/tour/sql-tables",
+    href: "/tour/sql-tables/",
   },
 ];
 

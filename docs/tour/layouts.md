@@ -16,11 +16,11 @@ other layout engines support.
 
 ## Layout engines
 
-- [dagre](/tour/dagre) (default): A fast, directed graph layout engine that produces
+- [dagre](/tour/dagre/) (default): A fast, directed graph layout engine that produces
   layered/hierarchical layouts. Based on Graphviz's DOT algorithm.
-- [ELK](/tour/elk): Also a directed graph layout engine. More mature than dagre, better
+- [ELK](/tour/elk/): Also a directed graph layout engine. More mature than dagre, better
   maintained (part-time academic research team working on it), with recent releases.
-- [TALA](/tour/tala): New layout engine designed specifically for software architecture
+- [TALA](/tour/tala/): New layout engine designed specifically for software architecture
   diagrams.
 
 You can choose whichever layout engine you like and works best for the diagram you're

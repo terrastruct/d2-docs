@@ -122,7 +122,7 @@ grid-rows: 4
 위의 애니메이션은 D2만으로 구현되었습니다.
 즉, 그리드 다이어그램의 구성 과정을 애니메이션화 할 수 있습니다.
 이 [코드](https://github.com/terrastruct/d2-docs/blob/f5c762223ce192338d9d7865df3ca8533d683cdc/static/bespoke-d2/grid-row-dominant.d2)와 함께 `animate-interval` 플래그를 사용하세요.
-이에 대한 자세한 내용은 뒤에 나오는 [composition](/tour/composition) 섹션에서 확인하세요.
+이에 대한 자세한 내용은 뒤에 나오는 [composition](/tour/composition/) 섹션에서 확인하세요.
 :::
 
 ## 그리드 간격 크기 조절

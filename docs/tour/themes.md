@@ -104,7 +104,7 @@ the labels, because the special theme uses different defaults.
 You can override theme values to customize existing themes or replace them entirely with
 your own theme.
 
-This is controlled by two [configuration variables](/tour/vars#configuration-variables):
+This is controlled by two [configuration variables](/tour/vars/#configuration-variables):
 
 - `theme-overrides`: replaces color codes for theme
 - `dark-theme-overrides`: replaces color codes for dark theme

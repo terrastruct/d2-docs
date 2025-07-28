@@ -35,7 +35,7 @@ export default function Home() {
         <button
           className="Directory__Banner--Button"
           onClick={() => {
-            window.location.href = "/tour/intro";
+            window.location.href = "/tour/intro/";
           }}
         >
           Explore docs

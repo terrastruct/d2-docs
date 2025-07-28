@@ -36,7 +36,7 @@ brevity.
 :::
 
 :::tip
-Want to change the default styles for shapes and/or connections? See [globs to change defaults](/tour/globs#changing-defaults).
+Want to change the default styles for shapes and/or connections? See [globs to change defaults](/tour/globs/#changing-defaults).
 :::
 
 ## Style keywords
