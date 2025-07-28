@@ -27,7 +27,7 @@ Let's look at a simple example first, and then a complex one at the end.
 
 <WebPImage src={require('@site/static/img/screenshots/cult_pptx.png').default} webpSrc={require('@site/static/img/screenshots/cult_pptx.webp').default} alt="powerpoint screenshot" style={{width:'100%'}}/>
 
-- Download: [cult.pptx](@site/static/img/generated/cult.pptx)
+- Download: [cult.pptx](pathname:///img/generated/cult.pptx)
 - Google Slides: [https://docs.google.com/presentation/d/1CnAPcvsh1B4J3nVppNDInm2oTquhCV58/view](https://docs.google.com/presentation/d/1CnAPcvsh1B4J3nVppNDInm2oTquhCV58/view)
 
 To produce this:
@@ -48,7 +48,7 @@ Be sure to go into Present mode to click on objects and navigate around.
 
 <WebPImage src={require('@site/static/img/screenshots/wcc_pptx.png').default} webpSrc={require('@site/static/img/screenshots/wcc_pptx.webp').default} alt="powerpoint screenshot" style={{width:'100%'}}/>
 
-- Download: [wcc.pptx](@site/static/img/generated/wcc.pptx)
+- Download: [wcc.pptx](pathname:///img/generated/wcc.pptx)
 - Google Slides: [https://docs.google.com/presentation/d/18rRh4izu3k_43On8PXtVYdqRxmoQJd4y/view](https://docs.google.com/presentation/d/18rRh4izu3k_43On8PXtVYdqRxmoQJd4y/view)
 
 The source code for this is a bit longer, and can be found [here](https://github.com/terrastruct/d2/blob/master/docs/examples/wcc/wcc.d2).
