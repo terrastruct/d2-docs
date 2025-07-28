@@ -109,7 +109,7 @@ It would do the opposite.
 These animations are also pure D2, so you can animate grid diagrams being built-up. Use
 the `animate-interval` flag with this
 [code](https://github.com/terrastruct/d2-docs/blob/f5c762223ce192338d9d7865df3ca8533d683cdc/static/bespoke-d2/grid-row-dominant.d2#L1).
-More on this later, in the [composition](/tour/composition) section.
+More on this later, in the [composition](/tour/composition/) section.
 :::
 
 ## Gap size

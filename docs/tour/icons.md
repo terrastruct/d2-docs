@@ -39,7 +39,7 @@ top-left and non-container icons in the center.
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/icon-placement.svg2')}}></div>
 
 :::info
-Icons can be positioned with the `near` keyword [introduced later](/tour/positions#label-and-icon-positioning).
+Icons can be positioned with the `near` keyword [introduced later](/tour/positions/#label-and-icon-positioning).
 :::
 
 ## Add `shape: image` for standalone icon shapes

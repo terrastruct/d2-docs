@@ -231,7 +231,7 @@ const config: Config = {
         fromExtensions: ["html", "htm"],
         redirects: [
           {
-            to: "/tour/intro",
+            to: "/tour/intro/",
             from: ["/tour"],
           },
         ],

@@ -208,7 +208,7 @@ You can nest globs, combining the features above.
 
 Triple globs apply globally to the whole diagram. The difference between a double glob and
 a triple glob is that a triple glob will apply to nested `layers` (see the section on
-[composition](/tour/composition) for more on `layers`), as well as persist across imports.
+[composition](/tour/composition/) for more on `layers`), as well as persist across imports.
 
 ```d2
 ***.style.fill: yellow

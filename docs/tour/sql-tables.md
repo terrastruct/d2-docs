@@ -59,7 +59,7 @@ Here's an example of how you'd define a foreign key connection between two table
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/tables-2.svg2')}}></div>
 
 :::info
-When rendered with the [TALA layout engine](/tour/tala) or [ELK layout engine](/tour/elk),
+When rendered with the [TALA layout engine](/tour/tala/) or [ELK layout engine](/tour/elk/),
 connections point to the exact row.
 :::
 

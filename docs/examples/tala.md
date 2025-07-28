@@ -8,7 +8,7 @@ import ExampleGrid from '@site/src/components/ExampleGrid';
 
 # D2 examples: TALA layout
 
-See [/tour/tala](/tour/tala).
+See [/tour/tala](/tour/tala/).
 
 <ExampleGrid examples={[
   {

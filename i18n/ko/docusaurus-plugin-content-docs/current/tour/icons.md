@@ -75,7 +75,7 @@ vpc: VPC 1 10.1.0.0./16 {
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/icon-placement.svg2')}}></div>
 
 :::info
-아이콘은 뒤에 소개될 [`near` 키워드](/tour/positions)로 배치할 수 있습니다.
+아이콘은 뒤에 소개될 [`near` 키워드](/tour/positions/)로 배치할 수 있습니다.
 :::
 
 ## `shape: image`을 추가해 독립형 아이콘 만들기

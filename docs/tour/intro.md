@@ -31,7 +31,7 @@ alt="D2 CLI"/>
 
 You can finish this tour in about 5-10 minutes, and at the end, there's a cheat sheet you
 can download and refer to. If you want just the bare essentials, <a
-href="/tour/hello-world">Getting Started</a> takes
+href="/tour/hello-world/">Getting Started</a> takes
 ~2 mins.
 
 :::info

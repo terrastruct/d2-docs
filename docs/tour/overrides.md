@@ -38,10 +38,10 @@ You may override with the value `null` to delete the shape/connection/attribute.
 <div style={{width: 200}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/null-basic.svg2')}}></div>
 
 When is this useful?
-- [Import](/tour/imports) a diagram from a colleague and remove the things you don't want.
-- [Multi-board compositions](/tour/composition) where you inherit all the objects from a
+- [Import](/tour/imports/) a diagram from a colleague and remove the things you don't want.
+- [Multi-board compositions](/tour/composition/) where you inherit all the objects from a
   board with some exceptions.
-- Use [globs](/tour/globs) to define connections between a batch of objects except one in
+- Use [globs](/tour/globs/) to define connections between a batch of objects except one in
   particular you want to leave out.
 
 ### Nulling a connection
