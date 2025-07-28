@@ -10,9 +10,9 @@ for doing much more than the ones shown here.
 
 ## Patterns
 
-- [Model-view](./model-view)
-- [Modular classes](./modular-classes)
-- [Nested composition](./nested-composition)
+- [Model-view](/tour/model-view/)
+- [Modular classes](/tour/modular-classes/)
+- [Nested composition](/tour/nested-composition/)
 
 ## Principles
 
@@ -38,5 +38,5 @@ files can also fulfill useful principles for organizations:
 Some more creative, practical examples of using imports that mix and match the above
 patterns and principles.
 
-- [Version visualization](./version-visualization)
-- [Template](./imported-template)
+- [Version visualization](/tour/version-visualization/)
+- [Template](/tour/imported-template/)

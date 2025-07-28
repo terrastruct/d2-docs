@@ -10,6 +10,7 @@ const config: Config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
+  trailingSlash: true,
 
   future: {
     experimental_faster: true,

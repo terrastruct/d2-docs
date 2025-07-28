@@ -67,4 +67,4 @@ If you haven't yet, please familiarize yourself with [globs](globs.md).
 
 As you may have noticed, each of these examples repeated the initial models. You can
 further apply the "one model" principle by defining models once in their own file and
-importing them. See the [import model-view pattern](model-view) for more.
+importing them. See the [import model-view pattern](/tour/model-view/) for more.
