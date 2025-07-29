@@ -105,6 +105,21 @@
   }
 }
 
+/* Special positioning for tooltips in modals */
+.example-modal-content .CodeBlock {
+  .Copy--Tooltip,
+  .PlaygroundLink--Tooltip {
+    top: 50%;
+    left: -8px;
+    transform: translateX(-100%) translateY(-50%);
+  }
+
+  .Copy--Arrow,
+  .PlaygroundLink--Arrow {
+    display: none;
+  }
+}
+
 .PlaygroundLink {
   right: 3.6rem;
 }
