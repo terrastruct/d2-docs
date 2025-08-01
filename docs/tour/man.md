@@ -65,6 +65,11 @@ OPTIONS
      -s, --sketch false
 		 Renders the diagram to look like it was sketched by hand.
 
+     --ascii-mode extended
+		 Character set to use for ASCII output (.txt extension or
+		 --stdout-format ascii). Options: standard (basic ASCII) or
+		 extended (Unicode box-drawing characters).
+
      --center flag
 		 Center the SVG in the containing viewbox, such as your
 		 browser screen.
@@ -145,7 +150,7 @@ OPTIONS
 
      --stdout-format string
 		 Set the output format when writing to stdout. Supported
-		 formats are: png, svg. Only used when output is set to stdout
+		 formats are: png, svg, ascii. Only used when output is set to stdout
 		 (-).
 
      --no-xml-tag false
@@ -235,6 +240,9 @@ ENVIRONMENT VARIABLES
 
      D2_STDOUT_FORMAT
 	     See --stdout-format flag.
+
+     D2_ASCII_MODE
+	     See --ascii-mode flag.
 
      D2_NO_XML_TAG
 	     See --no-xml-tag flag.
