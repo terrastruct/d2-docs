@@ -1,0 +1,13 @@
+*: {
+  &shape: person
+  &connected: true
+  style.fill: red
+}
+(** -> **)[*]: {
+  &src: a
+  &dst: c
+  style.stroke: yellow
+}
+a -> b
+a.shape: person
+a -> c

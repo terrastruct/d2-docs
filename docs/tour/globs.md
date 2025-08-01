@@ -11,6 +11,7 @@ import GlobsRecursive2 from '@site/static/d2/globs-recursive-2.d2';
 import GlobsFilter from '@site/static/d2/globs-filter.d2';
 import GlobsFilter2 from '@site/static/d2/globs-filter-2.d2';
 import GlobsFilter3 from '@site/static/d2/globs-filter-3.d2';
+import GlobsFilterAnd from '@site/static/d2/globs-filter-and.d2';
 import GlobsFilterEndpoints from '@site/static/d2/globs-filter-endpoints.d2';
 import GlobsFilterGlobValue from '@site/static/d2/globs-filter-glob-value.d2';
 import GlobsInverseFilter from '@site/static/d2/globs-inverse-filter.d2';
@@ -166,6 +167,15 @@ means the key must be specified.
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter-glob-value.svg2')}}></div>
 
+### AND filter
+
+Adding multiple lines of filters counts as an AND.
+
+<CodeBlock className="language-d2">
+    {GlobsFilterAnd}
+</CodeBlock>
+
+<div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter-and.svg2')}}></div>
 
 ### Connection endpoint filters
 
@@ -174,8 +184,6 @@ Connections can be filtered by properties on their source and destination shapes
 <CodeBlock className="language-d2">
     {GlobsFilterEndpoints}
 </CodeBlock>
-
-<div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter-endpoints.svg2')}}></div>
 
 Endpoint filters also work with IDs, e.g. `&src: b`.
 
