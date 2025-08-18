@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-d2-version="v0.7.0-HEAD" preserveAspectRatio="xMidYMid meet" viewBox="0 0 3066 2166"><svg class="d2-3500899881 d2-svg" width="3066" height="2166" viewBox="20 -86 3066 2166"><rect x="20.000000" y="-86.000000" width="3066.000000" height="2166.000000" rx="0.000000" fill="#FFFFFF" class=" fill-N7" stroke-width="0" /><style type="text/css"><![CDATA[
+<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 3066 2166"><svg class="d2-3500899881 d2-svg" width="3066" height="2166" viewBox="20 -86 3066 2166"><rect x="20.000000" y="-86.000000" width="3066.000000" height="2166.000000" rx="0.000000" fill="#FFFFFF" class=" fill-N7" stroke-width="0" /><style type="text/css"><![CDATA[
 .d2-3500899881 .text {
 	font-family: "d2-3500899881-font-regular";
 }
@@ -907,48 +907,6 @@
 </svg>
 </g><mask id="d2-3500899881" maskUnits="userSpaceOnUse" x="20" y="-86" width="3066" height="2166">
 <rect x="20" y="-86" width="3066" height="2166" fill="white"></rect>
-<rect x="1273.000000" y="-75.000000" width="542" height="70" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="1474.500000" y="170.500000" width="192" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2826.500000" y="370.500000" width="211" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="609.500000" y="1266.500000" width="62" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="506.500000" y="1133.500000" width="268" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="570.500000" y="1399.500000" width="141" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="1101.500000" y="1665.500000" width="37" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2093.000000" y="15.000000" width="399" height="50" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2176.500000" y="524.000000" width="232" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="1082.500000" y="1200.500000" width="74" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="119.500000" y="1200.500000" width="125" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="1505.500000" y="1532.500000" width="131" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="1382.500000" y="1170.500000" width="376" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="1392.500000" y="1303.500000" width="357" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="582.500000" y="1798.500000" width="117" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="544.500000" y="1665.500000" width="193" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="593.500000" y="1532.500000" width="95" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2200.500000" y="2008.500000" width="184" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2829.500000" y="2018.500000" width="205" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="1477.500000" y="1037.500000" width="186" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="543.500000" y="1000.500000" width="195" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2239.500000" y="1133.500000" width="106" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2182.500000" y="1333.500000" width="221" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2144.500000" y="1609.500000" width="297" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2190.500000" y="1742.500000" width="205" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2144.500000" y="1875.500000" width="297" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="1019.500000" y="1476.500000" width="200" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="79.500000" y="206.000000" width="205" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2187.500000" y="122.500000" width="210" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2202.500000" y="255.500000" width="180" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2236.500000" y="388.500000" width="113" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2060.000000" y="601.500000" width="184" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2042.500000" y="714.500000" width="219" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2044.000000" y="827.500000" width="216" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2051.000000" y="940.500000" width="202" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2356.500000" y="620.000000" width="172" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2343.000000" y="770.000000" width="199" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2342.500000" y="921.000000" width="200" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="94.500000" y="291.500000" width="175" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="84.500000" y="424.500000" width="195" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="119.500000" y="557.500000" width="125" height="28" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="81.500000" y="690.500000" width="201" height="28" fill="rgba(0,0,0,0.75)"></rect>
 <rect x="884.000000" y="1373.000000" width="86" height="21" fill="black"></rect>
 <rect x="864.000000" y="1550.000000" width="85" height="21" fill="black"></rect>
 </mask></svg></svg>

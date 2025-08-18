@@ -9,7 +9,16 @@ main() {
 
   # Create temp directory for extracted files
   temp_dir=$(mktemp -d)
-  trap "rm -rf $temp_dir" EXIT
+  
+  # Create temp directory for generated SVGs when no args provided
+  if [ $# -eq 0 ]; then
+    temp_output_dir=$(mktemp -d)
+    trap "rm -rf $temp_dir $temp_output_dir" EXIT
+    output_dir="$temp_output_dir"
+  else
+    trap "rm -rf $temp_dir" EXIT
+    output_dir="./static/img/examples"
+  fi
 
   # Parse txtar file
   current_file=""
@@ -68,11 +77,17 @@ main() {
       bigheader "$output_name"
 
       # Generate SVG with appropriate layout
-      runjob sh_c D2_LAYOUT=$layout d2 --theme=0 -c --pad 10 "$d2_file" "./static/img/examples/$output_name.svg2" &
+      runjob sh_c D2_LAYOUT=$layout d2 --omit-version --theme=0 -c --pad 10 "$d2_file" "$output_dir/$output_name.svg2" &
     done
   done
 
   waitjobs
+
+  # If no args provided, replace the examples directory with temp directory contents
+  if [ $# -eq 0 ]; then
+    rm -rf ./static/img/examples/*
+    cp "$temp_output_dir"/* ./static/img/examples/
+  fi
 
   # Generate the examples pages
   generate_examples_pages
