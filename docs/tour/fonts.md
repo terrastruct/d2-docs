@@ -29,7 +29,16 @@ one but not all of the fonts, it will fall back to Source Sans Pro for the missi
 For example, if you give a `--font-regular`, `--font-bold`, and `--font-semibold`, then the
 italic will remain as Source Sans Pro Italic.
 
-:::info
-Do you want to customize the fonts for code or sketch mode? Please raise an Issue on
-GitHub. We'll support this if there's demand.
-:::
+## Mono fonts
+
+If you'd like to customize the mono fonts:
+
+- `--font-regular`
+- `--font-italic`
+- `--font-bold`
+- `--fond-semibold`
+
+## Sketch font
+
+In sketch mode, if you supply a font, it will replace the default hand-drawn font family
+instead of Source Sans Pro.
