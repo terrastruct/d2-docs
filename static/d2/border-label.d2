@@ -1,0 +1,28 @@
+style.fill: "#222a25"
+env: Your environment {
+  # --- Outside label ---
+  label.near: outside-bottom-center
+  style.fill: "#222a25"
+  style.stroke-dash: 2
+  style.double-border: false
+  style.stroke: "#1e402d"
+  style.font-color: "#3ddb89"
+  app: Your applicaton {
+    # --- Border label ---
+    label.near: border-top-center
+    style.stroke: "#3d9069"
+    style.fill: "#222a25"
+    style.font-color: "#63c08c"
+
+    *.style.stroke: "#adf1c6"
+    *.style.fill: "#306a4a"
+    *.style.font-color: "#eef9f3"
+    Workflow
+    SDK
+    Workers
+    Workflow -> SDK: hello {
+      style.stroke: "#fbfdfd"
+      style.font-color: "#adf1c6"
+    }
+  }
+}
