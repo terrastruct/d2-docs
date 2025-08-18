@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-d2-version="v0.7.0-HEAD" preserveAspectRatio="xMidYMid meet" viewBox="0 0 3542 391"><svg class="d2-2586167847 d2-svg" width="3542" height="391" viewBox="-1 -21 3542 391"><rect x="-1.000000" y="-21.000000" width="3542.000000" height="391.000000" rx="0.000000" class=" fill-N7" stroke-width="0" /><style type="text/css"><![CDATA[
+<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 3542 391"><svg class="d2-2586167847 d2-svg" width="3542" height="391" viewBox="-1 -21 3542 391"><rect x="-1.000000" y="-21.000000" width="3542.000000" height="391.000000" rx="0.000000" class=" fill-N7" stroke-width="0" /><style type="text/css"><![CDATA[
 .d2-2586167847 .text {
 	font-family: "d2-2586167847-font-regular";
 }
@@ -909,7 +909,7 @@
 </div></foreignObject></g></g><g class="Y2hhdGJvdA== javascript customer-facing machine-learning"><g class="shape" ><path d="M 1141 207 C 1141 178 1170 155 1193 155 H 1464 C 1493 155 1516 184 1516 207 V 311 C 1516 340 1487 363 1464 363 H 1193 C 1164 363 1141 334 1141 311 Z" fill="#B0E0E6" class=" stroke-B1" style="stroke-width:2;" /><path d="M 1329 7 C 1374 7 1411 44 1411 90 C 1411 135 1374 172 1329 172 C 1283 172 1246 135 1246 90 C 1246 44 1283 7 1329 7" fill="#B0E0E6" class=" stroke-B1" style="stroke-width:2;" /></g><g><foreignObject requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" x="1167.500000" y="199.750000" width="322" height="119"><div xmlns="http://www.w3.org/1999/xhtml" class="md color-N1" style="background-color:#B0E0E6"><h2>Customer Chatbot</h2>
 <p>[Container: Node.js &amp; NLP]</p>
 <p>AI-powered chat interface for customer support.</p>
-</div></foreignObject></g></g><g class="a3ljX3N5c3RlbQ== legal security customer-facing"><g class="shape" ><path d="M 1576 207 C 1576 177 1606 153 1630 153 H 1910 C 1940 153 1964 183 1964 207 V 315 C 1964 345 1934 369 1910 369 H 1630 C 1600 369 1576 339 1576 315 Z" stroke="#800080" class=" fill-B3" style="stroke-width:2;" /><path d="M 1770 -0 C 1817 -0 1855 38 1855 85 C 1855 133 1817 171 1770 171 C 1723 171 1685 133 1685 85 C 1685 38 1723 -0 1770 -0" stroke="#800080" class=" fill-B3" style="stroke-width:2;" /></g><g><foreignObject requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" x="1603.000000" y="201.824000" width="334" height="119"><div xmlns="http://www.w3.org/1999/xhtml" class="md fill-B3 color-N1"><h2>KYC Verification</h2>
+</div></foreignObject></g></g><g class="a3ljX3N5c3RlbQ== legal security customer-facing"><g class="shape" ><path d="M 1576 207 C 1576 177 1606 153 1630 153 H 1910 C 1940 153 1964 183 1964 207 V 315 C 1964 345 1934 369 1910 369 H 1630 C 1600 369 1576 339 1576 315 Z" stroke="#800080" class=" fill-B3" style="stroke-width:2;" /><path d="M 1770 0 C 1817 0 1855 38 1855 85 C 1855 133 1817 171 1770 171 C 1723 171 1685 133 1685 85 C 1685 38 1723 0 1770 0" stroke="#800080" class=" fill-B3" style="stroke-width:2;" /></g><g><foreignObject requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" x="1603.000000" y="201.824000" width="334" height="119"><div xmlns="http://www.w3.org/1999/xhtml" class="md fill-B3 color-N1"><h2>KYC Verification</h2>
 <p>[Software System]</p>
 <p>Know Your Customer identity verification process.</p>
 </div></foreignObject></g></g><g class="aW52ZXN0bWVudF9wbGF0Zm9ybQ== financial-services customer-facing transaction-processing"><g class="shape" ><path d="M 2050 103 L 2514 103 L 2488 267 L 2024 267 L 2024 267 Z" fill="#90EE90" class=" stroke-B1" style="stroke-width:2;" /></g><g><foreignObject requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" x="2072.500000" y="125.500000" width="393" height="119"><div xmlns="http://www.w3.org/1999/xhtml" class="md color-N1" style="background-color:#90EE90"><h2>Investment Platform</h2>
@@ -923,11 +923,5 @@
 <p>API gateway specifically optimized for mobile client applications.</p>
 </div></foreignObject></g></g><mask id="d2-2586167847" maskUnits="userSpaceOnUse" x="-1" y="-21" width="3542" height="391">
 <rect x="-1" y="-21" width="3542" height="391" fill="white"></rect>
-<rect x="20.500000" y="125.500000" width="496" height="119" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="617.500000" y="125.500000" width="443" height="119" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="1165.500000" y="199.750000" width="326" height="119" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="1601.000000" y="201.824000" width="338" height="119" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2070.500000" y="125.500000" width="397" height="119" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="2594.500000" y="125.500000" width="387" height="119" fill="rgba(0,0,0,0.75)"></rect>
-<rect x="3082.500000" y="125.500000" width="437" height="119" fill="rgba(0,0,0,0.75)"></rect>
+
 </mask></svg></svg>
