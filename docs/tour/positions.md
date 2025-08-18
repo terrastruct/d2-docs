@@ -5,6 +5,7 @@ import NearContainer from '@site/static/d2/near-container.d2';
 import NearExplanation from '@site/static/d2/near-explanation.d2';
 import NearLabelIcon from '@site/static/d2/near-label-icon.d2';
 import BorderLabel from '@site/static/d2/border-label.d2';
+import TooltipNear from '@site/static/d2/tooltip-near.d2';
 
 # Positions
 
@@ -85,6 +86,17 @@ You can also add `border-x` prefix to specify the label being on the border.
 </CodeBlock>
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/border-label.svg2')}}></div>
+
+## Tooltip near
+
+Usually, `tooltip` is a on-hover effect. However, if you specify a `near` field, it will
+permanently show.
+
+<CodeBlock className="language-d2">
+    {TooltipNear}
+</CodeBlock>
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/tooltip-near.svg2')}}></div>
 
 ## Near objects
 
