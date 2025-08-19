@@ -250,7 +250,6 @@ async function newTextMateRegistry() {
           return parseRawGrammar(markdownGrammar);
       }
 
-      console.warn(`unknown scope name: ${scope}`);
       return undefined;
     },
   });
