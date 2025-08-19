@@ -1,4 +1,5 @@
 ---
+date: 2023-03-11
 title: Hand-drawn diagram aesthetic
 description: How you can make diagrams look hand-drawn in D2
 slug: hand-drawn-diagrams

@@ -1,3 +1,7 @@
+---
+date: 2025-08-02
+---
+
 import CodeBlock from '@theme/CodeBlock';
 import Example from '@site/static/d2/ascii-ex.d2';
 

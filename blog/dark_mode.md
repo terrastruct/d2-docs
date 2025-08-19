@@ -1,4 +1,5 @@
 ---
+date: 2023-03-04
 title: Dark-mode responsive diagrams
 description: How diagrams in D2 are responsive to dark mode
 slug: dark-mode
