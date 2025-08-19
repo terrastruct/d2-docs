@@ -98,7 +98,7 @@ const config: Config = {
             type: "all",
             title: "D2 Blog Feed",
             description: "Stay updated with the latest D2 news and tutorials",
-            copyright: `Copyright © ${new Date().getFullYear()} Terrastruct, Inc.`,
+            copyright: `Copyright © 2025 Terrastruct, Inc.`,
             language: "en",
           },
         },
@@ -215,7 +215,7 @@ const config: Config = {
       darkTheme: themes.dracula,
     },
     footer: {
-      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://terrastruct.com">Terrastruct, Inc.</a>`,
+      copyright: `Copyright © 2025 <a href="https://terrastruct.com">Terrastruct, Inc.</a>`,
     },
     algolia: {
       appId: "DWAXJIMTZU",
