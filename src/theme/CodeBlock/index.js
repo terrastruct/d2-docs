@@ -179,6 +179,9 @@ export default function D2CodeBlock(props) {
             if (props.layout) {
               playgroundURL.searchParams.set("layout", props.layout);
             }
+            if (props.ascii) {
+              playgroundURL.searchParams.set("ascii", "1");
+            }
             window.open(playgroundURL, "_blank");
           }}
         >

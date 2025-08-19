@@ -8,6 +8,7 @@ On the CLI, you may export `.d2` into
 * [PDF](#pdf)
 * [PPTX](#pptx)
 * [GIF](#gif)
+* [ASCII](#ascii)
 * [Stdout](#stdout)
 
 ## SVG
@@ -101,6 +102,60 @@ This export format is useful for giving presentations when used with short compo
 For example, show two Scenarios, show a couple of steps. Something that the audience can
 digest in a loop that lasts a couple of seconds without needing to flip through it
 manually.
+
+## ASCII
+
+:::warning Beta
+ASCII outputs are new as of 0.7.1. They are to be considered in beta, and many diagrams
+may not render correctly.
+:::
+
+ASCII exports render diagrams as text-based art, perfect for documentation, terminals, and environments where graphical formats aren't suitable. D2 automatically detects the `.txt` file extension and renders in ASCII format.
+
+```shell
+d2 in.d2 out.txt
+```
+
+### Character sets
+
+D2 supports two ASCII character modes:
+
+#### Extended mode (default)
+Uses Unicode box-drawing characters for cleaner output:
+
+```shell
+d2 in.d2 out.txt
+```
+
+```
+┌───────┐       ┌───────┐
+│ Hello │──────▶│ World │
+└───────┘       └───────┘
+```
+
+#### Standard mode
+Uses basic ASCII characters for maximum compatibility:
+
+```shell
+d2 --ascii-mode standard in.d2 out.txt
+```
+
+```
++-------+       +-------+
+| Hello |------>| World |
++-------+       +-------+
+```
+
+### Notes
+
+- Renders only with ELK and TALA, due to curved lines not rendering well in ASCII. If
+  Dagre (or unspecified) is chosen, it will render in ELK.
+- Some shapes are supported, like Person, but some shapes are hard to represent cleanly in
+  ASCII. It's best to avoid using these shapes when the output is ASCII, but if it can't
+  be avoided, in these cases, an icon on the top-left corner represents what the shape is
+  meant to be.
+- Many styles are moot in ASCII, such as shadow or multiple or animated. It's best to keep
+  it as simple box and arrow type diagrams.
 
 ## Stdout
 

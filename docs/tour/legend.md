@@ -23,3 +23,17 @@ of shapes to exclude them from the legend.
 </CodeBlock>
 
 <div style={{width: "100%"}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/legend-hidden.svg2')}}></div>
+
+## Rename "legend"
+
+You may rename "legend" by simply giving it a label. This is particularly useful for
+non-English diagrams.
+
+```d2
+vars: {
+  d2-legend: "凡例" {
+    # Legend items...
+  }
+}
+# Rest of diagram...
+```

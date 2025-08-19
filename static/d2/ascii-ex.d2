@@ -1,0 +1,34 @@
+LangUnits: {
+  RegexVal: {
+    ds
+  }
+  SQLSelect: {
+    ds
+  }
+  PythonTr: {
+    ds
+  }
+  langunit: {
+    "... ds"
+  }
+}
+
+LangUnits <- ExperimentHost.Dataset: "load dataset"
+Dataset UI -> LangUnits: "manage datasets"
+
+Dataset UI
+
+ExperimentHost: {
+  Experiment
+  Dataset
+}
+ExperimentHost.Experiment -> Experiment
+
+Experiment.ModelConfigurations
+Experiment.LangUnit
+
+Experiment.ModelConfigurations -> ModelConfiguration
+
+ModelConfiguration.Prompting
+ModelConfiguration.Model
+ModelConfiguration.LangUnit

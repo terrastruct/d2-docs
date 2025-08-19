@@ -4,6 +4,8 @@ import NearConstant from '@site/static/d2/near-constant.d2';
 import NearContainer from '@site/static/d2/near-container.d2';
 import NearExplanation from '@site/static/d2/near-explanation.d2';
 import NearLabelIcon from '@site/static/d2/near-label-icon.d2';
+import BorderLabel from '@site/static/d2/border-label.d2';
+import TooltipNear from '@site/static/d2/tooltip-near.d2';
 
 # Positions
 
@@ -62,7 +64,7 @@ The `near` can be nested to `label` and `icon` to specify their positions.
 
 <div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/near-label-icon.svg2')}}></div>
 
-:::info Extra values
+### Outside and border
 
 When positioning labels and icons, in addition to the values that `near` can take
 elsewhere, an `outside-` prefix can be added to specify positioning outside the bounding
@@ -76,8 +78,25 @@ box of the shape.
 
 
 Note that `outside-left-center` is a different order than `center-left`.
-:::
 
+You can also add `border-x` prefix to specify the label being on the border.
+
+<CodeBlock className="language-d2">
+    {BorderLabel}
+</CodeBlock>
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/border-label.svg2')}}></div>
+
+## Tooltip near
+
+Usually, `tooltip` is a on-hover effect. However, if you specify a `near` field, it will
+permanently show.
+
+<CodeBlock className="language-d2">
+    {TooltipNear}
+</CodeBlock>
+
+<div className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/tooltip-near.svg2')}}></div>
 
 ## Near objects
 
