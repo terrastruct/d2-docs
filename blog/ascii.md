@@ -62,13 +62,14 @@ outputs may look less even than their SVG counterparts.
 - Certain things just can't render
     - Special text, e.g. Markdown, Latex, Code
     - Images and icons
+    - UML classes and SQL tables
     - Right now these aren't special-handled -- whether removing them from the diagram or
 using some placeholder is the right choice is tbd.
 - Not all shapes are supported
   - Here's what all the shapes render as in ASCII. Some of these, like cloud and circle,
   have curves that don't translate well to ASCII. We render these as a rectangle and add
   a little icon for what it's supposed to represent in the top-left. These are subject to
-change.
+change. For now we recommend rendering without custom shapes.
 
 ```txt
                                                       ┌────────┐         ***
