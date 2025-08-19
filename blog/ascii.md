@@ -59,6 +59,37 @@ some post-processing to further compact it.
   - Sometimes the downscaling results in a box with uneven spacing, e.g. a rectangle with
 width 5 and the label is 2 chars. Due to discrete coordinate space in ASCII renders, some
 outputs may look less even than their SVG counterparts.
+- Not all shapes are supported
+  - Here's what all the shapes render as in ASCII. Some of these, like cloud and circle,
+  have curves that don't translate well to ASCII. We render these as a rectangle and add
+  a little icon for what it's supposed to represent in the top-left. These are subject to
+change.
+
+```txt
+                                                      ┌────────┐         ***
+                  ╱‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾╱   ╱‾‾‾‾‾‾‾‾‾╱╲    │callout │     ****   ****     ╱‾‾‾‾‾‾‾‾‾╲
+ ┌──────────┐    ╱               ╱   │         │  │   └────────┘  ***  diamond  *** ╱           ╲
+ │rectangle │   ╱ parallelogram ╱    │   queue │  │        │ ╱      ****     ****   ╲  hexagon  ╱
+ │          │  ╱_______________╱      ╲________ ╲╱         │╱           *****        ╲_________╱
+ └──────────┘
+       │                 │                  │              │              │                │
+       ▼                 ▼                  ▼              ▼              │                ▼
+  ┌─────────┐      ┌──────────┐        ┌────┐        ╱‾‾‾‾‾‾‾‾‾‾‾╱        ▼          ┌☁─────────┐
+  │         │      │ document │        │    └────┐  ╱           ╱    ┌⬭────────┐     │          │
+  │ square  │      │     .-`-.│        │ package │ │ stored_data     │  oval   │     │  cloud   │
+  │         │       `-.-`              └─────────┘  ╲           ╲    │         │     │          │
+  │         │                                        ╲___________╲   └─────────┘     │          │
+  └─────────┘            │                  │              │              │          └──────────┘
+       │                 │                  │              │              │
+       ▼                 ▼                  ▼              ▼              │
+   ┌─────┐          .-‾‾‾‾-.          ╲‾‾‾‾‾‾‾ ╲         ╱‾‾╲             ▼
+   │     ╲┐        │╲-____-╱│          ╲        ╲        ╲__╱        ┌⬭────────┐
+   │ page │        │        │           ╲        ╲      ╱‾‾‾‾╲       │         │
+   │      │        │        │           ╱ step   ╱      ‾‾‾‾‾‾       │ circle  │
+   └──────┘        │cylinder│          ╱        ╱       person       │         │
+                   │        │         ╱_______ ╱                     │         │
+                    ╲-____-╱                                         └─────────┘
+```
 
 ## Try it yourself
 
