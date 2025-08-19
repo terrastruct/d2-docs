@@ -1,4 +1,5 @@
 ---
+date: 2023-04-18
 title: Text to PowerPoint
 description: Creating PowerPoint presentations from text with diagrams
 slug: powerpoint

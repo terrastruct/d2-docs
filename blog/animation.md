@@ -1,3 +1,7 @@
+---
+date: 2023-04-01
+---
+
 # Text to (animated) diagrams
 
 This is a single SVG file created purely through D2 text:
