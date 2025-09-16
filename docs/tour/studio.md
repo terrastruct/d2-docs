@@ -10,7 +10,7 @@ D2 Studio is one of the ways the company behind D2 monetizes. It's free to try a
 evaluate, and like other IDEs you might try for your code, you can easily onboard by
 importing existing D2 code and offboard the same way. No lock-in.
 
-**[Try it out](https://app.terrastruct.com)**
+**[Try it out](https://d2studio.ai)**
 
 ## Benefits
 
@@ -27,7 +27,7 @@ importing existing D2 code and offboard the same way. No lock-in.
 
 Here's an example of a multi-layer D2 diagram presented in D2 studio's web interface:
 
-<a href="https://app.terrastruct.com/diagrams/2034296181">
+<a href="https://d2studio.ai/diagrams/2034296181">
 <WebPImage src={require('@site/static/img/screenshots/d2_studio.png').default} webpSrc={require('@site/static/img/screenshots/d2_studio.webp').default}
 alt="D2 Studio screenshot"/>
 </a>
