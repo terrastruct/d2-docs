@@ -16,7 +16,7 @@ TTF files through the following flags:
 - `--font-regular`
 - `--font-italic`
 - `--font-bold`
-- `--fond-semibold`
+- `--font-semibold`
 
 These should point to a `.ttf` file, for example:
 
@@ -36,7 +36,7 @@ If you'd like to customize the mono fonts:
 - `--font-regular`
 - `--font-italic`
 - `--font-bold`
-- `--fond-semibold`
+- `--font-semibold`
 
 ## Sketch font
 
