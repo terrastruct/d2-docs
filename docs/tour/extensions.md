@@ -13,7 +13,6 @@ Officially developed and maintained by the creators of D2.
 - [Obsidian plugin](/tour/obsidian/)
 - [D2 app for Slack](/tour/slack/)
 - [Discord plugin](/tour/discord/)
-- [Confluence app](/tour/confluence/)
 
 ## Community
 
